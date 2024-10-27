@@ -15,6 +15,15 @@ run/main_scene="res://Scenes/Title Screen.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
+[file_customization]
+
+folder_colors={
+"res://Assets/": "red",
+"res://Resources/": "yellow",
+"res://Scenes/": "teal",
+"res://Scripts/": "purple"
+}
+
 [input]
 
 Left={
