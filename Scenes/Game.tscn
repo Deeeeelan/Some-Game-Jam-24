@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://d0no0vp0vj5t1"]
+[gd_scene load_steps=10 format=3 uid="uid://d0no0vp0vj5t1"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_iytmc"]
 [ext_resource type="Material" uid="uid://c4v43aqjhny6t" path="res://Resources/Materials/Placeholder.tres" id="2_hgni2"]
+[ext_resource type="Shader" path="res://Resources/Shaders/Pixelate.gdshader" id="3_6jm6e"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_44npv"]
 
@@ -15,6 +16,10 @@ sky_material = SubResource("ProceduralSkyMaterial_rjoyy")
 [sub_resource type="Environment" id="Environment_k2ec4"]
 background_mode = 2
 sky = SubResource("Sky_p2ky0")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_8qle5"]
+shader = ExtResource("3_6jm6e")
+shader_parameter/pixelSize = 4
 
 [node name="Title Screen" type="Node"]
 
@@ -162,6 +167,18 @@ material = ExtResource("2_hgni2")
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="Control"]
+visible = false
+material = SubResource("ShaderMaterial_8qle5")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
