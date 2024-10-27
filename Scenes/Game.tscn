@@ -1,8 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://d0no0vp0vj5t1"]
+[gd_scene load_steps=13 format=3 uid="uid://d0no0vp0vj5t1"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_iytmc"]
 [ext_resource type="Material" uid="uid://c4v43aqjhny6t" path="res://Resources/Materials/Placeholder.tres" id="2_hgni2"]
 [ext_resource type="Shader" path="res://Resources/Shaders/Pixelate.gdshader" id="3_6jm6e"]
+[ext_resource type="Script" path="res://Scripts/Pause Screen.gd" id="4_w4rgy"]
+[ext_resource type="FontFile" uid="uid://c1k08kigjcudw" path="res://Assets/Fonts/Jacquard12-Regular.ttf" id="6_nfg15"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_44npv"]
 
@@ -20,6 +22,10 @@ sky = SubResource("Sky_p2ky0")
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_8qle5"]
 shader = ExtResource("3_6jm6e")
 shader_parameter/pixelSize = 4
+
+[sub_resource type="LabelSettings" id="LabelSettings_f05eg"]
+font = ExtResource("6_nfg15")
+font_size = 65
 
 [node name="Title Screen" type="Node"]
 
@@ -182,3 +188,40 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="Pause Screen" type="Control" parent="Control"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("4_w4rgy")
+
+[node name="QuitButton" type="Button" parent="Control/Pause Screen"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -175.0
+offset_top = -37.5
+offset_right = 175.0
+offset_bottom = 37.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Control/Pause Screen/QuitButton"]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Quit"
+label_settings = SubResource("LabelSettings_f05eg")
+horizontal_alignment = 1
+vertical_alignment = 1

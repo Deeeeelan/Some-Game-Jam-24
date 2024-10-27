@@ -6,7 +6,3 @@ func ButtonPressed():
 
 func _ready():
 	self.pressed.connect(ButtonPressed)
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
