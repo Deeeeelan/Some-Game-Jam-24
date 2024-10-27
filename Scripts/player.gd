@@ -12,7 +12,7 @@ var lerp_speed = 10
 var direction = Vector3.ZERO
 
 func _ready():
-	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED) #Hides mouse
 
 func _input(event):
 	if event is InputEventMouseMotion:

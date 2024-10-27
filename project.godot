@@ -13,11 +13,16 @@ config_version=5
 config/name="VGDCGameJam24"
 run/main_scene="res://Scenes/Title Screen.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
+boot_splash/show_image=false
 config/icon="res://Assets/Textures/icon.svg"
 
 [autoload]
 
 GlobalScript="*res://Scripts/GlobalScript.gd"
+
+[display]
+
+window/size/mode=3
 
 [file_customization]
 
