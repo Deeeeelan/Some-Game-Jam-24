@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://caeeogffw2krf"]
+
+[ext_resource type="PackedScene" uid="uid://bdxw0nilghpb4" path="res://Assets/player.tscn" id="1_6578n"]
+
+[node name="Game" type="Node"]
+
+[node name="Node3D" type="Node3D" parent="."]
+
+[node name="Test Floor" type="CSGBox3D" parent="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.16607, 0)
+size = Vector3(50, 1, 50)
+
+[node name="Camera3D" type="Camera3D" parent="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0947576, 0.749126, 0.026963)
+current = true
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Player" parent="." instance=ExtResource("1_6578n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0947576, 0.749126, 0.026963)

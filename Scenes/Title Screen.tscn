@@ -1,0 +1,55 @@
+[gd_scene load_steps=8 format=3 uid="uid://d0no0vp0vj5t1"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_m6fgu"]
+[ext_resource type="Material" uid="uid://c4v43aqjhny6t" path="res://Resources/Materials/Placeholder.tres" id="2_bkyoo"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_44npv"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_ey0af"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_rjoyy"]
+
+[sub_resource type="Sky" id="Sky_p2ky0"]
+sky_material = SubResource("ProceduralSkyMaterial_rjoyy")
+
+[sub_resource type="Environment" id="Environment_k2ec4"]
+background_mode = 2
+sky = SubResource("Sky_p2ky0")
+
+[node name="Title Screen" type="Node"]
+
+[node name="Background" type="Node3D" parent="."]
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="Background"]
+script = ExtResource("1_m6fgu")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Background/CharacterBody3D"]
+shape = SubResource("CapsuleShape3D_44npv")
+
+[node name="Head" type="Node3D" parent="Background/CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+
+[node name="Camera3D" type="Camera3D" parent="Background/CharacterBody3D/Head"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Background/CharacterBody3D"]
+mesh = SubResource("CapsuleMesh_ey0af")
+
+[node name="Test Floor" type="CSGBox3D" parent="Background"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.88503, 0)
+use_collision = true
+size = Vector3(100, 1, 100)
+material = ExtResource("2_bkyoo")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Background"]
+environment = SubResource("Environment_k2ec4")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Background"]
+transform = Transform3D(0.707107, 0.5, -0.5, 0, 0.707107, 0.707107, 0.707107, -0.5, 0.5, -5, 5, 5)
+light_energy = 2.0
+shadow_enabled = true
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
