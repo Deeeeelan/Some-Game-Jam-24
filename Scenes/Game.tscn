@@ -1,8 +1,10 @@
-[gd_scene load_steps=13 format=3 uid="uid://d0no0vp0vj5t1"]
+[gd_scene load_steps=15 format=3 uid="uid://d0no0vp0vj5t1"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_iytmc"]
 [ext_resource type="Material" uid="uid://c4v43aqjhny6t" path="res://Resources/Materials/Placeholder.tres" id="2_hgni2"]
 [ext_resource type="Shader" path="res://Resources/Shaders/Pixelate.gdshader" id="3_6jm6e"]
+[ext_resource type="Material" uid="uid://bavnshhfq73yu" path="res://Resources/Materials/RedPlaceholder.tres" id="3_6lbct"]
+[ext_resource type="Script" path="res://Scripts/BasicEnemy.gd" id="3_axfpw"]
 [ext_resource type="Script" path="res://Scripts/Pause Screen.gd" id="4_w4rgy"]
 [ext_resource type="FontFile" uid="uid://c1k08kigjcudw" path="res://Assets/Fonts/Jacquard12-Regular.ttf" id="6_nfg15"]
 
@@ -31,18 +33,18 @@ font_size = 65
 
 [node name="Node3D" type="Node3D" parent="."]
 
-[node name="CharacterBody3D" type="CharacterBody3D" parent="Node3D"]
+[node name="Player" type="CharacterBody3D" parent="Node3D"]
 script = ExtResource("1_iytmc")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/CharacterBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/Player"]
 shape = SubResource("CapsuleShape3D_44npv")
 
-[node name="Head" type="Node3D" parent="Node3D/CharacterBody3D"]
+[node name="Head" type="Node3D" parent="Node3D/Player"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 
-[node name="Camera3D" type="Camera3D" parent="Node3D/CharacterBody3D/Head"]
+[node name="Camera3D" type="Camera3D" parent="Node3D/Player/Head"]
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Node3D/CharacterBody3D"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Node3D/Player"]
 mesh = SubResource("CapsuleMesh_ey0af")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="Node3D"]
@@ -170,6 +172,19 @@ transform = Transform3D(-0.043144, -7.02002e-05, 1.96503e-05, -3.25351e-06, 0.90
 use_collision = true
 size = Vector3(60.4746, 2.75784, 100)
 material = ExtResource("2_hgni2")
+
+[node name="Enemies" type="Node3D" parent="Node3D"]
+
+[node name="Enemy" type="CharacterBody3D" parent="Node3D/Enemies"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 11)
+script = ExtResource("3_axfpw")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/Enemies/Enemy"]
+shape = SubResource("CapsuleShape3D_44npv")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Node3D/Enemies/Enemy"]
+material_override = ExtResource("3_6lbct")
+mesh = SubResource("CapsuleMesh_ey0af")
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
