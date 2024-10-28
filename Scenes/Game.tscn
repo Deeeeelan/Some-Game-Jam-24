@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://d0no0vp0vj5t1"]
+[gd_scene load_steps=16 format=3 uid="uid://d0no0vp0vj5t1"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_iytmc"]
 [ext_resource type="Material" uid="uid://c4v43aqjhny6t" path="res://Resources/Materials/Placeholder.tres" id="2_hgni2"]
@@ -20,6 +20,8 @@ sky_material = SubResource("ProceduralSkyMaterial_rjoyy")
 [sub_resource type="Environment" id="Environment_k2ec4"]
 background_mode = 2
 sky = SubResource("Sky_p2ky0")
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_gkuiu"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_8qle5"]
 shader = ExtResource("3_6jm6e")
@@ -175,16 +177,24 @@ material = ExtResource("2_hgni2")
 
 [node name="Enemies" type="Node3D" parent="Node3D"]
 
-[node name="Enemy" type="CharacterBody3D" parent="Node3D/Enemies"]
+[node name="Enemy2" type="RigidBody3D" parent="Node3D/Enemies"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 11)
+axis_lock_angular_x = true
+axis_lock_angular_z = true
+physics_material_override = SubResource("PhysicsMaterial_gkuiu")
 script = ExtResource("3_axfpw")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/Enemies/Enemy"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/Enemies/Enemy2"]
 shape = SubResource("CapsuleShape3D_44npv")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Node3D/Enemies/Enemy"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Node3D/Enemies/Enemy2"]
 material_override = ExtResource("3_6lbct")
 mesh = SubResource("CapsuleMesh_ey0af")
+skeleton = NodePath("")
+
+[node name="RayCast3D" type="RayCast3D" parent="Node3D/Enemies/Enemy2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+target_position = Vector3(0, -0.1, 0)
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
