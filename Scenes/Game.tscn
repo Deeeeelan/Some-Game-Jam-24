@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://d0no0vp0vj5t1"]
+[gd_scene load_steps=17 format=3 uid="uid://d0no0vp0vj5t1"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_iytmc"]
 [ext_resource type="Material" uid="uid://c4v43aqjhny6t" path="res://Resources/Materials/Placeholder.tres" id="2_hgni2"]
@@ -9,6 +9,8 @@
 [ext_resource type="FontFile" uid="uid://c1k08kigjcudw" path="res://Assets/Fonts/Jacquard12-Regular.ttf" id="6_nfg15"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_44npv"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_10t7b"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_ey0af"]
 
@@ -45,6 +47,12 @@ shape = SubResource("CapsuleShape3D_44npv")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Node3D/Player/Head"]
+
+[node name="Area3D" type="Area3D" parent="Node3D/Player/Head"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.4, -0.7)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/Player/Head/Area3D"]
+shape = SubResource("SphereShape3D_10t7b")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Node3D/Player"]
 mesh = SubResource("CapsuleMesh_ey0af")
