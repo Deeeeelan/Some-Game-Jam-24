@@ -1,17 +1,20 @@
 extends CharacterBody3D
 
 @onready var head = $Head
+@export var Player: Node3D
 
-const SPEED = 5.0
-const JUMP_VELOCITY = 4.5
+@export var SPEED = 5.0
+@export var JUMP_VELOCITY = 4.5
 
-const mouse_sens = 0.25
-
-var lerp_speed = 10
+@export var lerp_speed = 10
 
 var direction = Vector3.ZERO
 
+func Jump():
+	velocity.y = JUMP_VELOCITY
 
+#func _ready() -> void:
+#	
 
 
 func _physics_process(delta: float) -> void:
@@ -25,13 +28,20 @@ func _physics_process(delta: float) -> void:
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
+	var angleToPlayer = self.position.direction_to(Player.position)
 	var input_dir = Vector2(0,0)
-	direction = lerp(direction,(transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized(),delta*lerp_speed)
+	var NormDir = angleToPlayer #(transform.basis * Vector3(angleToPlayer.x, 0, angleToPlayer.y)).normalized()
+	direction = lerp(direction,NormDir,delta*lerp_speed)
 	if direction:
 		velocity.x = direction.x * SPEED
 		velocity.z = direction.z * SPEED
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)
+	
 
 	move_and_slide()
+	
+	# Just makes the enemy jump when velocity is lost. Likely hitting an obsticle. Temporary
+	if is_on_floor() and velocity.length() < 0.01:
+		Jump()
