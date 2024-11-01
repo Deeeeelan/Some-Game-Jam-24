@@ -189,6 +189,7 @@ axis_lock_angular_x = true
 axis_lock_angular_z = true
 script = ExtResource("3_axfpw")
 Player = NodePath("../../Player")
+metadata/Enemy = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/Enemies/Enemy"]
 shape = SubResource("CapsuleShape3D_44npv")

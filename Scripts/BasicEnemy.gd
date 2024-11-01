@@ -6,9 +6,24 @@ extends CharacterBody3D
 @export var SPEED = 5.0
 @export var JUMP_VELOCITY = 4.5
 
+@export var max_health = 100
+@export var health = 100
+@export var isDead = false
+
 @export var lerp_speed = 10
 
 var direction = Vector3.ZERO
+
+func death():
+	# Handle death animation etc.
+	print(self, " has died")
+	isDead = true
+
+func take_damage(damage):
+	health -= damage
+	if health <= 0:
+		death()
+
 
 func Jump():
 	velocity.y = JUMP_VELOCITY
@@ -39,8 +54,8 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 	
-
-	move_and_slide()
+	if not isDead:
+		move_and_slide()
 	
 	# Just makes the enemy jump when velocity is lost. Likely hitting an obsticle. Temporary
 	if is_on_floor() and velocity.length() < 0.01:

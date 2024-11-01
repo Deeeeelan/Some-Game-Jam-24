@@ -2,6 +2,9 @@ extends CharacterBody3D
 
 @onready var head = $Head
 
+@export var max_health = 100
+@export var health = 100
+
 const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
 
@@ -11,7 +14,14 @@ var lerp_speed = 10
 
 var direction = Vector3.ZERO
 
+func death():
+	# Handle death animation etc.
+	print(self, " has died")
 
+func take_damage(damage):
+	health -= damage
+	if health <= 0:
+		death()
 
 func _input(event):
 	if event is InputEventMouseMotion and GlobalScript.GamePaused == false:
@@ -21,6 +31,12 @@ func _input(event):
 	if event.is_action_pressed("Attack"):
 		var DetectedItems = $Head/Area3D.get_overlapping_bodies()
 		print(DetectedItems)
+		for i in DetectedItems:
+			if i is CharacterBody3D and i.get_meta("Enemy") == true: 
+				print("Enemy: ", i)
+				i.take_damage(100)
+		
+		
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
