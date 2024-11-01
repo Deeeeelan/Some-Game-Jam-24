@@ -25,12 +25,20 @@ func take_damage(damage):
 		death()
 
 
+
 func Jump():
 	velocity.y = JUMP_VELOCITY
+	
+func melee():
+	var DetectedItems = $Melee.get_overlapping_bodies()
 
-#func _ready() -> void:
-#	
+	for i in DetectedItems:
+		if i is CharacterBody3D and i.get_meta("Player") == true: 
+			print("Player: ", i)
+			i.take_damage(1)
 
+func _ready() -> void:
+	$EnemyAttackTick.timeout.connect(melee)
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
