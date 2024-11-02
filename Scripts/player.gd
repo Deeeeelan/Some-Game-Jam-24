@@ -32,7 +32,7 @@ func _input(event):
 		var DetectedItems = $Head/Area3D.get_overlapping_bodies()
 		print(DetectedItems)
 		for i in DetectedItems:
-			if i is CharacterBody3D and i.get_meta("Enemy") == true: 
+			if i is CharacterBody3D and i.has_meta("Enemy") and i.get_meta("Enemy") == true: 
 				print("Enemy: ", i)
 				i.take_damage(100)
 		
