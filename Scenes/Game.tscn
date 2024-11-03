@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://d0no0vp0vj5t1"]
+[gd_scene load_steps=18 format=3 uid="uid://d0no0vp0vj5t1"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_iytmc"]
 [ext_resource type="Script" path="res://GameScript.gd" id="1_m1acb"]
@@ -34,6 +34,10 @@ font_size = 65
 [sub_resource type="LabelSettings" id="LabelSettings_njqa6"]
 font = ExtResource("6_nfg15")
 font_size = 50
+
+[sub_resource type="LabelSettings" id="LabelSettings_4ahkw"]
+font = ExtResource("6_nfg15")
+font_size = 76
 
 [node name="Game" type="Node"]
 script = ExtResource("1_m1acb")
@@ -265,6 +269,27 @@ grow_vertical = 2
 text = "100/100"
 label_settings = SubResource("LabelSettings_njqa6")
 vertical_alignment = 2
+
+[node name="EXP" type="Control" parent="Control"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -114.0
+offset_right = 114.0
+offset_bottom = 88.0
+grow_horizontal = 2
+
+[node name="Label" type="Label" parent="Control/EXP"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "0"
+label_settings = SubResource("LabelSettings_4ahkw")
+horizontal_alignment = 1
 
 [node name="EnemyTick" type="Timer" parent="."]
 autostart = true

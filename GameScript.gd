@@ -9,7 +9,7 @@ func tick():
 	enemy.Player = $Node3D/Player
 	add_child(enemy)
 	enemy.owner = $Node3D/Enemies
-	print(enemy)
+	
 func _ready() -> void:
 	$EnemyTick.timeout.connect(tick)
 

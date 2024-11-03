@@ -17,7 +17,11 @@ var direction = Vector3.ZERO
 func death():
 	# Handle death animation etc.
 	print(self, " has died")
+	GlobalScript.TotalScore += 10
+	GlobalScript.CurrentEXP += 10
 	isDead = true
+	await get_tree().create_timer(1.0).timeout
+	self.queue_free()
 
 func take_damage(damage):
 	health -= damage
@@ -51,8 +55,11 @@ func _physics_process(delta: float) -> void:
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
-	var angleToPlayer = self.position.direction_to(Player.position)
-	var input_dir = Vector2(0,0)
+	var angleToPlayer = Vector3.ZERO
+	if Player:
+		angleToPlayer = self.position.direction_to(Player.position)
+		
+	
 	var NormDir = angleToPlayer #(transform.basis * Vector3(angleToPlayer.x, 0, angleToPlayer.y)).normalized()
 	direction = lerp(direction,NormDir,delta*lerp_speed)
 	if direction:

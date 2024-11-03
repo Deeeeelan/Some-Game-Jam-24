@@ -4,6 +4,7 @@ extends Node
 
 @export var GamePaused = false
 @export var TotalScore = 0
+@export var CurrentEXP = 0
 @export var CurrentLevel = 0
 @export var HighScore = 0
 
