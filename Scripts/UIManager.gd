@@ -1,6 +1,7 @@
 extends Control
 @export var Player: CharacterBody3D
 
+@onready var root = get_tree().current_scene
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
@@ -9,4 +10,4 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	$Health/Label.text = str(Player.health) + "/" + str(Player.max_health)
-	$EXP/Label.text = str(GlobalScript.CurrentEXP)
+	$EXP/Label.text = str(GlobalScript.CurrentEXP) + " / " + str(root.LevelRequirement()) + " , " + str(GlobalScript.CurrentLevel)
