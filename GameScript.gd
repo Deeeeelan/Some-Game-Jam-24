@@ -4,6 +4,11 @@ var levelingDecounce = false
 @onready var EnemyNode = $Node3D/Enemies
 @onready var player = $Node3D/Player
 
+func Death():
+	GlobalScript.PlayerDead = true
+	Engine.time_scale = 0.2
+	$Control/DeathScreen.visible = true
+	
 func LevelRequirement() -> int:
 	return snapped(GlobalScript.CurrentLevel ** 2 + 25, 10) 
 # snapped() returns the closest value to the second arguement (Round to the xth number)
@@ -24,8 +29,11 @@ func tick():
 	
 	
 func _ready() -> void:
+	GlobalScript.TotalScore = 0
+	GlobalScript.CurrentEXP = 0
+	GlobalScript.CurrentLevel = 0
 	$EnemyTick.timeout.connect(tick)
-	
+
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

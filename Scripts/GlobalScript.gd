@@ -1,14 +1,17 @@
 # This script is used in every scene.
 
 extends Node
-
+@export var PlayerDead = false
 @export var GamePaused = false
 @export var TotalScore = 0
 @export var CurrentEXP = 0
 @export var CurrentLevel = 0
 @export var HighScore = 0
 
+
 var FullScreen = true
+
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

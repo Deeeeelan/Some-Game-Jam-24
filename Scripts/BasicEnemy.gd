@@ -16,12 +16,13 @@ var direction = Vector3.ZERO
 
 func death():
 	# Handle death animation etc.
-	print(self, " has died")
-	GlobalScript.TotalScore += 10
-	GlobalScript.CurrentEXP += 10
-	isDead = true
-	await get_tree().create_timer(1.0).timeout
-	self.queue_free()
+	if not isDead:
+		print(self, " has died")
+		GlobalScript.TotalScore += 10
+		GlobalScript.CurrentEXP += 10
+		isDead = true
+		await get_tree().create_timer(1.0).timeout
+		self.queue_free()
 
 func take_damage(damage):
 	health -= damage

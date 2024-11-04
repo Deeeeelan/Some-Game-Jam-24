@@ -1,6 +1,7 @@
 extends CharacterBody3D
 
 @onready var head = $Head
+@onready var root = get_tree().current_scene
 
 @export var max_health = 100
 @export var health = 100
@@ -17,6 +18,7 @@ var direction = Vector3.ZERO
 func death():
 	# Handle death animation etc.
 	print(self, " has died")
+	root.Death()
 
 func take_damage(damage):
 	health -= damage
@@ -24,7 +26,7 @@ func take_damage(damage):
 		death()
 
 func _input(event):
-	if event is InputEventMouseMotion and GlobalScript.GamePaused == false:
+	if event is InputEventMouseMotion and GlobalScript.GamePaused == false and not GlobalScript.PlayerDead:
 		rotate_y(deg_to_rad(-event.relative.x * mouse_sens))
 		head.rotate_x(deg_to_rad(-event.relative.y * mouse_sens))
 		head.rotation.x = clamp(head.rotation.x,deg_to_rad(-89),deg_to_rad(89))
@@ -44,12 +46,15 @@ func _physics_process(delta: float) -> void:
 		velocity += get_gravity() * delta
 
 	# Handle jump.
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
+	if Input.is_action_just_pressed("ui_accept") and is_on_floor() and not GlobalScript.PlayerDead:
 		velocity.y = JUMP_VELOCITY
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
-	var input_dir := Input.get_vector("Left", "Right", "Forward", "Backward")
+	var input_dir = Vector2.ZERO
+	if not GlobalScript.PlayerDead:
+		input_dir = Input.get_vector("Left", "Right", "Forward", "Backward")
+	
 	direction = lerp(direction,(transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized(),delta*lerp_speed)
 	if direction:
 		velocity.x = direction.x * SPEED
