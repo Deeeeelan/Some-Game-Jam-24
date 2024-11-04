@@ -5,7 +5,8 @@ var levelingDecounce = false
 @onready var player = $Node3D/Player
 
 func LevelRequirement() -> int:
-	return GlobalScript.CurrentLevel ** 2 + 25
+	return snapped(GlobalScript.CurrentLevel ** 2 + 25, 10) 
+# snapped() returns the closest value to the second arguement (Round to the xth number)
 
 func LevelUp():
 	if levelingDecounce == false:
@@ -20,7 +21,6 @@ func tick():
 	
 	enemy.Player = player
 	EnemyNode.add_child(enemy)
-	print("owner: ",enemy.owner)
 	
 	
 func _ready() -> void:
