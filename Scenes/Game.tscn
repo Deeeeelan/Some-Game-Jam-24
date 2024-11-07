@@ -1,7 +1,7 @@
 [gd_scene load_steps=21 format=3 uid="uid://d0no0vp0vj5t1"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_iytmc"]
-[ext_resource type="Script" path="res://GameScript.gd" id="1_m1acb"]
+[ext_resource type="Script" path="res://Scripts/GameScript.gd" id="1_m1acb"]
 [ext_resource type="Material" uid="uid://c4v43aqjhny6t" path="res://Resources/Materials/Placeholder.tres" id="2_hgni2"]
 [ext_resource type="Shader" path="res://Resources/Shaders/Pixelate.gdshader" id="3_6jm6e"]
 [ext_resource type="Script" path="res://Scripts/Pause Screen.gd" id="4_w4rgy"]

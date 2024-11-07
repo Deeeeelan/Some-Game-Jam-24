@@ -5,10 +5,37 @@ var levelingDecounce = false
 @onready var player = $Node3D/Player
 
 func ModifierMessage(Title, Description):
-	print("ModifierMessage")
+	print("ModifierMessage", str(Title), str(Description))
 
 func TestModifier():
 	print("Modifier active")
+func TestModifier2():
+	print("Modifier active")
+
+
+
+var ModifierRates = {
+	"Test" = {
+		Name = "1",
+		Description = "a",
+		Func = Callable(self, "TestModifier"),
+		Weight = 2,
+	},
+	"Test2" = {
+		Name = "2",
+		Description = "b",
+		Func = Callable(self, "TestModifier2"),
+		Weight = 1,
+	},
+}
+
+func ChooseRandomModifier():
+	for ModifierName in ModifierRates:
+		var Modifier = ModifierRates[ModifierName]
+		if randi_range(1,Modifier.Weight) == 1:
+			Modifier.Func.call()
+			ModifierMessage(Modifier.Name, Modifier.Description)
+			break
 
 func Death():
 	GlobalScript.PlayerDead = true
@@ -24,6 +51,8 @@ func LevelUp():
 		levelingDecounce = true
 		GlobalScript.CurrentEXP -= LevelRequirement()
 		GlobalScript.CurrentLevel += 1
+		# Level Up
+		ChooseRandomModifier()
 		levelingDecounce = false
 
 func tick():
