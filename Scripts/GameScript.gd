@@ -8,19 +8,24 @@ func ModifierMessage(Title, Description):
 	print("ModifierMessage", str(Title), str(Description))
 	$Control/Modifer/Label.text = str(Title) + "\n" + str(Description)
 
-func LoseFPS():
+func LoseFPS(): # Hopefully this will not cause any problems in the future...
 	if Engine.max_fps > 120 or Engine.max_fps == 0:
 		Engine.max_fps = 120
 	Engine.max_fps = clampi(roundi(Engine.max_fps*0.9), 16, 60)
 
-func TestModifier2():
-	print("Modifier active")
-
+func Askew():
+	$Node3D/Player/Head/Camera3D.rotate_z(deg_to_rad(randi_range(-15,15))) # Can stack, have fun
 
 
 var ModifierRates = {
+		"Askew" = {
+		Title = "Askew",
+		Description = "Askew",
+		Func = Callable(self, "Askew"),
+		Weight = 1,
+	},
 	"LoseFPS" = {
-		Name = "Uh its getting choppy",
+		Title = "Uhoh its getting choppy",
 		Description = "No more FPS, how unfortunate",
 		Func = Callable(self, "LoseFPS"),
 		Weight = 1,
@@ -32,7 +37,7 @@ func ChooseRandomModifier():
 		var Modifier = ModifierRates[ModifierName]
 		if randi_range(1,Modifier.Weight) == 1:
 			Modifier.Func.call()
-			ModifierMessage(Modifier.Name, Modifier.Description)
+			ModifierMessage(Modifier.Title, Modifier.Description)
 			break
 
 func Death():

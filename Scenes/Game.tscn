@@ -214,7 +214,7 @@ grow_vertical = 2
 script = ExtResource("5_ubbnd")
 Player = NodePath("../Node3D/Player")
 
-[node name="ColorRect" type="ColorRect" parent="Control"]
+[node name="Pixelation" type="ColorRect" parent="Control"]
 visible = false
 material = SubResource("ShaderMaterial_8qle5")
 layout_mode = 1
