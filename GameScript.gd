@@ -4,6 +4,12 @@ var levelingDecounce = false
 @onready var EnemyNode = $Node3D/Enemies
 @onready var player = $Node3D/Player
 
+func ModifierMessage(Title, Description):
+	print("ModifierMessage")
+
+func TestModifier():
+	print("Modifier active")
+
 func Death():
 	GlobalScript.PlayerDead = true
 	Engine.time_scale = 0.2
