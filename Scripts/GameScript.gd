@@ -6,6 +6,7 @@ var levelingDecounce = false
 
 func ModifierMessage(Title, Description):
 	print("ModifierMessage", str(Title), str(Description))
+	$Control/Modifer/Label.text = str(Title) + "\n" + str(Description)
 
 func TestModifier():
 	print("Modifier active")
