@@ -9,7 +9,10 @@ func ModifierMessage(Title, Description):
 	$Control/Modifer/Label.text = str(Title) + "\n" + str(Description)
 
 func LoseFPS():
-	Engine.max_fps = 10
+	if Engine.max_fps > 120 or Engine.max_fps == 0:
+		Engine.max_fps = 120
+	Engine.max_fps = clampi(roundi(Engine.max_fps*0.9), 16, 60)
+
 func TestModifier2():
 	print("Modifier active")
 
@@ -20,7 +23,7 @@ var ModifierRates = {
 		Name = "Uh its getting choppy",
 		Description = "No more FPS, how unfortunate",
 		Func = Callable(self, "LoseFPS"),
-		Weight = 2,
+		Weight = 1,
 	},
 }
 
