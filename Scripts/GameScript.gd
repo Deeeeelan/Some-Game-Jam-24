@@ -8,25 +8,19 @@ func ModifierMessage(Title, Description):
 	print("ModifierMessage", str(Title), str(Description))
 	$Control/Modifer/Label.text = str(Title) + "\n" + str(Description)
 
-func TestModifier():
-	print("Modifier active")
+func LoseFPS():
+	Engine.max_fps = 10
 func TestModifier2():
 	print("Modifier active")
 
 
 
 var ModifierRates = {
-	"Test" = {
-		Name = "1",
-		Description = "a",
-		Func = Callable(self, "TestModifier"),
+	"LoseFPS" = {
+		Name = "Uh its getting choppy",
+		Description = "No more FPS, how unfortunate",
+		Func = Callable(self, "LoseFPS"),
 		Weight = 2,
-	},
-	"Test2" = {
-		Name = "2",
-		Description = "b",
-		Func = Callable(self, "TestModifier2"),
-		Weight = 1,
 	},
 }
 
