@@ -16,13 +16,22 @@ func LoseFPS(): # Hopefully this will not cause any problems in the future...
 func Askew():
 	$Node3D/Player/Head/Camera3D.rotate_z(deg_to_rad(randi_range(-15,15))) # Can stack, have fun
 
+func SpeedUp():
+	if Engine.time_scale <= 2:
+		Engine.time_scale += 0.1
 
 var ModifierRates = {
-		"Askew" = {
+	"SpeedUp" = {
+		Title = "SpeedUp",
+		Description = "SpeedUp",
+		Func = Callable(self, "SpeedUp"),
+		Weight = 1,
+	},
+	"Askew" = {
 		Title = "Askew",
 		Description = "Askew",
 		Func = Callable(self, "Askew"),
-		Weight = 1,
+		Weight = 2,
 	},
 	"LoseFPS" = {
 		Title = "Uhoh its getting choppy",
