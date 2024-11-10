@@ -14,7 +14,7 @@ func LoseFPS(): # Hopefully this will not cause any problems in the future...
 	Engine.max_fps = clampi(roundi(Engine.max_fps*0.9), 16, 60)
 
 func Askew():
-	$Node3D/Player/Head/Camera3D.rotate_z(deg_to_rad(randi_range(-15,15))) # Can stack, have fun
+	$Node3D/Player/Head/Camera3D.rotate_z(deg_to_rad(randi_range(-9,9))) # Can stack, have fun
  
 func SpeedUp():
 	if Engine.time_scale <= 2:
