@@ -9,5 +9,5 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	$Health/Label.text = str(Player.health) + "/" + str(Player.max_health)
+	$Health/Label.text = str(clamp(Player.health,0,INF)) + "/" + str(Player.max_health)
 	$EXP/Label.text = str(GlobalScript.CurrentEXP) + " / " + str(root.LevelRequirement()) + " , " + str(GlobalScript.CurrentLevel)

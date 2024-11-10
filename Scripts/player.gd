@@ -26,17 +26,18 @@ func take_damage(damage):
 		death()
 
 func _input(event):
-	if event is InputEventMouseMotion and GlobalScript.GamePaused == false and not GlobalScript.PlayerDead:
-		rotate_y(deg_to_rad(-event.relative.x * mouse_sens))
-		head.rotate_x(deg_to_rad(-event.relative.y * mouse_sens))
-		head.rotation.x = clamp(head.rotation.x,deg_to_rad(-89),deg_to_rad(89))
-	if event.is_action_pressed("Attack"):
-		var DetectedItems = $Head/Area3D.get_overlapping_bodies()
-		print(DetectedItems)
-		for i in DetectedItems:
-			if i is CharacterBody3D and i.has_meta("Enemy") and i.get_meta("Enemy") == true: 
-				print("Enemy: ", i)
-				i.take_damage(100)
+	if not GlobalScript.PlayerDead:
+		if event is InputEventMouseMotion and GlobalScript.GamePaused == false:
+			rotate_y(deg_to_rad(-event.relative.x * mouse_sens))
+			head.rotate_x(deg_to_rad(-event.relative.y * mouse_sens))
+			head.rotation.x = clamp(head.rotation.x,deg_to_rad(-89),deg_to_rad(89))
+		if event.is_action_pressed("Attack"):
+			var DetectedItems = $Head/Area3D.get_overlapping_bodies()
+			print(DetectedItems)
+			for i in DetectedItems:
+				if i is CharacterBody3D and i.has_meta("Enemy") and i.get_meta("Enemy") == true: 
+					print("Enemy: ", i)
+					i.take_damage(100)
 		
 		
 
