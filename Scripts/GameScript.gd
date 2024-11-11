@@ -73,7 +73,7 @@ func tick():
 	
 	enemy.Player = player
 	EnemyNode.add_child(enemy)
-	enemy.position = Vector3(0,0,0)
+	enemy.position = Vector3(0,5,0)
 
 func RegenTick():
 	if player.health < player.max_health:
