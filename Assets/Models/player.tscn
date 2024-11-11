@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://c4qmwrba7n82r"]
+[gd_scene load_steps=7 format=3 uid="uid://c4qmwrba7n82r"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_1n7vj"]
 [ext_resource type="Texture2D" uid="uid://c0tst7ntrr03h" path="res://Assets/Textures/flashlightpattern.png" id="2_7ny0r"]
+[ext_resource type="AudioStream" uid="uid://0ingyjs47j34" path="res://Assets/Audio/SwordSlash.wav" id="3_cub0i"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_44npv"]
 
@@ -38,6 +39,10 @@ shadow_enabled = true
 distance_fade_enabled = true
 spot_range = 7.0
 spot_angle = 40.0
+
+[node name="SwordSlash" type="AudioStreamPlayer3D" parent="Head"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+stream = ExtResource("3_cub0i")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("CapsuleMesh_ey0af")

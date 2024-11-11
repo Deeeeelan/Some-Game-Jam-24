@@ -10,6 +10,7 @@ extends CharacterBody3D
 @export var InvertControls = false
 @export var speed = 5.0
 @export var jump_velocity = 4.5
+@export var damage = 100
 
 var direction = Vector3.ZERO
 
@@ -31,11 +32,10 @@ func _input(event):
 			head.rotation.x = clamp(head.rotation.x,deg_to_rad(-89),deg_to_rad(89))
 		if event.is_action_pressed("Attack"):
 			var DetectedItems = $Head/Area3D.get_overlapping_bodies()
-			print(DetectedItems)
+			$Head/SwordSlash.play()
 			for i in DetectedItems:
 				if i is CharacterBody3D and i.has_meta("Enemy") and i.get_meta("Enemy") == true: 
-					print("Enemy: ", i)
-					i.take_damage(100)
+					i.take_damage(damage)
 		
 		
 
