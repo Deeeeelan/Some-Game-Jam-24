@@ -73,14 +73,18 @@ func tick():
 	
 	enemy.Player = player
 	EnemyNode.add_child(enemy)
-	
-	
+	enemy.position = Vector3(0,0,0)
+
+func RegenTick():
+	if player.health < player.max_health:
+		player.health += 1
+
 func _ready() -> void:
 	GlobalScript.TotalScore = 0
 	GlobalScript.CurrentEXP = 0
 	GlobalScript.CurrentLevel = 0
 	$EnemyTick.timeout.connect(tick)
-
+	$RegenTick.timeout.connect(RegenTick)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

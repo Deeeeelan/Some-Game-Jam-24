@@ -193,22 +193,28 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 10)
 
 [node name="Wall_Planes_B" parent="Wall_Plane" instance=ExtResource("87_ittky")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
+cast_shadow = 2
 
 [node name="Wall_Planes_A" parent="Wall_Plane" instance=ExtResource("88_ewlus")]
+cast_shadow = 2
 
 [node name="Wall_Planes_C" parent="Wall_Plane" instance=ExtResource("89_sc1hw")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+cast_shadow = 2
 
 [node name="Mine_Carts" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 6)
 
 [node name="Mine_Cart_AA" parent="Mine_Carts" instance=ExtResource("1_bkov4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+cast_shadow = 2
 
 [node name="Mine_Cart_BA" parent="Mine_Carts" instance=ExtResource("2_hnmfp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -2)
+cast_shadow = 2
 
 [node name="Mine_Cart_CA" parent="Mine_Carts" instance=ExtResource("3_032fv")]
+cast_shadow = 2
 
 [node name="Mine_Cart_AB_grp" parent="Mine_Carts" instance=ExtResource("4_pgcmc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 1)
@@ -224,500 +230,656 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 5)
 
 [node name="Rails_Corner_Straight_A" parent="Mine_Rails" instance=ExtResource("7_ta45y")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -3)
+cast_shadow = 2
 
 [node name="Rail_B" parent="Mine_Rails" instance=ExtResource("8_d8ib1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
+cast_shadow = 2
 
 [node name="Rail_C" parent="Mine_Rails" instance=ExtResource("9_ab1mq")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 0)
+cast_shadow = 2
 
 [node name="Rails_Corner_22_5Deg_A" parent="Mine_Rails" instance=ExtResource("10_1lxtd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3)
+cast_shadow = 2
 
 [node name="Rail_Falloff_B" parent="Mine_Rails" instance=ExtResource("11_0nh4v")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -1)
+cast_shadow = 2
 
 [node name="Rail_Falloff_A" parent="Mine_Rails" instance=ExtResource("12_yr70p")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -2)
+cast_shadow = 2
 
 [node name="Rail_A" parent="Mine_Rails" instance=ExtResource("13_cnlg7")]
+cast_shadow = 2
 
 [node name="Rails_Corner_Straight_B" parent="Mine_Rails" instance=ExtResource("14_eo35v")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -3)
+cast_shadow = 2
 
 [node name="Rail_Ramp" parent="Mine_Rails" instance=ExtResource("15_0wnvt")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 1)
+cast_shadow = 2
 
 [node name="Rail_45deg" parent="Mine_Rails" instance=ExtResource("16_qn2be")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 1)
+cast_shadow = 2
 
 [node name="Rails_Corner_90Deg_A" parent="Mine_Rails" instance=ExtResource("17_4g60i")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -3)
+cast_shadow = 2
 
 [node name="Rail_Scaffold_A" parent="Mine_Rails" instance=ExtResource("18_dxxmv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 1)
+cast_shadow = 2
 
 [node name="Rail_Scaffold_B" parent="Mine_Rails" instance=ExtResource("19_se8jc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 1)
+cast_shadow = 2
 
 [node name="Rail_Scaffold_C" parent="Mine_Rails" instance=ExtResource("20_opyn6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 1)
+cast_shadow = 2
 
 [node name="Rail_End" parent="Mine_Rails" instance=ExtResource("21_pqcdk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+cast_shadow = 2
 
 [node name="Rails_Corner_22_5Deg_B" parent="Mine_Rails" instance=ExtResource("25_26hof")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, 0)
+cast_shadow = 2
 
 [node name="Rails_Corner_90Deg_B" parent="Mine_Rails" instance=ExtResource("26_mi100")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, -1)
+cast_shadow = 2
 
 [node name="Ground_Mines" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -3)
 
 [node name="Ground_Mines_D" parent="Ground_Mines" instance=ExtResource("71_0obfx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 1)
+cast_shadow = 2
 
 [node name="Ground_Mines_C" parent="Ground_Mines" instance=ExtResource("72_xx3ta")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -2)
+cast_shadow = 2
 
 [node name="Ground_Mines_A" parent="Ground_Mines" instance=ExtResource("73_wppap")]
+cast_shadow = 2
 
 [node name="Ground_Mines_B" parent="Ground_Mines" instance=ExtResource("74_nlxms")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+cast_shadow = 2
 
 [node name="Ground_Mines_Ramp_A" parent="Ground_Mines" instance=ExtResource("75_glfi6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
+cast_shadow = 2
 
 [node name="Ground_Mines_Ramp_Side_B" parent="Ground_Mines" instance=ExtResource("76_rrbsh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -3)
+cast_shadow = 2
 
 [node name="Ground_Mines_Ramp_Side_A" parent="Ground_Mines" instance=ExtResource("77_2pmsx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 3)
+cast_shadow = 2
 
 [node name="Ground_Mines_Ramp_B" parent="Ground_Mines" instance=ExtResource("78_mc1co")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 3)
+cast_shadow = 2
 
 [node name="Ramp_Wall_1m" parent="Ground_Mines" instance=ExtResource("79_bjcnv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 3, 3)
+cast_shadow = 2
 
 [node name="Ramp_Wall_2m" parent="Ground_Mines" instance=ExtResource("80_q8c58")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 3)
+cast_shadow = 2
 
 [node name="Wall_Mines" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 0, -7)
 
 [node name="Wall_Mines_A" parent="Wall_Mines" instance=ExtResource("47_nmu8l")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
+cast_shadow = 2
 
 [node name="Wall_Mines_C" parent="Wall_Mines" instance=ExtResource("48_qcxf5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 0)
+cast_shadow = 2
 
 [node name="Wall_Mines_B" parent="Wall_Mines" instance=ExtResource("49_fk4tu")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+cast_shadow = 2
 
 [node name="Wall_Mines_D" parent="Wall_Mines" instance=ExtResource("50_dd8bq")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 0)
+cast_shadow = 2
 
 [node name="Wall_Mines_Entrance_A" parent="Wall_Mines" instance=ExtResource("51_v014e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, -3)
+cast_shadow = 2
 
 [node name="Wall_Mines_Entrance_B" parent="Wall_Mines" instance=ExtResource("52_y5q60")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -3)
+cast_shadow = 2
 
 [node name="Wall_Mines_Corner" parent="Wall_Mines" instance=ExtResource("54_p8yhs")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 0)
+cast_shadow = 2
 
 [node name="Wall_Tunnel" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 0, -11)
 
 [node name="Wall_Mines_Tunnel_Low" parent="Wall_Tunnel" instance=ExtResource("53_10gku")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+cast_shadow = 2
 
 [node name="Wall_Mines_Tunnel_Mid" parent="Wall_Tunnel" instance=ExtResource("54_7saj1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+cast_shadow = 2
 
 [node name="Wall_Mines_Tunnel_High" parent="Wall_Tunnel" instance=ExtResource("55_nxyfl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
+cast_shadow = 2
 
 [node name="Tunnel_Corner_D" parent="Wall_Tunnel" instance=ExtResource("56_7gblw")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -7)
+cast_shadow = 2
 
 [node name="Tunnel_B" parent="Wall_Tunnel" instance=ExtResource("57_vysc2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -3)
+cast_shadow = 2
 
 [node name="Tunnel_Corner_A" parent="Wall_Tunnel" instance=ExtResource("58_fxy2x")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -3)
+cast_shadow = 2
 
 [node name="Tunnel_Corner_B" parent="Wall_Tunnel" instance=ExtResource("59_4h8kh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -7)
+cast_shadow = 2
 
 [node name="Tunnel_A" parent="Wall_Tunnel" instance=ExtResource("60_b471f")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -8)
+cast_shadow = 2
 
 [node name="Tunnel_Corner_C" parent="Wall_Tunnel" instance=ExtResource("61_lck8m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3)
+cast_shadow = 2
 
 [node name="Panel_Wood" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -8)
 
 [node name="Panel_Wood_C" parent="Panel_Wood" instance=ExtResource("75_g3gsh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 0)
+cast_shadow = 2
 
 [node name="Panel_Wood_B" parent="Panel_Wood" instance=ExtResource("76_i2t5a")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, 0)
+cast_shadow = 2
 
 [node name="Panel_Wood_A" parent="Panel_Wood" instance=ExtResource("77_gev57")]
+cast_shadow = 2
 
 [node name="Panel_Wood_D" parent="Panel_Wood" instance=ExtResource("78_en7kv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, 0)
+cast_shadow = 2
 
 [node name="Panel_Wood_Entrance_A" parent="Panel_Wood" instance=ExtResource("79_tv2yu")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+cast_shadow = 2
 
 [node name="Panel_Wood_Entrance_B" parent="Panel_Wood" instance=ExtResource("80_nk4pl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 0)
+cast_shadow = 2
 
 [node name="Wall_Cave" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0, 8)
 
 [node name="Wall_Caves_A" parent="Wall_Cave" instance=ExtResource("41_0a0xd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 0)
+cast_shadow = 2
 
 [node name="Wall_Caves_B" parent="Wall_Cave" instance=ExtResource("42_okqet")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+cast_shadow = 2
 
 [node name="Wall_Caves_D" parent="Wall_Cave" instance=ExtResource("43_wcpnm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 0)
+cast_shadow = 2
 
 [node name="Wall_Caves_C" parent="Wall_Cave" instance=ExtResource("44_3jvbg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+cast_shadow = 2
 
 [node name="Wall_Caves_Entrance_A" parent="Wall_Cave" instance=ExtResource("45_oqmlu")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 0)
+cast_shadow = 2
 
 [node name="Wall_Caves_Entrance_B" parent="Wall_Cave" instance=ExtResource("46_0r1af")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, 0)
+cast_shadow = 2
 
 [node name="Wall_Caves_Corner" parent="Wall_Cave" instance=ExtResource("47_kiqh1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 0)
+cast_shadow = 2
 
 [node name="Ground_Cave" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, 1)
 
 [node name="Ground_Cave_B" parent="Ground_Cave" instance=ExtResource("21_smyna")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 2)
+cast_shadow = 2
 
 [node name="Ground_Cave_A" parent="Ground_Cave" instance=ExtResource("22_1drqs")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -3)
+cast_shadow = 2
 
 [node name="Ground_Cave_D" parent="Ground_Cave" instance=ExtResource("23_vsy6q")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 3)
+cast_shadow = 2
 
 [node name="Ground_Cave_C" parent="Ground_Cave" instance=ExtResource("24_qsukp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+cast_shadow = 2
 
 [node name="Ground_Cave_E" parent="Ground_Cave" instance=ExtResource("25_cf5gx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -3)
+cast_shadow = 2
 
 [node name="Ground_Cave_F" parent="Ground_Cave" instance=ExtResource("26_uqg3r")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -3)
+cast_shadow = 2
 
 [node name="Cave_Wall_Rocks" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 9)
 
 [node name="Cave_Wall_Rocks_B" parent="Cave_Wall_Rocks" instance=ExtResource("27_qidl7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 2, 0)
+cast_shadow = 2
 
 [node name="Cave_Wall_Rocks_E" parent="Cave_Wall_Rocks" instance=ExtResource("28_r6g1c")]
+cast_shadow = 2
 
 [node name="Cave_Wall_Rocks_G" parent="Cave_Wall_Rocks" instance=ExtResource("29_fruva")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 5, 0)
+cast_shadow = 2
 
 [node name="Cave_Wall_Rocks_D" parent="Cave_Wall_Rocks" instance=ExtResource("30_88cxn")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
+cast_shadow = 2
 
 [node name="Cave_Wall_Rocks_C" parent="Cave_Wall_Rocks" instance=ExtResource("31_x6k3d")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+cast_shadow = 2
 
 [node name="Cave_Wall_Rocks_A" parent="Cave_Wall_Rocks" instance=ExtResource("32_eeroo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 2, 0)
+cast_shadow = 2
 
 [node name="Cave_Wall_Rocks_F" parent="Cave_Wall_Rocks" instance=ExtResource("33_2hmhq")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 2, 0)
+cast_shadow = 2
 
 [node name="Cave_Rocks" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17, 0, 2)
 
 [node name="Cave_Rocks_D" parent="Cave_Rocks" instance=ExtResource("34_chrw7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 1)
+cast_shadow = 2
 
 [node name="Cave_Rocks_C" parent="Cave_Rocks" instance=ExtResource("35_vltcd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 1)
+cast_shadow = 2
 
 [node name="Cave_Rocks_A" parent="Cave_Rocks" instance=ExtResource("36_3hbhf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -1)
+cast_shadow = 2
 
 [node name="Cave_Pillar_B" parent="Cave_Rocks" instance=ExtResource("37_xplnc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -1)
+cast_shadow = 2
 
 [node name="Cave_Pillar_C" parent="Cave_Rocks" instance=ExtResource("38_43adr")]
+cast_shadow = 2
 
 [node name="Cave_Rocks_B" parent="Cave_Rocks" instance=ExtResource("39_fcp1m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+cast_shadow = 2
 
 [node name="Cave_Pillar_A" parent="Cave_Rocks" instance=ExtResource("40_4f7a7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 2)
+cast_shadow = 2
 
 [node name="Cave_Platform" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 0, 2)
 
 [node name="Cave_Platform_D" parent="Cave_Platform" instance=ExtResource("62_wwmpq")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -7)
+cast_shadow = 2
 
 [node name="Cave_Platform_H" parent="Cave_Platform" instance=ExtResource("63_k0esl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -7)
+cast_shadow = 2
 
 [node name="Cave_Platform_J" parent="Cave_Platform" instance=ExtResource("64_ji5sg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -2)
+cast_shadow = 2
 
 [node name="Cave_Platform_E" parent="Cave_Platform" instance=ExtResource("65_53jh1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
+cast_shadow = 2
 
 [node name="Cave_Platform_G" parent="Cave_Platform" instance=ExtResource("66_lxcgn")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -2)
+cast_shadow = 2
 
 [node name="Cave_Platform_I" parent="Cave_Platform" instance=ExtResource("67_m7ss4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 3)
+cast_shadow = 2
 
 [node name="Cave_Platform_C" parent="Cave_Platform" instance=ExtResource("68_str2x")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 8)
+cast_shadow = 2
 
 [node name="Cave_Platform_B" parent="Cave_Platform" instance=ExtResource("69_bohwq")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 8)
+cast_shadow = 2
 
 [node name="Cave_Platform_A" parent="Cave_Platform" instance=ExtResource("70_degn3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 8)
+cast_shadow = 2
 
 [node name="Cave_Platform_A_Corner" parent="Cave_Platform" instance=ExtResource("74_14jh8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 3, 14)
+cast_shadow = 2
 
 [node name="Cave_Platform_A_Side" parent="Cave_Platform" instance=ExtResource("75_ikl53")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 3, 14)
+cast_shadow = 2
 
 [node name="Cave_Platform_B_Corner" parent="Cave_Platform" instance=ExtResource("76_5vnte")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 17)
+cast_shadow = 2
 
 [node name="Cave_Platform_B_Side" parent="Cave_Platform" instance=ExtResource("77_0mgmb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 17)
+cast_shadow = 2
 
 [node name="Cave_Platform_C_Corner" parent="Cave_Platform" instance=ExtResource("78_30t6b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 14)
+cast_shadow = 2
 
 [node name="Cave_Platform_C_Side" parent="Cave_Platform" instance=ExtResource("79_ldd6s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, 14)
+cast_shadow = 2
 
 [node name="Posts" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -12)
 
 [node name="Beam_A" parent="Posts" instance=ExtResource("90_n5aac")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.9, 0)
+cast_shadow = 2
 
 [node name="Beam_B" parent="Posts" instance=ExtResource("91_3vuyp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.9, -1)
+cast_shadow = 2
 
 [node name="Beam_C" parent="Posts" instance=ExtResource("92_1n54a")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.9, -2)
+cast_shadow = 2
 
 [node name="Beam_D" parent="Posts" instance=ExtResource("93_07d2m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.9, -3)
+cast_shadow = 2
 
 [node name="Post_B" parent="Posts" instance=ExtResource("94_l4xo6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+cast_shadow = 2
 
 [node name="Post_A" parent="Posts" instance=ExtResource("95_nk5ia")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+cast_shadow = 2
 
 [node name="Post_D" parent="Posts" instance=ExtResource("96_pqppv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+cast_shadow = 2
 
 [node name="Post_E" parent="Posts" instance=ExtResource("97_4u4ya")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 0)
+cast_shadow = 2
 
 [node name="Post_F" parent="Posts" instance=ExtResource("98_lpbxd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 0)
+cast_shadow = 2
 
 [node name="Post_G" parent="Posts" instance=ExtResource("99_sy544")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, 0)
+cast_shadow = 2
 
 [node name="Post_C" parent="Posts" instance=ExtResource("100_lenvu")]
+cast_shadow = 2
 
 [node name="Post_Reinforced_B" parent="Posts" instance=ExtResource("101_7fkae")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -3)
+cast_shadow = 2
 
 [node name="Post_Reinforced_A" parent="Posts" instance=ExtResource("102_kg84k")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -3)
+cast_shadow = 2
 
 [node name="Post_Reinforced_D" parent="Posts" instance=ExtResource("103_2tni2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -3)
+cast_shadow = 2
 
 [node name="Post_Reinforced_E" parent="Posts" instance=ExtResource("104_mwxln")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -3)
+cast_shadow = 2
 
 [node name="Post_Reinforced_F" parent="Posts" instance=ExtResource("105_sglig")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -3)
+cast_shadow = 2
 
 [node name="Post_Reinforced_G" parent="Posts" instance=ExtResource("106_kp8oh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, -3)
+cast_shadow = 2
 
 [node name="Post_Reinforced_C" parent="Posts" instance=ExtResource("107_hr3ey")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3)
+cast_shadow = 2
 
 [node name="Ground_mound" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 0, 0)
 
 [node name="Ground_Mound_A" parent="Ground_mound" instance=ExtResource("108_tclnb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+cast_shadow = 2
 
 [node name="Ground_Mound_B" parent="Ground_mound" instance=ExtResource("109_rlak0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3)
+cast_shadow = 2
 
 [node name="Ground_Mound_C" parent="Ground_mound" instance=ExtResource("110_x2vdv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 2)
+cast_shadow = 2
 
 [node name="Ground_Mound_D" parent="Ground_mound" instance=ExtResource("111_xcbwt")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -3)
+cast_shadow = 2
 
 [node name="Ground_Mound_E" parent="Ground_mound" instance=ExtResource("112_2w6su")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -3)
+cast_shadow = 2
 
 [node name="Ladder" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0, -11)
 
 [node name="Ladder_Short" parent="Ladder" instance=ExtResource("122_aqkal")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+cast_shadow = 2
 
 [node name="Ladder_Tall" parent="Ladder" instance=ExtResource("123_8jldx")]
+cast_shadow = 2
 
 [node name="Ladder_Top_A" parent="Ladder" instance=ExtResource("124_3hgjh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+cast_shadow = 2
 
 [node name="Ladder_Top_B" parent="Ladder" instance=ExtResource("125_7j6pg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 2, 0)
+cast_shadow = 2
 
 [node name="Wood_Platform" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 0, -14)
 
 [node name="Wood_Platform_45Deg_A" parent="Wood_Platform" instance=ExtResource("126_sd8xl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 3)
+cast_shadow = 2
 
 [node name="Wood_Platform_45Deg_B" parent="Wood_Platform" instance=ExtResource("127_nd4qg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+cast_shadow = 2
 
 [node name="Wood_Platform_45Deg_Connector_A" parent="Wood_Platform" instance=ExtResource("128_owxpm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1)
+cast_shadow = 2
 
 [node name="Wood_Platform_45Deg_Connector_B" parent="Wood_Platform" instance=ExtResource("129_h6kho")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -1)
+cast_shadow = 2
 
 [node name="Wood_Platform_A" parent="Wood_Platform" instance=ExtResource("130_6sxy6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0, -5)
+cast_shadow = 2
 
 [node name="Wood_Platform_A_Corner_A" parent="Wood_Platform" instance=ExtResource("131_1mk85")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23, 0, -10)
+cast_shadow = 2
 
 [node name="Wood_Platform_A_Corner_B" parent="Wood_Platform" instance=ExtResource("132_qrssd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0, -10)
+cast_shadow = 2
 
 [node name="Wood_Platform_A_TSection" parent="Wood_Platform" instance=ExtResource("133_otork")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0, -10)
+cast_shadow = 2
 
 [node name="Wood_Platform_B" parent="Wood_Platform" instance=ExtResource("134_csieo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0, -6)
+cast_shadow = 2
 
 [node name="Wood_Platform_C" parent="Wood_Platform" instance=ExtResource("135_x5s4l")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23, 0, -5)
+cast_shadow = 2
 
 [node name="Wood_Platform_D" parent="Wood_Platform" instance=ExtResource("136_kail3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -4)
+cast_shadow = 2
 
 [node name="Wood_Platform_D_45Deg_A" parent="Wood_Platform" instance=ExtResource("137_ebsii")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -3)
+cast_shadow = 2
 
 [node name="Wood_Platform_D_45Deg_B" parent="Wood_Platform" instance=ExtResource("138_xyufh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, -3)
+cast_shadow = 2
 
 [node name="Wood_Platform_D_90Deg_A" parent="Wood_Platform" instance=ExtResource("139_6w4xa")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, -4)
+cast_shadow = 2
 
 [node name="Wood_Platform_D_90Deg_B" parent="Wood_Platform" instance=ExtResource("140_556qe")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -8)
+cast_shadow = 2
 
 [node name="Wood_Platform_D_Corner_A" parent="Wood_Platform" instance=ExtResource("141_khk18")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -4)
+cast_shadow = 2
 
 [node name="Wood_Platform_D_Corner_B" parent="Wood_Platform" instance=ExtResource("142_77sme")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -4)
+cast_shadow = 2
 
 [node name="Wood_Platform_D_TSection" parent="Wood_Platform" instance=ExtResource("143_qnlug")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -4)
+cast_shadow = 2
 
 [node name="Wood_Platform_Planks_A" parent="Wood_Platform" instance=ExtResource("144_s2agg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29, 0, -10)
+cast_shadow = 2
 
 [node name="Wood_Platform_Planks_A_Side" parent="Wood_Platform" instance=ExtResource("145_jao0w")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26, 0, -10)
+cast_shadow = 2
 
 [node name="Wood_Platform_Planks_B" parent="Wood_Platform" instance=ExtResource("146_qqlxc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33, 0, -10)
+cast_shadow = 2
 
 [node name="Wood_Platform_Planks_C" parent="Wood_Platform" instance=ExtResource("147_08ocf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28, 0, -6)
+cast_shadow = 2
 
 [node name="Wood_Platform_Planks_C_Side" parent="Wood_Platform" instance=ExtResource("148_rwwx5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26, 0, -6)
+cast_shadow = 2
 
 [node name="Wood_Platform_Post" parent="Wood_Platform" instance=ExtResource("149_otsey")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, -6)
+cast_shadow = 2
 
 [node name="Wood_Platform_Post_A" parent="Wood_Platform" instance=ExtResource("150_if4ou")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -6)
+cast_shadow = 2
 
 [node name="Wood_Platform_Post_B" parent="Wood_Platform" instance=ExtResource("151_aru5w")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, -6)
+cast_shadow = 2
 
 [node name="Wood_Platform_Post_C" parent="Wood_Platform" instance=ExtResource("152_3j5kv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -6)
+cast_shadow = 2
 
 [node name="Wood_Platform_Post_D" parent="Wood_Platform" instance=ExtResource("153_6xf28")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0, -6)
+cast_shadow = 2
 
 [node name="Wood_Platform_Stairs_A" parent="Wood_Platform" instance=ExtResource("154_1wm8t")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -13, 0, 1)
+cast_shadow = 2
 
 [node name="Wood_Platform_Stairs_B" parent="Wood_Platform" instance=ExtResource("155_ies10")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -13, 0, -2)
+cast_shadow = 2
 
 [node name="Wood_Platform_Stairs_C" parent="Wood_Platform" instance=ExtResource("156_qoa1w")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -17, 0, 1)
+cast_shadow = 2
 
 [node name="Wood_Platform_Stairs_D" parent="Wood_Platform" instance=ExtResource("157_rg7ru")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -17, 0, -2)
+cast_shadow = 2
 
 [node name="Wood_Platform_Stairs_Planks_A" parent="Wood_Platform" instance=ExtResource("158_mstwa")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8, 0, 1)
+cast_shadow = 2
 
 [node name="Wood_Platform_Stairs_Planks_B" parent="Wood_Platform" instance=ExtResource("159_5fj18")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8, 0, -2)
+cast_shadow = 2
 
 [node name="Wood_Platform_Stairs_Planks_C" parent="Wood_Platform" instance=ExtResource("160_7fekb")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4, 0, 0.999999)
+cast_shadow = 2
 
 [node name="Wood_Platform_Stairs_Planks_D" parent="Wood_Platform" instance=ExtResource("161_uuown")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4, 0, -2)
+cast_shadow = 2
 
 [node name="Wood_Platform_Stairs_Planks_Side_A" parent="Wood_Platform" instance=ExtResource("162_v3byn")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 0, 2)
+cast_shadow = 2
 
 [node name="Wood_Platform_Stairs_Planks_Side_B" parent="Wood_Platform" instance=ExtResource("163_run6l")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 0, 5)
+cast_shadow = 2

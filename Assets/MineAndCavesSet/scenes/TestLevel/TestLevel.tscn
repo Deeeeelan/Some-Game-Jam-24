@@ -1,4 +1,4 @@
-[gd_scene load_steps=70 format=3 uid="uid://cdquc2ay7103"]
+[gd_scene load_steps=71 format=3 uid="uid://cdquc2ay7103"]
 
 [ext_resource type="PackedScene" uid="uid://m2h4fbycsv2x" path="res://Assets/MineAndCavesSet/scenes/Mine_Carts/mine_cart_aa.tscn" id="1_lo3fu"]
 [ext_resource type="PackedScene" uid="uid://c8dxtgd0mkg8t" path="res://Assets/MineAndCavesSet/scenes/Mine_Carts/mine_cart_ba.tscn" id="2_4hjkj"]
@@ -44,6 +44,7 @@
 [ext_resource type="PackedScene" uid="uid://cchsmsh28fd62" path="res://Assets/MineAndCavesSet/scenes/Wall/Tunnel/tunnel_corner_a.tscn" id="58_n68rd"]
 [ext_resource type="PackedScene" uid="uid://crtjm82djjgya" path="res://Assets/MineAndCavesSet/scenes/Wall/Tunnel/tunnel_a.tscn" id="60_eqaxo"]
 [ext_resource type="Material" uid="uid://dhqe4xbq7tk5t" path="res://Assets/MineAndCavesSet/material/Mine_Walls_1.material" id="65_tbm4h"]
+[ext_resource type="PackedScene" uid="uid://c4qmwrba7n82r" path="res://Assets/Models/player.tscn" id="67_adbsc"]
 [ext_resource type="PackedScene" uid="uid://d1jgihsgw7huj" path="res://Assets/MineAndCavesSet/scenes/Ground/Ground_Mines/ground_mines_c.tscn" id="72_tj0ap"]
 [ext_resource type="PackedScene" uid="uid://bk0wqsefojk16" path="res://Assets/MineAndCavesSet/scenes/Cave_Platform/cave_platform_a_corner.tscn" id="73_5insr"]
 [ext_resource type="PackedScene" uid="uid://bvnq4ywoa0omv" path="res://Assets/MineAndCavesSet/scenes/Ground/Ground_Mines/ground_mines_a.tscn" id="73_bs6re"]
@@ -1492,3 +1493,6 @@ shadow_enabled = true
 [node name="OmniLight3D2" type="OmniLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5946, 3, -31.6677)
 shadow_enabled = true
+
+[node name="Player" parent="." instance=ExtResource("67_adbsc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 1, 2)
