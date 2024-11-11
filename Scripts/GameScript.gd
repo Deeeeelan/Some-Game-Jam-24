@@ -33,10 +33,29 @@ func Pixelation():
 	var PixelSize = $Control/Pixelation.material.get_shader_parameter("pixelSize")
 	if PixelSize < 16:
 		$Control/Pixelation.material.set_shader_parameter("pixelSize", PixelSize + 1)
+		
+func Slippery():
+	if player.lerp_speed > 2:
+		player.lerp_speed = ceil(player.lerp_speed/2)
+func Speedy():
+	if player.speed < 30:
+		player.speed += 2.5
 
-const FORCED_MODIFIER = "Flipped"
+const FORCED_MODIFIER = "Speedy"
 
 var ModifierRates = {
+	"Speedy" = {
+		Title = "Speedy",
+		Description = "Speedy",
+		Func = Callable(self, "Speedy"),
+		Weight = 2,
+	},
+	"Slippery" = {
+		Title = "Slippery",
+		Description = "Slippery",
+		Func = Callable(self, "Slippery"),
+		Weight = 2,
+	},
 	"Pixelation" = {
 		Title = "Pixelation",
 		Description = "Pixelation",
@@ -63,7 +82,7 @@ var ModifierRates = {
 	},
 	"LoseFPS" = {
 		Title = "Uhoh its getting choppy",
-		Description = "No more FPS, how unfortunate",
+		Description = "how unfortunate",
 		Func = Callable(self, "LoseFPS"),
 		Weight = 1,
 	},
