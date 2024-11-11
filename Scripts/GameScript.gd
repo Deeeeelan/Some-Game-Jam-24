@@ -49,20 +49,26 @@ func SubwaySurfing():
 	$Control/Modifiers/SubwaySurfers.play()
 
 
-const FORCED_MODIFIER = "SubwaySurfing"
+const FORCED_MODIFIER = ""
 
 var ModifierRates = {
 	"SubwaySurfing" = {
 		Title = "SubwaySurfing",
 		Description = "SubwaySurfing",
 		Func = Callable(self, "SubwaySurfing"),
-		Weight = 2,
+		Weight = 4,
 	},
 	"InvertControls" = {
 		Title = "InvertControls",
 		Description = "InvertControls",
 		Func = Callable(self, "InvertControls"),
-		Weight = 2,
+		Weight = 4,
+	},
+		"Flipped" = {
+		Title = "Flipped",
+		Description = "Flipped",
+		Func = Callable(self, "Flipped"),
+		Weight = 4,
 	},
 	"Speedy" = {
 		Title = "Speedy",
@@ -88,12 +94,7 @@ var ModifierRates = {
 		Func = Callable(self, "SpeedUp"),
 		Weight = 2,
 	},
-	"Flipped" = {
-		Title = "Flipped",
-		Description = "Flipped",
-		Func = Callable(self, "Flipped"),
-		Weight = 2,
-	},
+
 	"Askew" = {
 		Title = "Askew",
 		Description = "Askew",
