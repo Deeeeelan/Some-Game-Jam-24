@@ -40,7 +40,7 @@ func melee():
 		for i in DetectedItems:
 			if i is CharacterBody3D and i.has_meta("Player") and i.get_meta("Player") == true: 
 				print("Player: ", i)
-				i.take_damage(1)
+				i.take_damage(5)
 
 func _ready() -> void:
 	$EnemyAttackTick.timeout.connect(melee)

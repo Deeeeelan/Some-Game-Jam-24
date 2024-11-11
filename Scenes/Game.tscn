@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://d0no0vp0vj5t1"]
+[gd_scene load_steps=26 format=3 uid="uid://d0no0vp0vj5t1"]
 
 [ext_resource type="Script" path="res://Scripts/GameScript.gd" id="1_m1acb"]
 [ext_resource type="PackedScene" uid="uid://c4qmwrba7n82r" path="res://Assets/Models/player.tscn" id="2_1pfwd"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://cvbhnjwpa7hrl" path="res://Assets/MineAndCavesSet/scenes/Wall/Wall_Mines/wall_mines_entrance_a.tscn" id="7_gkj50"]
 [ext_resource type="Shader" path="res://Resources/Shaders/DeathScreen.gdshader" id="8_0aouy"]
 [ext_resource type="PackedScene" uid="uid://c00xan47osuhq" path="res://Assets/MineAndCavesSet/scenes/Wall/Wall_Cave/wall_caves_a.tscn" id="8_damqn"]
+[ext_resource type="PackedScene" uid="uid://c7v2njopsowns" path="res://Assets/Models/ground_mines_a_151.tscn" id="9_gdya1"]
 [ext_resource type="PackedScene" uid="uid://bsv0s3v2px57" path="res://Assets/MineAndCavesSet/scenes/Wall/Wall_Cave/wall_caves_corner.tscn" id="9_k0i22"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_mliqr"]
@@ -77,7 +78,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
 environment = SubResource("Environment_k2ec4")
 
 [node name="Test Evironment" type="Node3D" parent="Node3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -110)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -298)
 
 [node name="Test Floor" type="CSGBox3D" parent="Node3D/Test Evironment"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 0)
@@ -200,1105 +201,1648 @@ material = ExtResource("2_hgni2")
 [node name="Map" type="Node3D" parent="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 2)
 
-[node name="Ground_Mines_A" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Mines" type="Node3D" parent="Node3D/Map"]
+
+[node name="Ground_Mines_A" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 cast_shadow = 2
 
-[node name="Ground_Mines_A2" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A2" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
 cast_shadow = 2
 
-[node name="Ground_Mines_A3" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A3" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
 cast_shadow = 2
 
-[node name="Ground_Mines_A17" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A17" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 0)
 cast_shadow = 2
 
-[node name="Ground_Mines_A4" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A4" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 4)
 cast_shadow = 2
 
-[node name="Ground_Mines_A5" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A5" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -8)
 cast_shadow = 2
 
-[node name="Ground_Mines_A6" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A6" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
 cast_shadow = 2
 
-[node name="Ground_Mines_A7" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A7" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -8)
 cast_shadow = 2
 
-[node name="Ground_Mines_A8" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A8" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -4)
 cast_shadow = 2
 
-[node name="Ground_Mines_A9" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A9" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 0)
 cast_shadow = 2
 
-[node name="Ground_Mines_A10" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A10" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 4)
 cast_shadow = 2
 
-[node name="Ground_Mines_A11" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A11" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
 cast_shadow = 2
 
-[node name="Ground_Mines_A12" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A12" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 4)
 cast_shadow = 2
 
-[node name="Ground_Mines_A13" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A13" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -8)
 cast_shadow = 2
 
-[node name="Ground_Mines_A14" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A14" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -4)
 cast_shadow = 2
 
-[node name="Ground_Mines_A15" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A15" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -8)
 cast_shadow = 2
 
-[node name="Ground_Mines_A16" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A16" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -4)
 cast_shadow = 2
 
-[node name="Ground_Mines_A33" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A33" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 8, 8, 4)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A34" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A34" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 8, 8, 0)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A35" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A35" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 8, 8, -4)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A36" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A36" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 8, 8, -8)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A37" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A37" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 4, 8, 4)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A38" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A38" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 4, 8, 0)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A39" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A39" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 4, 8, -4)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A40" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A40" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 4, 8, -8)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A41" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A41" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 0, 8, 4)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A42" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A42" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 0, 8, 0)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A43" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A43" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 0, 8, -4)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A44" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A44" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 0, 8, -8)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A45" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A45" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -4, 8, 4)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A46" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A46" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -4, 8, 0)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A49" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A49" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -8, 4, 0)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A18" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A18" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -4)
 cast_shadow = 2
 
-[node name="Ground_Mines_A50" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A50" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -8, 4, -4)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A47" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A47" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -4, 8, -4)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A48" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A48" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -4, 8, -8)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="OmniLight3D" type="OmniLight3D" parent="Node3D/Map"]
+[node name="OmniLight3D" type="OmniLight3D" parent="Node3D/Map/Mines"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 3, 0)
 light_energy = 16.0
 omni_range = 5.43
 omni_attenuation = 2.115
 
-[node name="Wall_Mines_Entrance_A" parent="Node3D/Map" instance=ExtResource("7_gkj50")]
+[node name="Wall_Mines_Entrance_A" parent="Node3D/Map/Mines" instance=ExtResource("7_gkj50")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6, 0, 0)
 cast_shadow = 2
 
-[node name="Wall_Mines_Entrance_A2" parent="Node3D/Map" instance=ExtResource("7_gkj50")]
+[node name="Wall_Mines_Entrance_A2" parent="Node3D/Map/Mines" instance=ExtResource("7_gkj50")]
 transform = Transform3D(1, 0, -1.06581e-14, 0, 1, 0, 1.06581e-14, 0, 1, -16, 0, -6)
 cast_shadow = 2
 
-[node name="Wall_Caves_A" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6, 0, -4)
 cast_shadow = 2
 
-[node name="Wall_Caves_A2" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A2" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6, 4, 0)
 cast_shadow = 2
 
-[node name="Wall_Caves_A7" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A7" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6, 4, 4)
 cast_shadow = 2
 
-[node name="Wall_Caves_A4" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A4" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6, 0, -8)
 cast_shadow = 2
 
-[node name="Wall_Caves_A6" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A6" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6, 4, -8)
 cast_shadow = 2
 
-[node name="Wall_Caves_A54" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A54" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, -4, 0, -10)
 cast_shadow = 2
 
-[node name="Wall_Caves_A55" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A55" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, -4, 4, -10)
 cast_shadow = 2
 
-[node name="Wall_Caves_A56" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A56" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 0, 0, -10)
 cast_shadow = 2
 
-[node name="Wall_Caves_A57" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A57" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 0, 4, -10)
 cast_shadow = 2
 
-[node name="Wall_Caves_A58" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A58" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 4, 0, -10)
 cast_shadow = 2
 
-[node name="Wall_Caves_A59" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A59" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 4, 4, -10)
 cast_shadow = 2
 
-[node name="Wall_Caves_A60" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A60" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 8, 0, -10)
 cast_shadow = 2
 
-[node name="Wall_Caves_A61" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A61" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 8, 4, -10)
 cast_shadow = 2
 
-[node name="Wall_Caves_A62" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A62" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(4.37114e-08, 0, 1, 0, 1, 0, -1, 0, 4.37114e-08, 10, 0, -8)
 cast_shadow = 2
 
-[node name="Wall_Caves_A63" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A63" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(4.37114e-08, 0, 1, 0, 1, 0, -1, 0, 4.37114e-08, 10, 4, -8)
 cast_shadow = 2
 
-[node name="Wall_Caves_A64" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A64" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(4.37114e-08, 0, 1, 0, 1, 0, -1, 0, 4.37114e-08, 10, 0, -4)
 cast_shadow = 2
 
-[node name="Wall_Caves_A65" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A65" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(4.37114e-08, 0, 1, 0, 1, 0, -1, 0, 4.37114e-08, 10, 4, -4)
 cast_shadow = 2
 
-[node name="Wall_Caves_A66" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A66" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(4.37114e-08, 0, 1, 0, 1, 0, -1, 0, 4.37114e-08, 10, 0, 0)
 cast_shadow = 2
 
-[node name="Wall_Caves_A67" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A67" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(4.37114e-08, 0, 1, 0, 1, 0, -1, 0, 4.37114e-08, 10, 4, 0)
 cast_shadow = 2
 
-[node name="Wall_Caves_A68" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A68" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(4.37114e-08, 0, 1, 0, 1, 0, -1, 0, 4.37114e-08, 10, 0, 4)
 cast_shadow = 2
 
-[node name="Wall_Caves_A69" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A69" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(4.37114e-08, 0, 1, 0, 1, 0, -1, 0, 4.37114e-08, 10, 4, 4)
 cast_shadow = 2
 
-[node name="Wall_Caves_A5" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A5" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6, 4, -4)
 cast_shadow = 2
 
-[node name="Wall_Caves_A3" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A3" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6, 0, 4)
 cast_shadow = 2
 
-[node name="Wall_Caves_A48" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A48" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(1, 0, -1.06581e-14, 0, 1, 0, 1.06581e-14, 0, 1, 4, 4, 6)
 cast_shadow = 2
 
-[node name="Wall_Caves_A49" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A49" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(1, 0, -1.06581e-14, 0, 1, 0, 1.06581e-14, 0, 1, 8, 4, 6)
 cast_shadow = 2
 
-[node name="Wall_Caves_A50" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A50" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(1, 0, -1.06581e-14, 0, 1, 0, 1.06581e-14, 0, 1, -4, 0, 6)
 cast_shadow = 2
 
-[node name="Wall_Caves_A51" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A51" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(1, 0, -1.06581e-14, 0, 1, 0, 1.06581e-14, 0, 1, -4, 4, 6)
 cast_shadow = 2
 
-[node name="Wall_Caves_A52" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A52" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(1, 0, -1.06581e-14, 0, 1, 0, 1.06581e-14, 0, 1, 0, 4, 6)
 cast_shadow = 2
 
-[node name="Wall_Caves_A53" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A53" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(1, 0, -1.06581e-14, 0, 1, 0, 1.06581e-14, 0, 1, 8, 0, 6)
 cast_shadow = 2
 
-[node name="Wall_Caves_A8" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A8" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 2)
 cast_shadow = 2
 
-[node name="Wall_Caves_A10" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A10" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8, 0, -6)
 cast_shadow = 2
 
-[node name="Ground_Mines_A19" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A19" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, 0)
 cast_shadow = 2
 
-[node name="Ground_Mines_A51" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A51" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -12, 4, 0)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A20" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A20" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -4)
 cast_shadow = 2
 
-[node name="Ground_Mines_A52" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A52" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -12, 4, -4)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Wall_Caves_A11" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A11" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, 2)
 cast_shadow = 2
 
-[node name="Wall_Caves_A12" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A12" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -12, 0, -6)
 cast_shadow = 2
 
-[node name="Ground_Mines_A21" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A21" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, 0)
 cast_shadow = 2
 
-[node name="Ground_Mines_A53" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A53" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -16, 4, 0)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A22" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A22" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, -4)
 cast_shadow = 2
 
-[node name="Ground_Mines_A54" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A54" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -16, 4, -4)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Wall_Caves_A13" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Ground_Mines_A151" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, -8)
+cast_shadow = 2
+
+[node name="Ground_Mines_A152" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -16, 4, -8)
+material_override = ExtResource("6_v4hgg")
+cast_shadow = 2
+
+[node name="Ground_Mines_A153" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, -12)
+cast_shadow = 2
+
+[node name="Ground_Mines_A154" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -16, 4, -12)
+material_override = ExtResource("6_v4hgg")
+cast_shadow = 2
+
+[node name="Ground_Mines_A155" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, -16)
+cast_shadow = 2
+
+[node name="Ground_Mines_A156" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -16, 4, -16)
+material_override = ExtResource("6_v4hgg")
+cast_shadow = 2
+
+[node name="Ground_Mines_A157" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, -20)
+cast_shadow = 2
+
+[node name="Ground_Mines_A158" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -16, 4, -20)
+material_override = ExtResource("6_v4hgg")
+cast_shadow = 2
+
+[node name="Ground_Mines_A159" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, -24)
+cast_shadow = 2
+
+[node name="Ground_Mines_A160" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -16, 4, -24)
+material_override = ExtResource("6_v4hgg")
+cast_shadow = 2
+
+[node name="Ground_Mines_A161" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, -28)
+cast_shadow = 2
+
+[node name="Ground_Mines_A162" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -16, 4, -28)
+material_override = ExtResource("6_v4hgg")
+cast_shadow = 2
+
+[node name="Ground_Mines_A163" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, -32)
+cast_shadow = 2
+
+[node name="Ground_Mines_A164" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -16, 4, -32)
+material_override = ExtResource("6_v4hgg")
+cast_shadow = 2
+
+[node name="Wall_Caves_A13" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, 2)
 cast_shadow = 2
 
-[node name="Ground_Mines_A23" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A23" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0, 0)
 cast_shadow = 2
 
-[node name="Ground_Mines_A55" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A55" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -20, 4, 0)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A25" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A25" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 0, 0)
 cast_shadow = 2
 
-[node name="Ground_Mines_A57" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A57" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -24, 4, 0)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A26" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A26" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0, 4)
 cast_shadow = 2
 
-[node name="Ground_Mines_A58" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A58" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -20, 4, 4)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A27" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A27" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 0, 4)
 cast_shadow = 2
 
-[node name="Ground_Mines_A59" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A59" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -24, 4, 4)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A28" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A28" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0, 8)
 cast_shadow = 2
 
-[node name="Ground_Mines_A60" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A60" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -20, 4, 8)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A29" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A29" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 0, 8)
 cast_shadow = 2
 
-[node name="Ground_Mines_A61" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A61" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -24, 4, 8)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A30" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A30" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0, 12)
 cast_shadow = 2
 
-[node name="Ground_Mines_A62" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A62" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -20, 4, 12)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A31" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A31" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 0, 12)
 cast_shadow = 2
 
-[node name="Ground_Mines_A71" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A71" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0, 16)
 cast_shadow = 2
 
-[node name="Ground_Mines_A72" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A72" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 0, 16)
 cast_shadow = 2
 
-[node name="Ground_Mines_A73" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A73" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0, 20)
 cast_shadow = 2
 
-[node name="Ground_Mines_A74" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A74" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 0, 20)
 cast_shadow = 2
 
-[node name="Ground_Mines_A75" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A75" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, 16)
 cast_shadow = 2
 
-[node name="Ground_Mines_A76" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A76" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, 16)
 cast_shadow = 2
 
-[node name="Ground_Mines_A77" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A77" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, 20)
 cast_shadow = 2
 
-[node name="Ground_Mines_A78" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A78" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, 20)
 cast_shadow = 2
 
-[node name="Ground_Mines_A63" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A63" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -24, 4, 12)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A79" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A79" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -20, 4, 16)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A80" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A80" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -24, 4, 16)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A81" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A81" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -20, 4, 20)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A82" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A82" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -24, 4, 20)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A83" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A83" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -12, 4, 16)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A84" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A84" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -16, 4, 16)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A85" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A85" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -12, 4, 20)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A86" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A86" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -16, 4, 20)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A87" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A87" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -12, 4, 16)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A88" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A88" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -16, 4, 16)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A89" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A89" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -12, 4, 20)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A90" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A90" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -16, 4, 20)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A91" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A91" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 16)
 cast_shadow = 2
 
-[node name="Ground_Mines_A92" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A92" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 16)
 cast_shadow = 2
 
-[node name="Ground_Mines_A93" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A93" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 20)
 cast_shadow = 2
 
-[node name="Ground_Mines_A94" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A94" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 20)
 cast_shadow = 2
 
-[node name="Ground_Mines_A95" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A95" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -4, 4, 16)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A96" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A96" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -8, 4, 16)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A97" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A97" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -4, 4, 20)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A98" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A98" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -8, 4, 20)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A99" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A99" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 16)
 cast_shadow = 2
 
-[node name="Ground_Mines_A100" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A100" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 16)
 cast_shadow = 2
 
-[node name="Ground_Mines_A101" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A101" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 20)
 cast_shadow = 2
 
-[node name="Ground_Mines_A102" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A102" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 20)
 cast_shadow = 2
 
-[node name="Ground_Mines_A103" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A103" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 4, 4, 16)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A104" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A104" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 0, 4, 16)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A105" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A105" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 4, 4, 20)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A106" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A106" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 0, 4, 20)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A107" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A107" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 8)
 cast_shadow = 2
 
-[node name="Ground_Mines_A108" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A108" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8)
 cast_shadow = 2
 
-[node name="Ground_Mines_A109" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A109" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 12)
 cast_shadow = 2
 
-[node name="Ground_Mines_A110" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A110" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 12)
 cast_shadow = 2
 
-[node name="Ground_Mines_A111" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A111" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 4, 4, 8)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A112" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A112" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 0, 4, 8)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A113" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A113" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 4, 4, 12)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A114" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A114" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 0, 4, 12)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A32" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A32" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28, 0, 4)
 cast_shadow = 2
 
-[node name="Ground_Mines_A64" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A64" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -28, 4, 4)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A65" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A65" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32, 0, 4)
 cast_shadow = 2
 
-[node name="Ground_Mines_A66" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A66" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -32, 4, 4)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A67" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A67" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28, 0, 8)
 cast_shadow = 2
 
-[node name="Ground_Mines_A68" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A68" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -28, 4, 8)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A69" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A69" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32, 0, 8)
 cast_shadow = 2
 
-[node name="Ground_Mines_A70" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A70" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -32, 4, 8)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A24" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A24" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0, -4)
 cast_shadow = 2
 
-[node name="Ground_Mines_A56" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A56" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -20, 4, -4)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Wall_Caves_A15" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A15" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -18, 0, 4)
 cast_shadow = 2
 
-[node name="Wall_Caves_A21" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A21" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -18, 0, 8)
 cast_shadow = 2
 
-[node name="Wall_Caves_A22" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A22" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -18, 0, 12)
 cast_shadow = 2
 
-[node name="Wall_Caves_A16" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A16" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -20, 0, -6)
 cast_shadow = 2
 
-[node name="Wall_Caves_A17" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A17" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -22, 0, -4)
 cast_shadow = 2
 
-[node name="Wall_Caves_A18" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A42" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -18, 0, -8)
+cast_shadow = 2
+
+[node name="Wall_Caves_A43" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -18, 0, -12)
+cast_shadow = 2
+
+[node name="Wall_Caves_A70" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -18, 0, -16)
+cast_shadow = 2
+
+[node name="Wall_Caves_A88" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -18, 0, -20)
+cast_shadow = 2
+
+[node name="Wall_Caves_A89" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -18, 0, -24)
+cast_shadow = 2
+
+[node name="Wall_Caves_A90" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -18, 0, -28)
+cast_shadow = 2
+
+[node name="Wall_Caves_A91" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -18, 0, -32)
+cast_shadow = 2
+
+[node name="Wall_Caves_A92" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
+transform = Transform3D(-2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, -14, 0, -32)
+cast_shadow = 2
+
+[node name="Wall_Caves_A93" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
+transform = Transform3D(-2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, -14, 0, -28)
+cast_shadow = 2
+
+[node name="Wall_Caves_A94" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
+transform = Transform3D(-2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, -14, 0, -24)
+cast_shadow = 2
+
+[node name="Wall_Caves_A95" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
+transform = Transform3D(-2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, -14, 0, -20)
+cast_shadow = 2
+
+[node name="Wall_Caves_A96" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
+transform = Transform3D(-2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, -14, 0, -16)
+cast_shadow = 2
+
+[node name="Wall_Caves_A97" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
+transform = Transform3D(-2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, -14, 0, -12)
+cast_shadow = 2
+
+[node name="Wall_Caves_A98" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
+transform = Transform3D(-2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, -14, 0, -8)
+cast_shadow = 2
+
+[node name="Wall_Caves_A71" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -18, 0, -16)
+cast_shadow = 2
+
+[node name="Wall_Caves_A18" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -24, 0, -2)
 cast_shadow = 2
 
-[node name="Wall_Caves_A9" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A9" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6, 0, -4)
 cast_shadow = 2
 
-[node name="Wall_Caves_Corner" parent="Node3D/Map" instance=ExtResource("9_k0i22")]
+[node name="Wall_Caves_Corner" parent="Node3D/Map/Mines" instance=ExtResource("9_k0i22")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6, 0, -2)
 cast_shadow = 2
 
-[node name="Wall_Caves_Corner7" parent="Node3D/Map" instance=ExtResource("9_k0i22")]
+[node name="Wall_Caves_Corner7" parent="Node3D/Map/Mines" instance=ExtResource("9_k0i22")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -14, 0, -6)
 cast_shadow = 2
 
-[node name="Wall_Caves_A14" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A14" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -16, 0, 14)
 cast_shadow = 2
 
-[node name="Wall_Caves_A34" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A34" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -12, 0, 14)
 cast_shadow = 2
 
-[node name="Wall_Caves_A35" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A35" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8, 0, 14)
 cast_shadow = 2
 
-[node name="Wall_Caves_A36" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A36" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4, 0, 14)
 cast_shadow = 2
 
-[node name="Wall_Caves_Corner13" parent="Node3D/Map" instance=ExtResource("9_k0i22")]
+[node name="Wall_Caves_Corner13" parent="Node3D/Map/Mines" instance=ExtResource("9_k0i22")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -18, 0, 14)
 cast_shadow = 2
 
-[node name="Wall_Caves_Corner8" parent="Node3D/Map" instance=ExtResource("9_k0i22")]
+[node name="Wall_Caves_Corner8" parent="Node3D/Map/Mines" instance=ExtResource("9_k0i22")]
 transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, -18, 0, -6)
 cast_shadow = 2
 
-[node name="Wall_Caves_Corner9" parent="Node3D/Map" instance=ExtResource("9_k0i22")]
+[node name="Wall_Mines_Entrance_A3" parent="Node3D/Map/Mines" instance=ExtResource("7_gkj50")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -16, 0, -34)
+cast_shadow = 2
+
+[node name="Wall_Caves_Corner20" parent="Node3D/Map/Mines" instance=ExtResource("9_k0i22")]
+transform = Transform3D(1, 0, -1.42109e-14, 0, 1, 0, 1.42109e-14, 0, 1, -18, 0, -34)
+cast_shadow = 2
+
+[node name="Wall_Caves_Corner21" parent="Node3D/Map/Mines" instance=ExtResource("9_k0i22")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -14, 0, -34)
+cast_shadow = 2
+
+[node name="Wall_Caves_Corner9" parent="Node3D/Map/Mines" instance=ExtResource("9_k0i22")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -22, 0, -2)
 cast_shadow = 2
 
-[node name="Wall_Caves_A19" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A19" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -26, 0, 0)
 cast_shadow = 2
 
-[node name="Wall_Caves_A20" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A20" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -28, 0, 2)
 cast_shadow = 2
 
-[node name="Wall_Caves_A23" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A23" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -32, 0, 2)
 cast_shadow = 2
 
-[node name="Wall_Caves_A24" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A24" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -34, 0, 4)
 cast_shadow = 2
 
-[node name="Wall_Caves_A25" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A25" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -34, 0, 8)
 cast_shadow = 2
 
-[node name="Wall_Caves_Corner11" parent="Node3D/Map" instance=ExtResource("9_k0i22")]
+[node name="Wall_Caves_Corner11" parent="Node3D/Map/Mines" instance=ExtResource("9_k0i22")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -26, 0, 2)
 cast_shadow = 2
 
-[node name="Wall_Caves_Corner15" parent="Node3D/Map" instance=ExtResource("9_k0i22")]
+[node name="Wall_Caves_Corner15" parent="Node3D/Map/Mines" instance=ExtResource("9_k0i22")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -2, 0, 14)
 cast_shadow = 2
 
-[node name="Wall_Caves_A26" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A26" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -28, 0, 9.66667)
 cast_shadow = 2
 
-[node name="Wall_Caves_A28" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A28" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -32, 0, 9.66667)
 cast_shadow = 2
 
-[node name="Wall_Caves_A29" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A29" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -24, 0, 21.6667)
 cast_shadow = 2
 
-[node name="Wall_Caves_A32" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A32" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -20, 0, 21.6667)
 cast_shadow = 2
 
-[node name="Wall_Caves_A33" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A33" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -16, 0, 21.6667)
 cast_shadow = 2
 
-[node name="Wall_Caves_A37" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A37" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -12, 0, 21.6667)
 cast_shadow = 2
 
-[node name="Wall_Caves_A38" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A38" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -8, 0, 21.6667)
 cast_shadow = 2
 
-[node name="Wall_Caves_A39" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A39" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -4, 0, 21.6667)
 cast_shadow = 2
 
-[node name="Wall_Caves_A40" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A40" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 0, 0, 21.6667)
 cast_shadow = 2
 
-[node name="Wall_Caves_A41" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A41" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 4, 0, 21.6667)
 cast_shadow = 2
 
-[node name="Wall_Caves_A44" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A44" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(-2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 6, 0, 11.6667)
 cast_shadow = 2
 
-[node name="Wall_Caves_A45" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A45" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(-2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 6, 0, 7.66667)
 cast_shadow = 2
 
-[node name="Wall_Caves_A27" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A27" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -26, 0, 11.6667)
 cast_shadow = 2
 
-[node name="Wall_Caves_A30" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A30" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -26, 0, 15.6667)
 cast_shadow = 2
 
-[node name="Wall_Caves_A31" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A31" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -26, 0, 19.6667)
 cast_shadow = 2
 
-[node name="Wall_Caves_Corner12" parent="Node3D/Map" instance=ExtResource("9_k0i22")]
+[node name="Wall_Caves_Corner12" parent="Node3D/Map/Mines" instance=ExtResource("9_k0i22")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -26, 0, 9.66667)
 cast_shadow = 2
 
-[node name="Wall_Caves_A46" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A46" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -2, 0, 7.66667)
 cast_shadow = 2
 
-[node name="Wall_Caves_A47" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A47" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -2, 0, 11.6667)
 cast_shadow = 2
 
-[node name="Wall_Caves_Corner14" parent="Node3D/Map" instance=ExtResource("9_k0i22")]
+[node name="Wall_Caves_Corner23" parent="Node3D/Map/Mines" instance=ExtResource("9_k0i22")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 14, 0, 14)
+cast_shadow = 2
+
+[node name="Wall_Caves_A101" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 14, 0, 11.6667)
+cast_shadow = 2
+
+[node name="Wall_Caves_A113" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 14, 0, 7.6667)
+cast_shadow = 2
+
+[node name="Wall_Caves_A114" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 14, 0, 3.6667)
+cast_shadow = 2
+
+[node name="Wall_Caves_A115" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 14, 0, -0.3333)
+cast_shadow = 2
+
+[node name="Wall_Caves_A116" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 14, 0, -4.3333)
+cast_shadow = 2
+
+[node name="Wall_Caves_Corner14" parent="Node3D/Map/Mines" instance=ExtResource("9_k0i22")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2, 0, 5.66667)
 cast_shadow = 2
 
-[node name="Wall_Caves_Corner19" parent="Node3D/Map" instance=ExtResource("9_k0i22")]
+[node name="Wall_Caves_Corner19" parent="Node3D/Map/Mines" instance=ExtResource("9_k0i22")]
 transform = Transform3D(1, 0, -2.13163e-14, 0, 1, 0, 2.13163e-14, 0, 1, 6, 0, 5.66667)
 cast_shadow = 2
 
-[node name="Ground_Mines_A115" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A115" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 16)
 cast_shadow = 2
 
-[node name="Ground_Mines_A116" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A116" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 16)
 cast_shadow = 2
 
-[node name="Ground_Mines_A117" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A117" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 20)
 cast_shadow = 2
 
-[node name="Ground_Mines_A118" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A118" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 20)
 cast_shadow = 2
 
-[node name="Ground_Mines_A119" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A119" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 12, 4, 16)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A120" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A120" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 8, 4, 16)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A121" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A121" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 12, 4, 20)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A122" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A122" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 8, 4, 20)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A123" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A123" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 12, 4, 16)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A124" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A124" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 8, 4, 16)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A125" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A125" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 12, 4, 20)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A126" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A126" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 8, 4, 20)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A127" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A127" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 16)
 cast_shadow = 2
 
-[node name="Ground_Mines_A128" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A128" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 16)
 cast_shadow = 2
 
-[node name="Ground_Mines_A129" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A189" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 12)
+cast_shadow = 2
+
+[node name="Ground_Mines_A190" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 8)
+cast_shadow = 2
+
+[node name="Ground_Mines_A191" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 4)
+cast_shadow = 2
+
+[node name="Ground_Mines_A192" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 0)
+cast_shadow = 2
+
+[node name="Ground_Mines_A193" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -4)
+cast_shadow = 2
+
+[node name="Ground_Mines_A194" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, -4)
+cast_shadow = 2
+
+[node name="Ground_Mines_A195" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 0)
+cast_shadow = 2
+
+[node name="Ground_Mines_A129" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 20)
 cast_shadow = 2
 
-[node name="Ground_Mines_A130" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A130" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 20)
 cast_shadow = 2
 
-[node name="Ground_Mines_A131" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A131" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 20, 4, 16)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A132" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A132" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 16, 4, 16)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A133" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A133" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 20, 4, 20)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A134" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A134" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 16, 4, 20)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A135" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A135" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, 16)
 cast_shadow = 2
 
-[node name="Ground_Mines_A136" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A136" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 16)
 cast_shadow = 2
 
-[node name="Ground_Mines_A137" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A137" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, 20)
 cast_shadow = 2
 
-[node name="Ground_Mines_A138" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A138" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 20)
 cast_shadow = 2
 
-[node name="Ground_Mines_A139" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A139" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 28, 4, 16)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A140" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A140" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 24, 4, 16)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A141" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A141" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 28, 4, 20)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A142" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A142" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 24, 4, 20)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A143" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A143" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, 8)
 cast_shadow = 2
 
-[node name="Ground_Mines_A144" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A144" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 8)
 cast_shadow = 2
 
-[node name="Ground_Mines_A145" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A145" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, 12)
 cast_shadow = 2
 
-[node name="Ground_Mines_A146" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A146" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 12)
 cast_shadow = 2
 
-[node name="Ground_Mines_A147" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A147" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 28, 4, 8)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A148" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A148" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 24, 4, 8)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A149" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A149" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 28, 4, 12)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Ground_Mines_A150" parent="Node3D/Map" instance=ExtResource("4_wjyj0")]
+[node name="Ground_Mines_A150" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
 transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 24, 4, 12)
 material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
-[node name="Wall_Caves_A72" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A72" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8, 0, 14)
 cast_shadow = 2
 
-[node name="Wall_Caves_A73" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A73" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 12, 0, 14)
 cast_shadow = 2
 
-[node name="Wall_Caves_A74" parent="Node3D/Map" instance=ExtResource("8_damqn")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 16, 0, 14)
-cast_shadow = 2
-
-[node name="Wall_Caves_A75" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A75" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 20, 0, 14)
 cast_shadow = 2
 
-[node name="Wall_Caves_Corner16" parent="Node3D/Map" instance=ExtResource("9_k0i22")]
-transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 6, 0, 14)
+[node name="Wall_Caves_Corner16" parent="Node3D/Map/Mines" instance=ExtResource("9_k0i22")]
+transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 6, 0, 14)
 cast_shadow = 2
 
-[node name="Wall_Caves_Corner17" parent="Node3D/Map" instance=ExtResource("9_k0i22")]
+[node name="Wall_Caves_Corner24" parent="Node3D/Map/Mines" instance=ExtResource("9_k0i22")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 22.1667, 0, 1.83335)
+cast_shadow = 2
+
+[node name="Wall_Caves_A102" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
+transform = Transform3D(-1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, 19.8333, 0, -6.16665)
+cast_shadow = 2
+
+[node name="Wall_Caves_A112" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
+transform = Transform3D(-1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, 15.8333, 0, -6.16665)
+cast_shadow = 2
+
+[node name="Wall_Caves_A111" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
+transform = Transform3D(1, 0, 1.74845e-07, 0, 1, 0, -1.74845e-07, 0, 1, 19.8334, 0, 1.83335)
+cast_shadow = 2
+
+[node name="Wall_Caves_Corner25" parent="Node3D/Map/Mines" instance=ExtResource("9_k0i22")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 22.1666, 0, -6.16665)
+cast_shadow = 2
+
+[node name="Wall_Caves_A74" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
+transform = Transform3D(-2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 18, 0, 11.6667)
+cast_shadow = 2
+
+[node name="Wall_Caves_A117" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
+transform = Transform3D(-2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 18, 0, 7.6667)
+cast_shadow = 2
+
+[node name="Wall_Caves_A118" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
+transform = Transform3D(-2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 18, 0, 3.6667)
+cast_shadow = 2
+
+[node name="Wall_Caves_Corner22" parent="Node3D/Map/Mines" instance=ExtResource("9_k0i22")]
+transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 18, 0, 14)
+cast_shadow = 2
+
+[node name="Wall_Caves_Corner26" parent="Node3D/Map/Mines" instance=ExtResource("9_k0i22")]
+transform = Transform3D(1, 0, -1.74846e-07, 0, 1, 0, 1.74846e-07, 0, 1, 18, 0, 2)
+cast_shadow = 2
+
+[node name="Wall_Caves_Corner17" parent="Node3D/Map/Mines" instance=ExtResource("9_k0i22")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 22, 0, 14)
 cast_shadow = 2
 
-[node name="Wall_Caves_A76" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A76" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 8, 0, 21.6667)
 cast_shadow = 2
 
-[node name="Wall_Caves_A77" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A77" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 12, 0, 21.6667)
 cast_shadow = 2
 
-[node name="Wall_Caves_A78" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A78" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 16, 0, 21.6667)
 cast_shadow = 2
 
-[node name="Wall_Caves_A79" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A79" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 20, 0, 21.6667)
 cast_shadow = 2
 
-[node name="Wall_Caves_A80" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A80" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 24, 0, 21.6667)
 cast_shadow = 2
 
-[node name="Wall_Caves_A81" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A81" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 28, 0, 21.6667)
 cast_shadow = 2
 
-[node name="Wall_Caves_A82" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A82" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(-2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 30, 0, 19.6667)
 cast_shadow = 2
 
-[node name="Wall_Caves_A83" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A83" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(-2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 30, 0, 15.6667)
 cast_shadow = 2
 
-[node name="Wall_Caves_A84" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A84" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(-2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 30, 0, 11.6667)
 cast_shadow = 2
 
-[node name="Wall_Caves_A87" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A87" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(-2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 30, 0, 7.66667)
 cast_shadow = 2
 
-[node name="Wall_Caves_A85" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A85" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 22, 0, 11.6667)
 cast_shadow = 2
 
-[node name="Wall_Caves_A86" parent="Node3D/Map" instance=ExtResource("8_damqn")]
+[node name="Wall_Caves_A86" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
 transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 22, 0, 7.66667)
 cast_shadow = 2
 
-[node name="Wall_Caves_Corner18" parent="Node3D/Map" instance=ExtResource("9_k0i22")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 22, 0, 5.66667)
+[node name="Ground_Mines_A165" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, 4)
 cast_shadow = 2
 
-[node name="Wall_Caves_Corner10" parent="Node3D/Map" instance=ExtResource("9_k0i22")]
+[node name="Ground_Mines_A166" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 4)
+cast_shadow = 2
+
+[node name="Ground_Mines_A167" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 28, 4, 4)
+material_override = ExtResource("6_v4hgg")
+cast_shadow = 2
+
+[node name="Ground_Mines_A168" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 24, 4, 4)
+material_override = ExtResource("6_v4hgg")
+cast_shadow = 2
+
+[node name="Wall_Caves_A99" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
+transform = Transform3D(-2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 30, 0, 3.66667)
+cast_shadow = 2
+
+[node name="Wall_Caves_A100" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 22, 0, 3.66667)
+cast_shadow = 2
+
+[node name="Ground_Mines_A169" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, -4)
+cast_shadow = 2
+
+[node name="Ground_Mines_A170" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, -4)
+cast_shadow = 2
+
+[node name="Ground_Mines_A171" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, 0)
+cast_shadow = 2
+
+[node name="Ground_Mines_A172" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 0)
+cast_shadow = 2
+
+[node name="Ground_Mines_A173" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 28, 4, -4)
+material_override = ExtResource("6_v4hgg")
+cast_shadow = 2
+
+[node name="Ground_Mines_A174" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 24, 4, -4)
+material_override = ExtResource("6_v4hgg")
+cast_shadow = 2
+
+[node name="Ground_Mines_A175" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 28, 4, 0)
+material_override = ExtResource("6_v4hgg")
+cast_shadow = 2
+
+[node name="Ground_Mines_A176" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 24, 4, 0)
+material_override = ExtResource("6_v4hgg")
+cast_shadow = 2
+
+[node name="Ground_Mines_A196" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 16, 4, 8)
+material_override = ExtResource("6_v4hgg")
+cast_shadow = 2
+
+[node name="Ground_Mines_A197" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 16, 4, 12)
+material_override = ExtResource("6_v4hgg")
+cast_shadow = 2
+
+[node name="Ground_Mines_A198" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 16, 4, 4)
+material_override = ExtResource("6_v4hgg")
+cast_shadow = 2
+
+[node name="Ground_Mines_A199" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 20, 4, -4)
+material_override = ExtResource("6_v4hgg")
+cast_shadow = 2
+
+[node name="Ground_Mines_A200" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 16, 4, -4)
+material_override = ExtResource("6_v4hgg")
+cast_shadow = 2
+
+[node name="Ground_Mines_A201" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 20, 4, 0)
+material_override = ExtResource("6_v4hgg")
+cast_shadow = 2
+
+[node name="Ground_Mines_A202" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 16, 4, 0)
+material_override = ExtResource("6_v4hgg")
+cast_shadow = 2
+
+[node name="Ground_Mines_A177" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, -12)
+cast_shadow = 2
+
+[node name="Ground_Mines_A178" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, -12)
+cast_shadow = 2
+
+[node name="Ground_Mines_A179" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, -8)
+cast_shadow = 2
+
+[node name="Ground_Mines_A180" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, -8)
+cast_shadow = 2
+
+[node name="Ground_Mines_A181" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 28, 4, -12)
+material_override = ExtResource("6_v4hgg")
+cast_shadow = 2
+
+[node name="Ground_Mines_A182" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 24, 4, -12)
+material_override = ExtResource("6_v4hgg")
+cast_shadow = 2
+
+[node name="Ground_Mines_A183" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 28, 4, -8)
+material_override = ExtResource("6_v4hgg")
+cast_shadow = 2
+
+[node name="Ground_Mines_A184" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 24, 4, -8)
+material_override = ExtResource("6_v4hgg")
+cast_shadow = 2
+
+[node name="Wall_Caves_Corner18" parent="Node3D/Map/Mines" instance=ExtResource("9_k0i22")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 22, 0, -6)
+cast_shadow = 2
+
+[node name="Wall_Caves_A103" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
+transform = Transform3D(-2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 30, 0, -0.3333)
+cast_shadow = 2
+
+[node name="Wall_Caves_A104" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
+transform = Transform3D(-2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 30, 0, -4.3333)
+cast_shadow = 2
+
+[node name="Wall_Caves_A105" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
+transform = Transform3D(-2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 30, 0, -8.3333)
+cast_shadow = 2
+
+[node name="Wall_Caves_A106" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
+transform = Transform3D(-2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 30, 0, -12.3333)
+cast_shadow = 2
+
+[node name="Wall_Caves_A107" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 22, 0, -8.3333)
+cast_shadow = 2
+
+[node name="Wall_Caves_A108" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 22, 0, -12.3333)
+cast_shadow = 2
+
+[node name="Ground_Mines_A185" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, -16)
+cast_shadow = 2
+
+[node name="Ground_Mines_A186" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, -16)
+cast_shadow = 2
+
+[node name="Ground_Mines_A187" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 28, 4, -16)
+material_override = ExtResource("6_v4hgg")
+cast_shadow = 2
+
+[node name="Ground_Mines_A188" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 24, 4, -16)
+material_override = ExtResource("6_v4hgg")
+cast_shadow = 2
+
+[node name="Wall_Caves_A109" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
+transform = Transform3D(-2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 30, 0, -16.3333)
+cast_shadow = 2
+
+[node name="Wall_Caves_A110" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 22, 0, -16.3333)
+cast_shadow = 2
+
+[node name="Ground_Mines_A203" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, -20)
+cast_shadow = 2
+
+[node name="Ground_Mines_A204" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, -20)
+cast_shadow = 2
+
+[node name="Ground_Mines_A205" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 28, 4, -20)
+material_override = ExtResource("6_v4hgg")
+cast_shadow = 2
+
+[node name="Ground_Mines_A206" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 24, 4, -20)
+material_override = ExtResource("6_v4hgg")
+cast_shadow = 2
+
+[node name="Wall_Caves_A119" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
+transform = Transform3D(-2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 30, 0, -20.3333)
+cast_shadow = 2
+
+[node name="Wall_Caves_A120" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 22, 0, -20.3333)
+cast_shadow = 2
+
+[node name="Ground_Mines_A207" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, -24)
+cast_shadow = 2
+
+[node name="Ground_Mines_A208" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, -24)
+cast_shadow = 2
+
+[node name="Ground_Mines_A209" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 28, 4, -24)
+material_override = ExtResource("6_v4hgg")
+cast_shadow = 2
+
+[node name="Ground_Mines_A210" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 24, 4, -24)
+material_override = ExtResource("6_v4hgg")
+cast_shadow = 2
+
+[node name="Wall_Caves_A121" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
+transform = Transform3D(-2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 30, 0, -24.3333)
+cast_shadow = 2
+
+[node name="Wall_Caves_A122" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 22, 0, -24.3333)
+cast_shadow = 2
+
+[node name="Ground_Mines_A211" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, -28)
+cast_shadow = 2
+
+[node name="Ground_Mines_A212" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, -28)
+cast_shadow = 2
+
+[node name="Ground_Mines_A213" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 28, 4, -28)
+material_override = ExtResource("6_v4hgg")
+cast_shadow = 2
+
+[node name="Ground_Mines_A214" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 24, 4, -28)
+material_override = ExtResource("6_v4hgg")
+cast_shadow = 2
+
+[node name="Wall_Caves_A123" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
+transform = Transform3D(-2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 30, 0, -28.3333)
+cast_shadow = 2
+
+[node name="Wall_Caves_A124" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 22, 0, -28.3333)
+cast_shadow = 2
+
+[node name="Ground_Mines_A215" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, -32)
+cast_shadow = 2
+
+[node name="Ground_Mines_A216" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, -32)
+cast_shadow = 2
+
+[node name="Ground_Mines_A217" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 28, 4, -32)
+material_override = ExtResource("6_v4hgg")
+cast_shadow = 2
+
+[node name="Ground_Mines_A218" parent="Node3D/Map/Mines" instance=ExtResource("4_wjyj0")]
+transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 24, 4, -32)
+material_override = ExtResource("6_v4hgg")
+cast_shadow = 2
+
+[node name="Wall_Caves_A125" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
+transform = Transform3D(-2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 30, 0, -32.3333)
+cast_shadow = 2
+
+[node name="Wall_Caves_A126" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 22, 0, -32.3333)
+cast_shadow = 2
+
+[node name="Wall_Caves_Corner10" parent="Node3D/Map/Mines" instance=ExtResource("9_k0i22")]
 transform = Transform3D(1, 0, -2.13163e-14, 0, 1, 0, 2.13163e-14, 0, 1, -18, 0, 2)
 cast_shadow = 2
 
-[node name="Wall_Caves_Corner3" parent="Node3D/Map" instance=ExtResource("9_k0i22")]
+[node name="Wall_Caves_Corner3" parent="Node3D/Map/Mines" instance=ExtResource("9_k0i22")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6, 0, 6)
 cast_shadow = 2
 
-[node name="Wall_Caves_Corner4" parent="Node3D/Map" instance=ExtResource("9_k0i22")]
+[node name="Wall_Caves_Corner4" parent="Node3D/Map/Mines" instance=ExtResource("9_k0i22")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6, 4, 6)
 cast_shadow = 2
 
-[node name="Wall_Caves_Corner5" parent="Node3D/Map" instance=ExtResource("9_k0i22")]
+[node name="Wall_Caves_Corner5" parent="Node3D/Map/Mines" instance=ExtResource("9_k0i22")]
 transform = Transform3D(-0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, -0.866025, -6, 0, -10)
 cast_shadow = 2
 
-[node name="Wall_Caves_Corner6" parent="Node3D/Map" instance=ExtResource("9_k0i22")]
+[node name="Wall_Caves_Corner6" parent="Node3D/Map/Mines" instance=ExtResource("9_k0i22")]
 transform = Transform3D(-0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, -0.866025, -6, 4, -10)
 cast_shadow = 2
 
-[node name="Wall_Caves_Corner2" parent="Node3D/Map" instance=ExtResource("9_k0i22")]
+[node name="Wall_Caves_Corner2" parent="Node3D/Map/Mines" instance=ExtResource("9_k0i22")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6, 0, 2)
 cast_shadow = 2
+
+[node name="Outside" type="Node3D" parent="Node3D/Map"]
+
+[node name="Ground" type="Node3D" parent="Node3D/Map/Outside"]
+
+[node name="Ground_Mines_A151" parent="Node3D/Map/Outside/Ground" instance=ExtResource("9_gdya1")]
+transform = Transform3D(9.45, 0, 0, 0, 1, 0, 0, 0, 9.45, -16, 0, -53)
+
+[node name="Ground_Mines_A153" parent="Node3D/Map/Outside/Ground" instance=ExtResource("9_gdya1")]
+transform = Transform3D(9.45, 0, 0, 0, 1, 0, 0, 0, 9.45, 23, 0, -53)
+
+[node name="Ground_Mines_A152" parent="Node3D/Map/Outside/Ground" instance=ExtResource("9_gdya1")]
+transform = Transform3D(9.45, 0, 0, 0, 1, 0, 0, 0, 9.45, -55, 0, -53)
+
+[node name="Ground_Mines_A154" parent="Node3D/Map/Outside/Ground" instance=ExtResource("9_gdya1")]
+transform = Transform3D(9.45, 0, 0, 0, 1, 0, 0, 0, 9.45, -16, 0, -92)
+
+[node name="Ground_Mines_A155" parent="Node3D/Map/Outside/Ground" instance=ExtResource("9_gdya1")]
+transform = Transform3D(9.45, 0, 0, 0, 1, 0, 0, 0, 9.45, 23, 0, -92)
+
+[node name="Ground_Mines_A156" parent="Node3D/Map/Outside/Ground" instance=ExtResource("9_gdya1")]
+transform = Transform3D(9.45, 0, 0, 0, 1, 0, 0, 0, 9.45, -55, 0, -92)
+
+[node name="Ground_Mines_A157" parent="Node3D/Map/Outside/Ground" instance=ExtResource("9_gdya1")]
+transform = Transform3D(9.45, 0, 0, 0, 1, 0, 0, 0, 9.45, -16, 0, -131)
+
+[node name="Ground_Mines_A158" parent="Node3D/Map/Outside/Ground" instance=ExtResource("9_gdya1")]
+transform = Transform3D(9.45, 0, 0, 0, 1, 0, 0, 0, 9.45, 23, 0, -131)
+
+[node name="Ground_Mines_A159" parent="Node3D/Map/Outside/Ground" instance=ExtResource("9_gdya1")]
+transform = Transform3D(9.45, 0, 0, 0, 1, 0, 0, 0, 9.45, -55, 0, -131)
 
 [node name="Modular_Mine_Set" parent="Node3D" instance=ExtResource("4_403ij")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 53)
@@ -1466,8 +2010,19 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 
+[node name="Fade" type="ColorRect" parent="Control"]
+visible = false
+z_index = -5
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
 [node name="EnemyTick" type="Timer" parent="."]
-wait_time = 5.0
+wait_time = 2.0
 autostart = true
 
 [node name="RegenTick" type="Timer" parent="."]

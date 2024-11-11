@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cfscmf67jdl5d"]
+
+[ext_resource type="Texture2D" uid="uid://dson6iaq1oqo1" path="res://Assets/PSX_Forest_Level_byStarkCrafts/PSX_ForestGround_Tex/PSX_Seamless_ShortForestGrass_128px.png" id="1_5gxpg"]
+
+[resource]
+albedo_texture = ExtResource("1_5gxpg")
+rim = 0.0
+rim_tint = 1.0
