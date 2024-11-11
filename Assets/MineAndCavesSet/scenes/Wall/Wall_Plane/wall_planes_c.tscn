@@ -1,0 +1,47 @@
+[gd_scene load_steps=5 format=3 uid="uid://d1i77bp2f853w"]
+
+[ext_resource type="Material" uid="uid://b2233iujb5cfq" path="res://Assets/MineAndCavesSet/material/Mine_Walls_2.tres" id="1_0luu1"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_1e03r"]
+_surfaces = [{
+"aabb": AABB(-1, 0, -0.1, 2.00001, 4, 9.99868e-06),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 3, 0, 1, 0, 0, 0, 2, 0, 3, 0),
+"name": "Mines_Walls",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(254, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 201, 16, 0, 0, 254, 255, 255, 255, 0, 0, 0, 0, 0, 0, 255, 255, 201, 16, 0, 0)
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_7v6vg"]
+resource_name = "Modular_Mine_Set_Wall_Planes_C"
+_surfaces = [{
+"aabb": AABB(-1, 0, -0.1, 2.00001, 4, 9.99868e-06),
+"attribute_data": PackedByteArray(255, 127, 255, 255, 255, 255, 255, 255, 255, 127, 0, 0, 255, 255, 0, 0),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 3, 0, 1, 0, 0, 0, 2, 0, 3, 0),
+"material": ExtResource("1_0luu1"),
+"name": "Mines_Walls",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(254, 255, 0, 0, 0, 0, 255, 255, 0, 0, 0, 0, 201, 16, 255, 255, 254, 255, 255, 255, 0, 0, 255, 255, 0, 0, 255, 255, 201, 16, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255)
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_1e03r")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_wq27m"]
+data = PackedVector3Array(1, 0, -0.1, -1, 4, -0.0999997, -1, 0, -0.0999997, 1, 0, -0.1, 1, 4, -0.1, -1, 4, -0.0999997)
+
+[node name="Wall_Planes_C" type="MeshInstance3D"]
+mesh = SubResource("ArrayMesh_7v6vg")
+skeleton = NodePath("")
+
+[node name="Wall_Planes_C" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wall_Planes_C"]
+shape = SubResource("ConcavePolygonShape3D_wq27m")

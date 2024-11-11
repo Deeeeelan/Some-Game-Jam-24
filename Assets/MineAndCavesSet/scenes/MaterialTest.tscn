@@ -1,0 +1,40 @@
+[gd_scene load_steps=8 format=3 uid="uid://bgvqty2c1hkcn"]
+
+[ext_resource type="Material" uid="uid://dv3ifptd3m7c1" path="res://Assets/MineAndCavesSet/material/Mine_Carts.material" id="2_itbu8"]
+[ext_resource type="Material" uid="uid://mnpwlc0stujg" path="res://Assets/MineAndCavesSet/material/Mines_Grounds.material" id="3_hbvix"]
+[ext_resource type="Material" uid="uid://ba6dvnpjd80mw" path="res://Assets/MineAndCavesSet/material/Mines_Trim.material" id="4_cusf4"]
+[ext_resource type="Material" uid="uid://dhqe4xbq7tk5t" path="res://Assets/MineAndCavesSet/material/Mine_Walls_1.material" id="5_47bcd"]
+[ext_resource type="PackedScene" uid="uid://dfcc7bl8rwed4" path="res://Assets/MineAndCavesSet/gltf/Modular_Mine_Set.glb" id="6_18lik"]
+[ext_resource type="Material" uid="uid://b2233iujb5cfq" path="res://Assets/MineAndCavesSet/material/Mine_Walls_2.tres" id="6_twkrr"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_wgd1j"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.258819, 0.965926, 0, -0.965926, 0.258819, 6, 0, 24)
+material_override = ExtResource("2_itbu8")
+mesh = SubResource("BoxMesh_wgd1j")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.965926, -0.258819, 0, 0.258819, 0.965926, 8, 0, 24)
+material_override = ExtResource("3_hbvix")
+mesh = SubResource("BoxMesh_wgd1j")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 24)
+material_override = ExtResource("4_cusf4")
+mesh = SubResource("BoxMesh_wgd1j")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 24)
+material_override = ExtResource("5_47bcd")
+mesh = SubResource("BoxMesh_wgd1j")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.585976, -0.810328, 0, 0.810328, -0.585976, 14, 0, 24)
+material_override = ExtResource("6_twkrr")
+mesh = SubResource("BoxMesh_wgd1j")
+
+[node name="Modular_Mine_Set" parent="." instance=ExtResource("6_18lik")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 4)

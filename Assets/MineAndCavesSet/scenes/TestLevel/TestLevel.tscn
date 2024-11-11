@@ -1,0 +1,1494 @@
+[gd_scene load_steps=70 format=3 uid="uid://cdquc2ay7103"]
+
+[ext_resource type="PackedScene" uid="uid://m2h4fbycsv2x" path="res://Assets/MineAndCavesSet/scenes/Mine_Carts/mine_cart_aa.tscn" id="1_lo3fu"]
+[ext_resource type="PackedScene" uid="uid://c8dxtgd0mkg8t" path="res://Assets/MineAndCavesSet/scenes/Mine_Carts/mine_cart_ba.tscn" id="2_4hjkj"]
+[ext_resource type="PackedScene" uid="uid://iif4pmyrvx5m" path="res://Assets/MineAndCavesSet/scenes/Mine_Carts/mine_cart_ca.tscn" id="3_gw8nx"]
+[ext_resource type="PackedScene" uid="uid://bsb5u81ofdanm" path="res://Assets/MineAndCavesSet/scenes/Mine_Carts/mine_cart_ab_grp.tscn" id="4_ss5n7"]
+[ext_resource type="PackedScene" uid="uid://dtacffqd2hli3" path="res://Assets/MineAndCavesSet/scenes/Mine_Carts/mine_cart_bb_grp.tscn" id="5_3y7tv"]
+[ext_resource type="PackedScene" uid="uid://v6wqs1sdvfbw" path="res://Assets/MineAndCavesSet/scenes/Mine_Carts/mine_cart_cb_grp.tscn" id="6_mk6rp"]
+[ext_resource type="PackedScene" uid="uid://daarvcqv2vplc" path="res://Assets/MineAndCavesSet/scenes/Mine_Rails/rail_b.tscn" id="8_b0f53"]
+[ext_resource type="PackedScene" uid="uid://bfvp5vm3li33s" path="res://Assets/MineAndCavesSet/scenes/Mine_Rails/rail_c.tscn" id="9_aekki"]
+[ext_resource type="PackedScene" uid="uid://cbkx8rsrth4g8" path="res://Assets/MineAndCavesSet/scenes/Mine_Rails/rails_corner_22_5_deg_a.tscn" id="10_nqgtc"]
+[ext_resource type="PackedScene" uid="uid://o258fbaej4mh" path="res://Assets/MineAndCavesSet/scenes/Mine_Rails/rail_falloff_b.tscn" id="11_dok8r"]
+[ext_resource type="PackedScene" uid="uid://jto21uf1ydhb" path="res://Assets/MineAndCavesSet/scenes/Mine_Rails/rail_a.tscn" id="13_n6uwl"]
+[ext_resource type="PackedScene" uid="uid://k0punnrg04nn" path="res://Assets/MineAndCavesSet/scenes/Mine_Rails/rail_ramp.tscn" id="15_3b6xm"]
+[ext_resource type="PackedScene" uid="uid://c33hlfujl83r8" path="res://Assets/MineAndCavesSet/scenes/Mine_Rails/rail_45_deg.tscn" id="16_f7m1k"]
+[ext_resource type="PackedScene" uid="uid://dqok1wu8pgh86" path="res://Assets/MineAndCavesSet/scenes/Mine_Rails/rails_corner_90_deg_a.tscn" id="17_jeiux"]
+[ext_resource type="PackedScene" uid="uid://d2kc52diwvnta" path="res://Assets/MineAndCavesSet/scenes/Mine_Rails/rail_scaffold_a.tscn" id="18_etw03"]
+[ext_resource type="PackedScene" uid="uid://c2m8n1m62lbwu" path="res://Assets/MineAndCavesSet/scenes/Ground/Ground_Cave/ground_cave_b.tscn" id="21_4ef3u"]
+[ext_resource type="PackedScene" uid="uid://j0qgcudvsied" path="res://Assets/MineAndCavesSet/scenes/Mine_Rails/rail_end.tscn" id="21_wk3j4"]
+[ext_resource type="PackedScene" uid="uid://jfoexio5dlsj" path="res://Assets/MineAndCavesSet/scenes/Ground/Ground_Cave/ground_cave_a.tscn" id="22_vmg2q"]
+[ext_resource type="PackedScene" uid="uid://cl2r67avdg8vh" path="res://Assets/MineAndCavesSet/scenes/Ground/Ground_Cave/ground_cave_e.tscn" id="25_wbo8k"]
+[ext_resource type="PackedScene" uid="uid://ce5psp1bm3hwd" path="res://Assets/MineAndCavesSet/scenes/Rocks/Cave_Wall_Rocks/cave_wall_rocks_g.tscn" id="29_0dvmj"]
+[ext_resource type="PackedScene" uid="uid://deqqtc8uhnjgq" path="res://Assets/MineAndCavesSet/scenes/Rocks/Cave_Wall_Rocks/cave_wall_rocks_d.tscn" id="30_ckttg"]
+[ext_resource type="PackedScene" uid="uid://ogsc8ntr767h" path="res://Assets/MineAndCavesSet/scenes/Rocks/Cave_Wall_Rocks/cave_wall_rocks_c.tscn" id="31_t2bce"]
+[ext_resource type="PackedScene" uid="uid://heagcsl1rg6j" path="res://Assets/MineAndCavesSet/scenes/Rocks/Cave_Rocks/cave_rocks_c.tscn" id="35_wou3w"]
+[ext_resource type="PackedScene" uid="uid://b0lu6reasthps" path="res://Assets/MineAndCavesSet/scenes/Rocks/Cave_Rocks/cave_pillar_b.tscn" id="37_eynpl"]
+[ext_resource type="PackedScene" uid="uid://b5k5klb248a25" path="res://Assets/MineAndCavesSet/scenes/Rocks/Cave_Rocks/cave_rocks_b.tscn" id="39_4qoy2"]
+[ext_resource type="PackedScene" uid="uid://bqkqhn00cprff" path="res://Assets/MineAndCavesSet/scenes/Rocks/Cave_Rocks/cave_pillar_a.tscn" id="40_5fywt"]
+[ext_resource type="PackedScene" uid="uid://c00xan47osuhq" path="res://Assets/MineAndCavesSet/scenes/Wall/Wall_Cave/wall_caves_a.tscn" id="41_oym6g"]
+[ext_resource type="PackedScene" uid="uid://bkdsea5ej7kn0" path="res://Assets/MineAndCavesSet/scenes/Wall/Wall_Cave/wall_caves_b.tscn" id="42_birlu"]
+[ext_resource type="PackedScene" uid="uid://cdv44jqgmd01a" path="res://Assets/MineAndCavesSet/scenes/Wall/Wall_Cave/wall_caves_d.tscn" id="43_y7dl6"]
+[ext_resource type="PackedScene" uid="uid://6og47l5osrlx" path="res://Assets/MineAndCavesSet/scenes/Wall/Wall_Cave/wall_caves_c.tscn" id="44_kf4y3"]
+[ext_resource type="PackedScene" uid="uid://dciha3i7arw38" path="res://Assets/MineAndCavesSet/scenes/Wall/Wall_Cave/wall_caves_entrance_a.tscn" id="45_fujqh"]
+[ext_resource type="PackedScene" uid="uid://ux21fdh6aqv0" path="res://Assets/MineAndCavesSet/scenes/Wall/Wall_Cave/wall_caves_entrance_b.tscn" id="46_x5wmx"]
+[ext_resource type="PackedScene" uid="uid://dk7tf11vn6nfa" path="res://Assets/MineAndCavesSet/scenes/Wall/Wall_Mines/wall_mines_corner.tscn" id="47_gq6ef"]
+[ext_resource type="PackedScene" uid="uid://cbut3xmla7mq3" path="res://Assets/MineAndCavesSet/scenes/Wall/Wall_Mines/wall_mines_a.tscn" id="47_h7ygp"]
+[ext_resource type="PackedScene" uid="uid://ejocgotiwmbc" path="res://Assets/MineAndCavesSet/scenes/Wall/Wall_Mines/wall_mines_c.tscn" id="48_2bexy"]
+[ext_resource type="PackedScene" uid="uid://bsv0s3v2px57" path="res://Assets/MineAndCavesSet/scenes/Wall/Wall_Cave/wall_caves_corner.tscn" id="48_nf28j"]
+[ext_resource type="PackedScene" uid="uid://dg06tlvuo74r0" path="res://Assets/MineAndCavesSet/scenes/Wall/Wall_Mines/wall_mines_b.tscn" id="49_f2415"]
+[ext_resource type="PackedScene" uid="uid://by7vbafdhocrk" path="res://Assets/MineAndCavesSet/scenes/Wall/Wall_Mines/wall_mines_d.tscn" id="50_hro5w"]
+[ext_resource type="PackedScene" uid="uid://cvbhnjwpa7hrl" path="res://Assets/MineAndCavesSet/scenes/Wall/Wall_Mines/wall_mines_entrance_a.tscn" id="51_j5b3h"]
+[ext_resource type="PackedScene" uid="uid://oxxy7shvgvtm" path="res://Assets/MineAndCavesSet/scenes/Wall/Wall_Mines/wall_mines_entrance_b.tscn" id="52_i6bk7"]
+[ext_resource type="PackedScene" uid="uid://ula17edr6c77" path="res://Assets/MineAndCavesSet/scenes/Wall/Tunnel/wall_mines_tunnel_low.tscn" id="53_idvc1"]
+[ext_resource type="PackedScene" uid="uid://cchsmsh28fd62" path="res://Assets/MineAndCavesSet/scenes/Wall/Tunnel/tunnel_corner_a.tscn" id="58_n68rd"]
+[ext_resource type="PackedScene" uid="uid://crtjm82djjgya" path="res://Assets/MineAndCavesSet/scenes/Wall/Tunnel/tunnel_a.tscn" id="60_eqaxo"]
+[ext_resource type="Material" uid="uid://dhqe4xbq7tk5t" path="res://Assets/MineAndCavesSet/material/Mine_Walls_1.material" id="65_tbm4h"]
+[ext_resource type="PackedScene" uid="uid://d1jgihsgw7huj" path="res://Assets/MineAndCavesSet/scenes/Ground/Ground_Mines/ground_mines_c.tscn" id="72_tj0ap"]
+[ext_resource type="PackedScene" uid="uid://bk0wqsefojk16" path="res://Assets/MineAndCavesSet/scenes/Cave_Platform/cave_platform_a_corner.tscn" id="73_5insr"]
+[ext_resource type="PackedScene" uid="uid://bvnq4ywoa0omv" path="res://Assets/MineAndCavesSet/scenes/Ground/Ground_Mines/ground_mines_a.tscn" id="73_bs6re"]
+[ext_resource type="PackedScene" uid="uid://bkle6cv720bue" path="res://Assets/MineAndCavesSet/scenes/Cave_Platform/cave_platform_a_side.tscn" id="74_d1kbe"]
+[ext_resource type="PackedScene" uid="uid://ewt573sbxusj" path="res://Assets/MineAndCavesSet/scenes/Ground/Ground_Mines/ground_mines_b.tscn" id="74_vgfe7"]
+[ext_resource type="PackedScene" uid="uid://cpxrf1k1m05d6" path="res://Assets/MineAndCavesSet/scenes/Ground/Ground_Mines/ground_mines_ramp_a.tscn" id="75_ftif2"]
+[ext_resource type="PackedScene" uid="uid://p2xe61mceh84" path="res://Assets/MineAndCavesSet/scenes/Ground/Ground_Mines/ground_mines_ramp_side_b.tscn" id="76_nhlva"]
+[ext_resource type="PackedScene" uid="uid://dlv6fq8lsa7gt" path="res://Assets/MineAndCavesSet/scenes/Ground/Ground_Mines/ramp_wall_1m.tscn" id="79_5h6mx"]
+[ext_resource type="PackedScene" uid="uid://b72enfplm62fi" path="res://Assets/MineAndCavesSet/scenes/Panel_Wood/panel_wood_b.tscn" id="82_l2kgt"]
+[ext_resource type="PackedScene" uid="uid://0nrf7ptm47u5" path="res://Assets/MineAndCavesSet/scenes/Panel_Wood/panel_wood_a.tscn" id="83_gxwb1"]
+[ext_resource type="PackedScene" uid="uid://bvonvs4yjgpuw" path="res://Assets/MineAndCavesSet/scenes/Panel_Wood/panel_wood_entrance_a.tscn" id="85_t6oo0"]
+[ext_resource type="PackedScene" uid="uid://cmc3r4l1dwabm" path="res://Assets/MineAndCavesSet/scenes/Posts/beam_a.tscn" id="90_5f1m4"]
+[ext_resource type="PackedScene" uid="uid://cv1cfkquliwhl" path="res://Assets/MineAndCavesSet/scenes/Posts/beam_c.tscn" id="92_tiu7f"]
+[ext_resource type="PackedScene" uid="uid://cedk6qultj1ws" path="res://Assets/MineAndCavesSet/scenes/Posts/post_a.tscn" id="95_y55oa"]
+[ext_resource type="PackedScene" uid="uid://b3qhywpe6iy7i" path="res://Assets/MineAndCavesSet/scenes/Posts/post_f.tscn" id="98_nnoeb"]
+[ext_resource type="PackedScene" uid="uid://d0s3mpcp11f5l" path="res://Assets/MineAndCavesSet/scenes/Posts/post_g.tscn" id="99_oh4a7"]
+[ext_resource type="PackedScene" uid="uid://ddjjc6fn3iytb" path="res://Assets/MineAndCavesSet/scenes/Posts/post_c.tscn" id="100_oc2bm"]
+[ext_resource type="PackedScene" uid="uid://d2o2hn53xxx2q" path="res://Assets/MineAndCavesSet/scenes/Ground/Ground_Mound/ground_mound_a.tscn" id="108_l284y"]
+[ext_resource type="PackedScene" uid="uid://dst113wck31te" path="res://Assets/MineAndCavesSet/scenes/Ground/Ground_Mound/ground_mound_c.tscn" id="110_ex2sk"]
+[ext_resource type="PackedScene" uid="uid://d4rnxsyjujq" path="res://Assets/MineAndCavesSet/scenes/Ground/Ground_Mound/ground_mound_d.tscn" id="111_nkpil"]
+[ext_resource type="PackedScene" uid="uid://dkprqyqnrh5pt" path="res://Assets/MineAndCavesSet/scenes/Wood_Platform/wood_platform_a.tscn" id="130_jscd6"]
+[ext_resource type="PackedScene" uid="uid://bni6p47hun3nw" path="res://Assets/MineAndCavesSet/scenes/Wood_Platform/wood_platform_stairs_b.tscn" id="155_rdtc4"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_jy67v"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_vg5nj"]
+sky_material = SubResource("ProceduralSkyMaterial_jy67v")
+
+[sub_resource type="Environment" id="Environment_uhhdk"]
+background_mode = 2
+sky = SubResource("Sky_vg5nj")
+tonemap_mode = 2
+ssr_enabled = true
+ssao_enabled = true
+ssil_enabled = true
+glow_enabled = true
+
+[node name="Modular_Mine_Set" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_uhhdk")
+
+[node name="TestLevel" type="Node3D" parent="."]
+
+[node name="Mine_Carts" type="Node3D" parent="TestLevel"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29, 0, -77)
+
+[node name="Mine_Cart_AA" parent="TestLevel/Mine_Carts" instance=ExtResource("1_lo3fu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.9, 0.475815, 75.9)
+
+[node name="Mine_Cart_BA" parent="TestLevel/Mine_Carts" instance=ExtResource("2_4hjkj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0.284923, 77)
+
+[node name="Mine_Cart_CA" parent="TestLevel/Mine_Carts" instance=ExtResource("3_gw8nx")]
+transform = Transform3D(0.707107, -0.707107, 2.10734e-08, 0, 2.98023e-08, 1, -0.707107, -0.707107, 2.10734e-08, -18.1, 0.366962, 77.6)
+
+[node name="Mine_Cart_AB_grp" parent="TestLevel/Mine_Carts" instance=ExtResource("4_ss5n7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39, -2, 80)
+
+[node name="Mine_Cart_BB_grp" parent="TestLevel/Mine_Carts" instance=ExtResource("5_3y7tv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0, 76)
+
+[node name="Mine_Cart_CB_grp" parent="TestLevel/Mine_Carts" instance=ExtResource("6_mk6rp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0, 75)
+
+[node name="Mine_Rails" type="Node3D" parent="TestLevel"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0, -91)
+
+[node name="Rail_B2" parent="TestLevel/Mine_Rails" instance=ExtResource("8_b0f53")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -24, 0, 92)
+
+[node name="Rail_B3" parent="TestLevel/Mine_Rails" instance=ExtResource("8_b0f53")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 0, 94)
+
+[node name="Rail_C2" parent="TestLevel/Mine_Rails" instance=ExtResource("9_aekki")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26, 0, 94)
+
+[node name="Rails_Corner_22_5Deg_A3" parent="TestLevel/Mine_Rails" instance=ExtResource("10_nqgtc")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -23, 0, 94)
+
+[node name="Rails_Corner_22_5Deg_A2" parent="TestLevel/Mine_Rails" instance=ExtResource("10_nqgtc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 0, 90)
+
+[node name="Rail_Falloff_B2" parent="TestLevel/Mine_Rails" instance=ExtResource("11_dok8r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -51, -2, 94)
+
+[node name="Rail_A2" parent="TestLevel/Mine_Rails" instance=ExtResource("13_n6uwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, 89)
+
+[node name="Rail_Ramp2" parent="TestLevel/Mine_Rails" instance=ExtResource("15_3b6xm")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -33, -1, 94)
+
+[node name="Rail_Ramp3" parent="TestLevel/Mine_Rails" instance=ExtResource("15_3b6xm")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -35, -2, 94)
+
+[node name="Rail_45deg2" parent="TestLevel/Mine_Rails" instance=ExtResource("16_f7m1k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 0, 92)
+
+[node name="Rails_Corner_90Deg_A2" parent="TestLevel/Mine_Rails" instance=ExtResource("17_jeiux")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23, 0, 89)
+
+[node name="Rail_Scaffold_A2" parent="TestLevel/Mine_Rails" instance=ExtResource("18_etw03")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44, -4, 94)
+
+[node name="Rail_Scaffold_A3" parent="TestLevel/Mine_Rails" instance=ExtResource("18_etw03")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -44, -4, 94)
+
+[node name="Rail_Scaffold_A4" parent="TestLevel/Mine_Rails" instance=ExtResource("18_etw03")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, -4, 94)
+
+[node name="Rail_Scaffold_A5" parent="TestLevel/Mine_Rails" instance=ExtResource("18_etw03")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -46, -4, 94)
+
+[node name="Rail_Scaffold_A6" parent="TestLevel/Mine_Rails" instance=ExtResource("18_etw03")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48, -4, 94)
+
+[node name="Rail_Scaffold_A7" parent="TestLevel/Mine_Rails" instance=ExtResource("18_etw03")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -48, -4, 94)
+
+[node name="Rail_Scaffold_A8" parent="TestLevel/Mine_Rails" instance=ExtResource("18_etw03")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, -4, 94)
+
+[node name="Rail_Scaffold_A9" parent="TestLevel/Mine_Rails" instance=ExtResource("18_etw03")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -50, -4, 94)
+
+[node name="Rail_Scaffold_A10" parent="TestLevel/Mine_Rails" instance=ExtResource("18_etw03")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48, -6, 94)
+
+[node name="Rail_Scaffold_A11" parent="TestLevel/Mine_Rails" instance=ExtResource("18_etw03")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -48, -6, 94)
+
+[node name="Rail_Scaffold_A12" parent="TestLevel/Mine_Rails" instance=ExtResource("18_etw03")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, -6, 94)
+
+[node name="Rail_Scaffold_A13" parent="TestLevel/Mine_Rails" instance=ExtResource("18_etw03")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -50, -6, 94)
+
+[node name="Rail_End2" parent="TestLevel/Mine_Rails" instance=ExtResource("21_wk3j4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 89)
+
+[node name="Rail_End4" parent="TestLevel/Mine_Rails" instance=ExtResource("21_wk3j4")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -24, 0, 93)
+
+[node name="Rail_A3" parent="TestLevel/Mine_Rails" instance=ExtResource("13_n6uwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, 90)
+
+[node name="Rail_A4" parent="TestLevel/Mine_Rails" instance=ExtResource("13_n6uwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, 89)
+
+[node name="Rail_A5" parent="TestLevel/Mine_Rails" instance=ExtResource("13_n6uwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, 90)
+
+[node name="Rail_A6" parent="TestLevel/Mine_Rails" instance=ExtResource("13_n6uwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0, 89)
+
+[node name="Rail_A7" parent="TestLevel/Mine_Rails" instance=ExtResource("13_n6uwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29, 0, 94)
+
+[node name="Rail_A9" parent="TestLevel/Mine_Rails" instance=ExtResource("13_n6uwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37, -2, 94)
+
+[node name="Rail_A10" parent="TestLevel/Mine_Rails" instance=ExtResource("13_n6uwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41, -2, 94)
+
+[node name="Rail_A11" parent="TestLevel/Mine_Rails" instance=ExtResource("13_n6uwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45, -2, 94)
+
+[node name="Rail_A12" parent="TestLevel/Mine_Rails" instance=ExtResource("13_n6uwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49, -2, 94)
+
+[node name="Rail_End3" parent="TestLevel/Mine_Rails" instance=ExtResource("21_wk3j4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 90)
+
+[node name="Ground_Mines" type="Node3D" parent="TestLevel"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -46)
+
+[node name="Ground_Mines_C2" parent="TestLevel/Ground_Mines" instance=ExtResource("72_tj0ap")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 42)
+
+[node name="Ground_Mines_A" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 49)
+
+[node name="Ground_Mines_A3" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, 49)
+
+[node name="Ground_Mines_A19" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(1, 0, 0, 0, -1, -5.96046e-08, 0, 5.96046e-08, -1, -8, 3, 49)
+
+[node name="Ground_Mines_A21" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(0.984808, 0.173648, 1.03502e-08, 0.173648, -0.984808, -5.86991e-08, 0, 5.96046e-08, -1, -11.9304, 2.6473, 49)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Mines_A29" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(0.984808, 0.173648, 1.03502e-08, 0.173648, -0.984808, -5.86991e-08, 0, 5.96046e-08, -1, -15.8696, 1.9527, 49)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Mines_A30" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(0.984808, 0.173648, 1.03502e-08, 0.173648, -0.984808, -5.86991e-08, 0, 5.96046e-08, -1, -11.9304, 2.6473, 53)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Mines_A31" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(0.984808, 0.173648, 1.03502e-08, 0.173648, -0.984808, -5.86991e-08, 0, 5.96046e-08, -1, -15.8696, 1.9527, 53)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Mines_A20" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(1, 0, 0, 0, -1, -5.96046e-08, 0, 5.96046e-08, -1, -8, 3, 49)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Mines_A28" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(1, 0, 0, 0, -1, -5.96046e-08, 0, 5.96046e-08, -1, -9, 3, 52)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Mines_A22" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(1, 0, 0, 0, -1, -5.96046e-08, 0, 5.96046e-08, -1, -19, 1.8, 49)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Mines_A23" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(1, 0, 0, 0, -1, -5.96046e-08, 0, 5.96046e-08, -1, -23, 1.8, 49)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Mines_A24" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(1, 0, 0, 0, -1, -5.96046e-08, 0, 5.96046e-08, -1, -27, 1.8, 49)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Mines_A25" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(1, 0, 0, 0, -1, -5.96046e-08, 0, 5.96046e-08, -1, -31, 1.8, 49)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Mines_A26" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(1, 0, 0, 0, -1, -5.96046e-08, 0, 5.96046e-08, -1, -35, 1.8, 49)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Mines_A27" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(1, 0, 0, 0, -1, -5.96046e-08, 0, 5.96046e-08, -1, -39, 2, 49)
+
+[node name="Ground_Mines_A14" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17, -2, 49)
+
+[node name="Ground_Mines_A16" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, -2, 49)
+
+[node name="Ground_Mines_A17" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35, -5, 49)
+
+[node name="Ground_Mines_A18" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31, -5, 49)
+
+[node name="Ground_Mines_A15" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17, -2, 49)
+
+[node name="Ground_Mines_A4" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 39)
+
+[node name="Ground_Mines_A5" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 35)
+
+[node name="Ground_Mines_A6" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 31)
+
+[node name="Ground_Mines_A7" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 1, 27)
+
+[node name="Ground_Mines_A8" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 45)
+
+[node name="Ground_Mines_A13" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 45)
+
+[node name="Ground_Mines_A2" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4, 0, 45)
+
+[node name="Ground_Mines_B" parent="TestLevel/Ground_Mines" instance=ExtResource("74_vgfe7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 42)
+
+[node name="Ground_Mines_B4" parent="TestLevel/Ground_Mines" instance=ExtResource("74_vgfe7")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -7, 0, 49)
+
+[node name="Ground_Mines_A9" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 49)
+
+[node name="Ground_Mines_A10" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 45)
+
+[node name="Ground_Mines_B2" parent="TestLevel/Ground_Mines" instance=ExtResource("74_vgfe7")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 42)
+
+[node name="Ground_Mines_A33" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, -4, 4, 49)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Mines_A34" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(-1, -5.96046e-08, 0, 5.96046e-08, -1, 0, 0, 0, 1, -4, 4, 45)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Mines_A63" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(-1, -5.96046e-08, 0, 5.96046e-08, -1, 0, 0, 0, 1, -8, 4, 39)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Mines_A64" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(-1, -5.96046e-08, 0, 5.96046e-08, -1, 0, 0, 0, 1, -8, 4, 43)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Mines_B5" parent="TestLevel/Ground_Mines" instance=ExtResource("74_vgfe7")]
+transform = Transform3D(1, -5.96046e-08, -8.74228e-08, -5.96046e-08, -1, 3.55271e-15, -8.74228e-08, 0, -1, -4, 4, 42)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Mines_A35" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 0, 4, 49)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Mines_A36" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(-1, -5.96046e-08, 0, 5.96046e-08, -1, 0, 0, 0, 1, 0, 4, 45)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Mines_B6" parent="TestLevel/Ground_Mines" instance=ExtResource("74_vgfe7")]
+transform = Transform3D(1, -5.96046e-08, -8.74228e-08, -5.96046e-08, -1, 3.55271e-15, -8.74228e-08, 0, -1, 0, 4, 42)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Mines_A37" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 4, 4, 49)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Mines_A38" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(-1, -5.96046e-08, 0, 5.96046e-08, -1, 0, 0, 0, 1, 4, 4, 45)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Mines_B7" parent="TestLevel/Ground_Mines" instance=ExtResource("74_vgfe7")]
+transform = Transform3D(1, -5.96046e-08, -8.74228e-08, -5.96046e-08, -1, 3.55271e-15, -8.74228e-08, 0, -1, 4, 4, 42)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Mines_A39" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 8, 4, 49)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Mines_A40" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(-1, -5.96046e-08, 0, 5.96046e-08, -1, 0, 0, 0, 1, 8, 4, 45)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Mines_B8" parent="TestLevel/Ground_Mines" instance=ExtResource("74_vgfe7")]
+transform = Transform3D(1, -5.96046e-08, -8.74228e-08, -5.96046e-08, -1, 3.55271e-15, -8.74228e-08, 0, -1, 8, 4, 42)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Mines_A41" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 12, 4, 49)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Mines_A42" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(-1, -5.96046e-08, 0, 5.96046e-08, -1, 0, 0, 0, 1, 12, 4, 45)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Mines_B9" parent="TestLevel/Ground_Mines" instance=ExtResource("74_vgfe7")]
+transform = Transform3D(1, -5.96046e-08, -8.74228e-08, -5.96046e-08, -1, 3.55271e-15, -8.74228e-08, 0, -1, 12, 4, 42)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Mines_A11" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 4, 0, 49)
+
+[node name="Ground_Mines_A32" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 8, 0, 49)
+
+[node name="Ground_Mines_A43" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 12, 0, 49)
+
+[node name="Ground_Mines_A12" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4, 0, 45)
+
+[node name="Ground_Mines_B3" parent="TestLevel/Ground_Mines" instance=ExtResource("74_vgfe7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 42)
+
+[node name="Ground_Mines_B10" parent="TestLevel/Ground_Mines" instance=ExtResource("74_vgfe7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 42)
+
+[node name="Ground_Mines_B11" parent="TestLevel/Ground_Mines" instance=ExtResource("74_vgfe7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 42)
+
+[node name="Ground_Mines_A44" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 45)
+
+[node name="Ground_Mines_A45" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 16, 4, 49)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Mines_A46" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(-1, -5.96046e-08, 0, 5.96046e-08, -1, 0, 0, 0, 1, 16, 4, 45)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Mines_B12" parent="TestLevel/Ground_Mines" instance=ExtResource("74_vgfe7")]
+transform = Transform3D(1, -5.96046e-08, -8.74228e-08, -5.96046e-08, -1, 3.55271e-15, -8.74228e-08, 0, -1, 16, 4, 42)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Mines_A47" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 16, 0, 49)
+
+[node name="Ground_Mines_B13" parent="TestLevel/Ground_Mines" instance=ExtResource("74_vgfe7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 42)
+
+[node name="Ground_Mines_A48" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 45)
+
+[node name="Ground_Mines_A49" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 20, 4, 49)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Mines_A50" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(-1, -5.96046e-08, 0, 5.96046e-08, -1, 0, 0, 0, 1, 20, 4, 45)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Mines_B14" parent="TestLevel/Ground_Mines" instance=ExtResource("74_vgfe7")]
+transform = Transform3D(1, -5.96046e-08, -8.74228e-08, -5.96046e-08, -1, 3.55271e-15, -8.74228e-08, 0, -1, 20, 4, 42)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Mines_A51" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 20, 0, 49)
+
+[node name="Ground_Mines_B15" parent="TestLevel/Ground_Mines" instance=ExtResource("74_vgfe7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 42)
+
+[node name="Ground_Mines_A52" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 45)
+
+[node name="Ground_Mines_A53" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 24, 4, 49)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Mines_A59" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 28, 4, 49)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Mines_A60" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 32, 4, 49)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Mines_A61" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(4.37114e-08, -5.96046e-08, -1, -1.77636e-15, -1, 5.96046e-08, -1, 0, -4.37114e-08, 36, 4, 49)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Mines_A54" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(-1, -5.96046e-08, 0, 5.96046e-08, -1, 0, 0, 0, 1, 24, 4, 45)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Mines_B16" parent="TestLevel/Ground_Mines" instance=ExtResource("74_vgfe7")]
+transform = Transform3D(1, -5.96046e-08, -8.74228e-08, -5.96046e-08, -1, 3.55271e-15, -8.74228e-08, 0, -1, 24, 4, 42)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Mines_A55" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0, 49)
+
+[node name="Ground_Mines_A56" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 28, 0, 49)
+
+[node name="Ground_Mines_A57" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 32, 0, 49)
+
+[node name="Ground_Mines_A58" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 36, 0, 49)
+
+[node name="Ground_Mines_A62" parent="TestLevel/Ground_Mines" instance=ExtResource("73_bs6re")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 40, 0, 49)
+
+[node name="Ground_Mines_B17" parent="TestLevel/Ground_Mines" instance=ExtResource("74_vgfe7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 42)
+
+[node name="Ground_Mines_Ramp_A3" parent="TestLevel/Ground_Mines" instance=ExtResource("75_ftif2")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -12, -1, 49)
+
+[node name="Ground_Mines_Ramp_A7" parent="TestLevel/Ground_Mines" instance=ExtResource("75_ftif2")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -24, -3, 49)
+
+[node name="Ground_Mines_Ramp_A8" parent="TestLevel/Ground_Mines" instance=ExtResource("75_ftif2")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -24, -3, 47)
+
+[node name="Ground_Mines_Ramp_A9" parent="TestLevel/Ground_Mines" instance=ExtResource("75_ftif2")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -24, -3, 51)
+
+[node name="Ground_Mines_Ramp_A10" parent="TestLevel/Ground_Mines" instance=ExtResource("75_ftif2")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -26, -4, 49)
+
+[node name="Ground_Mines_Ramp_A11" parent="TestLevel/Ground_Mines" instance=ExtResource("75_ftif2")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -26, -4, 47)
+
+[node name="Ground_Mines_Ramp_A12" parent="TestLevel/Ground_Mines" instance=ExtResource("75_ftif2")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -26, -4, 51)
+
+[node name="Ground_Mines_Ramp_A13" parent="TestLevel/Ground_Mines" instance=ExtResource("75_ftif2")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -28, -5, 49)
+
+[node name="Ground_Mines_Ramp_A14" parent="TestLevel/Ground_Mines" instance=ExtResource("75_ftif2")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -28, -5, 47)
+
+[node name="Ground_Mines_Ramp_A15" parent="TestLevel/Ground_Mines" instance=ExtResource("75_ftif2")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -28, -5, 51)
+
+[node name="Ground_Mines_Ramp_A4" parent="TestLevel/Ground_Mines" instance=ExtResource("75_ftif2")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -12, -1, 48)
+
+[node name="Ground_Mines_Ramp_A2" parent="TestLevel/Ground_Mines" instance=ExtResource("75_ftif2")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -9, 0, 30)
+
+[node name="Ground_Mines_Ramp_Side_B2" parent="TestLevel/Ground_Mines" instance=ExtResource("76_nhlva")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -12, -1, 50)
+
+[node name="Ground_Mines_Ramp_A5" parent="TestLevel/Ground_Mines" instance=ExtResource("75_ftif2")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -14, -2, 49)
+
+[node name="Ground_Mines_Ramp_A6" parent="TestLevel/Ground_Mines" instance=ExtResource("75_ftif2")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -14, -2, 48)
+
+[node name="Ground_Mines_Ramp_Side_B3" parent="TestLevel/Ground_Mines" instance=ExtResource("76_nhlva")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -14, -2, 50)
+
+[node name="Ramp_Wall_1m2" parent="TestLevel/Ground_Mines" instance=ExtResource("79_5h6mx")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -12, -2, 51)
+
+[node name="Wall_Mines" type="Node3D" parent="TestLevel"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, -38)
+
+[node name="Wall_Mines_A2" parent="TestLevel/Wall_Mines" instance=ExtResource("47_h7ygp")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -20, 0, 37)
+
+[node name="Wall_Mines_A4" parent="TestLevel/Wall_Mines" instance=ExtResource("47_h7ygp")]
+transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, -20.8, 0, 45)
+
+[node name="Wall_Mines_A11" parent="TestLevel/Wall_Mines" instance=ExtResource("47_h7ygp")]
+transform = Transform3D(0.939693, 0, 0.34202, 0, 1, 0, -0.34202, 0, 0.939693, -21.8, 0, 45)
+
+[node name="Wall_Mines_A3" parent="TestLevel/Wall_Mines" instance=ExtResource("47_h7ygp")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -14, 0, 33)
+
+[node name="Wall_Mines_A5" parent="TestLevel/Wall_Mines" instance=ExtResource("47_h7ygp")]
+transform = Transform3D(1, 0, -1.42109e-14, 0, 1, 0, 1.42109e-14, 0, 1, -14, 0, 43)
+
+[node name="Wall_Mines_C2" parent="TestLevel/Wall_Mines" instance=ExtResource("48_2bexy")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -22, 0, 34)
+
+[node name="Wall_Mines_B2" parent="TestLevel/Wall_Mines" instance=ExtResource("49_f2415")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -18, 0, 33)
+
+[node name="Wall_Mines_B5" parent="TestLevel/Wall_Mines" instance=ExtResource("49_f2415")]
+transform = Transform3D(1, 0, -1.78814e-07, 0, 1, 0, 1.78814e-07, 0, 1, -18, 0, 43)
+
+[node name="Wall_Mines_A6" parent="TestLevel/Wall_Mines" instance=ExtResource("47_h7ygp")]
+transform = Transform3D(1, 0, -1.42109e-14, 0, 1, 0, 1.42109e-14, 0, 1, -35, -2, 43)
+
+[node name="Wall_Mines_A8" parent="TestLevel/Wall_Mines" instance=ExtResource("47_h7ygp")]
+transform = Transform3D(1, 0, -1.42109e-14, 0, 1, 0, 1.42109e-14, 0, 1, -31, -2, 45)
+
+[node name="Wall_Mines_A10" parent="TestLevel/Wall_Mines" instance=ExtResource("47_h7ygp")]
+transform = Transform3D(1, 0, -1.42109e-14, 0, 1, 0, 1.42109e-14, 0, 1, -23, 0, 45)
+
+[node name="Wall_Mines_A32" parent="TestLevel/Wall_Mines" instance=ExtResource("47_h7ygp")]
+transform = Transform3D(-0.906308, 0, 0.422618, 0, 1, 0, -0.422618, 0, -0.906308, -23.3, 0, 45.8)
+
+[node name="Wall_Mines_A12" parent="TestLevel/Wall_Mines" instance=ExtResource("47_h7ygp")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -22, 0, 39)
+
+[node name="Wall_Mines_A13" parent="TestLevel/Wall_Mines" instance=ExtResource("47_h7ygp")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -26, -1, 39)
+
+[node name="Wall_Mines_A14" parent="TestLevel/Wall_Mines" instance=ExtResource("47_h7ygp")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -33, -2, 39)
+
+[node name="Wall_Mines_A15" parent="TestLevel/Wall_Mines" instance=ExtResource("47_h7ygp")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -37, -2, 39)
+
+[node name="Wall_Mines_A16" parent="TestLevel/Wall_Mines" instance=ExtResource("47_h7ygp")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -41, -2, 39)
+
+[node name="Wall_Mines_A17" parent="TestLevel/Wall_Mines" instance=ExtResource("47_h7ygp")]
+transform = Transform3D(1, 0, -1.42109e-14, 0, 1, 0, 1.42109e-14, 0, 1, -39, -2, 43)
+
+[node name="Wall_Mines_A18" parent="TestLevel/Wall_Mines" instance=ExtResource("47_h7ygp")]
+transform = Transform3D(1, 0, -1.42109e-14, 0, 1, 0, 1.42109e-14, 0, 1, -43, -2, 43)
+
+[node name="Wall_Mines_A20" parent="TestLevel/Wall_Mines" instance=ExtResource("47_h7ygp")]
+transform = Transform3D(1, 0, -1.42109e-14, 0, 1, 0, 1.42109e-14, 0, 1, -47, -2, 43)
+
+[node name="Wall_Mines_A30" parent="TestLevel/Wall_Mines" instance=ExtResource("47_h7ygp")]
+transform = Transform3D(0.939693, 0, -0.34202, 0, 1, 0, 0.34202, 0, 0.939693, -50.8, -2, 42.8)
+
+[node name="Wall_Mines_A19" parent="TestLevel/Wall_Mines" instance=ExtResource("47_h7ygp")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -45, -2, 39)
+
+[node name="Wall_Mines_A33" parent="TestLevel/Wall_Mines" instance=ExtResource("47_h7ygp")]
+transform = Transform3D(-0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, -0.866025, -53.7, -2, 40.2)
+
+[node name="Wall_Mines_A34" parent="TestLevel/Wall_Mines" instance=ExtResource("47_h7ygp")]
+transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, -53.8, -2, 41.6)
+
+[node name="Wall_Mines_A21" parent="TestLevel/Wall_Mines" instance=ExtResource("47_h7ygp")]
+transform = Transform3D(1, 0, -1.42109e-14, 0, 1, 0, 1.42109e-14, 0, 1, -36, -6, 43)
+
+[node name="Wall_Mines_A22" parent="TestLevel/Wall_Mines" instance=ExtResource("47_h7ygp")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -37, -6, 39)
+
+[node name="Wall_Mines_A23" parent="TestLevel/Wall_Mines" instance=ExtResource("47_h7ygp")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -41, -6, 39)
+
+[node name="Wall_Mines_A24" parent="TestLevel/Wall_Mines" instance=ExtResource("47_h7ygp")]
+transform = Transform3D(1, 0, -1.42109e-14, 0, 1, 0, 1.42109e-14, 0, 1, -40, -6, 43)
+
+[node name="Wall_Mines_A25" parent="TestLevel/Wall_Mines" instance=ExtResource("47_h7ygp")]
+transform = Transform3D(1, 0, -1.42109e-14, 0, 1, 0, 1.42109e-14, 0, 1, -44, -6, 43)
+
+[node name="Wall_Mines_A26" parent="TestLevel/Wall_Mines" instance=ExtResource("47_h7ygp")]
+transform = Transform3D(1, 0, -1.42109e-14, 0, 1, 0, 1.42109e-14, 0, 1, -48, -6, 43)
+
+[node name="Wall_Mines_A27" parent="TestLevel/Wall_Mines" instance=ExtResource("47_h7ygp")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -45, -6, 39)
+
+[node name="Wall_Mines_A28" parent="TestLevel/Wall_Mines" instance=ExtResource("47_h7ygp")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -49, -2, 39)
+
+[node name="Wall_Mines_A31" parent="TestLevel/Wall_Mines" instance=ExtResource("47_h7ygp")]
+transform = Transform3D(-0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, -0.965926, -50.3, -2, 39.2)
+
+[node name="Wall_Mines_A29" parent="TestLevel/Wall_Mines" instance=ExtResource("47_h7ygp")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -49, -6, 39)
+
+[node name="Wall_Mines_A7" parent="TestLevel/Wall_Mines" instance=ExtResource("47_h7ygp")]
+transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, -32, -2, 44.2)
+
+[node name="Wall_Mines_B9" parent="TestLevel/Wall_Mines" instance=ExtResource("49_f2415")]
+transform = Transform3D(-1, 0, 2.66237e-07, 0, 1, 0, -2.66237e-07, 0, -1, -29, -2, 39)
+
+[node name="Wall_Mines_B6" parent="TestLevel/Wall_Mines" instance=ExtResource("49_f2415")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -10, 0, 33)
+
+[node name="Wall_Mines_B10" parent="TestLevel/Wall_Mines" instance=ExtResource("49_f2415")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -6, 0, 33)
+
+[node name="Wall_Mines_B11" parent="TestLevel/Wall_Mines" instance=ExtResource("49_f2415")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -2, 0, 33)
+
+[node name="Wall_Mines_B8" parent="TestLevel/Wall_Mines" instance=ExtResource("49_f2415")]
+transform = Transform3D(1, 0, -2.13163e-14, 0, 1, 0, 2.13163e-14, 0, 1, -10, 0, 43)
+
+[node name="Wall_Mines_B12" parent="TestLevel/Wall_Mines" instance=ExtResource("49_f2415")]
+transform = Transform3D(1, 0, -2.13163e-14, 0, 1, 0, 2.13163e-14, 0, 1, -6, 0, 43)
+
+[node name="Wall_Mines_B13" parent="TestLevel/Wall_Mines" instance=ExtResource("49_f2415")]
+transform = Transform3D(1, 0, -2.13163e-14, 0, 1, 0, 2.13163e-14, 0, 1, -2, 0, 43)
+
+[node name="Wall_Mines_B14" parent="TestLevel/Wall_Mines" instance=ExtResource("49_f2415")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 2, 0, 33)
+
+[node name="Wall_Mines_B15" parent="TestLevel/Wall_Mines" instance=ExtResource("49_f2415")]
+transform = Transform3D(1, 0, -2.13163e-14, 0, 1, 0, 2.13163e-14, 0, 1, 2, 0, 43)
+
+[node name="Wall_Mines_B16" parent="TestLevel/Wall_Mines" instance=ExtResource("49_f2415")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 6, 0, 33)
+
+[node name="Wall_Mines_B17" parent="TestLevel/Wall_Mines" instance=ExtResource("49_f2415")]
+transform = Transform3D(1, 0, -2.13163e-14, 0, 1, 0, 2.13163e-14, 0, 1, 6, 0, 43)
+
+[node name="Wall_Mines_B18" parent="TestLevel/Wall_Mines" instance=ExtResource("49_f2415")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 10, 0, 33)
+
+[node name="Wall_Mines_B20" parent="TestLevel/Wall_Mines" instance=ExtResource("49_f2415")]
+transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 12, 0, 37)
+
+[node name="Wall_Mines_B21" parent="TestLevel/Wall_Mines" instance=ExtResource("49_f2415")]
+transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 12, 0, 33)
+
+[node name="Wall_Mines_B19" parent="TestLevel/Wall_Mines" instance=ExtResource("49_f2415")]
+transform = Transform3D(1, 0, -2.13163e-14, 0, 1, 0, 2.13163e-14, 0, 1, 10, 0, 43)
+
+[node name="Wall_Mines_B22" parent="TestLevel/Wall_Mines" instance=ExtResource("49_f2415")]
+transform = Transform3D(1, 0, -2.13163e-14, 0, 1, 0, 2.13163e-14, 0, 1, 14, 0, 43)
+
+[node name="Wall_Mines_B23" parent="TestLevel/Wall_Mines" instance=ExtResource("49_f2415")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 14, 0, 39)
+
+[node name="Wall_Mines_B24" parent="TestLevel/Wall_Mines" instance=ExtResource("49_f2415")]
+transform = Transform3D(1, 0, -2.13163e-14, 0, 1, 0, 2.13163e-14, 0, 1, 18, 0, 43)
+
+[node name="Wall_Mines_B25" parent="TestLevel/Wall_Mines" instance=ExtResource("49_f2415")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 18, 0, 39)
+
+[node name="Wall_Mines_B26" parent="TestLevel/Wall_Mines" instance=ExtResource("49_f2415")]
+transform = Transform3D(1, 0, -2.13163e-14, 0, 1, 0, 2.13163e-14, 0, 1, 22, 0, 43)
+
+[node name="Wall_Mines_B27" parent="TestLevel/Wall_Mines" instance=ExtResource("49_f2415")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 22, 0, 39)
+
+[node name="Wall_Mines_B3" parent="TestLevel/Wall_Mines" instance=ExtResource("49_f2415")]
+transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, -20, 0, 31)
+
+[node name="Wall_Mines_B4" parent="TestLevel/Wall_Mines" instance=ExtResource("49_f2415")]
+transform = Transform3D(-4.37112e-08, 0, -1, 0, 1, 0, 1, 0, -4.37112e-08, -24, 0, 31)
+
+[node name="Wall_Mines_D2" parent="TestLevel/Wall_Mines" instance=ExtResource("50_hro5w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 0, 35)
+
+[node name="Wall_Mines_D4" parent="TestLevel/Wall_Mines" instance=ExtResource("50_hro5w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 0, 35)
+
+[node name="Wall_Mines_D5" parent="TestLevel/Wall_Mines" instance=ExtResource("50_hro5w")]
+transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, -21.1, 0, 29.7)
+
+[node name="Wall_Mines_D3" parent="TestLevel/Wall_Mines" instance=ExtResource("50_hro5w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23, 0, 33)
+
+[node name="Wall_Mines_Entrance_A" parent="TestLevel/Wall_Mines" instance=ExtResource("51_j5b3h")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -20, 0, 41)
+
+[node name="Wall_Mines_Entrance_A2" parent="TestLevel/Wall_Mines" instance=ExtResource("51_j5b3h")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 12, 0, 41)
+
+[node name="Wall_Mines_Entrance_A3" parent="TestLevel/Wall_Mines" instance=ExtResource("51_j5b3h")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 22.7, 0, 41)
+
+[node name="Wall_Mines_Entrance_B" parent="TestLevel/Wall_Mines" instance=ExtResource("52_i6bk7")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -20, 0, 34)
+
+[node name="Wall_Mines_Corner2" parent="TestLevel/Wall_Mines" instance=ExtResource("47_gq6ef")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -22, 0, 33)
+
+[node name="Wall_Mines_Corner4" parent="TestLevel/Wall_Mines" instance=ExtResource("47_gq6ef")]
+transform = Transform3D(1, 0, -1.06581e-14, 0, 1, 0, 1.06581e-14, 0, 1, -20.6, 0, 42.9)
+
+[node name="Wall_Mines_Corner3" parent="TestLevel/Wall_Mines" instance=ExtResource("47_gq6ef")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -20.1, 1, 17.8)
+
+[node name="Wall_Tunnel" type="Node3D" parent="TestLevel"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 0, -43)
+
+[node name="Wall_Mines_Tunnel_Low2" parent="TestLevel/Wall_Tunnel" instance=ExtResource("53_idvc1")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -41, 0, 34)
+
+[node name="Wall_Mines_Tunnel_Low3" parent="TestLevel/Wall_Tunnel" instance=ExtResource("53_idvc1")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -38, 1, 24)
+
+[node name="Tunnel_Corner_A2" parent="TestLevel/Wall_Tunnel" instance=ExtResource("58_n68rd")]
+transform = Transform3D(4.37114e-08, 1, -8.74228e-08, 1, -4.37114e-08, 0, -3.82137e-15, -8.74228e-08, -1, -41, 0, 28)
+
+[node name="Tunnel_Corner_A3" parent="TestLevel/Wall_Tunnel" instance=ExtResource("58_n68rd")]
+transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, -41.2, 1.3, 27)
+
+[node name="Tunnel_Corner_A4" parent="TestLevel/Wall_Tunnel" instance=ExtResource("58_n68rd")]
+transform = Transform3D(0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, 0.5, -41.2, 1.3, 25)
+
+[node name="Tunnel_Corner_A5" parent="TestLevel/Wall_Tunnel" instance=ExtResource("58_n68rd")]
+transform = Transform3D(-5.96046e-08, 0, -1, 0, 1, 0, 1, 0, -5.96046e-08, -40.2, 1.3, 24)
+
+[node name="Tunnel_A2" parent="TestLevel/Wall_Tunnel" instance=ExtResource("60_eqaxo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41, 0, 31)
+
+[node name="Panel_Wood" type="Node3D" parent="TestLevel"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, -70)
+
+[node name="Panel_Wood_B3" parent="TestLevel/Panel_Wood" instance=ExtResource("82_l2kgt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 74.5)
+
+[node name="Panel_Wood_B4" parent="TestLevel/Panel_Wood" instance=ExtResource("82_l2kgt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 71.4)
+
+[node name="Panel_Wood_B2" parent="TestLevel/Panel_Wood" instance=ExtResource("82_l2kgt")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -12, 0, 66)
+
+[node name="Panel_Wood_A2" parent="TestLevel/Panel_Wood" instance=ExtResource("83_gxwb1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0, 74.5)
+
+[node name="Panel_Wood_A6" parent="TestLevel/Panel_Wood" instance=ExtResource("83_gxwb1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0, 74.5)
+
+[node name="Panel_Wood_A7" parent="TestLevel/Panel_Wood" instance=ExtResource("83_gxwb1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, 74.5)
+
+[node name="Panel_Wood_A8" parent="TestLevel/Panel_Wood" instance=ExtResource("83_gxwb1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, 65.5)
+
+[node name="Panel_Wood_A14" parent="TestLevel/Panel_Wood" instance=ExtResource("83_gxwb1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 74.5)
+
+[node name="Panel_Wood_A15" parent="TestLevel/Panel_Wood" instance=ExtResource("83_gxwb1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 65.5)
+
+[node name="Panel_Wood_A16" parent="TestLevel/Panel_Wood" instance=ExtResource("83_gxwb1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 74.5)
+
+[node name="Panel_Wood_A17" parent="TestLevel/Panel_Wood" instance=ExtResource("83_gxwb1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 65.5)
+
+[node name="Panel_Wood_A20" parent="TestLevel/Panel_Wood" instance=ExtResource("83_gxwb1")]
+transform = Transform3D(2.98023e-08, 0, 1, 0, 1, 0, -1, 0, 2.98023e-08, -12, 0, 69)
+
+[node name="Panel_Wood_A18" parent="TestLevel/Panel_Wood" instance=ExtResource("83_gxwb1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 74.5)
+
+[node name="Panel_Wood_A23" parent="TestLevel/Panel_Wood" instance=ExtResource("83_gxwb1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 74.5)
+
+[node name="Panel_Wood_A24" parent="TestLevel/Panel_Wood" instance=ExtResource("83_gxwb1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 71.4)
+
+[node name="Panel_Wood_A25" parent="TestLevel/Panel_Wood" instance=ExtResource("83_gxwb1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 74.5)
+
+[node name="Panel_Wood_A26" parent="TestLevel/Panel_Wood" instance=ExtResource("83_gxwb1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 71.4)
+
+[node name="Panel_Wood_A19" parent="TestLevel/Panel_Wood" instance=ExtResource("83_gxwb1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 65.5)
+
+[node name="Panel_Wood_A21" parent="TestLevel/Panel_Wood" instance=ExtResource("83_gxwb1")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.649998, 0, 68.95)
+
+[node name="Panel_Wood_A22" parent="TestLevel/Panel_Wood" instance=ExtResource("83_gxwb1")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.649998, 0, 64.95)
+
+[node name="Panel_Wood_A9" parent="TestLevel/Panel_Wood" instance=ExtResource("83_gxwb1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0, 65.5)
+
+[node name="Panel_Wood_A10" parent="TestLevel/Panel_Wood" instance=ExtResource("83_gxwb1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0, 65.5)
+
+[node name="Panel_Wood_A11" parent="TestLevel/Panel_Wood" instance=ExtResource("83_gxwb1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26, 0, 65.5)
+
+[node name="Panel_Wood_A13" parent="TestLevel/Panel_Wood" instance=ExtResource("83_gxwb1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0, 65.5)
+
+[node name="Panel_Wood_A12" parent="TestLevel/Panel_Wood" instance=ExtResource("83_gxwb1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26, 0, 65.3)
+
+[node name="Panel_Wood_A3" parent="TestLevel/Panel_Wood" instance=ExtResource("83_gxwb1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26, 0, 74.5)
+
+[node name="Panel_Wood_A4" parent="TestLevel/Panel_Wood" instance=ExtResource("83_gxwb1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0, 74.5)
+
+[node name="Panel_Wood_A5" parent="TestLevel/Panel_Wood" instance=ExtResource("83_gxwb1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0, 74.5)
+
+[node name="Panel_Wood_Entrance_A" parent="TestLevel/Panel_Wood" instance=ExtResource("85_t6oo0")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -12, 0, 73)
+
+[node name="Panel_Wood_Entrance_A2" parent="TestLevel/Panel_Wood" instance=ExtResource("85_t6oo0")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.699997, 0, 72.9)
+
+[node name="Panel_Wood_Entrance_A3" parent="TestLevel/Panel_Wood" instance=ExtResource("85_t6oo0")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 11.1, 0, 73)
+
+[node name="Panel_Wood_Entrance_A4" parent="TestLevel/Panel_Wood" instance=ExtResource("85_t6oo0")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10.1, 0, 73)
+
+[node name="Wall_Cave" type="Node3D" parent="TestLevel"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0, -38)
+
+[node name="Wall_Caves_A2" parent="TestLevel/Wall_Cave" instance=ExtResource("41_oym6g")]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, 23.667, 1, 19.4232)
+
+[node name="Wall_Caves_A4" parent="TestLevel/Wall_Cave" instance=ExtResource("41_oym6g")]
+transform = Transform3D(0.258819, 0, 0.965926, 0, 1, 0, -0.965926, 0, 0.258819, 25, 1, 18)
+
+[node name="Wall_Caves_A7" parent="TestLevel/Wall_Cave" instance=ExtResource("41_oym6g")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 22.1, 1, 5.1)
+
+[node name="Wall_Caves_A8" parent="TestLevel/Wall_Cave" instance=ExtResource("41_oym6g")]
+transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, 21.1, 1, 2.1)
+
+[node name="Wall_Caves_A9" parent="TestLevel/Wall_Cave" instance=ExtResource("41_oym6g")]
+transform = Transform3D(-1, 0, -5.96046e-08, 0, 1, 0, 5.96046e-08, 0, -1, 18.1, 1, 1.1)
+
+[node name="Wall_Caves_A10" parent="TestLevel/Wall_Cave" instance=ExtResource("41_oym6g")]
+transform = Transform3D(-0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, -0.707107, 15.1, 1, 2.1)
+cast_shadow = 2
+
+[node name="Wall_Caves_A11" parent="TestLevel/Wall_Cave" instance=ExtResource("41_oym6g")]
+transform = Transform3D(0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, 0.5, 15.1, 1, 5.1)
+cast_shadow = 2
+
+[node name="Wall_Caves_A3" parent="TestLevel/Wall_Cave" instance=ExtResource("41_oym6g")]
+transform = Transform3D(0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, 0.5, 20.8, 1, 15.7)
+
+[node name="Wall_Caves_A5" parent="TestLevel/Wall_Cave" instance=ExtResource("41_oym6g")]
+transform = Transform3D(0.0871557, 0, -0.996195, 0, 1, 0, 0.996195, 0, 0.0871557, 20.2, 1, 13.2)
+
+[node name="Wall_Caves_A6" parent="TestLevel/Wall_Cave" instance=ExtResource("41_oym6g")]
+transform = Transform3D(0.677711, 0, -0.735329, 0, 1, 0, 0.735329, 0, 0.677711, 18.9, 1, 10)
+
+[node name="Wall_Caves_B2" parent="TestLevel/Wall_Cave" instance=ExtResource("42_birlu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 22.5, 1, 12.5)
+
+[node name="Wall_Caves_B3" parent="TestLevel/Wall_Cave" instance=ExtResource("42_birlu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 22.4, 1, 8.5)
+
+[node name="Wall_Caves_D2" parent="TestLevel/Wall_Cave" instance=ExtResource("43_y7dl6")]
+transform = Transform3D(-0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, -0.866025, 25.4366, 1, 15.8098)
+
+[node name="Wall_Caves_D3" parent="TestLevel/Wall_Cave" instance=ExtResource("43_y7dl6")]
+transform = Transform3D(-0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, -0.866025, 23.7, 1, 15.1)
+
+[node name="Wall_Caves_C2" parent="TestLevel/Wall_Cave" instance=ExtResource("44_kf4y3")]
+transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 16.6, 1, 7.9)
+
+[node name="Wall_Caves_Entrance_A2" parent="TestLevel/Wall_Cave" instance=ExtResource("45_fujqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, -1.5, 45)
+
+[node name="Wall_Caves_Entrance_B2" parent="TestLevel/Wall_Cave" instance=ExtResource("46_x5wmx")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -10, -2, 41)
+
+[node name="Wall_Caves_Corner3" parent="TestLevel/Wall_Cave" instance=ExtResource("48_nf28j")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 22.6, 1, 14.6)
+
+[node name="Wall_Caves_Corner5" parent="TestLevel/Wall_Cave" instance=ExtResource("48_nf28j")]
+transform = Transform3D(-0.0858167, 0, -0.996311, 0, 1, 0, 0.996311, 0, -0.0858167, 20.0785, 1, 11.7216)
+
+[node name="Wall_Caves_Corner6" parent="TestLevel/Wall_Cave" instance=ExtResource("48_nf28j")]
+transform = Transform3D(-0.0858167, 0, -0.996311, 0, 1, 0, 0.996311, 0, -0.0858167, 16.0785, 1, 6.7216)
+
+[node name="Wall_Caves_Corner4" parent="TestLevel/Wall_Cave" instance=ExtResource("48_nf28j")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 24.6, 1, 15.6)
+
+[node name="Ground_Cave" type="Node3D" parent="TestLevel"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -45)
+
+[node name="Ground_Cave_B2" parent="TestLevel/Ground_Cave" instance=ExtResource("21_4ef3u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 1, 25)
+
+[node name="Ground_Cave_B6" parent="TestLevel/Ground_Cave" instance=ExtResource("21_4ef3u")]
+transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 13, 4.7, 25.4)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Cave_B7" parent="TestLevel/Ground_Cave" instance=ExtResource("21_4ef3u")]
+transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 13, 4.7, 21)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Cave_B8" parent="TestLevel/Ground_Cave" instance=ExtResource("21_4ef3u")]
+transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 11, 4.7, 20)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Cave_B9" parent="TestLevel/Ground_Cave" instance=ExtResource("21_4ef3u")]
+transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 10, 4.7, 16)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Cave_B10" parent="TestLevel/Ground_Cave" instance=ExtResource("21_4ef3u")]
+transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 7, 4.7, 15)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Cave_B11" parent="TestLevel/Ground_Cave" instance=ExtResource("21_4ef3u")]
+transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 7, 4.7, 11)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Cave_B12" parent="TestLevel/Ground_Cave" instance=ExtResource("21_4ef3u")]
+transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 11, 4.7, 12)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Cave_B13" parent="TestLevel/Ground_Cave" instance=ExtResource("21_4ef3u")]
+transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 9, 4.7, 10)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Cave_B3" parent="TestLevel/Ground_Cave" instance=ExtResource("21_4ef3u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 1, 22)
+
+[node name="Ground_Cave_B4" parent="TestLevel/Ground_Cave" instance=ExtResource("21_4ef3u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 1, 18)
+
+[node name="Ground_Cave_B5" parent="TestLevel/Ground_Cave" instance=ExtResource("21_4ef3u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 1, 14)
+
+[node name="Ground_Cave_A2" parent="TestLevel/Ground_Cave" instance=ExtResource("22_vmg2q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 1, 10)
+
+[node name="Ground_Cave_A3" parent="TestLevel/Ground_Cave" instance=ExtResource("22_vmg2q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 1, 10)
+
+[node name="Ground_Cave_A4" parent="TestLevel/Ground_Cave" instance=ExtResource("22_vmg2q")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6, 1, 14)
+
+[node name="Ground_Cave_E2" parent="TestLevel/Ground_Cave" instance=ExtResource("25_wbo8k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 1, 22)
+
+[node name="Ground_Cave_E3" parent="TestLevel/Ground_Cave" instance=ExtResource("25_wbo8k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 1, 22)
+
+[node name="Cave_Wall_Rocks" type="Node3D" parent="TestLevel"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -67)
+
+[node name="Cave_Wall_Rocks_G2" parent="TestLevel/Cave_Wall_Rocks" instance=ExtResource("29_0dvmj")]
+transform = Transform3D(1, 0, 0, 0, 0.707107, -0.707107, 0, 0.707107, 0.707107, -4.1, 0.8, 74.6)
+
+[node name="Cave_Wall_Rocks_G3" parent="TestLevel/Cave_Wall_Rocks" instance=ExtResource("29_0dvmj")]
+transform = Transform3D(-3.09086e-08, 1.0981e-22, 1, -3.09086e-08, 1, 0, -1, -3.09086e-08, -3.09086e-08, 47.4, 3.1, 71)
+
+[node name="Cave_Wall_Rocks_D3" parent="TestLevel/Cave_Wall_Rocks" instance=ExtResource("30_ckttg")]
+transform = Transform3D(0.965926, -0.148453, -0.212012, 0, 0.819152, -0.573576, 0.258819, 0.554032, 0.79124, -5, 0, 74.4)
+
+[node name="Cave_Wall_Rocks_D2" parent="TestLevel/Cave_Wall_Rocks" instance=ExtResource("30_ckttg")]
+transform = Transform3D(-0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, -0.5, 6, 4.4, 45.3)
+
+[node name="Cave_Wall_Rocks_C2" parent="TestLevel/Cave_Wall_Rocks" instance=ExtResource("31_t2bce")]
+transform = Transform3D(0.819152, 0.196175, -0.538986, 0, 0.939693, 0.34202, 0.573576, -0.280167, 0.769751, -9, 0.4, 72.4)
+
+[node name="Cave_Rocks" type="Node3D" parent="TestLevel"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -56)
+
+[node name="Cave_Rocks_C2" parent="TestLevel/Cave_Rocks" instance=ExtResource("35_wou3w")]
+transform = Transform3D(0.258819, 0.965926, 0, -0.965926, 0.258819, 0, 0, 0, 1, -2.7, 0.6, 50.3)
+
+[node name="Cave_Rocks_C6" parent="TestLevel/Cave_Rocks" instance=ExtResource("35_wou3w")]
+transform = Transform3D(0.258819, 0.965926, 0, -0.965926, 0.258819, 0, 0, 0, 1, -2.7, 0.6, 50.3)
+
+[node name="Cave_Rocks_C7" parent="TestLevel/Cave_Rocks" instance=ExtResource("35_wou3w")]
+transform = Transform3D(0.258819, 0.965926, 0, -0.965926, 0.258819, 0, 0, 0, 1, 1.3, 0.6, 48.3)
+
+[node name="Cave_Rocks_C8" parent="TestLevel/Cave_Rocks" instance=ExtResource("35_wou3w")]
+transform = Transform3D(-0.707107, 0.707107, 0, -0.707107, -0.707107, 0, 0, 0, 1, 1.3, 3.6, 48.3)
+
+[node name="Cave_Rocks_C9" parent="TestLevel/Cave_Rocks" instance=ExtResource("35_wou3w")]
+transform = Transform3D(1, 7.45058e-08, 0, -7.45058e-08, 1, 0, 0, 0, 1, -0.7, 4, 47.1)
+
+[node name="Cave_Rocks_B2" parent="TestLevel/Cave_Rocks" instance=ExtResource("39_4qoy2")]
+transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, -31.4, -0.9, 59.2)
+
+[node name="Cave_Rocks_C3" parent="TestLevel/Cave_Rocks" instance=ExtResource("35_wou3w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.8, 3, 59.2)
+
+[node name="Cave_Rocks_C4" parent="TestLevel/Cave_Rocks" instance=ExtResource("35_wou3w")]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, 19, 0.3, 52.5)
+
+[node name="Cave_Rocks_C5" parent="TestLevel/Cave_Rocks" instance=ExtResource("35_wou3w")]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -2.2, 0.3, 60.6)
+
+[node name="Cave_Pillar_B2" parent="TestLevel/Cave_Rocks" instance=ExtResource("37_eynpl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.9, 2, 61)
+
+[node name="Cave_Pillar_B3" parent="TestLevel/Cave_Rocks" instance=ExtResource("37_eynpl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0.3, 60.7)
+
+[node name="Cave_Pillar_B4" parent="TestLevel/Cave_Rocks" instance=ExtResource("37_eynpl")]
+transform = Transform3D(0.258819, 0, 0.965926, 0, 1, 0, -0.965926, 0, 0.258819, -28.3, 0.3, 61.1)
+
+[node name="Cave_Rocks_B3" parent="TestLevel/Cave_Rocks" instance=ExtResource("39_4qoy2")]
+transform = Transform3D(0.468714, -0.812687, 0.346189, 0.392742, 0.542762, 0.742404, -0.79124, -0.212012, 0.573576, 44.8, 0.1, 58.1)
+
+[node name="Cave_Rocks_B4" parent="TestLevel/Cave_Rocks" instance=ExtResource("39_4qoy2")]
+transform = Transform3D(0.554032, 0.148453, 0.819152, -0.697292, -0.454788, 0.554032, 0.454788, -0.87814, -0.148453, 41, -0.9, 58.8)
+
+[node name="Cave_Pillar_A2" parent="TestLevel/Cave_Rocks" instance=ExtResource("40_5fywt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.6, 0, 57)
+
+[node name="Cave_Pillar_A3" parent="TestLevel/Cave_Rocks" instance=ExtResource("40_5fywt")]
+transform = Transform3D(1, 0, 0, 0, -5.96046e-08, 1, 0, -1, -5.96046e-08, 44.6, 4, 60.6)
+
+[node name="Cave_Platform" type="Node3D" parent="TestLevel"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 65, 4, -78)
+
+[node name="Cave_Platform_A_Corner" parent="TestLevel/Cave_Platform" instance=ExtResource("73_5insr")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -68, -8.2, 85)
+
+[node name="Cave_Platform_A_Corner2" parent="TestLevel/Cave_Platform" instance=ExtResource("73_5insr")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -76, -10.2, 85)
+
+[node name="Cave_Platform_A_Side3" parent="TestLevel/Cave_Platform" instance=ExtResource("74_d1kbe")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -96, -10, 81)
+
+[node name="Cave_Platform_A_Side2" parent="TestLevel/Cave_Platform" instance=ExtResource("74_d1kbe")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -72, -10, 85)
+
+[node name="Posts" type="Node3D" parent="TestLevel"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37, 0, -63)
+
+[node name="Beam_A48" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1, 3.9, 65.5)
+
+[node name="Beam_A53" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3, 3.9, 65.5)
+
+[node name="Beam_A49" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3, 3.9, 67.5)
+
+[node name="Beam_A50" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3, 3.9, 64.4)
+
+[node name="Beam_A51" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1, 3.9, 67.5)
+
+[node name="Beam_A52" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1, 3.9, 64.4)
+
+[node name="Beam_C9" parent="TestLevel/Posts" instance=ExtResource("92_tiu7f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 3.9, 67.5)
+
+[node name="Beam_C10" parent="TestLevel/Posts" instance=ExtResource("92_tiu7f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 3.9, 64.4)
+
+[node name="Beam_C2" parent="TestLevel/Posts" instance=ExtResource("92_tiu7f")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -18, 3.9, 58.8)
+
+[node name="Post_A2" parent="TestLevel/Posts" instance=ExtResource("95_y55oa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29, 0, 67.5)
+
+[node name="Post_A3" parent="TestLevel/Posts" instance=ExtResource("95_y55oa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 0, 67.5)
+
+[node name="Post_A5" parent="TestLevel/Posts" instance=ExtResource("95_y55oa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.9, 0, 67.5)
+
+[node name="Post_A6" parent="TestLevel/Posts" instance=ExtResource("95_y55oa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.1, 0, 67.5)
+
+[node name="Post_A7" parent="TestLevel/Posts" instance=ExtResource("95_y55oa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.1, 0, 58.5)
+
+[node name="Post_A13" parent="TestLevel/Posts" instance=ExtResource("95_y55oa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.1, 0, 67.5)
+
+[node name="Post_A19" parent="TestLevel/Posts" instance=ExtResource("95_y55oa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17, 0, 64.1)
+
+[node name="Post_A20" parent="TestLevel/Posts" instance=ExtResource("95_y55oa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17, 0, 59.9)
+
+[node name="Post_A14" parent="TestLevel/Posts" instance=ExtResource("95_y55oa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.1, 0, 58.5)
+
+[node name="Post_A15" parent="TestLevel/Posts" instance=ExtResource("95_y55oa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.1, 0, 67.5)
+
+[node name="Post_A16" parent="TestLevel/Posts" instance=ExtResource("95_y55oa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.1, 0, 58.5)
+
+[node name="Post_A21" parent="TestLevel/Posts" instance=ExtResource("95_y55oa")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -5.65, 0, 59.85)
+
+[node name="Post_A22" parent="TestLevel/Posts" instance=ExtResource("95_y55oa")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -5.65, 0, 63.85)
+
+[node name="Post_A17" parent="TestLevel/Posts" instance=ExtResource("95_y55oa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.1, 0, 67.5)
+
+[node name="Post_A18" parent="TestLevel/Posts" instance=ExtResource("95_y55oa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.1, 0, 58.5)
+
+[node name="Post_A8" parent="TestLevel/Posts" instance=ExtResource("95_y55oa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.1, 0, 58.5)
+
+[node name="Post_A9" parent="TestLevel/Posts" instance=ExtResource("95_y55oa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.1, 0, 58.5)
+
+[node name="Post_A10" parent="TestLevel/Posts" instance=ExtResource("95_y55oa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.1, 0, 58.5)
+
+[node name="Post_A11" parent="TestLevel/Posts" instance=ExtResource("95_y55oa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.1, 0, 58.5)
+
+[node name="Post_A12" parent="TestLevel/Posts" instance=ExtResource("95_y55oa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.1, 0, 58.5)
+
+[node name="Post_A4" parent="TestLevel/Posts" instance=ExtResource("95_y55oa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33, 0, 67.5)
+
+[node name="Post_F2" parent="TestLevel/Posts" instance=ExtResource("98_nnoeb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 67.5)
+
+[node name="Post_F3" parent="TestLevel/Posts" instance=ExtResource("98_nnoeb")]
+transform = Transform3D(-1, 0, 8.9407e-08, 0, 1, 0, -8.9407e-08, 0, -1, -1, 0, 64.4)
+
+[node name="Post_F4" parent="TestLevel/Posts" instance=ExtResource("98_nnoeb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 67.5)
+
+[node name="Post_F5" parent="TestLevel/Posts" instance=ExtResource("98_nnoeb")]
+transform = Transform3D(-1, 0, 8.9407e-08, 0, 1, 0, -8.9407e-08, 0, -1, 3, 0, 64.4)
+
+[node name="Post_G3" parent="TestLevel/Posts" instance=ExtResource("99_oh4a7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.1, 0, 64.1)
+
+[node name="Post_G4" parent="TestLevel/Posts" instance=ExtResource("99_oh4a7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0, 59.9)
+
+[node name="Post_G5" parent="TestLevel/Posts" instance=ExtResource("99_oh4a7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.1, 0, 64.1)
+
+[node name="Post_G6" parent="TestLevel/Posts" instance=ExtResource("99_oh4a7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23, 0, 59.9)
+
+[node name="Post_G7" parent="TestLevel/Posts" instance=ExtResource("99_oh4a7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.1, 0, 64.1)
+
+[node name="Post_G8" parent="TestLevel/Posts" instance=ExtResource("99_oh4a7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27, 0, 59.9)
+
+[node name="Post_G9" parent="TestLevel/Posts" instance=ExtResource("99_oh4a7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.1, 0, 64.1)
+
+[node name="Post_G10" parent="TestLevel/Posts" instance=ExtResource("99_oh4a7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 0, 59.9)
+
+[node name="Post_G11" parent="TestLevel/Posts" instance=ExtResource("99_oh4a7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.1, 0, 64.1)
+
+[node name="Post_G12" parent="TestLevel/Posts" instance=ExtResource("99_oh4a7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36, 0, 59.9)
+
+[node name="Beam_A2" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, -18, 3.9, 62)
+
+[node name="Beam_A18" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, -18, 3.9, 66)
+
+[node name="Beam_C3" parent="TestLevel/Posts" instance=ExtResource("92_tiu7f")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -23, 3.9, 58.8)
+
+[node name="Beam_A19" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, -23, 3.9, 62)
+
+[node name="Beam_A20" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, -23, 3.9, 66)
+
+[node name="Beam_C4" parent="TestLevel/Posts" instance=ExtResource("92_tiu7f")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -27, 3.9, 58.8)
+
+[node name="Beam_A21" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, -27, 3.9, 62)
+
+[node name="Beam_A22" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, -27, 3.9, 66)
+
+[node name="Beam_C5" parent="TestLevel/Posts" instance=ExtResource("92_tiu7f")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -31, 3.9, 58.8)
+
+[node name="Beam_A23" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, -31, 3.9, 62)
+
+[node name="Beam_A24" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, -31, 3.9, 66)
+
+[node name="Beam_C6" parent="TestLevel/Posts" instance=ExtResource("92_tiu7f")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -36, 3.9, 58.8)
+
+[node name="Beam_A25" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, -36, 3.9, 62)
+
+[node name="Beam_A26" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, -36, 3.9, 66)
+
+[node name="Beam_A3" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 3.9, 67.5)
+
+[node name="Beam_A27" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 3.9, 58.5)
+
+[node name="Beam_A28" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23, 3.9, 58.5)
+
+[node name="Beam_A29" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27, 3.9, 58.5)
+
+[node name="Beam_A30" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 3.9, 58.5)
+
+[node name="Beam_A31" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35, 3.9, 58.5)
+
+[node name="Beam_A4" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23, 3.9, 67.5)
+
+[node name="Beam_A5" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27, 3.9, 67.5)
+
+[node name="Beam_A6" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 3.9, 67.5)
+
+[node name="Beam_A7" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35, 3.9, 67.5)
+
+[node name="Beam_A8" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 3.9, 59.9)
+
+[node name="Beam_A9" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23, 3.9, 59.9)
+
+[node name="Beam_A10" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27, 3.9, 59.9)
+
+[node name="Beam_A11" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 3.9, 59.9)
+
+[node name="Beam_A12" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35, 3.9, 59.9)
+
+[node name="Post_C6" parent="TestLevel/Posts" instance=ExtResource("100_oc2bm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33, 0, 59.9)
+
+[node name="Beam_A13" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35, 3.9, 64.1)
+
+[node name="Post_C7" parent="TestLevel/Posts" instance=ExtResource("100_oc2bm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33, 0, 64.1)
+
+[node name="Post_C8" parent="TestLevel/Posts" instance=ExtResource("100_oc2bm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29, 0, 59.9)
+
+[node name="Post_C9" parent="TestLevel/Posts" instance=ExtResource("100_oc2bm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29, 0, 64.1)
+
+[node name="Post_C10" parent="TestLevel/Posts" instance=ExtResource("100_oc2bm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 0, 59.9)
+
+[node name="Post_C13" parent="TestLevel/Posts" instance=ExtResource("100_oc2bm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 0, 59.9)
+
+[node name="Post_C12" parent="TestLevel/Posts" instance=ExtResource("100_oc2bm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 0, 64.1)
+
+[node name="Beam_A14" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 3.9, 64.1)
+
+[node name="Beam_A15" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27, 3.9, 64.1)
+
+[node name="Beam_A16" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23, 3.9, 64.1)
+
+[node name="Beam_A17" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 3.9, 64.1)
+
+[node name="Post_C11" parent="TestLevel/Posts" instance=ExtResource("100_oc2bm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 0, 64.1)
+
+[node name="Beam_C7" parent="TestLevel/Posts" instance=ExtResource("92_tiu7f")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -18, 3.9, 58.8)
+
+[node name="Post_G13" parent="TestLevel/Posts" instance=ExtResource("99_oh4a7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.1, 0, 64.1)
+
+[node name="Post_G14" parent="TestLevel/Posts" instance=ExtResource("99_oh4a7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0, 59.9)
+
+[node name="Beam_A32" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, -18, 3.9, 62)
+
+[node name="Beam_A33" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, -18, 3.9, 66)
+
+[node name="Beam_A34" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 3.9, 59.9)
+
+[node name="Post_C14" parent="TestLevel/Posts" instance=ExtResource("100_oc2bm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 0, 59.9)
+
+[node name="Beam_A35" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 3.9, 64.1)
+
+[node name="Post_C15" parent="TestLevel/Posts" instance=ExtResource("100_oc2bm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 0, 64.1)
+
+[node name="Beam_A36" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 3.9, 59.9)
+
+[node name="Beam_A37" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 3.9, 64.1)
+
+[node name="Beam_C8" parent="TestLevel/Posts" instance=ExtResource("92_tiu7f")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -10, 3.9, 58.8)
+
+[node name="Post_G15" parent="TestLevel/Posts" instance=ExtResource("99_oh4a7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.1, 0, 64.1)
+
+[node name="Post_G16" parent="TestLevel/Posts" instance=ExtResource("99_oh4a7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 59.9)
+
+[node name="Beam_A38" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, -10, 3.9, 62)
+
+[node name="Beam_A39" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, -10, 3.9, 66)
+
+[node name="Beam_A40" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 3.9, 59.9)
+
+[node name="Post_C16" parent="TestLevel/Posts" instance=ExtResource("100_oc2bm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0, 59.9)
+
+[node name="Beam_A41" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 3.9, 64.1)
+
+[node name="Post_C17" parent="TestLevel/Posts" instance=ExtResource("100_oc2bm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0, 64.1)
+
+[node name="Beam_A42" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 3.9, 59.9)
+
+[node name="Beam_A43" parent="TestLevel/Posts" instance=ExtResource("90_5f1m4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 3.9, 64.1)
+
+[node name="Post_C18" parent="TestLevel/Posts" instance=ExtResource("100_oc2bm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 59.9)
+
+[node name="Post_C19" parent="TestLevel/Posts" instance=ExtResource("100_oc2bm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 64.1)
+
+[node name="Ground_mound" type="Node3D" parent="TestLevel"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -63)
+
+[node name="Ground_Mound_A2" parent="TestLevel/Ground_mound" instance=ExtResource("108_l284y")]
+transform = Transform3D(1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, -17, -1, 71)
+
+[node name="Ground_Mound_A3" parent="TestLevel/Ground_mound" instance=ExtResource("108_l284y")]
+transform = Transform3D(0.183013, -0.953879, 0.237953, 0.183013, 0.270866, 0.945059, -0.965926, -0.12941, 0.224144, 34.5, 1, 65.2)
+
+[node name="Ground_Mound_C2" parent="TestLevel/Ground_mound" instance=ExtResource("110_ex2sk")]
+transform = Transform3D(1, 0, 0, 0, -0.99, -8.74228e-08, 0, 8.65486e-08, -1, -21.5, 1.8, 66.2)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Mound_C3" parent="TestLevel/Ground_mound" instance=ExtResource("110_ex2sk")]
+transform = Transform3D(1, 0, 0, 0, -0.99, -8.74228e-08, 0, 8.65486e-08, -1, -21.5, 1.8, 70.2)
+material_override = ExtResource("65_tbm4h")
+
+[node name="Ground_Mound_D2" parent="TestLevel/Ground_mound" instance=ExtResource("111_nkpil")]
+transform = Transform3D(1, 0, 0, 0, 0.5, 0.866025, 0, -0.866025, 0.5, -16.8, -0.2, 70.6)
+
+[node name="Ground_Mound_D4" parent="TestLevel/Ground_mound" instance=ExtResource("111_nkpil")]
+transform = Transform3D(-0.258819, -0.836516, 0.482963, 0, 0.5, 0.866025, -0.965926, 0.224144, -0.12941, 33.9, 2.7, 65.2)
+
+[node name="Ground_Mound_D3" parent="TestLevel/Ground_mound" instance=ExtResource("111_nkpil")]
+transform = Transform3D(0.258819, 0.482963, 0.836516, -0.836516, 0.545085, -0.0558857, -0.482963, -0.685295, 0.545085, -17.7, 1.2, 70.9)
+
+[node name="Wood_Platform" type="Node3D" parent="TestLevel"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, -93)
+
+[node name="Wood_Platform_A2" parent="TestLevel/Wood_Platform" instance=ExtResource("130_jscd6")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -30, 1, 90.6)
+
+[node name="Wood_Platform_A3" parent="TestLevel/Wood_Platform" instance=ExtResource("130_jscd6")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -34, 1, 90.6)
+
+[node name="Wood_Platform_Stairs_B2" parent="TestLevel/Wood_Platform" instance=ExtResource("155_rdtc4")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -26, 0, 90.6)
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.4054, 3, 1.1323)
+shadow_enabled = true
+
+[node name="OmniLight3D5" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.9054, 3, 0.332298)
+shadow_enabled = true
+
+[node name="OmniLight3D11" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.5946, -0.9, 2.4323)
+shadow_enabled = true
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5946, 3, -31.6677)
+shadow_enabled = true

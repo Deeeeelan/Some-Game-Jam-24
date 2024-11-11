@@ -204,6 +204,8 @@ material = ExtResource("2_hgni2")
 
 [node name="Enemies" type="Node3D" parent="Node3D"]
 
+[node name="Map" type="Node3D" parent="Node3D"]
+
 [node name="Control" type="Control" parent="." node_paths=PackedStringArray("Player")]
 layout_mode = 3
 anchors_preset = 15

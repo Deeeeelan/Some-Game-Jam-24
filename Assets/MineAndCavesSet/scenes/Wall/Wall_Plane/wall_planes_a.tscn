@@ -1,0 +1,47 @@
+[gd_scene load_steps=5 format=3 uid="uid://cgfyjwbv4u1ix"]
+
+[ext_resource type="Material" uid="uid://b2233iujb5cfq" path="res://Assets/MineAndCavesSet/material/Mine_Walls_2.tres" id="1_gqr8e"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_usdb1"]
+_surfaces = [{
+"aabb": AABB(-2, 0, -0.100001, 4.00001, 4, 1.00136e-05),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 3, 0, 1, 0, 0, 0, 2, 0, 3, 0),
+"name": "Mines_Walls",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(254, 255, 0, 0, 97, 0, 0, 0, 0, 0, 0, 0, 133, 33, 0, 0, 254, 255, 255, 255, 0, 0, 0, 0, 0, 0, 255, 255, 36, 33, 0, 0)
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_3q6up"]
+resource_name = "Modular_Mine_Set_Wall_Planes_A"
+_surfaces = [{
+"aabb": AABB(-2, 0, -0.100001, 4.00001, 4, 1.00136e-05),
+"attribute_data": PackedByteArray(0, 0, 255, 255, 255, 255, 255, 255, 0, 0, 0, 0, 255, 255, 0, 0),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 3, 0, 1, 0, 0, 0, 2, 0, 3, 0),
+"material": ExtResource("1_gqr8e"),
+"name": "Mines_Walls",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(254, 255, 0, 0, 97, 0, 255, 255, 0, 0, 0, 0, 133, 33, 255, 255, 254, 255, 255, 255, 0, 0, 255, 255, 0, 0, 255, 255, 36, 33, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255)
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_usdb1")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_f6h6w"]
+data = PackedVector3Array(2, 0, -0.100001, -2, 4, -0.0999994, -2, 0, -0.0999993, 2, 0, -0.100001, 2, 4, -0.100001, -2, 4, -0.0999994)
+
+[node name="Wall_Planes_A" type="MeshInstance3D"]
+mesh = SubResource("ArrayMesh_3q6up")
+skeleton = NodePath("")
+
+[node name="Wall_Planes_A" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wall_Planes_A"]
+shape = SubResource("ConcavePolygonShape3D_f6h6w")

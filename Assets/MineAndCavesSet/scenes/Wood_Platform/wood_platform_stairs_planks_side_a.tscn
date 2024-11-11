@@ -1,0 +1,47 @@
+[gd_scene load_steps=5 format=3 uid="uid://bxex1jlhdp5ay"]
+
+[ext_resource type="Material" uid="uid://ba6dvnpjd80mw" path="res://Assets/MineAndCavesSet/material/Mines_Trim.material" id="1_8qvy6"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_yx3b6"]
+_surfaces = [{
+"aabb": AABB(-0.135, -0.264347, -4, 0.27001, 2.52869, 4.00001),
+"format": 34896613377,
+"index_count": 24,
+"index_data": PackedByteArray(7, 0, 0, 0, 1, 0, 7, 0, 2, 0, 0, 0, 0, 0, 4, 0, 3, 0, 0, 0, 2, 0, 4, 0, 5, 0, 4, 0, 6, 0, 5, 0, 3, 0, 4, 0, 5, 0, 7, 0, 1, 0, 5, 0, 6, 0, 7, 0),
+"name": "MinesTrim",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray(252, 255, 0, 0, 254, 255, 0, 0, 252, 255, 133, 53, 254, 255, 0, 0, 252, 255, 121, 202, 0, 0, 0, 0, 0, 0, 0, 0, 254, 255, 0, 0, 0, 0, 121, 202, 0, 0, 0, 0, 0, 0, 133, 53, 254, 255, 0, 0, 0, 0, 255, 255, 0, 0, 0, 0, 252, 255, 255, 255, 0, 0, 0, 0)
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_74w62"]
+resource_name = "Modular_Mine_Set_Wood_Platform_Stairs_Planks_Side_A"
+_surfaces = [{
+"aabb": AABB(-0.135, -0.264347, -4, 0.27001, 2.52869, 4.00001),
+"attribute_data": PackedByteArray(0, 0, 111, 0, 0, 0, 229, 20, 0, 0, 229, 20, 0, 0, 111, 0, 255, 255, 111, 0, 255, 255, 229, 20, 0, 0, 229, 20, 0, 0, 111, 0, 255, 255, 229, 20, 255, 255, 111, 0, 0, 0, 111, 0, 0, 0, 229, 20, 255, 255, 111, 0, 254, 255, 229, 20, 255, 255, 229, 20, 255, 255, 111, 0),
+"format": 34896613399,
+"index_count": 24,
+"index_data": PackedByteArray(15, 0, 1, 0, 3, 0, 15, 0, 5, 0, 1, 0, 0, 0, 8, 0, 6, 0, 0, 0, 4, 0, 8, 0, 11, 0, 9, 0, 13, 0, 11, 0, 7, 0, 9, 0, 10, 0, 14, 0, 2, 0, 10, 0, 12, 0, 14, 0),
+"material": ExtResource("1_8qvy6"),
+"name": "MinesTrim",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 16,
+"vertex_data": PackedByteArray(252, 255, 0, 0, 254, 255, 245, 224, 252, 255, 0, 0, 254, 255, 38, 194, 252, 255, 133, 53, 254, 255, 104, 203, 252, 255, 133, 53, 254, 255, 38, 194, 252, 255, 121, 202, 0, 0, 245, 224, 252, 255, 121, 202, 0, 0, 38, 194, 0, 0, 0, 0, 254, 255, 245, 224, 0, 0, 0, 0, 254, 255, 178, 242, 0, 0, 121, 202, 0, 0, 245, 224, 0, 0, 121, 202, 0, 0, 178, 242, 0, 0, 133, 53, 254, 255, 104, 203, 0, 0, 133, 53, 254, 255, 178, 242, 0, 0, 255, 255, 0, 0, 104, 203, 0, 0, 255, 255, 0, 0, 178, 242, 252, 255, 255, 255, 0, 0, 104, 203, 252, 255, 255, 255, 0, 0, 38, 194, 27, 79, 27, 79, 242, 86, 134, 20, 158, 220, 96, 35, 242, 86, 134, 20, 27, 79, 27, 79, 242, 86, 134, 20, 27, 79, 27, 79, 123, 242, 192, 198, 27, 79, 27, 79, 123, 242, 192, 198, 158, 220, 96, 35, 123, 242, 192, 198, 158, 220, 96, 35, 123, 242, 192, 198, 158, 220, 96, 35, 242, 86, 134, 20)
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_yx3b6")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_e4kvx"]
+data = PackedVector3Array(0.135, 2.26435, -4, 0.135, -0.264347, 0, 0.135, 0.264347, 0, 0.135, 2.26435, -4, 0.135, 1.73565, -4, 0.135, -0.264347, 0, 0.135, -0.264347, 0, -0.135, 1.73565, -4, -0.135, -0.264347, 0, 0.135, -0.264347, 0, 0.135, 1.73565, -4, -0.135, 1.73565, -4, -0.135, 0.264347, 0, -0.135, 1.73565, -4, -0.135, 2.26435, -4, -0.135, 0.264347, 0, -0.135, -0.264347, 0, -0.135, 1.73565, -4, -0.135, 0.264347, 0, 0.135, 2.26435, -4, 0.135, 0.264347, 0, -0.135, 0.264347, 0, -0.135, 2.26435, -4, 0.135, 2.26435, -4)
+
+[node name="Wood_Platform_Stairs_Planks_Side_A" type="MeshInstance3D"]
+mesh = SubResource("ArrayMesh_74w62")
+skeleton = NodePath("")
+
+[node name="Wood_Platform_Stairs_Planks_Side_A" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wood_Platform_Stairs_Planks_Side_A"]
+shape = SubResource("ConcavePolygonShape3D_e4kvx")

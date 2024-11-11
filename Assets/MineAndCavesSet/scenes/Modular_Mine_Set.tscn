@@ -1,0 +1,723 @@
+[gd_scene load_steps=169 format=3 uid="uid://b0i7rkvyp80k0"]
+
+[ext_resource type="PackedScene" uid="uid://m2h4fbycsv2x" path="res://Assets/MineAndCavesSet/scenes/Mine_Carts/mine_cart_aa.tscn" id="1_bkov4"]
+[ext_resource type="PackedScene" uid="uid://c8dxtgd0mkg8t" path="res://Assets/MineAndCavesSet/scenes/Mine_Carts/mine_cart_ba.tscn" id="2_hnmfp"]
+[ext_resource type="PackedScene" uid="uid://iif4pmyrvx5m" path="res://Assets/MineAndCavesSet/scenes/Mine_Carts/mine_cart_ca.tscn" id="3_032fv"]
+[ext_resource type="PackedScene" uid="uid://bsb5u81ofdanm" path="res://Assets/MineAndCavesSet/scenes/Mine_Carts/mine_cart_ab_grp.tscn" id="4_pgcmc"]
+[ext_resource type="PackedScene" uid="uid://dtacffqd2hli3" path="res://Assets/MineAndCavesSet/scenes/Mine_Carts/mine_cart_bb_grp.tscn" id="5_uiwsp"]
+[ext_resource type="PackedScene" uid="uid://v6wqs1sdvfbw" path="res://Assets/MineAndCavesSet/scenes/Mine_Carts/mine_cart_cb_grp.tscn" id="6_2vyap"]
+[ext_resource type="PackedScene" uid="uid://cyts1n30fiky8" path="res://Assets/MineAndCavesSet/scenes/Mine_Rails/rails_corner_straight_a.tscn" id="7_ta45y"]
+[ext_resource type="PackedScene" uid="uid://daarvcqv2vplc" path="res://Assets/MineAndCavesSet/scenes/Mine_Rails/rail_b.tscn" id="8_d8ib1"]
+[ext_resource type="PackedScene" uid="uid://bfvp5vm3li33s" path="res://Assets/MineAndCavesSet/scenes/Mine_Rails/rail_c.tscn" id="9_ab1mq"]
+[ext_resource type="PackedScene" uid="uid://cbkx8rsrth4g8" path="res://Assets/MineAndCavesSet/scenes/Mine_Rails/rails_corner_22_5_deg_a.tscn" id="10_1lxtd"]
+[ext_resource type="PackedScene" uid="uid://o258fbaej4mh" path="res://Assets/MineAndCavesSet/scenes/Mine_Rails/rail_falloff_b.tscn" id="11_0nh4v"]
+[ext_resource type="PackedScene" uid="uid://bw2cf34wldevr" path="res://Assets/MineAndCavesSet/scenes/Mine_Rails/rail_falloff_a.tscn" id="12_yr70p"]
+[ext_resource type="PackedScene" uid="uid://jto21uf1ydhb" path="res://Assets/MineAndCavesSet/scenes/Mine_Rails/rail_a.tscn" id="13_cnlg7"]
+[ext_resource type="PackedScene" uid="uid://c5xrcrvcxir87" path="res://Assets/MineAndCavesSet/scenes/Mine_Rails/rails_corner_straight_b.tscn" id="14_eo35v"]
+[ext_resource type="PackedScene" uid="uid://k0punnrg04nn" path="res://Assets/MineAndCavesSet/scenes/Mine_Rails/rail_ramp.tscn" id="15_0wnvt"]
+[ext_resource type="PackedScene" uid="uid://c33hlfujl83r8" path="res://Assets/MineAndCavesSet/scenes/Mine_Rails/rail_45_deg.tscn" id="16_qn2be"]
+[ext_resource type="PackedScene" uid="uid://dqok1wu8pgh86" path="res://Assets/MineAndCavesSet/scenes/Mine_Rails/rails_corner_90_deg_a.tscn" id="17_4g60i"]
+[ext_resource type="PackedScene" uid="uid://d2kc52diwvnta" path="res://Assets/MineAndCavesSet/scenes/Mine_Rails/rail_scaffold_a.tscn" id="18_dxxmv"]
+[ext_resource type="PackedScene" uid="uid://48yio5e08ocf" path="res://Assets/MineAndCavesSet/scenes/Mine_Rails/rail_scaffold_b.tscn" id="19_se8jc"]
+[ext_resource type="PackedScene" uid="uid://b583mbfxhwdpe" path="res://Assets/MineAndCavesSet/scenes/Mine_Rails/rail_scaffold_c.tscn" id="20_opyn6"]
+[ext_resource type="PackedScene" uid="uid://j0qgcudvsied" path="res://Assets/MineAndCavesSet/scenes/Mine_Rails/rail_end.tscn" id="21_pqcdk"]
+[ext_resource type="PackedScene" uid="uid://c2m8n1m62lbwu" path="res://Assets/MineAndCavesSet/scenes/Ground/Ground_Cave/ground_cave_b.tscn" id="21_smyna"]
+[ext_resource type="PackedScene" uid="uid://jfoexio5dlsj" path="res://Assets/MineAndCavesSet/scenes/Ground/Ground_Cave/ground_cave_a.tscn" id="22_1drqs"]
+[ext_resource type="PackedScene" uid="uid://co45q2f1grlky" path="res://Assets/MineAndCavesSet/scenes/Ground/Ground_Cave/ground_cave_d.tscn" id="23_vsy6q"]
+[ext_resource type="PackedScene" uid="uid://ctdg6q4ttpxca" path="res://Assets/MineAndCavesSet/scenes/Ground/Ground_Cave/ground_cave_c.tscn" id="24_qsukp"]
+[ext_resource type="PackedScene" uid="uid://b5n8sger6wey5" path="res://Assets/MineAndCavesSet/scenes/Mine_Rails/rails_corner_22_5_deg_b.tscn" id="25_26hof"]
+[ext_resource type="PackedScene" uid="uid://cl2r67avdg8vh" path="res://Assets/MineAndCavesSet/scenes/Ground/Ground_Cave/ground_cave_e.tscn" id="25_cf5gx"]
+[ext_resource type="PackedScene" uid="uid://dviav8n8m8o4j" path="res://Assets/MineAndCavesSet/scenes/Mine_Rails/rails_corner_90_deg_b.tscn" id="26_mi100"]
+[ext_resource type="PackedScene" uid="uid://dklmjy7qrvbwa" path="res://Assets/MineAndCavesSet/scenes/Ground/Ground_Cave/ground_cave_f.tscn" id="26_uqg3r"]
+[ext_resource type="PackedScene" uid="uid://cwkjxxqx23oct" path="res://Assets/MineAndCavesSet/scenes/Rocks/Cave_Wall_Rocks/cave_wall_rocks_b.tscn" id="27_qidl7"]
+[ext_resource type="PackedScene" uid="uid://bvh0xwrekfpe8" path="res://Assets/MineAndCavesSet/scenes/Rocks/Cave_Wall_Rocks/cave_wall_rocks_e.tscn" id="28_r6g1c"]
+[ext_resource type="PackedScene" uid="uid://ce5psp1bm3hwd" path="res://Assets/MineAndCavesSet/scenes/Rocks/Cave_Wall_Rocks/cave_wall_rocks_g.tscn" id="29_fruva"]
+[ext_resource type="PackedScene" uid="uid://deqqtc8uhnjgq" path="res://Assets/MineAndCavesSet/scenes/Rocks/Cave_Wall_Rocks/cave_wall_rocks_d.tscn" id="30_88cxn"]
+[ext_resource type="PackedScene" uid="uid://ogsc8ntr767h" path="res://Assets/MineAndCavesSet/scenes/Rocks/Cave_Wall_Rocks/cave_wall_rocks_c.tscn" id="31_x6k3d"]
+[ext_resource type="PackedScene" uid="uid://et2mttnp2vsj" path="res://Assets/MineAndCavesSet/scenes/Rocks/Cave_Wall_Rocks/cave_wall_rocks_a.tscn" id="32_eeroo"]
+[ext_resource type="PackedScene" uid="uid://hb2xsg6304v0" path="res://Assets/MineAndCavesSet/scenes/Rocks/Cave_Wall_Rocks/cave_wall_rocks_f.tscn" id="33_2hmhq"]
+[ext_resource type="PackedScene" uid="uid://bngu77ixi7om4" path="res://Assets/MineAndCavesSet/scenes/Rocks/Cave_Rocks/cave_rocks_d.tscn" id="34_chrw7"]
+[ext_resource type="PackedScene" uid="uid://heagcsl1rg6j" path="res://Assets/MineAndCavesSet/scenes/Rocks/Cave_Rocks/cave_rocks_c.tscn" id="35_vltcd"]
+[ext_resource type="PackedScene" uid="uid://dj5l0k3asn15c" path="res://Assets/MineAndCavesSet/scenes/Rocks/Cave_Rocks/cave_rocks_a.tscn" id="36_3hbhf"]
+[ext_resource type="PackedScene" uid="uid://b0lu6reasthps" path="res://Assets/MineAndCavesSet/scenes/Rocks/Cave_Rocks/cave_pillar_b.tscn" id="37_xplnc"]
+[ext_resource type="PackedScene" uid="uid://dw67via2c8v4a" path="res://Assets/MineAndCavesSet/scenes/Rocks/Cave_Rocks/cave_pillar_c.tscn" id="38_43adr"]
+[ext_resource type="PackedScene" uid="uid://b5k5klb248a25" path="res://Assets/MineAndCavesSet/scenes/Rocks/Cave_Rocks/cave_rocks_b.tscn" id="39_fcp1m"]
+[ext_resource type="PackedScene" uid="uid://bqkqhn00cprff" path="res://Assets/MineAndCavesSet/scenes/Rocks/Cave_Rocks/cave_pillar_a.tscn" id="40_4f7a7"]
+[ext_resource type="PackedScene" uid="uid://c00xan47osuhq" path="res://Assets/MineAndCavesSet/scenes/Wall/Wall_Cave/wall_caves_a.tscn" id="41_0a0xd"]
+[ext_resource type="PackedScene" uid="uid://bkdsea5ej7kn0" path="res://Assets/MineAndCavesSet/scenes/Wall/Wall_Cave/wall_caves_b.tscn" id="42_okqet"]
+[ext_resource type="PackedScene" uid="uid://cdv44jqgmd01a" path="res://Assets/MineAndCavesSet/scenes/Wall/Wall_Cave/wall_caves_d.tscn" id="43_wcpnm"]
+[ext_resource type="PackedScene" uid="uid://6og47l5osrlx" path="res://Assets/MineAndCavesSet/scenes/Wall/Wall_Cave/wall_caves_c.tscn" id="44_3jvbg"]
+[ext_resource type="PackedScene" uid="uid://dciha3i7arw38" path="res://Assets/MineAndCavesSet/scenes/Wall/Wall_Cave/wall_caves_entrance_a.tscn" id="45_oqmlu"]
+[ext_resource type="PackedScene" uid="uid://ux21fdh6aqv0" path="res://Assets/MineAndCavesSet/scenes/Wall/Wall_Cave/wall_caves_entrance_b.tscn" id="46_0r1af"]
+[ext_resource type="PackedScene" uid="uid://bsv0s3v2px57" path="res://Assets/MineAndCavesSet/scenes/Wall/Wall_Cave/wall_caves_corner.tscn" id="47_kiqh1"]
+[ext_resource type="PackedScene" uid="uid://cbut3xmla7mq3" path="res://Assets/MineAndCavesSet/scenes/Wall/Wall_Mines/wall_mines_a.tscn" id="47_nmu8l"]
+[ext_resource type="PackedScene" uid="uid://ejocgotiwmbc" path="res://Assets/MineAndCavesSet/scenes/Wall/Wall_Mines/wall_mines_c.tscn" id="48_qcxf5"]
+[ext_resource type="PackedScene" uid="uid://dg06tlvuo74r0" path="res://Assets/MineAndCavesSet/scenes/Wall/Wall_Mines/wall_mines_b.tscn" id="49_fk4tu"]
+[ext_resource type="PackedScene" uid="uid://by7vbafdhocrk" path="res://Assets/MineAndCavesSet/scenes/Wall/Wall_Mines/wall_mines_d.tscn" id="50_dd8bq"]
+[ext_resource type="PackedScene" uid="uid://cvbhnjwpa7hrl" path="res://Assets/MineAndCavesSet/scenes/Wall/Wall_Mines/wall_mines_entrance_a.tscn" id="51_v014e"]
+[ext_resource type="PackedScene" uid="uid://oxxy7shvgvtm" path="res://Assets/MineAndCavesSet/scenes/Wall/Wall_Mines/wall_mines_entrance_b.tscn" id="52_y5q60"]
+[ext_resource type="PackedScene" uid="uid://ula17edr6c77" path="res://Assets/MineAndCavesSet/scenes/Wall/Tunnel/wall_mines_tunnel_low.tscn" id="53_10gku"]
+[ext_resource type="PackedScene" uid="uid://3dkcxx2j104j" path="res://Assets/MineAndCavesSet/scenes/Wall/Tunnel/wall_mines_tunnel_mid.tscn" id="54_7saj1"]
+[ext_resource type="PackedScene" uid="uid://dk7tf11vn6nfa" path="res://Assets/MineAndCavesSet/scenes/Wall/Wall_Mines/wall_mines_corner.tscn" id="54_p8yhs"]
+[ext_resource type="PackedScene" uid="uid://dlj3xlaobph5x" path="res://Assets/MineAndCavesSet/scenes/Wall/Tunnel/wall_mines_tunnel_high.tscn" id="55_nxyfl"]
+[ext_resource type="PackedScene" uid="uid://cwxes8x7tulyu" path="res://Assets/MineAndCavesSet/scenes/Wall/Tunnel/tunnel_corner_d.tscn" id="56_7gblw"]
+[ext_resource type="PackedScene" uid="uid://bd6fpjgxgmhk6" path="res://Assets/MineAndCavesSet/scenes/Wall/Tunnel/tunnel_b.tscn" id="57_vysc2"]
+[ext_resource type="PackedScene" uid="uid://cchsmsh28fd62" path="res://Assets/MineAndCavesSet/scenes/Wall/Tunnel/tunnel_corner_a.tscn" id="58_fxy2x"]
+[ext_resource type="PackedScene" uid="uid://bb5ao6xawsm7e" path="res://Assets/MineAndCavesSet/scenes/Wall/Tunnel/tunnel_corner_b.tscn" id="59_4h8kh"]
+[ext_resource type="PackedScene" uid="uid://crtjm82djjgya" path="res://Assets/MineAndCavesSet/scenes/Wall/Tunnel/tunnel_a.tscn" id="60_b471f"]
+[ext_resource type="PackedScene" uid="uid://bgl0javkb0yux" path="res://Assets/MineAndCavesSet/scenes/Wall/Tunnel/tunnel_corner_c.tscn" id="61_lck8m"]
+[ext_resource type="PackedScene" uid="uid://duqcw3i31gwxh" path="res://Assets/MineAndCavesSet/scenes/Cave_Platform/cave_platform_d.tscn" id="62_wwmpq"]
+[ext_resource type="PackedScene" uid="uid://bec337x8qbpm1" path="res://Assets/MineAndCavesSet/scenes/Cave_Platform/cave_platform_h.tscn" id="63_k0esl"]
+[ext_resource type="PackedScene" uid="uid://cb1fyqgx3rvn0" path="res://Assets/MineAndCavesSet/scenes/Cave_Platform/cave_platform_j.tscn" id="64_ji5sg"]
+[ext_resource type="PackedScene" uid="uid://cqw63cpej07tx" path="res://Assets/MineAndCavesSet/scenes/Cave_Platform/cave_platform_e.tscn" id="65_53jh1"]
+[ext_resource type="PackedScene" uid="uid://bu8s3wcajbaqp" path="res://Assets/MineAndCavesSet/scenes/Cave_Platform/cave_platform_g.tscn" id="66_lxcgn"]
+[ext_resource type="PackedScene" uid="uid://7hqjro87t87w" path="res://Assets/MineAndCavesSet/scenes/Cave_Platform/cave_platform_i.tscn" id="67_m7ss4"]
+[ext_resource type="PackedScene" uid="uid://dnowdewqogwpy" path="res://Assets/MineAndCavesSet/scenes/Cave_Platform/cave_platform_c.tscn" id="68_str2x"]
+[ext_resource type="PackedScene" uid="uid://s2a338db52cn" path="res://Assets/MineAndCavesSet/scenes/Cave_Platform/cave_platform_b.tscn" id="69_bohwq"]
+[ext_resource type="PackedScene" uid="uid://bdn3e7mqv1d8" path="res://Assets/MineAndCavesSet/scenes/Cave_Platform/cave_platform_a.tscn" id="70_degn3"]
+[ext_resource type="PackedScene" uid="uid://dxwghrhs8n6lx" path="res://Assets/MineAndCavesSet/scenes/Ground/Ground_Mines/ground_mines_d.tscn" id="71_0obfx"]
+[ext_resource type="PackedScene" uid="uid://d1jgihsgw7huj" path="res://Assets/MineAndCavesSet/scenes/Ground/Ground_Mines/ground_mines_c.tscn" id="72_xx3ta"]
+[ext_resource type="PackedScene" uid="uid://bvnq4ywoa0omv" path="res://Assets/MineAndCavesSet/scenes/Ground/Ground_Mines/ground_mines_a.tscn" id="73_wppap"]
+[ext_resource type="PackedScene" uid="uid://bk0wqsefojk16" path="res://Assets/MineAndCavesSet/scenes/Cave_Platform/cave_platform_a_corner.tscn" id="74_14jh8"]
+[ext_resource type="PackedScene" uid="uid://ewt573sbxusj" path="res://Assets/MineAndCavesSet/scenes/Ground/Ground_Mines/ground_mines_b.tscn" id="74_nlxms"]
+[ext_resource type="PackedScene" uid="uid://dlc533yv5bxda" path="res://Assets/MineAndCavesSet/scenes/Panel_Wood/panel_wood_c.tscn" id="75_g3gsh"]
+[ext_resource type="PackedScene" uid="uid://cpxrf1k1m05d6" path="res://Assets/MineAndCavesSet/scenes/Ground/Ground_Mines/ground_mines_ramp_a.tscn" id="75_glfi6"]
+[ext_resource type="PackedScene" uid="uid://bkle6cv720bue" path="res://Assets/MineAndCavesSet/scenes/Cave_Platform/cave_platform_a_side.tscn" id="75_ikl53"]
+[ext_resource type="PackedScene" uid="uid://7dxw8vuqsodr" path="res://Assets/MineAndCavesSet/scenes/Cave_Platform/cave_platform_b_corner.tscn" id="76_5vnte"]
+[ext_resource type="PackedScene" uid="uid://b72enfplm62fi" path="res://Assets/MineAndCavesSet/scenes/Panel_Wood/panel_wood_b.tscn" id="76_i2t5a"]
+[ext_resource type="PackedScene" uid="uid://p2xe61mceh84" path="res://Assets/MineAndCavesSet/scenes/Ground/Ground_Mines/ground_mines_ramp_side_b.tscn" id="76_rrbsh"]
+[ext_resource type="PackedScene" uid="uid://cn3j5du07xu1q" path="res://Assets/MineAndCavesSet/scenes/Cave_Platform/cave_platform_b_side.tscn" id="77_0mgmb"]
+[ext_resource type="PackedScene" uid="uid://cvnqki25rcjvk" path="res://Assets/MineAndCavesSet/scenes/Ground/Ground_Mines/ground_mines_ramp_side_a.tscn" id="77_2pmsx"]
+[ext_resource type="PackedScene" uid="uid://0nrf7ptm47u5" path="res://Assets/MineAndCavesSet/scenes/Panel_Wood/panel_wood_a.tscn" id="77_gev57"]
+[ext_resource type="PackedScene" uid="uid://c7b5vic6efjhj" path="res://Assets/MineAndCavesSet/scenes/Cave_Platform/cave_platform_c_corner.tscn" id="78_30t6b"]
+[ext_resource type="PackedScene" uid="uid://bfku4udq82qrn" path="res://Assets/MineAndCavesSet/scenes/Panel_Wood/panel_wood_d.tscn" id="78_en7kv"]
+[ext_resource type="PackedScene" uid="uid://dvwbypquh2i8p" path="res://Assets/MineAndCavesSet/scenes/Ground/Ground_Mines/ground_mines_ramp_b.tscn" id="78_mc1co"]
+[ext_resource type="PackedScene" uid="uid://dlv6fq8lsa7gt" path="res://Assets/MineAndCavesSet/scenes/Ground/Ground_Mines/ramp_wall_1m.tscn" id="79_bjcnv"]
+[ext_resource type="PackedScene" uid="uid://b7huufl4ryaif" path="res://Assets/MineAndCavesSet/scenes/Cave_Platform/cave_platform_c_side.tscn" id="79_ldd6s"]
+[ext_resource type="PackedScene" uid="uid://bvonvs4yjgpuw" path="res://Assets/MineAndCavesSet/scenes/Panel_Wood/panel_wood_entrance_a.tscn" id="79_tv2yu"]
+[ext_resource type="PackedScene" uid="uid://bx3mjtpa1s527" path="res://Assets/MineAndCavesSet/scenes/Panel_Wood/panel_wood_entrance_b.tscn" id="80_nk4pl"]
+[ext_resource type="PackedScene" uid="uid://bdmrv2475m0vk" path="res://Assets/MineAndCavesSet/scenes/Ground/Ground_Mines/ramp_wall_2m.tscn" id="80_q8c58"]
+[ext_resource type="PackedScene" uid="uid://v7mhsm882l55" path="res://Assets/MineAndCavesSet/scenes/Wall/Wall_Plane/wall_planes_b.tscn" id="87_ittky"]
+[ext_resource type="PackedScene" uid="uid://cgfyjwbv4u1ix" path="res://Assets/MineAndCavesSet/scenes/Wall/Wall_Plane/wall_planes_a.tscn" id="88_ewlus"]
+[ext_resource type="PackedScene" uid="uid://d1i77bp2f853w" path="res://Assets/MineAndCavesSet/scenes/Wall/Wall_Plane/wall_planes_c.tscn" id="89_sc1hw"]
+[ext_resource type="PackedScene" uid="uid://cmc3r4l1dwabm" path="res://Assets/MineAndCavesSet/scenes/Posts/beam_a.tscn" id="90_n5aac"]
+[ext_resource type="PackedScene" uid="uid://bhvum18c6uj26" path="res://Assets/MineAndCavesSet/scenes/Posts/beam_b.tscn" id="91_3vuyp"]
+[ext_resource type="PackedScene" uid="uid://cv1cfkquliwhl" path="res://Assets/MineAndCavesSet/scenes/Posts/beam_c.tscn" id="92_1n54a"]
+[ext_resource type="PackedScene" uid="uid://bx33hjtabx42t" path="res://Assets/MineAndCavesSet/scenes/Posts/beam_d.tscn" id="93_07d2m"]
+[ext_resource type="PackedScene" uid="uid://ck4ntl0jvuq4w" path="res://Assets/MineAndCavesSet/scenes/Posts/post_b.tscn" id="94_l4xo6"]
+[ext_resource type="PackedScene" uid="uid://cedk6qultj1ws" path="res://Assets/MineAndCavesSet/scenes/Posts/post_a.tscn" id="95_nk5ia"]
+[ext_resource type="PackedScene" uid="uid://csnsghc6fiv5q" path="res://Assets/MineAndCavesSet/scenes/Posts/post_d.tscn" id="96_pqppv"]
+[ext_resource type="PackedScene" uid="uid://cpnvtyktjgm1j" path="res://Assets/MineAndCavesSet/scenes/Posts/post_e.tscn" id="97_4u4ya"]
+[ext_resource type="PackedScene" uid="uid://b3qhywpe6iy7i" path="res://Assets/MineAndCavesSet/scenes/Posts/post_f.tscn" id="98_lpbxd"]
+[ext_resource type="PackedScene" uid="uid://d0s3mpcp11f5l" path="res://Assets/MineAndCavesSet/scenes/Posts/post_g.tscn" id="99_sy544"]
+[ext_resource type="PackedScene" uid="uid://ddjjc6fn3iytb" path="res://Assets/MineAndCavesSet/scenes/Posts/post_c.tscn" id="100_lenvu"]
+[ext_resource type="PackedScene" uid="uid://beshbeoskfpps" path="res://Assets/MineAndCavesSet/scenes/Posts/post_reinforced_b.tscn" id="101_7fkae"]
+[ext_resource type="PackedScene" uid="uid://n3i3whtq6asx" path="res://Assets/MineAndCavesSet/scenes/Posts/post_reinforced_a.tscn" id="102_kg84k"]
+[ext_resource type="PackedScene" uid="uid://cspjlynxkeumw" path="res://Assets/MineAndCavesSet/scenes/Posts/post_reinforced_d.tscn" id="103_2tni2"]
+[ext_resource type="PackedScene" uid="uid://dqfbtpfgd8asw" path="res://Assets/MineAndCavesSet/scenes/Posts/post_reinforced_e.tscn" id="104_mwxln"]
+[ext_resource type="PackedScene" uid="uid://c6vwbekiattq5" path="res://Assets/MineAndCavesSet/scenes/Posts/post_reinforced_f.tscn" id="105_sglig"]
+[ext_resource type="PackedScene" uid="uid://tynjinxkeog6" path="res://Assets/MineAndCavesSet/scenes/Posts/post_reinforced_g.tscn" id="106_kp8oh"]
+[ext_resource type="PackedScene" uid="uid://bqxy3dn5osn2t" path="res://Assets/MineAndCavesSet/scenes/Posts/post_reinforced_c.tscn" id="107_hr3ey"]
+[ext_resource type="PackedScene" uid="uid://d2o2hn53xxx2q" path="res://Assets/MineAndCavesSet/scenes/Ground/Ground_Mound/ground_mound_a.tscn" id="108_tclnb"]
+[ext_resource type="PackedScene" uid="uid://b1r8lvdk7jkpf" path="res://Assets/MineAndCavesSet/scenes/Ground/Ground_Mound/ground_mound_b.tscn" id="109_rlak0"]
+[ext_resource type="PackedScene" uid="uid://dst113wck31te" path="res://Assets/MineAndCavesSet/scenes/Ground/Ground_Mound/ground_mound_c.tscn" id="110_x2vdv"]
+[ext_resource type="PackedScene" uid="uid://d4rnxsyjujq" path="res://Assets/MineAndCavesSet/scenes/Ground/Ground_Mound/ground_mound_d.tscn" id="111_xcbwt"]
+[ext_resource type="PackedScene" uid="uid://lv6pcb6cow8h" path="res://Assets/MineAndCavesSet/scenes/Ground/Ground_Mound/ground_mound_e.tscn" id="112_2w6su"]
+[ext_resource type="PackedScene" uid="uid://dgpp2yjwa15c6" path="res://Assets/MineAndCavesSet/scenes/Ladder/ladder_short.tscn" id="122_aqkal"]
+[ext_resource type="PackedScene" uid="uid://r0ruvess8k4d" path="res://Assets/MineAndCavesSet/scenes/Ladder/ladder_tall.tscn" id="123_8jldx"]
+[ext_resource type="PackedScene" uid="uid://25glihulyfyj" path="res://Assets/MineAndCavesSet/scenes/Ladder/ladder_top_a.tscn" id="124_3hgjh"]
+[ext_resource type="PackedScene" uid="uid://b3viatal0uva5" path="res://Assets/MineAndCavesSet/scenes/Ladder/ladder_top_b.tscn" id="125_7j6pg"]
+[ext_resource type="PackedScene" uid="uid://vawfhl5k48p4" path="res://Assets/MineAndCavesSet/scenes/Wood_Platform/wood_platform_45_deg_a.tscn" id="126_sd8xl"]
+[ext_resource type="PackedScene" uid="uid://dr10462vlu46s" path="res://Assets/MineAndCavesSet/scenes/Wood_Platform/wood_platform_45_deg_b.tscn" id="127_nd4qg"]
+[ext_resource type="PackedScene" uid="uid://bdk1xe85att0p" path="res://Assets/MineAndCavesSet/scenes/Wood_Platform/wood_platform_45_deg_connector_a.tscn" id="128_owxpm"]
+[ext_resource type="PackedScene" uid="uid://1wynusxhs6kq" path="res://Assets/MineAndCavesSet/scenes/Wood_Platform/wood_platform_45_deg_connector_b.tscn" id="129_h6kho"]
+[ext_resource type="PackedScene" uid="uid://dkprqyqnrh5pt" path="res://Assets/MineAndCavesSet/scenes/Wood_Platform/wood_platform_a.tscn" id="130_6sxy6"]
+[ext_resource type="PackedScene" uid="uid://6308n7r6jftb" path="res://Assets/MineAndCavesSet/scenes/Wood_Platform/wood_platform_a_corner_a.tscn" id="131_1mk85"]
+[ext_resource type="PackedScene" uid="uid://dkn0gmhb8q02i" path="res://Assets/MineAndCavesSet/scenes/Wood_Platform/wood_platform_a_corner_b.tscn" id="132_qrssd"]
+[ext_resource type="PackedScene" uid="uid://b2htw5c23m6id" path="res://Assets/MineAndCavesSet/scenes/Wood_Platform/wood_platform_a_t_section.tscn" id="133_otork"]
+[ext_resource type="PackedScene" uid="uid://byymj3alwyvoi" path="res://Assets/MineAndCavesSet/scenes/Wood_Platform/wood_platform_b.tscn" id="134_csieo"]
+[ext_resource type="PackedScene" uid="uid://ceho0h0xyuqcf" path="res://Assets/MineAndCavesSet/scenes/Wood_Platform/wood_platform_c.tscn" id="135_x5s4l"]
+[ext_resource type="PackedScene" uid="uid://bp0qal6mitd3q" path="res://Assets/MineAndCavesSet/scenes/Wood_Platform/wood_platform_d.tscn" id="136_kail3"]
+[ext_resource type="PackedScene" uid="uid://dglbpjrlfd7pv" path="res://Assets/MineAndCavesSet/scenes/Wood_Platform/wood_platform_d_45_deg_a.tscn" id="137_ebsii"]
+[ext_resource type="PackedScene" uid="uid://bceenfuvkpv54" path="res://Assets/MineAndCavesSet/scenes/Wood_Platform/wood_platform_d_45_deg_b.tscn" id="138_xyufh"]
+[ext_resource type="PackedScene" uid="uid://bj2xjyr5ejq5w" path="res://Assets/MineAndCavesSet/scenes/Wood_Platform/wood_platform_d_90_deg_a.tscn" id="139_6w4xa"]
+[ext_resource type="PackedScene" uid="uid://dkk45rq11nlax" path="res://Assets/MineAndCavesSet/scenes/Wood_Platform/wood_platform_d_90_deg_b.tscn" id="140_556qe"]
+[ext_resource type="PackedScene" uid="uid://gl5onx6kl47i" path="res://Assets/MineAndCavesSet/scenes/Wood_Platform/wood_platform_d_corner_a.tscn" id="141_khk18"]
+[ext_resource type="PackedScene" uid="uid://kpt17c065pwy" path="res://Assets/MineAndCavesSet/scenes/Wood_Platform/wood_platform_d_corner_b.tscn" id="142_77sme"]
+[ext_resource type="PackedScene" uid="uid://py2in26j2g0u" path="res://Assets/MineAndCavesSet/scenes/Wood_Platform/wood_platform_d_t_section.tscn" id="143_qnlug"]
+[ext_resource type="PackedScene" uid="uid://jqbbxvoher7q" path="res://Assets/MineAndCavesSet/scenes/Wood_Platform/wood_platform_planks_a.tscn" id="144_s2agg"]
+[ext_resource type="PackedScene" uid="uid://mvhw8l3kl8yw" path="res://Assets/MineAndCavesSet/scenes/Wood_Platform/wood_platform_planks_a_side.tscn" id="145_jao0w"]
+[ext_resource type="PackedScene" uid="uid://bfxwxvrckdadv" path="res://Assets/MineAndCavesSet/scenes/Wood_Platform/wood_platform_planks_b.tscn" id="146_qqlxc"]
+[ext_resource type="PackedScene" uid="uid://ctgxrksj4bo1o" path="res://Assets/MineAndCavesSet/scenes/Wood_Platform/wood_platform_planks_c.tscn" id="147_08ocf"]
+[ext_resource type="PackedScene" uid="uid://dxdpjynvlnk23" path="res://Assets/MineAndCavesSet/scenes/Wood_Platform/wood_platform_planks_c_side.tscn" id="148_rwwx5"]
+[ext_resource type="PackedScene" uid="uid://djr7ajb8dlsc1" path="res://Assets/MineAndCavesSet/scenes/Wood_Platform/wood_platform_post.tscn" id="149_otsey"]
+[ext_resource type="PackedScene" uid="uid://b1bxmcsapx3f6" path="res://Assets/MineAndCavesSet/scenes/Wood_Platform/wood_platform_post_a.tscn" id="150_if4ou"]
+[ext_resource type="PackedScene" uid="uid://qvgcajdsq7l2" path="res://Assets/MineAndCavesSet/scenes/Wood_Platform/wood_platform_post_b.tscn" id="151_aru5w"]
+[ext_resource type="PackedScene" uid="uid://bv2plbhiartpe" path="res://Assets/MineAndCavesSet/scenes/Wood_Platform/wood_platform_post_c.tscn" id="152_3j5kv"]
+[ext_resource type="PackedScene" uid="uid://cpyackknxocvb" path="res://Assets/MineAndCavesSet/scenes/Wood_Platform/wood_platform_post_d.tscn" id="153_6xf28"]
+[ext_resource type="PackedScene" uid="uid://bgio5s8qhthlj" path="res://Assets/MineAndCavesSet/scenes/Wood_Platform/wood_platform_stairs_a.tscn" id="154_1wm8t"]
+[ext_resource type="PackedScene" uid="uid://bni6p47hun3nw" path="res://Assets/MineAndCavesSet/scenes/Wood_Platform/wood_platform_stairs_b.tscn" id="155_ies10"]
+[ext_resource type="PackedScene" uid="uid://cpxqqy5gk8m46" path="res://Assets/MineAndCavesSet/scenes/Wood_Platform/wood_platform_stairs_c.tscn" id="156_qoa1w"]
+[ext_resource type="PackedScene" uid="uid://2pfey5ytl6bs" path="res://Assets/MineAndCavesSet/scenes/Wood_Platform/wood_platform_stairs_d.tscn" id="157_rg7ru"]
+[ext_resource type="PackedScene" uid="uid://dby8lte5ux1c2" path="res://Assets/MineAndCavesSet/scenes/Wood_Platform/wood_platform_stairs_planks_a.tscn" id="158_mstwa"]
+[ext_resource type="PackedScene" uid="uid://bitf4w6vllay3" path="res://Assets/MineAndCavesSet/scenes/Wood_Platform/wood_platform_stairs_planks_b.tscn" id="159_5fj18"]
+[ext_resource type="PackedScene" uid="uid://cfhm5n2op8evx" path="res://Assets/MineAndCavesSet/scenes/Wood_Platform/wood_platform_stairs_planks_c.tscn" id="160_7fekb"]
+[ext_resource type="PackedScene" uid="uid://dh0vxl5ai214c" path="res://Assets/MineAndCavesSet/scenes/Wood_Platform/wood_platform_stairs_planks_d.tscn" id="161_uuown"]
+[ext_resource type="PackedScene" uid="uid://bxex1jlhdp5ay" path="res://Assets/MineAndCavesSet/scenes/Wood_Platform/wood_platform_stairs_planks_side_a.tscn" id="162_v3byn"]
+[ext_resource type="PackedScene" uid="uid://daw3q54qr4ar4" path="res://Assets/MineAndCavesSet/scenes/Wood_Platform/wood_platform_stairs_planks_side_b.tscn" id="163_run6l"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_tautp"]
+ground_bottom_color = Color(0.481829, 0.614175, 0.766329, 1)
+
+[sub_resource type="Sky" id="Sky_1jynh"]
+sky_material = SubResource("ProceduralSkyMaterial_tautp")
+
+[sub_resource type="Environment" id="Environment_usw6m"]
+background_mode = 2
+sky = SubResource("Sky_1jynh")
+tonemap_mode = 2
+ssao_enabled = true
+glow_enabled = true
+
+[node name="Modular_Mine_Set" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.349834, 0.357239, 0, 0.714473, 0.699663, -0.500003, 0.605925, -0.61875, 0, 0, 0)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_usw6m")
+
+[node name="Wall_Plane" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 10)
+
+[node name="Wall_Planes_B" parent="Wall_Plane" instance=ExtResource("87_ittky")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
+
+[node name="Wall_Planes_A" parent="Wall_Plane" instance=ExtResource("88_ewlus")]
+
+[node name="Wall_Planes_C" parent="Wall_Plane" instance=ExtResource("89_sc1hw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+
+[node name="Mine_Carts" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 6)
+
+[node name="Mine_Cart_AA" parent="Mine_Carts" instance=ExtResource("1_bkov4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="Mine_Cart_BA" parent="Mine_Carts" instance=ExtResource("2_hnmfp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -2)
+
+[node name="Mine_Cart_CA" parent="Mine_Carts" instance=ExtResource("3_032fv")]
+
+[node name="Mine_Cart_AB_grp" parent="Mine_Carts" instance=ExtResource("4_pgcmc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 1)
+
+[node name="Mine_Cart_BB_grp" parent="Mine_Carts" instance=ExtResource("5_uiwsp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Mine_Cart_CB_grp" parent="Mine_Carts" instance=ExtResource("6_2vyap")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 1)
+
+[node name="Mine_Rails" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 5)
+
+[node name="Rails_Corner_Straight_A" parent="Mine_Rails" instance=ExtResource("7_ta45y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -3)
+
+[node name="Rail_B" parent="Mine_Rails" instance=ExtResource("8_d8ib1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
+
+[node name="Rail_C" parent="Mine_Rails" instance=ExtResource("9_ab1mq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 0)
+
+[node name="Rails_Corner_22_5Deg_A" parent="Mine_Rails" instance=ExtResource("10_1lxtd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3)
+
+[node name="Rail_Falloff_B" parent="Mine_Rails" instance=ExtResource("11_0nh4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -1)
+
+[node name="Rail_Falloff_A" parent="Mine_Rails" instance=ExtResource("12_yr70p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -2)
+
+[node name="Rail_A" parent="Mine_Rails" instance=ExtResource("13_cnlg7")]
+
+[node name="Rails_Corner_Straight_B" parent="Mine_Rails" instance=ExtResource("14_eo35v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -3)
+
+[node name="Rail_Ramp" parent="Mine_Rails" instance=ExtResource("15_0wnvt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 1)
+
+[node name="Rail_45deg" parent="Mine_Rails" instance=ExtResource("16_qn2be")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 1)
+
+[node name="Rails_Corner_90Deg_A" parent="Mine_Rails" instance=ExtResource("17_4g60i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -3)
+
+[node name="Rail_Scaffold_A" parent="Mine_Rails" instance=ExtResource("18_dxxmv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 1)
+
+[node name="Rail_Scaffold_B" parent="Mine_Rails" instance=ExtResource("19_se8jc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 1)
+
+[node name="Rail_Scaffold_C" parent="Mine_Rails" instance=ExtResource("20_opyn6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 1)
+
+[node name="Rail_End" parent="Mine_Rails" instance=ExtResource("21_pqcdk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="Rails_Corner_22_5Deg_B" parent="Mine_Rails" instance=ExtResource("25_26hof")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, 0)
+
+[node name="Rails_Corner_90Deg_B" parent="Mine_Rails" instance=ExtResource("26_mi100")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, -1)
+
+[node name="Ground_Mines" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -3)
+
+[node name="Ground_Mines_D" parent="Ground_Mines" instance=ExtResource("71_0obfx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 1)
+
+[node name="Ground_Mines_C" parent="Ground_Mines" instance=ExtResource("72_xx3ta")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -2)
+
+[node name="Ground_Mines_A" parent="Ground_Mines" instance=ExtResource("73_wppap")]
+
+[node name="Ground_Mines_B" parent="Ground_Mines" instance=ExtResource("74_nlxms")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+
+[node name="Ground_Mines_Ramp_A" parent="Ground_Mines" instance=ExtResource("75_glfi6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
+
+[node name="Ground_Mines_Ramp_Side_B" parent="Ground_Mines" instance=ExtResource("76_rrbsh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -3)
+
+[node name="Ground_Mines_Ramp_Side_A" parent="Ground_Mines" instance=ExtResource("77_2pmsx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 3)
+
+[node name="Ground_Mines_Ramp_B" parent="Ground_Mines" instance=ExtResource("78_mc1co")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 3)
+
+[node name="Ramp_Wall_1m" parent="Ground_Mines" instance=ExtResource("79_bjcnv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 3, 3)
+
+[node name="Ramp_Wall_2m" parent="Ground_Mines" instance=ExtResource("80_q8c58")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 3)
+
+[node name="Wall_Mines" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 0, -7)
+
+[node name="Wall_Mines_A" parent="Wall_Mines" instance=ExtResource("47_nmu8l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
+
+[node name="Wall_Mines_C" parent="Wall_Mines" instance=ExtResource("48_qcxf5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 0)
+
+[node name="Wall_Mines_B" parent="Wall_Mines" instance=ExtResource("49_fk4tu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Wall_Mines_D" parent="Wall_Mines" instance=ExtResource("50_dd8bq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 0)
+
+[node name="Wall_Mines_Entrance_A" parent="Wall_Mines" instance=ExtResource("51_v014e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, -3)
+
+[node name="Wall_Mines_Entrance_B" parent="Wall_Mines" instance=ExtResource("52_y5q60")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -3)
+
+[node name="Wall_Mines_Corner" parent="Wall_Mines" instance=ExtResource("54_p8yhs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 0)
+
+[node name="Wall_Tunnel" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 0, -11)
+
+[node name="Wall_Mines_Tunnel_Low" parent="Wall_Tunnel" instance=ExtResource("53_10gku")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="Wall_Mines_Tunnel_Mid" parent="Wall_Tunnel" instance=ExtResource("54_7saj1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="Wall_Mines_Tunnel_High" parent="Wall_Tunnel" instance=ExtResource("55_nxyfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
+
+[node name="Tunnel_Corner_D" parent="Wall_Tunnel" instance=ExtResource("56_7gblw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -7)
+
+[node name="Tunnel_B" parent="Wall_Tunnel" instance=ExtResource("57_vysc2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -3)
+
+[node name="Tunnel_Corner_A" parent="Wall_Tunnel" instance=ExtResource("58_fxy2x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -3)
+
+[node name="Tunnel_Corner_B" parent="Wall_Tunnel" instance=ExtResource("59_4h8kh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -7)
+
+[node name="Tunnel_A" parent="Wall_Tunnel" instance=ExtResource("60_b471f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -8)
+
+[node name="Tunnel_Corner_C" parent="Wall_Tunnel" instance=ExtResource("61_lck8m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3)
+
+[node name="Panel_Wood" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -8)
+
+[node name="Panel_Wood_C" parent="Panel_Wood" instance=ExtResource("75_g3gsh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 0)
+
+[node name="Panel_Wood_B" parent="Panel_Wood" instance=ExtResource("76_i2t5a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, 0)
+
+[node name="Panel_Wood_A" parent="Panel_Wood" instance=ExtResource("77_gev57")]
+
+[node name="Panel_Wood_D" parent="Panel_Wood" instance=ExtResource("78_en7kv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, 0)
+
+[node name="Panel_Wood_Entrance_A" parent="Panel_Wood" instance=ExtResource("79_tv2yu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+
+[node name="Panel_Wood_Entrance_B" parent="Panel_Wood" instance=ExtResource("80_nk4pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 0)
+
+[node name="Wall_Cave" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0, 8)
+
+[node name="Wall_Caves_A" parent="Wall_Cave" instance=ExtResource("41_0a0xd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 0)
+
+[node name="Wall_Caves_B" parent="Wall_Cave" instance=ExtResource("42_okqet")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="Wall_Caves_D" parent="Wall_Cave" instance=ExtResource("43_wcpnm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 0)
+
+[node name="Wall_Caves_C" parent="Wall_Cave" instance=ExtResource("44_3jvbg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="Wall_Caves_Entrance_A" parent="Wall_Cave" instance=ExtResource("45_oqmlu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 0)
+
+[node name="Wall_Caves_Entrance_B" parent="Wall_Cave" instance=ExtResource("46_0r1af")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, 0)
+
+[node name="Wall_Caves_Corner" parent="Wall_Cave" instance=ExtResource("47_kiqh1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 0)
+
+[node name="Ground_Cave" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, 1)
+
+[node name="Ground_Cave_B" parent="Ground_Cave" instance=ExtResource("21_smyna")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 2)
+
+[node name="Ground_Cave_A" parent="Ground_Cave" instance=ExtResource("22_1drqs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -3)
+
+[node name="Ground_Cave_D" parent="Ground_Cave" instance=ExtResource("23_vsy6q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 3)
+
+[node name="Ground_Cave_C" parent="Ground_Cave" instance=ExtResource("24_qsukp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Ground_Cave_E" parent="Ground_Cave" instance=ExtResource("25_cf5gx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -3)
+
+[node name="Ground_Cave_F" parent="Ground_Cave" instance=ExtResource("26_uqg3r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -3)
+
+[node name="Cave_Wall_Rocks" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 9)
+
+[node name="Cave_Wall_Rocks_B" parent="Cave_Wall_Rocks" instance=ExtResource("27_qidl7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 2, 0)
+
+[node name="Cave_Wall_Rocks_E" parent="Cave_Wall_Rocks" instance=ExtResource("28_r6g1c")]
+
+[node name="Cave_Wall_Rocks_G" parent="Cave_Wall_Rocks" instance=ExtResource("29_fruva")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 5, 0)
+
+[node name="Cave_Wall_Rocks_D" parent="Cave_Wall_Rocks" instance=ExtResource("30_88cxn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
+
+[node name="Cave_Wall_Rocks_C" parent="Cave_Wall_Rocks" instance=ExtResource("31_x6k3d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+
+[node name="Cave_Wall_Rocks_A" parent="Cave_Wall_Rocks" instance=ExtResource("32_eeroo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 2, 0)
+
+[node name="Cave_Wall_Rocks_F" parent="Cave_Wall_Rocks" instance=ExtResource("33_2hmhq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 2, 0)
+
+[node name="Cave_Rocks" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17, 0, 2)
+
+[node name="Cave_Rocks_D" parent="Cave_Rocks" instance=ExtResource("34_chrw7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 1)
+
+[node name="Cave_Rocks_C" parent="Cave_Rocks" instance=ExtResource("35_vltcd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 1)
+
+[node name="Cave_Rocks_A" parent="Cave_Rocks" instance=ExtResource("36_3hbhf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -1)
+
+[node name="Cave_Pillar_B" parent="Cave_Rocks" instance=ExtResource("37_xplnc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -1)
+
+[node name="Cave_Pillar_C" parent="Cave_Rocks" instance=ExtResource("38_43adr")]
+
+[node name="Cave_Rocks_B" parent="Cave_Rocks" instance=ExtResource("39_fcp1m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+
+[node name="Cave_Pillar_A" parent="Cave_Rocks" instance=ExtResource("40_4f7a7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 2)
+
+[node name="Cave_Platform" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 0, 2)
+
+[node name="Cave_Platform_D" parent="Cave_Platform" instance=ExtResource("62_wwmpq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -7)
+
+[node name="Cave_Platform_H" parent="Cave_Platform" instance=ExtResource("63_k0esl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -7)
+
+[node name="Cave_Platform_J" parent="Cave_Platform" instance=ExtResource("64_ji5sg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -2)
+
+[node name="Cave_Platform_E" parent="Cave_Platform" instance=ExtResource("65_53jh1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
+
+[node name="Cave_Platform_G" parent="Cave_Platform" instance=ExtResource("66_lxcgn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -2)
+
+[node name="Cave_Platform_I" parent="Cave_Platform" instance=ExtResource("67_m7ss4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 3)
+
+[node name="Cave_Platform_C" parent="Cave_Platform" instance=ExtResource("68_str2x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 8)
+
+[node name="Cave_Platform_B" parent="Cave_Platform" instance=ExtResource("69_bohwq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 8)
+
+[node name="Cave_Platform_A" parent="Cave_Platform" instance=ExtResource("70_degn3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 8)
+
+[node name="Cave_Platform_A_Corner" parent="Cave_Platform" instance=ExtResource("74_14jh8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 3, 14)
+
+[node name="Cave_Platform_A_Side" parent="Cave_Platform" instance=ExtResource("75_ikl53")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 3, 14)
+
+[node name="Cave_Platform_B_Corner" parent="Cave_Platform" instance=ExtResource("76_5vnte")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 17)
+
+[node name="Cave_Platform_B_Side" parent="Cave_Platform" instance=ExtResource("77_0mgmb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 17)
+
+[node name="Cave_Platform_C_Corner" parent="Cave_Platform" instance=ExtResource("78_30t6b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 14)
+
+[node name="Cave_Platform_C_Side" parent="Cave_Platform" instance=ExtResource("79_ldd6s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, 14)
+
+[node name="Posts" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -12)
+
+[node name="Beam_A" parent="Posts" instance=ExtResource("90_n5aac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.9, 0)
+
+[node name="Beam_B" parent="Posts" instance=ExtResource("91_3vuyp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.9, -1)
+
+[node name="Beam_C" parent="Posts" instance=ExtResource("92_1n54a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.9, -2)
+
+[node name="Beam_D" parent="Posts" instance=ExtResource("93_07d2m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.9, -3)
+
+[node name="Post_B" parent="Posts" instance=ExtResource("94_l4xo6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="Post_A" parent="Posts" instance=ExtResource("95_nk5ia")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+
+[node name="Post_D" parent="Posts" instance=ExtResource("96_pqppv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="Post_E" parent="Posts" instance=ExtResource("97_4u4ya")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 0)
+
+[node name="Post_F" parent="Posts" instance=ExtResource("98_lpbxd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 0)
+
+[node name="Post_G" parent="Posts" instance=ExtResource("99_sy544")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, 0)
+
+[node name="Post_C" parent="Posts" instance=ExtResource("100_lenvu")]
+
+[node name="Post_Reinforced_B" parent="Posts" instance=ExtResource("101_7fkae")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -3)
+
+[node name="Post_Reinforced_A" parent="Posts" instance=ExtResource("102_kg84k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -3)
+
+[node name="Post_Reinforced_D" parent="Posts" instance=ExtResource("103_2tni2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -3)
+
+[node name="Post_Reinforced_E" parent="Posts" instance=ExtResource("104_mwxln")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -3)
+
+[node name="Post_Reinforced_F" parent="Posts" instance=ExtResource("105_sglig")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -3)
+
+[node name="Post_Reinforced_G" parent="Posts" instance=ExtResource("106_kp8oh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, -3)
+
+[node name="Post_Reinforced_C" parent="Posts" instance=ExtResource("107_hr3ey")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3)
+
+[node name="Ground_mound" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 0, 0)
+
+[node name="Ground_Mound_A" parent="Ground_mound" instance=ExtResource("108_tclnb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+
+[node name="Ground_Mound_B" parent="Ground_mound" instance=ExtResource("109_rlak0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3)
+
+[node name="Ground_Mound_C" parent="Ground_mound" instance=ExtResource("110_x2vdv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 2)
+
+[node name="Ground_Mound_D" parent="Ground_mound" instance=ExtResource("111_xcbwt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -3)
+
+[node name="Ground_Mound_E" parent="Ground_mound" instance=ExtResource("112_2w6su")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -3)
+
+[node name="Ladder" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0, -11)
+
+[node name="Ladder_Short" parent="Ladder" instance=ExtResource("122_aqkal")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Ladder_Tall" parent="Ladder" instance=ExtResource("123_8jldx")]
+
+[node name="Ladder_Top_A" parent="Ladder" instance=ExtResource("124_3hgjh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+
+[node name="Ladder_Top_B" parent="Ladder" instance=ExtResource("125_7j6pg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 2, 0)
+
+[node name="Wood_Platform" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 0, -14)
+
+[node name="Wood_Platform_45Deg_A" parent="Wood_Platform" instance=ExtResource("126_sd8xl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 3)
+
+[node name="Wood_Platform_45Deg_B" parent="Wood_Platform" instance=ExtResource("127_nd4qg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="Wood_Platform_45Deg_Connector_A" parent="Wood_Platform" instance=ExtResource("128_owxpm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1)
+
+[node name="Wood_Platform_45Deg_Connector_B" parent="Wood_Platform" instance=ExtResource("129_h6kho")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -1)
+
+[node name="Wood_Platform_A" parent="Wood_Platform" instance=ExtResource("130_6sxy6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0, -5)
+
+[node name="Wood_Platform_A_Corner_A" parent="Wood_Platform" instance=ExtResource("131_1mk85")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23, 0, -10)
+
+[node name="Wood_Platform_A_Corner_B" parent="Wood_Platform" instance=ExtResource("132_qrssd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0, -10)
+
+[node name="Wood_Platform_A_TSection" parent="Wood_Platform" instance=ExtResource("133_otork")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0, -10)
+
+[node name="Wood_Platform_B" parent="Wood_Platform" instance=ExtResource("134_csieo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0, -6)
+
+[node name="Wood_Platform_C" parent="Wood_Platform" instance=ExtResource("135_x5s4l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23, 0, -5)
+
+[node name="Wood_Platform_D" parent="Wood_Platform" instance=ExtResource("136_kail3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -4)
+
+[node name="Wood_Platform_D_45Deg_A" parent="Wood_Platform" instance=ExtResource("137_ebsii")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -3)
+
+[node name="Wood_Platform_D_45Deg_B" parent="Wood_Platform" instance=ExtResource("138_xyufh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, -3)
+
+[node name="Wood_Platform_D_90Deg_A" parent="Wood_Platform" instance=ExtResource("139_6w4xa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, -4)
+
+[node name="Wood_Platform_D_90Deg_B" parent="Wood_Platform" instance=ExtResource("140_556qe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -8)
+
+[node name="Wood_Platform_D_Corner_A" parent="Wood_Platform" instance=ExtResource("141_khk18")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -4)
+
+[node name="Wood_Platform_D_Corner_B" parent="Wood_Platform" instance=ExtResource("142_77sme")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -4)
+
+[node name="Wood_Platform_D_TSection" parent="Wood_Platform" instance=ExtResource("143_qnlug")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -4)
+
+[node name="Wood_Platform_Planks_A" parent="Wood_Platform" instance=ExtResource("144_s2agg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29, 0, -10)
+
+[node name="Wood_Platform_Planks_A_Side" parent="Wood_Platform" instance=ExtResource("145_jao0w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26, 0, -10)
+
+[node name="Wood_Platform_Planks_B" parent="Wood_Platform" instance=ExtResource("146_qqlxc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33, 0, -10)
+
+[node name="Wood_Platform_Planks_C" parent="Wood_Platform" instance=ExtResource("147_08ocf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28, 0, -6)
+
+[node name="Wood_Platform_Planks_C_Side" parent="Wood_Platform" instance=ExtResource("148_rwwx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26, 0, -6)
+
+[node name="Wood_Platform_Post" parent="Wood_Platform" instance=ExtResource("149_otsey")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, -6)
+
+[node name="Wood_Platform_Post_A" parent="Wood_Platform" instance=ExtResource("150_if4ou")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -6)
+
+[node name="Wood_Platform_Post_B" parent="Wood_Platform" instance=ExtResource("151_aru5w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, -6)
+
+[node name="Wood_Platform_Post_C" parent="Wood_Platform" instance=ExtResource("152_3j5kv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -6)
+
+[node name="Wood_Platform_Post_D" parent="Wood_Platform" instance=ExtResource("153_6xf28")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0, -6)
+
+[node name="Wood_Platform_Stairs_A" parent="Wood_Platform" instance=ExtResource("154_1wm8t")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -13, 0, 1)
+
+[node name="Wood_Platform_Stairs_B" parent="Wood_Platform" instance=ExtResource("155_ies10")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -13, 0, -2)
+
+[node name="Wood_Platform_Stairs_C" parent="Wood_Platform" instance=ExtResource("156_qoa1w")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -17, 0, 1)
+
+[node name="Wood_Platform_Stairs_D" parent="Wood_Platform" instance=ExtResource("157_rg7ru")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -17, 0, -2)
+
+[node name="Wood_Platform_Stairs_Planks_A" parent="Wood_Platform" instance=ExtResource("158_mstwa")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8, 0, 1)
+
+[node name="Wood_Platform_Stairs_Planks_B" parent="Wood_Platform" instance=ExtResource("159_5fj18")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8, 0, -2)
+
+[node name="Wood_Platform_Stairs_Planks_C" parent="Wood_Platform" instance=ExtResource("160_7fekb")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4, 0, 0.999999)
+
+[node name="Wood_Platform_Stairs_Planks_D" parent="Wood_Platform" instance=ExtResource("161_uuown")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4, 0, -2)
+
+[node name="Wood_Platform_Stairs_Planks_Side_A" parent="Wood_Platform" instance=ExtResource("162_v3byn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 0, 2)
+
+[node name="Wood_Platform_Stairs_Planks_Side_B" parent="Wood_Platform" instance=ExtResource("163_run6l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 0, 5)
