@@ -20,7 +20,20 @@ func SpeedUp():
 	if Engine.time_scale <= 2:
 		Engine.time_scale += 0.1
 
+func Pixelation():
+	print($Control/Pixelation.material)
+	var PixelSize = $Control/Pixelation.material.get_shader_parameter("pixelSize")
+	if PixelSize < 16:
+		$Control/Pixelation.material.set_shader_parameter("pixelSize", PixelSize + 1)
+
+
 var ModifierRates = {
+	"Pixelation" = {
+		Title = "Pixelation",
+		Description = "Pixelation",
+		Func = Callable(self, "Pixelation"),
+		Weight = 1,
+	},
 	"SpeedUp" = {
 		Title = "SpeedUp",
 		Description = "SpeedUp",
