@@ -33,7 +33,9 @@ func Pixelation():
 	var PixelSize = $Control/Pixelation.material.get_shader_parameter("pixelSize")
 	if PixelSize < 16:
 		$Control/Pixelation.material.set_shader_parameter("pixelSize", PixelSize + 1)
-		
+func Saturated():
+	if $Node3D/WorldEnvironment.environment.adjustment_saturation < 20:
+		$Node3D/WorldEnvironment.environment.adjustment_saturation += 2
 func Slippery():
 	if player.lerp_speed > 2:
 		player.lerp_speed = ceil(player.lerp_speed/2)
@@ -49,7 +51,7 @@ func SubwaySurfing():
 	$Control/Modifiers/SubwaySurfers.play()
 
 
-const FORCED_MODIFIER = ""
+const FORCED_MODIFIER = "Saturated"
 
 var ModifierRates = {
 	"SubwaySurfing" = {
@@ -64,7 +66,7 @@ var ModifierRates = {
 		Func = Callable(self, "InvertControls"),
 		Weight = 4,
 	},
-		"Flipped" = {
+	"Flipped" = {
 		Title = "Flipped",
 		Description = "Flipped",
 		Func = Callable(self, "Flipped"),
@@ -80,6 +82,12 @@ var ModifierRates = {
 		Title = "Slippery",
 		Description = "Slippery",
 		Func = Callable(self, "Slippery"),
+		Weight = 2,
+	},
+	"Saturated" = {
+		Title = "Saturated",
+		Description = "Saturated",
+		Func = Callable(self, "Saturated"),
 		Weight = 2,
 	},
 	"Pixelation" = {
