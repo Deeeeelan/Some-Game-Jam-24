@@ -14,8 +14,16 @@ func LoseFPS(): # Hopefully this will not cause any problems in the future...
 	Engine.max_fps = clampi(roundi(Engine.max_fps*0.9), 16, 60)
 
 func Askew():
-	$Node3D/Player/Head/Camera3D.rotate_z(deg_to_rad(randi_range(-9,9))) # Can stack, have fun
- 
+	var tween = get_tree().create_tween()
+	var camera = $Node3D/Player/Head/Camera3D
+	tween.tween_property(camera, "quaternion", camera.quaternion * Quaternion.from_euler(Vector3(0, 0, deg_to_rad(randi_range(-9,9)))), 0.65).set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_IN_OUT)
+
+
+func Flipped():
+	var tween = get_tree().create_tween()
+	var camera = $Node3D/Player/Head/Camera3D
+	tween.tween_property(camera, "quaternion", camera.quaternion * Quaternion.from_euler(Vector3(0, 0, deg_to_rad(180))), 1.45).set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_IN_OUT)
+
 func SpeedUp():
 	if Engine.time_scale <= 2:
 		Engine.time_scale += 0.1
@@ -26,18 +34,25 @@ func Pixelation():
 	if PixelSize < 16:
 		$Control/Pixelation.material.set_shader_parameter("pixelSize", PixelSize + 1)
 
+const FORCED_MODIFIER = "Flipped"
 
 var ModifierRates = {
 	"Pixelation" = {
 		Title = "Pixelation",
 		Description = "Pixelation",
 		Func = Callable(self, "Pixelation"),
-		Weight = 1,
+		Weight = 2,
 	},
 	"SpeedUp" = {
 		Title = "SpeedUp",
 		Description = "SpeedUp",
 		Func = Callable(self, "SpeedUp"),
+		Weight = 2,
+	},
+	"Flipped" = {
+		Title = "Flipped",
+		Description = "Flipped",
+		Func = Callable(self, "Flipped"),
 		Weight = 2,
 	},
 	"Askew" = {
@@ -55,6 +70,11 @@ var ModifierRates = {
 }
 
 func ChooseRandomModifier():
+	if FORCED_MODIFIER != "":
+		var Modifier = ModifierRates[FORCED_MODIFIER]
+		Modifier.Func.call()
+		ModifierMessage(Modifier.Title, Modifier.Description)
+		return
 	for ModifierName in ModifierRates:
 		var Modifier = ModifierRates[ModifierName]
 		if randi_range(1,Modifier.Weight) == 1:
