@@ -44,10 +44,20 @@ func Speedy():
 func InvertControls():
 	player.InvertControls = not player.InvertControls
 
+func SubwaySurfing():
+	$Control/Modifiers/SubwaySurfers.visible = true
+	$Control/Modifiers/SubwaySurfers.play()
 
-const FORCED_MODIFIER = "InvertControls"
+
+const FORCED_MODIFIER = "SubwaySurfing"
 
 var ModifierRates = {
+	"SubwaySurfing" = {
+		Title = "SubwaySurfing",
+		Description = "SubwaySurfing",
+		Func = Callable(self, "SubwaySurfing"),
+		Weight = 2,
+	},
 	"InvertControls" = {
 		Title = "InvertControls",
 		Description = "InvertControls",

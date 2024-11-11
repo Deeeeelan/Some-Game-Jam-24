@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://d0no0vp0vj5t1"]
+[gd_scene load_steps=27 format=3 uid="uid://d0no0vp0vj5t1"]
 
 [ext_resource type="Script" path="res://Scripts/GameScript.gd" id="1_m1acb"]
 [ext_resource type="PackedScene" uid="uid://c4qmwrba7n82r" path="res://Assets/Models/player.tscn" id="2_1pfwd"]
@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://c00xan47osuhq" path="res://Assets/MineAndCavesSet/scenes/Wall/Wall_Cave/wall_caves_a.tscn" id="8_damqn"]
 [ext_resource type="PackedScene" uid="uid://c7v2njopsowns" path="res://Assets/Models/ground_mines_a_151.tscn" id="9_gdya1"]
 [ext_resource type="PackedScene" uid="uid://bsv0s3v2px57" path="res://Assets/MineAndCavesSet/scenes/Wall/Wall_Cave/wall_caves_corner.tscn" id="9_k0i22"]
+[ext_resource type="VideoStream" path="res://Assets/Videos/subwaySurf.ogv" id="16_0lknu"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_mliqr"]
 sky_top_color = Color(0.968329, 0.974258, 0.982565, 1)
@@ -2132,6 +2133,27 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 1)
+
+[node name="Modifiers" type="Control" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SubwaySurfers" type="VideoStreamPlayer" parent="Control/Modifiers"]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.7
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 0
+grow_vertical = 2
+stream = ExtResource("16_0lknu")
+expand = true
+loop = true
 
 [node name="EnemyTick" type="Timer" parent="."]
 wait_time = 2.0
