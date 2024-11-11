@@ -7,7 +7,7 @@ extends CharacterBody3D
 @export var health = 100
 @export var lerp_speed = 10
 @export var mouse_sens = 0.25
-
+@export var InvertControls = false
 @export var speed = 5.0
 @export var jump_velocity = 4.5
 
@@ -53,7 +53,8 @@ func _physics_process(delta: float) -> void:
 	var input_dir = Vector2.ZERO
 	if not GlobalScript.PlayerDead:
 		input_dir = Input.get_vector("Left", "Right", "Forward", "Backward")
-	
+	if InvertControls:
+		input_dir *= -1
 	direction = lerp(direction,(transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized(),delta*lerp_speed)
 	if direction:
 		velocity.x = direction.x * speed

@@ -41,9 +41,19 @@ func Speedy():
 	if player.speed < 30:
 		player.speed += 2.5
 
-const FORCED_MODIFIER = "Speedy"
+func InvertControls():
+	player.InvertControls = not player.InvertControls
+
+
+const FORCED_MODIFIER = "InvertControls"
 
 var ModifierRates = {
+	"InvertControls" = {
+		Title = "InvertControls",
+		Description = "InvertControls",
+		Func = Callable(self, "InvertControls"),
+		Weight = 2,
+	},
 	"Speedy" = {
 		Title = "Speedy",
 		Description = "Speedy",
