@@ -74,13 +74,13 @@ var ModifierRates = {
 		Weight = 15,
 	},
 	"SubwaySurfing" = {
-		Title = "SubwaySurfing",
+		Title = "Subway Surfing",
 		Description = "Keeping your attention span",
 		Func = Callable(self, "SubwaySurfing"),
 		Weight = 12,
 	},
 	"InvertControls" = {
-		Title = "InvertControls",
+		Title = "Inverted Controls",
 		Description = "huh?!",
 		Func = Callable(self, "InvertControls"),
 		Weight = 12,

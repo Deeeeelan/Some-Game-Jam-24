@@ -10,7 +10,7 @@ extends CharacterBody3D
 @export var InvertControls = false
 @export var speed = 5.0
 @export var jump_velocity = 4.5
-@export var damage = 50
+@export var damage = 100
 @export var sword_cooldown = 1
 
 var direction = Vector3.ZERO
