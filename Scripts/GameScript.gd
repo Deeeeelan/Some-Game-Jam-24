@@ -177,7 +177,8 @@ func tick():
 	
 	enemy.Player = player
 	EnemyNode.add_child(enemy)
-	enemy.position = Vector3(0,5,0)
+	var randomSpawn = $Node3D/Spawns.get_children().pick_random()
+	enemy.position = randomSpawn.position
 
 func RegenTick():
 	if player.health < player.max_health:

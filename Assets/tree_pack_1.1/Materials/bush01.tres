@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cq2ijlxi3caab"]
+
+[ext_resource type="Texture2D" uid="uid://by3uswo08piw6" path="res://Assets/tree_pack_1.1/textures/bush01.png" id="1_dcfud"]
+
+[resource]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+albedo_texture = ExtResource("1_dcfud")
