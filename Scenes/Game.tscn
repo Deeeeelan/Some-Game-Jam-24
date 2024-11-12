@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://d0no0vp0vj5t1"]
+[gd_scene load_steps=29 format=3 uid="uid://d0no0vp0vj5t1"]
 
 [ext_resource type="Script" path="res://Scripts/GameScript.gd" id="1_m1acb"]
 [ext_resource type="PackedScene" uid="uid://c4qmwrba7n82r" path="res://Assets/Models/player.tscn" id="2_1pfwd"]
@@ -57,9 +57,18 @@ font_size = 50
 font = ExtResource("6_nfg15")
 font_size = 76
 
+[sub_resource type="LabelSettings" id="LabelSettings_l6qkl"]
+font = ExtResource("6_nfg15")
+font_size = 64
+
 [sub_resource type="LabelSettings" id="LabelSettings_aqka1"]
 font = ExtResource("6_nfg15")
 font_size = 51
+
+[sub_resource type="LabelSettings" id="LabelSettings_36nfk"]
+font = ExtResource("6_nfg15")
+font_size = 32
+font_color = Color(0.466181, 0.466181, 0.466181, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_rcyts"]
 font_size = 56
@@ -2061,28 +2070,54 @@ text = "0"
 label_settings = SubResource("LabelSettings_4ahkw")
 horizontal_alignment = 1
 
-[node name="Modifer" type="Control" parent="Control"]
+[node name="Level" type="Control" parent="Control"]
 layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -114.0
-offset_right = 114.0
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -228.0
 offset_bottom = 88.0
-grow_horizontal = 2
+grow_horizontal = 0
 
-[node name="Label" type="Label" parent="Control/Modifer"]
+[node name="Label" type="Label" parent="Control/Level"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = 96.0
-offset_bottom = 96.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "0"
+label_settings = SubResource("LabelSettings_l6qkl")
+horizontal_alignment = 2
+
+[node name="Modifer" type="Control" parent="Control"]
+layout_mode = 1
+anchors_preset = 0
+offset_right = 228.0
+offset_bottom = 88.0
+
+[node name="Title" type="Label" parent="Control/Modifer"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "Modifier"
 label_settings = SubResource("LabelSettings_aqka1")
-horizontal_alignment = 1
+
+[node name="Description" type="Label" parent="Control/Modifer"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 92.0
+offset_right = 171.0
+offset_bottom = 72.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Description"
+label_settings = SubResource("LabelSettings_36nfk")
 
 [node name="DeathScreen" type="Control" parent="Control"]
 visible = false

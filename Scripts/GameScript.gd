@@ -6,7 +6,8 @@ var levelingDecounce = false
 
 func ModifierMessage(Title, Description):
 	print("ModifierMessage", str(Title), str(Description))
-	$Control/Modifer/Label.text = str(Title) + "\n" + str(Description)
+	$Control/Modifer/Title.text = str(Title) 
+	$Control/Modifer/Description.text = str(Description)
 
 func LoseFPS(): # Hopefully this will not cause any problems in the future...
 	if Engine.max_fps > 120 or Engine.max_fps == 0:
@@ -70,66 +71,66 @@ var ModifierRates = {
 		Title = "Loud",
 		Description = "Loud is funny",
 		Func = Callable(self, "BassBoost"),
-		Weight = 4,
+		Weight = 15,
 	},
 	"SubwaySurfing" = {
 		Title = "SubwaySurfing",
-		Description = "SubwaySurfing",
+		Description = "Keeping your attention span",
 		Func = Callable(self, "SubwaySurfing"),
-		Weight = 4,
+		Weight = 12,
 	},
 	"InvertControls" = {
 		Title = "InvertControls",
-		Description = "InvertControls",
+		Description = "huh?!",
 		Func = Callable(self, "InvertControls"),
-		Weight = 4,
+		Weight = 12,
 	},
 	"Flipped" = {
 		Title = "Flipped",
-		Description = "Flipped",
+		Description = "Upside down",
 		Func = Callable(self, "Flipped"),
-		Weight = 4,
+		Weight = 12,
 	},
 	"Speedy" = {
 		Title = "Speedy",
-		Description = "Speedy",
+		Description = "Going fast! (just for you, though)",
 		Func = Callable(self, "Speedy"),
-		Weight = 2,
+		Weight = 5,
 	},
 	"Slippery" = {
 		Title = "Slippery",
-		Description = "Slippery",
+		Description = "Ice all over the ground",
 		Func = Callable(self, "Slippery"),
-		Weight = 2,
+		Weight = 5,
 	},
 	"Saturated" = {
 		Title = "Saturated",
-		Description = "Saturated",
+		Description = "yeah... not much else",
 		Func = Callable(self, "Saturated"),
-		Weight = 2,
+		Weight = 5,
 	},
 	"Pixelation" = {
 		Title = "Pixelation",
-		Description = "Pixelation",
+		Description = "Retro...",
 		Func = Callable(self, "Pixelation"),
-		Weight = 2,
+		Weight = 5,
 	},
 	"SpeedUp" = {
-		Title = "SpeedUp",
-		Description = "SpeedUp",
+		Title = "Speed Up",
+		Description = "Going fast!",
 		Func = Callable(self, "SpeedUp"),
-		Weight = 2,
+		Weight = 5,
 	},
 
 	"Askew" = {
 		Title = "Askew",
-		Description = "Askew",
+		Description = "A bit to the side",
 		Func = Callable(self, "Askew"),
-		Weight = 2,
+		Weight = 5,
 	},
 	"LoseFPS" = {
-		Title = "Uhoh its getting choppy",
-		Description = "how unfortunate",
+		Title = "Lowered FPS",
+		Description = "Its gettin choppy",
 		Func = Callable(self, "LoseFPS"),
 		Weight = 1,
 	},
@@ -162,6 +163,10 @@ func LevelUp():
 		levelingDecounce = true
 		GlobalScript.CurrentEXP -= LevelRequirement()
 		GlobalScript.CurrentLevel += 1
+		player.max_health += 5
+		player.damage += 5
+		if player.sword_cooldown > 0.05:
+			player.sword_cooldown -= 0.05
 		# Level Up
 		ChooseRandomModifier()
 		levelingDecounce = false
