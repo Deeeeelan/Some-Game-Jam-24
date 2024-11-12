@@ -18,7 +18,6 @@ var SwordCD = false
 
 func death():
 	# Handle death animation etc.
-	print(self, " has died")
 	root.Death()
 
 func take_damage(damage):

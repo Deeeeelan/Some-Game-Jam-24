@@ -5,7 +5,6 @@ var levelingDecounce = false
 @onready var player = $Node3D/Player
 
 func ModifierMessage(Title, Description):
-	print("ModifierMessage", str(Title), str(Description))
 	$Control/Modifer/Title.text = str(Title) 
 	$Control/Modifer/Description.text = str(Description)
 
@@ -30,7 +29,6 @@ func SpeedUp():
 		Engine.time_scale += 0.1
 
 func Pixelation():
-	print($Control/Pixelation.material)
 	var PixelSize = $Control/Pixelation.material.get_shader_parameter("pixelSize")
 	if PixelSize < 16:
 		$Control/Pixelation.material.set_shader_parameter("pixelSize", PixelSize + 1)
@@ -71,62 +69,61 @@ var ModifierRates = {
 		Title = "Loud",
 		Description = "Loud is funny",
 		Func = Callable(self, "BassBoost"),
-		Weight = 15,
+		Weight = 32,
 	},
 	"SubwaySurfing" = {
 		Title = "Subway Surfing",
 		Description = "Keeping your attention span",
 		Func = Callable(self, "SubwaySurfing"),
-		Weight = 12,
+		Weight = 24,
 	},
 	"InvertControls" = {
 		Title = "Inverted Controls",
 		Description = "huh?!",
 		Func = Callable(self, "InvertControls"),
-		Weight = 12,
+		Weight = 16,
 	},
 	"Flipped" = {
 		Title = "Flipped",
 		Description = "Upside down",
 		Func = Callable(self, "Flipped"),
-		Weight = 12,
-	},
-	"Speedy" = {
-		Title = "Speedy",
-		Description = "Going fast! (just for you, though)",
-		Func = Callable(self, "Speedy"),
-		Weight = 5,
-	},
-	"Slippery" = {
-		Title = "Slippery",
-		Description = "Ice all over the ground",
-		Func = Callable(self, "Slippery"),
-		Weight = 5,
-	},
-	"Saturated" = {
-		Title = "Saturated",
-		Description = "yeah... not much else",
-		Func = Callable(self, "Saturated"),
-		Weight = 5,
-	},
-	"Pixelation" = {
-		Title = "Pixelation",
-		Description = "Retro...",
-		Func = Callable(self, "Pixelation"),
-		Weight = 5,
+		Weight = 16,
 	},
 	"SpeedUp" = {
 		Title = "Speed Up",
 		Description = "Going fast!",
 		Func = Callable(self, "SpeedUp"),
-		Weight = 5,
+		Weight = 8,
 	},
-
 	"Askew" = {
 		Title = "Askew",
 		Description = "A bit to the side",
 		Func = Callable(self, "Askew"),
-		Weight = 5,
+		Weight = 8,
+	},
+	"Speedy" = {
+		Title = "Speedy",
+		Description = "Going fast! (just for you, though)",
+		Func = Callable(self, "Speedy"),
+		Weight = 8,
+	},
+	"Slippery" = {
+		Title = "Slippery",
+		Description = "Ice all over the ground",
+		Func = Callable(self, "Slippery"),
+		Weight = 8,
+	},
+	"Saturated" = {
+		Title = "Saturated",
+		Description = "yeah... not much else",
+		Func = Callable(self, "Saturated"),
+		Weight = 8,
+	},
+	"Pixelation" = {
+		Title = "Pixelation",
+		Description = "Retro...",
+		Func = Callable(self, "Pixelation"),
+		Weight = 8,
 	},
 	"LoseFPS" = {
 		Title = "Lowered FPS",
@@ -134,6 +131,7 @@ var ModifierRates = {
 		Func = Callable(self, "LoseFPS"),
 		Weight = 1,
 	},
+	
 }
 
 func ChooseRandomModifier():

@@ -20,7 +20,6 @@ func despawn():
 func death():
 	# Handle death animation etc.
 	if not isDead:
-		print(self, " has died")
 		GlobalScript.TotalScore += 10
 		GlobalScript.CurrentEXP += 10
 		isDead = true
@@ -42,7 +41,6 @@ func melee():
 		var DetectedItems = $Melee.get_overlapping_bodies()
 		for i in DetectedItems:
 			if i is CharacterBody3D and i.has_meta("Player") and i.get_meta("Player") == true: 
-				print("Player: ", i)
 				i.take_damage(5)
 
 func _ready() -> void:
