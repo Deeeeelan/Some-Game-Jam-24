@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://caeeogffw2krf"]
+[gd_scene load_steps=5 format=3 uid="uid://caeeogffw2krf"]
 
 [ext_resource type="Script" path="res://Scripts/StartGame.gd" id="1_6cbjg"]
 [ext_resource type="FontFile" uid="uid://c1k08kigjcudw" path="res://Assets/Fonts/Jacquard12-Regular.ttf" id="2_w5tgx"]
+[ext_resource type="Texture2D" uid="uid://c77h2bf5nvw6w" path="res://Assets/Textures/WTHIH Logo SVG.svg" id="3_0b8qn"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_w3p1i"]
 font = ExtResource("2_w5tgx")
@@ -19,11 +20,11 @@ grow_vertical = 2
 
 [node name="Button" type="Button" parent="Control"]
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = -1
 anchor_left = 0.5
-anchor_top = 0.5
+anchor_top = 0.865
 anchor_right = 0.5
-anchor_bottom = 0.5
+anchor_bottom = 0.865
 offset_left = -175.0
 offset_top = -50.0
 offset_right = 175.0
@@ -44,5 +45,15 @@ text = "Start"
 label_settings = SubResource("LabelSettings_w3p1i")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.1
+anchor_right = 0.9
+anchor_bottom = 0.85
+grow_horizontal = 2
+texture = ExtResource("3_0b8qn")
+stretch_mode = 5
 
 [node name="Background" type="Node3D" parent="."]

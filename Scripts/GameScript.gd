@@ -182,7 +182,7 @@ func tick():
 
 func RegenTick():
 	if player.health < player.max_health:
-		player.health += 1
+		player.health += floor(player.max_health/100)
 
 func _ready() -> void:
 	GlobalScript.TotalScore = 0
