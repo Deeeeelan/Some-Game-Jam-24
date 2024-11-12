@@ -257,10 +257,10 @@ material_override = ExtResource("6_v4hgg")
 cast_shadow = 2
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Node3D/Map/Mines"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 3, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 3, -2)
 light_energy = 16.0
-omni_range = 5.43
-omni_attenuation = 2.115
+omni_range = 6.0
+omni_attenuation = 1.25
 
 [node name="Wall_Mines_Entrance_A" parent="Node3D/Map/Mines" instance=ExtResource("7_gkj50")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6, 0, 0)
@@ -2643,7 +2643,6 @@ loop = true
 
 [node name="EnemyTick" type="Timer" parent="."]
 wait_time = 2.0
-autostart = true
 
 [node name="RegenTick" type="Timer" parent="."]
 autostart = true
