@@ -38,15 +38,15 @@ func Saturated():
 		$Node3D/WorldEnvironment.environment.adjustment_saturation += 2
 		
 var BassBoosts = 0
-func BassBoost(): # This is where the funny starts
-	if BassBoosts < 3:
+func BassBoost(): # This is where the funny starts (Had to nerf, was too good, sorry)
+	if BassBoosts < 1:
 		BassBoosts + 1
 		var effect = AudioServer.get_bus_effect(0,0)
-		effect.volume_db += 2
+		effect.volume_db += 1
 		var effect2 = AudioServer.get_bus_effect(0,1)
 		effect2.gain += 1.5
 		var effect3 = AudioServer.get_bus_effect(0,2)
-		effect3.drive += 0.35
+		effect3.drive += 0.28
 
 func Slippery():
 	if player.lerp_speed > 2:
@@ -63,7 +63,7 @@ func SubwaySurfing():
 	$Control/Modifiers/SubwaySurfers.play()
 
 
-const FORCED_MODIFIER = "BassBoost"
+const FORCED_MODIFIER = ""
 
 var ModifierRates = {
 	"BassBoost" = {

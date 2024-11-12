@@ -8,7 +8,7 @@
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_44npv"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_10t7b"]
-radius = 0.8
+radius = 1.3
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_ey0af"]
 
@@ -88,7 +88,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, -0.7)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Head/Area3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.3, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.3, -0.2)
 shape = SubResource("SphereShape3D_10t7b")
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Head"]

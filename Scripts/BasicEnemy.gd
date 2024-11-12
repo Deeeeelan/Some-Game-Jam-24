@@ -21,7 +21,7 @@ func death():
 		GlobalScript.TotalScore += 10
 		GlobalScript.CurrentEXP += 10
 		isDead = true
-		await get_tree().create_timer(1.0).timeout
+		await get_tree().create_timer(0.2).timeout
 		self.queue_free()
 
 func take_damage(damage):
