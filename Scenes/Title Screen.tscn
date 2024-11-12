@@ -53,6 +53,7 @@ anchor_left = 0.1
 anchor_right = 0.9
 anchor_bottom = 0.85
 grow_horizontal = 2
+mouse_filter = 2
 texture = ExtResource("3_0b8qn")
 stretch_mode = 5
 

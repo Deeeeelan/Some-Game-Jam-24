@@ -14,6 +14,9 @@ extends CharacterBody3D
 
 var direction = Vector3.ZERO
 
+func despawn():
+	self.queue_free()
+
 func death():
 	# Handle death animation etc.
 	if not isDead:
@@ -44,7 +47,7 @@ func melee():
 
 func _ready() -> void:
 	$EnemyAttackTick.timeout.connect(melee)
-
+	$DespawnTimer.timeout.connect(despawn)
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	if not is_on_floor():

@@ -155,7 +155,7 @@ func Death():
 	$Control/DeathScreen.visible = true
 	
 func LevelRequirement() -> int:
-	return snapped(GlobalScript.CurrentLevel ** 2 + 25, 10) 
+	return snapped(GlobalScript.CurrentLevel * 5 + 10, 10) 
 # snapped() returns the closest value to the second arguement (Round to the xth number)
 
 func LevelUp():
