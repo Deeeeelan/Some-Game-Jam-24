@@ -183,7 +183,12 @@ func tick():
 func RegenTick():
 	if player.health < player.max_health:
 		player.health += floor(player.max_health/100)
-
+func _input(event: InputEvent) -> void:
+	if Input.is_action_pressed("DebugMenu"):
+		ModifierMessage("Super Secret Debug Mode Enabled", "")
+		GlobalScript.DebugMode = true
+	if Input.is_action_pressed("DebugAction1") and GlobalScript.DebugMode:
+		GlobalScript.CurrentEXP += 1
 func _ready() -> void:
 	GlobalScript.TotalScore = 0
 	GlobalScript.CurrentEXP = 0

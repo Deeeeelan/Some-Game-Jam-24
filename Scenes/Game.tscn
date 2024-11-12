@@ -487,11 +487,11 @@ transform = Transform3D(1, 0, -1.06581e-14, 0, 1, 0, 1.06581e-14, 0, 1, -72, 0, 
 cast_shadow = 2
 
 [node name="Wall_Caves_A154" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
-transform = Transform3D(-1.04897e-06, 0, -1, 0, 8, 0, 23.9976, 0, -4.37114e-08, -74, 0, -87)
+transform = Transform3D(-1.15387e-06, 0, -1, 0, 8, 0, 26.3974, 0, -4.37114e-08, -74, 0, -87)
 cast_shadow = 2
 
 [node name="Wall_Caves_A155" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
-transform = Transform3D(3.14691e-06, 0, 1, 0, 8, 0, -23.9976, 0, 1.31134e-07, 42, 0, -87)
+transform = Transform3D(3.4616e-06, 0, 1, 0, 8, 0, -26.3974, 0, 1.31134e-07, 42, 0, -87)
 cast_shadow = 2
 
 [node name="Wall_Caves_A156" parent="Node3D/Map/Mines" instance=ExtResource("8_damqn")]
