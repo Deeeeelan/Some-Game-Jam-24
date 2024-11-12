@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://qma07x6lbifr"]
+
+[ext_resource type="PackedScene" uid="uid://bar37l36ugfbu" path="res://Assets/Models/Sting-Sword lowpoly.fbx" id="1_dnpve"]
+[ext_resource type="Material" uid="uid://dxaybwwlaylna" path="res://Resources/Materials/Sword.tres" id="2_vkb6u"]
+
+[node name="Sting-Sword lowpoly" instance=ExtResource("1_dnpve")]
+
+[node name="Garde" parent="." index="0"]
+material_override = ExtResource("2_vkb6u")
+
+[node name="Manche" parent="." index="2"]
+material_override = ExtResource("2_vkb6u")
+
+[node name="Lame" parent="." index="3"]
+material_override = ExtResource("2_vkb6u")
