@@ -5,8 +5,14 @@ var levelingDecounce = false
 @onready var player = $Node3D/Player
 
 func ModifierMessage(Title, Description):
+	var TitleText = $Control/Modifer
 	$Control/Modifer/Title.text = str(Title) 
 	$Control/Modifer/Description.text = str(Description)
+	var tween = get_tree().create_tween()
+	TitleText.position = Vector2(0,-200)
+	tween.tween_property(TitleText,"position", Vector2.ZERO, 2).set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_OUT)
+
+
 
 func LoseFPS(): # Hopefully this will not cause any problems in the future...
 	if Engine.max_fps > 120 or Engine.max_fps == 0:
