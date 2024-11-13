@@ -11,7 +11,7 @@ func ModifierMessage(Title, Description):
 func LoseFPS(): # Hopefully this will not cause any problems in the future...
 	if Engine.max_fps > 120 or Engine.max_fps == 0:
 		Engine.max_fps = 120
-	Engine.max_fps = clampi(roundi(Engine.max_fps*0.9), 16, 60)
+	Engine.max_fps = clampi(roundi(Engine.max_fps*0.85), 16, 60)
 
 func Askew():
 	var tween = get_tree().create_tween()
@@ -26,7 +26,7 @@ func Flipped():
 
 func SpeedUp():
 	if Engine.time_scale <= 2:
-		Engine.time_scale += 0.1
+		Engine.time_scale += 0.2
 
 func Pixelation():
 	var PixelSize = $Control/Pixelation.material.get_shader_parameter("pixelSize")
@@ -52,7 +52,7 @@ func Slippery():
 		player.lerp_speed = ceil(player.lerp_speed/2)
 func Speedy():
 	if player.speed < 30:
-		player.speed += 2.5
+		player.speed += 3.5
 
 func InvertControls():
 	player.InvertControls = not player.InvertControls
@@ -161,6 +161,7 @@ func LevelUp():
 		levelingDecounce = true
 		GlobalScript.CurrentEXP -= LevelRequirement()
 		GlobalScript.CurrentLevel += 1
+		GlobalScript.TotalScore += 25
 		player.max_health += 5
 		player.damage += 5
 		if player.sword_cooldown > 0.05:
@@ -181,12 +182,14 @@ func tick():
 func RegenTick():
 	if player.health < player.max_health:
 		player.health += floor(player.max_health/100)
+
 func _input(event: InputEvent) -> void:
 	if Input.is_action_pressed("DebugMenu"):
 		ModifierMessage("Super Secret Debug Mode Enabled", "")
 		GlobalScript.DebugMode = true
 	if Input.is_action_pressed("DebugAction1") and GlobalScript.DebugMode:
 		GlobalScript.CurrentEXP += 1
+
 func _ready() -> void:
 	GlobalScript.TotalScore = 0
 	GlobalScript.CurrentEXP = 0
