@@ -188,7 +188,9 @@ func LevelUp():
 		GlobalScript.CurrentEXP -= LevelRequirement()
 		GlobalScript.CurrentLevel += 1
 		GlobalScript.TotalScore += 25
-		$EnemyTick.wait_time = clamp( 8 * ((7/8) ** GlobalScript.CurrentLevel), 0.15, 10)
+		# You know what, screw this, no clamping the wait time , it will now approach zero
+		# Risky, but I don't really care as I have been debugging this for too long (I'm just dumb)
+		$EnemyTick.wait_time = ((0.875) ** float(GlobalScript.CurrentLevel)) * 8.0 
 		player.max_health += 5
 		player.damage += 5
 		if player.sword_cooldown > 0.05:

@@ -39,8 +39,9 @@ func quit():
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED) #Hides mouse
 	$QuitButton.pressed.connect(quit)
-	$QuitButton.mouse_entered.connect(enter.bind($QuitButton))
-	$QuitButton.mouse_exited.connect(exit.bind($QuitButton))
+	# Why are tweens affected by the engine time scale, I don't wanna fix this
+	# $QuitButton.mouse_entered.connect(enter.bind($QuitButton))
+	# $QuitButton.mouse_exited.connect(exit.bind($QuitButton))
 func _process(delta: float) -> void:
 	if GlobalScript.PlayerDead == true and GamePaused == true:
 		GamePaused = false
