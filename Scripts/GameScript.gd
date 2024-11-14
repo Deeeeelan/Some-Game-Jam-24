@@ -199,8 +199,15 @@ func LevelUp():
 		ChooseRandomModifier()
 		levelingDecounce = false
 
-func tick():
-	var enemyScene = load("res://Assets/Enemies/enemy.tscn")
+var FORCED_ENEMY = ""
+var EnemyRates = {
+	"Angry Guy" : {
+		"FilePath" : "res://Assets/Enemies/enemy.tscn",
+		"Weight" : 1,
+	}
+}
+func LoadEnemy(Path):
+	var enemyScene = load(Path)
 	var enemy = enemyScene.instantiate()
 	
 	EnemyNode.add_child(enemy)
@@ -208,6 +215,17 @@ func tick():
 	
 	var randomSpawn = $Node3D/Spawns.get_children().pick_random()
 	enemy.position = randomSpawn.position
+func tick():
+	# Select random enemy
+	if FORCED_ENEMY != "":
+		pass
+	for EnemyName in EnemyRates:
+		var Enemy = EnemyRates[EnemyName]
+		if randi_range(1,Enemy.Weight) == 1:
+			LoadEnemy(Enemy.FilePath)
+			
+			break
+
 
 func RegenTick():
 	if player.health < player.max_health:
