@@ -30,15 +30,20 @@ func ModifierMessage(Title, Description):
 	$Control/Modifer/Description.text = str(Description)
 	var tween = get_tree().create_tween()
 	TitleText.position = Vector2(-100,-100)
-	tween.tween_property(TitleText,"position", Vector2.ZERO, 1).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
+	tween.tween_property(TitleText,"position", Vector2.ZERO, 0.8).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
 	var tween2 = get_tree().create_tween()
 	DescText.position = Vector2(-100,-100)
-	tween2.tween_property(DescText,"position", Vector2(0,62), 1).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT).set_delay(0.5)
+	tween2.tween_property(DescText,"position", Vector2(0,62), 0.8).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT).set_delay(0.5)
 
 func EnemyDied(Pos : Vector3):
 	print(Pos)
 	pass
-
+func DMGMulti():
+	MobDMGMulti += 0.1
+func HealthMulti():
+	MobHealthMulti += 0.15
+func SpeedMulti():
+	MobSpeedMulti += 0.15
 func LoseFPS(): # Hopefully this will not cause any problems in the future...
 	if Engine.max_fps > 120 or Engine.max_fps == 0:
 		Engine.max_fps = 120
@@ -96,6 +101,24 @@ func SubwaySurfing():
 const FORCED_MODIFIER = ""
 
 var ModifierRates = {
+	"HealthMulti" = {
+		Title = "Healthier Enemies",
+		Description = "tanky - ish",
+		Func = Callable(self, "HealthMulti"),
+		Weight = 16,
+	},
+	"SpeedMulti" = {
+		Title = "Faster Enemies",
+		Description = "cardio",
+		Func = Callable(self, "SpeedMulti"),
+		Weight = 16,
+	},
+	"DMGMulti" = {
+		Title = "Stronger Enemies",
+		Description = "Strong and Scary",
+		Func = Callable(self, "DMGMulti"),
+		Weight = 16,
+	},
 	"BassBoost" = {
 		Title = "Loud",
 		Description = "Loud is funny",
