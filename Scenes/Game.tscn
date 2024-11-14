@@ -2251,6 +2251,33 @@ transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -22, 0, -80)
 [node name="bush34" parent="Node3D/Map/Outside/Foilage" instance=ExtResource("17_joet1")]
 transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 9, 0, -86)
 
+[node name="bush35" parent="Node3D/Map/Outside/Foilage" instance=ExtResource("17_joet1")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 24, 0, -69)
+
+[node name="bush36" parent="Node3D/Map/Outside/Foilage" instance=ExtResource("17_joet1")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 7, 0, -98)
+
+[node name="bush37" parent="Node3D/Map/Outside/Foilage" instance=ExtResource("17_joet1")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -14, 0, -112)
+
+[node name="bush38" parent="Node3D/Map/Outside/Foilage" instance=ExtResource("17_joet1")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -33, 0, -115)
+
+[node name="bush39" parent="Node3D/Map/Outside/Foilage" instance=ExtResource("17_joet1")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -56, 0, -127)
+
+[node name="bush40" parent="Node3D/Map/Outside/Foilage" instance=ExtResource("17_joet1")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -55, 0, -115)
+
+[node name="bush41" parent="Node3D/Map/Outside/Foilage" instance=ExtResource("17_joet1")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -47, 0, -93)
+
+[node name="bush42" parent="Node3D/Map/Outside/Foilage" instance=ExtResource("17_joet1")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -35, 0, -78)
+
+[node name="bush43" parent="Node3D/Map/Outside/Foilage" instance=ExtResource("17_joet1")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -43, 0, -67)
+
 [node name="tree03" parent="Node3D/Map/Outside/Foilage" instance=ExtResource("11_63ec5")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 8, 0, -41)
 
@@ -2322,6 +2349,18 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -26, 0, -86)
 
 [node name="tree26" parent="Node3D/Map/Outside/Foilage" instance=ExtResource("11_63ec5")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -3, 0, -68)
+
+[node name="tree45" parent="Node3D/Map/Outside/Foilage" instance=ExtResource("11_63ec5")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -5, 0, -86)
+
+[node name="tree46" parent="Node3D/Map/Outside/Foilage" instance=ExtResource("11_63ec5")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 2, 0, -102)
+
+[node name="tree47" parent="Node3D/Map/Outside/Foilage" instance=ExtResource("11_63ec5")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 7, 0, -75)
+
+[node name="tree48" parent="Node3D/Map/Outside/Foilage" instance=ExtResource("11_63ec5")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -20, 0, -68)
 
 [node name="tree27" parent="Node3D/Map/Outside/Foilage" instance=ExtResource("11_63ec5")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 13, 0, -85)

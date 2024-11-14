@@ -4,6 +4,10 @@ var levelingDecounce = false
 @onready var EnemyNode = $Node3D/Enemies
 @onready var player = $Node3D/Player
 @export var Loading = false
+@export var MobDMGMulti = 1.0
+@export var MobSpeedMulti = 1.0
+@export var MobHealthMulti = 1.0
+
 var gamePath = "res://Scenes/Game.tscn"
 var loading_status
 var progress : Array
@@ -258,7 +262,10 @@ func LoadEnemy(Path):
 	
 	EnemyNode.add_child(enemy)
 	enemy.Player = player
-	
+	enemy.health *= MobHealthMulti
+	enemy.max_health *= MobHealthMulti
+	enemy.Damage *= MobDMGMulti
+	enemy.SPEED *= MobSpeedMulti
 	var randomSpawn = $Node3D/Spawns.get_children().pick_random()
 	enemy.position = randomSpawn.position
 func tick():
@@ -292,7 +299,7 @@ func _input(_event: InputEvent) -> void:
 		ModifierMessage("Super Secret Debug Mode Enabled", "")
 		GlobalScript.DebugMode = true
 	if Input.is_action_pressed("DebugAction1") and GlobalScript.DebugMode:
-		GlobalScript.CurrentEXP += 1
+		GlobalScript.CurrentEXP += 100
 	if Input.is_action_pressed("DebugAction2") and GlobalScript.DebugMode:
 		player.max_health = 99999999
 		player.health = 99999999
