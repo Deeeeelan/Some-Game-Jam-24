@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://d0no0vp0vj5t1"]
+[gd_scene load_steps=30 format=3 uid="uid://d0no0vp0vj5t1"]
 
 [ext_resource type="Script" path="res://Scripts/GameScript.gd" id="1_m1acb"]
 [ext_resource type="PackedScene" uid="uid://c4qmwrba7n82r" path="res://Assets/Models/player.tscn" id="2_1pfwd"]
@@ -16,6 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://cx2g1g8px7bn7" path="res://Assets/tree_pack_1.1/trees/tree_03.tscn" id="11_63ec5"]
 [ext_resource type="VideoStream" path="res://Assets/Videos/subwaySurf.ogv" id="16_0lknu"]
 [ext_resource type="PackedScene" uid="uid://b48wun1qmbuo7" path="res://Assets/tree_pack_1.1/trees/bush_01.tscn" id="17_joet1"]
+[ext_resource type="AudioStream" uid="uid://o46yxlx44jik" path="res://Assets/Audio/Beat One.mp3" id="17_x14pj"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_mliqr"]
 sky_top_color = Color(0.968329, 0.974258, 0.982565, 1)
@@ -2519,6 +2520,7 @@ label_settings = SubResource("LabelSettings_njqa6")
 vertical_alignment = 2
 
 [node name="Score" type="Control" parent="Control"]
+z_index = 2
 layout_mode = 1
 anchors_preset = 3
 anchor_left = 1.0
@@ -2531,6 +2533,7 @@ grow_horizontal = 0
 grow_vertical = 0
 
 [node name="Label" type="Label" parent="Control/Score"]
+z_index = 2
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -2565,6 +2568,7 @@ label_settings = SubResource("LabelSettings_4ahkw")
 horizontal_alignment = 1
 
 [node name="Level" type="Control" parent="Control"]
+z_index = 2
 layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
@@ -2574,6 +2578,7 @@ offset_bottom = 88.0
 grow_horizontal = 0
 
 [node name="Label" type="Label" parent="Control/Level"]
+z_index = 2
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -2699,6 +2704,7 @@ grow_vertical = 2
 color = Color(0, 0, 0, 1)
 
 [node name="Modifiers" type="Control" parent="Control"]
+z_index = 1
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -2709,6 +2715,7 @@ mouse_filter = 2
 
 [node name="SubwaySurfers" type="VideoStreamPlayer" parent="Control/Modifiers"]
 visible = false
+z_index = 1
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.7
@@ -2739,5 +2746,10 @@ autostart = true
 
 [node name="RegenTick" type="Timer" parent="."]
 autostart = true
+
+[node name="BGMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("17_x14pj")
+volume_db = -7.155
+parameters/looping = true
 
 [editable path="Node3D/Player"]

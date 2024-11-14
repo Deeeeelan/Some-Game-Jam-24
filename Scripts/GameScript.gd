@@ -208,6 +208,13 @@ func ChooseRandomModifier():
 			break
 
 func Death():
+	if $BGMusic.playing:
+		var tween = get_tree().create_tween()
+		tween.tween_property($BGMusic, "volume_db", -80, 1.0).set_trans(Tween.TRANS_QUART).set_ease(Tween.EASE_IN_OUT)
+		tween.play()
+		tween.finished.connect(func():
+			$BGMusic.stop()
+			)
 	GlobalScript.PlayerDead = true
 	# Engine.time_scale = 0.2
 	$Control/DeathScreen.visible = true
@@ -230,6 +237,12 @@ func LevelUp():
 		player.damage += 5
 		if player.sword_cooldown > 0.05:
 			player.sword_cooldown -= 0.05
+		if GlobalScript.CurrentLevel >= 15 and not $BGMusic.playing:
+			$BGMusic.volume_db = -80
+			$BGMusic.play()
+			var tween = get_tree().create_tween()
+			tween.tween_property($BGMusic, "volume_db", 0, 6.0).set_trans(Tween.TRANS_QUART).set_ease(Tween.EASE_IN_OUT)
+		
 		# Level Up
 		ChooseRandomModifier()
 		levelingDecounce = false
