@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://ca3m1t2h462bd"]
 
-[ext_resource type="Script" path="res://Scripts/Speedy Guy.gd" id="1_fjykk"]
+[ext_resource type="Script" path="res://Scripts/Enemies/Speedy Guy.gd" id="1_fjykk"]
 [ext_resource type="Material" uid="uid://chyi5xifpvwdd" path="res://Resources/Materials/Enemies/Speedy Guy.tres" id="2_loy5q"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_44npv"]

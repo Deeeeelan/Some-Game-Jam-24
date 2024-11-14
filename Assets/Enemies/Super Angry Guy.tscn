@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://datsbv1f021o4"]
 
-[ext_resource type="Script" path="res://Scripts/Speedy Guy.gd" id="1_6vivj"]
+[ext_resource type="Script" path="res://Scripts/Enemies/Super Angry Guy.gd" id="1_m3syc"]
 [ext_resource type="Material" uid="uid://cut6gmxba2l7m" path="res://Resources/Materials/Enemies/Super Angry Guy.tres" id="2_guinr"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_44npv"]
@@ -14,7 +14,7 @@ radius = 0.75
 [node name="Super Angry Guy" type="CharacterBody3D"]
 axis_lock_angular_x = true
 axis_lock_angular_z = true
-script = ExtResource("1_6vivj")
+script = ExtResource("1_m3syc")
 metadata/Enemy = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://ddwnkm6ucusop"]
 
-[ext_resource type="Script" path="res://Scripts/Robot Guy.gd" id="1_iu6cu"]
+[ext_resource type="Script" path="res://Scripts/Enemies/Robot Guy.gd" id="1_iu6cu"]
 [ext_resource type="Material" uid="uid://o6v4v7hkbac6" path="res://Resources/Materials/Enemies/Robot Guy.tres" id="2_iovwg"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_44npv"]

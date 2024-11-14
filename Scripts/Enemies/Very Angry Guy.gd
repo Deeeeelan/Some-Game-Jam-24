@@ -3,13 +3,13 @@ extends CharacterBody3D
 @onready var head = $Head
 @export var Player: Node3D
 
-@export var SPEED = 12.0
+@export var SPEED = 7.0
 @export var JUMP_VELOCITY = 4.5
 
-@export var max_health = 120
-@export var health = 120
+@export var max_health = 250
+@export var health = 250
 @export var isDead = false
-@export var Damage = 2
+@export var Damage = 25
 
 @export var lerp_speed = 10
 
@@ -23,8 +23,8 @@ func death():
 	if not isDead:
 		
 		get_tree().current_scene.EnemyDied(self.position)
-		GlobalScript.TotalScore += 10
-		GlobalScript.CurrentEXP += 10
+		GlobalScript.TotalScore += 25
+		GlobalScript.CurrentEXP += 15
 		isDead = true
 		await get_tree().create_timer(0.2).timeout
 		self.queue_free()
@@ -65,7 +65,7 @@ func _physics_process(delta: float) -> void:
 		# Spent way too long figuring this out
 		angleToPlayer = self.position.direction_to(Player.position) 
 		$MeshInstance3D.look_at_from_position(self.position, (Player.position * Vector3(1,0,1))+self.position*Vector3(0,1,0))
-		SPEED = Player.speed + 1
+	
 	var NormDir = angleToPlayer #(transform.basis * Vector3(angleToPlayer.x, 0, angleToPlayer.y)).normalized()
 	direction = lerp(direction,NormDir,delta*lerp_speed)
 	if direction:

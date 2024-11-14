@@ -181,7 +181,7 @@ func Death():
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	
 func LevelRequirement() -> int:
-	return snapped(GlobalScript.CurrentLevel * 5 + 10, 10) 
+	return snapped(GlobalScript.CurrentLevel * 10 + 10, 10) 
 # snapped() returns the closest value to the second arguement (Round to the xth number)
 
 func LevelUp():

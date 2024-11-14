@@ -3,13 +3,13 @@ extends CharacterBody3D
 @onready var head = $Head
 @export var Player: Node3D
 
-@export var SPEED = 12.0
+@export var SPEED = 30
 @export var JUMP_VELOCITY = 4.5
 
-@export var max_health = 450
-@export var health = 450
+@export var max_health = 10000
+@export var health = 10000
 @export var isDead = false
-@export var Damage = 75
+@export var Damage = 1
 
 @export var lerp_speed = 10
 
@@ -23,8 +23,8 @@ func death():
 	if not isDead:
 		
 		get_tree().current_scene.EnemyDied(self.position)
-		GlobalScript.TotalScore += 10
-		GlobalScript.CurrentEXP += 10
+		GlobalScript.TotalScore += 10000
+		GlobalScript.CurrentEXP += 1000
 		isDead = true
 		await get_tree().create_timer(0.2).timeout
 		self.queue_free()

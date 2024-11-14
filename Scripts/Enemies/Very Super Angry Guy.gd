@@ -23,8 +23,8 @@ func death():
 	if not isDead:
 		
 		get_tree().current_scene.EnemyDied(self.position)
-		GlobalScript.TotalScore += 10
-		GlobalScript.CurrentEXP += 10
+		GlobalScript.TotalScore += 125
+		GlobalScript.CurrentEXP += 35
 		isDead = true
 		await get_tree().create_timer(0.2).timeout
 		self.queue_free()
