@@ -36,8 +36,14 @@ func ModifierMessage(Title, Description):
 	tween2.tween_property(DescText,"position", Vector2(0,62), 0.8).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT).set_delay(0.5)
 
 func EnemyDied(Pos : Vector3):
-	print(Pos)
-	pass
+	var PartiScene = load("res://Assets/Misc/deathparticle.tscn")
+	var Particle = PartiScene.instantiate()
+	$Node3D/Particles.add_child(Particle)
+	Particle.position = Pos
+	Particle.get_node("CPUParticles3D").emitting = true
+	await Particle.get_node("CPUParticles3D").finished
+	Particle.queue_free()
+	
 func DMGMulti():
 	MobDMGMulti += 0.1
 func HealthMulti():
