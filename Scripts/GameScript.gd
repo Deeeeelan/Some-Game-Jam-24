@@ -202,6 +202,12 @@ func _ready() -> void:
 	GlobalScript.CurrentLevel = 0
 	$EnemyTick.timeout.connect(tick)
 	$RegenTick.timeout.connect(RegenTick)
+	$Control/FG.scale = Vector2.ONE
+	$Control/FG.visible = true
+	var tween = get_tree().create_tween()
+
+	tween.tween_property($Control/FG, "scale", Vector2.ZERO, 2.0).set_trans(Tween.TRANS_QUART).set_ease(Tween.EASE_IN_OUT)
+	tween.play()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

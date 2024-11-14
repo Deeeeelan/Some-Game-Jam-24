@@ -1,14 +1,19 @@
-[gd_scene load_steps=5 format=3 uid="uid://caeeogffw2krf"]
+[gd_scene load_steps=6 format=3 uid="uid://caeeogffw2krf"]
 
-[ext_resource type="Script" path="res://Scripts/StartGame.gd" id="1_6cbjg"]
+[ext_resource type="Script" path="res://Scripts/TitleScreen.gd" id="1_bq351"]
 [ext_resource type="FontFile" uid="uid://c1k08kigjcudw" path="res://Assets/Fonts/Jacquard12-Regular.ttf" id="2_w5tgx"]
-[ext_resource type="Texture2D" uid="uid://c77h2bf5nvw6w" path="res://Assets/Textures/WTHIH Logo SVG.svg" id="3_0b8qn"]
+[ext_resource type="Texture2D" uid="uid://cp3ksktwmkwfx" path="res://Assets/Textures/WTHIH Logo FINAL.png" id="4_hqgjn"]
+[ext_resource type="Texture2D" uid="uid://crs3dw7ln8c67" path="res://Assets/Textures/Checkerboard BG.png" id="5_3jxrg"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_w3p1i"]
 font = ExtResource("2_w5tgx")
 font_size = 65
+shadow_size = 8
+shadow_color = Color(0.172549, 0.172549, 0.172549, 0.6)
+shadow_offset = Vector2(3, 3)
 
 [node name="Title Screen" type="Node"]
+script = ExtResource("1_bq351")
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
@@ -18,7 +23,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Button" type="Button" parent="Control"]
+[node name="StartButton" type="Button" parent="Control"]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -31,9 +36,11 @@ offset_right = 175.0
 offset_bottom = 50.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_6cbjg")
+pivot_offset = Vector2(175, 50)
+focus_mode = 0
+flat = true
 
-[node name="Label" type="Label" parent="Control/Button"]
+[node name="Label" type="Label" parent="Control/StartButton"]
 layout_direction = 1
 layout_mode = 1
 anchors_preset = 15
@@ -49,12 +56,50 @@ vertical_alignment = 1
 [node name="TextureRect" type="TextureRect" parent="Control"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.1
-anchor_right = 0.9
-anchor_bottom = 0.85
+anchor_left = 0.15
+anchor_right = 0.85
+anchor_bottom = 0.83
 grow_horizontal = 2
 mouse_filter = 2
-texture = ExtResource("3_0b8qn")
+texture = ExtResource("4_hqgjn")
+expand_mode = 1
 stretch_mode = 5
+
+[node name="Checkerboard" type="TextureRect" parent="Control"]
+z_index = -10
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.2, 1.2)
+pivot_offset = Vector2(576, 540)
+mouse_filter = 2
+texture = ExtResource("5_3jxrg")
+stretch_mode = 6
+
+[node name="BG" type="ColorRect" parent="Control"]
+z_index = -20
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.254902, 0.498039, 0.72549, 1)
+
+[node name="FG" type="ColorRect" parent="Control"]
+visible = false
+z_index = 20
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
 
 [node name="Background" type="Node3D" parent="."]
