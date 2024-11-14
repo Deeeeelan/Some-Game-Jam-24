@@ -3,7 +3,22 @@ extends Node
 var levelingDecounce = false
 @onready var EnemyNode = $Node3D/Enemies
 @onready var player = $Node3D/Player
+@export var Loading = false
+var gamePath = "res://Scenes/Game.tscn"
+var loading_status
+var progress : Array
 
+func enter(node):
+	var tween = get_tree().create_tween()
+
+	tween.tween_property(node, "scale", Vector2.ONE*1.2, 0.2).set_trans(Tween.TRANS_EXPO).set_ease(Tween.EASE_OUT)
+	tween.play()
+func exit(node):
+	var tween = get_tree().create_tween()
+
+	tween.tween_property(node, "scale", Vector2.ONE, 0.2).set_trans(Tween.TRANS_EXPO).set_ease(Tween.EASE_OUT)
+	tween.play()
+	
 func ModifierMessage(Title, Description):
 	var TitleText = $Control/Modifer/Title
 	var DescText = $Control/Modifer/Description
@@ -49,7 +64,7 @@ func Saturated():
 var BassBoosts = 0
 func BassBoost(): # This is where the funny starts (Had to nerf, was too good, sorry)
 	if BassBoosts < 1:
-		BassBoosts + 1
+		BassBoosts += 1
 		var effect = AudioServer.get_bus_effect(0,0)
 		effect.volume_db += 1
 		var effect2 = AudioServer.get_bus_effect(0,1)
@@ -159,8 +174,9 @@ func ChooseRandomModifier():
 
 func Death():
 	GlobalScript.PlayerDead = true
-	Engine.time_scale = 0.2
+	# Engine.time_scale = 0.2
 	$Control/DeathScreen.visible = true
+	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	
 func LevelRequirement() -> int:
 	return snapped(GlobalScript.CurrentLevel * 5 + 10, 10) 
@@ -172,6 +188,7 @@ func LevelUp():
 		GlobalScript.CurrentEXP -= LevelRequirement()
 		GlobalScript.CurrentLevel += 1
 		GlobalScript.TotalScore += 25
+		$EnemyTick.wait_time = clamp( 8 * (7/80) ** GlobalScript.CurrentLevel, 0.15, 10)
 		player.max_health += 5
 		player.damage += 5
 		if player.sword_cooldown > 0.05:
@@ -192,7 +209,16 @@ func tick():
 func RegenTick():
 	if player.health < player.max_health:
 		player.health += floor(player.max_health/100)
-
+func Retry():
+	if not Loading:
+		Loading = true
+		ResourceLoader.load_threaded_request(gamePath)
+		$Control/FG.scale = Vector2.ZERO
+		$Control/FG.visible = true
+		var tween = get_tree().create_tween()
+		tween.tween_property($Control/FG, "scale", Vector2.ONE, 2.0).set_trans(Tween.TRANS_QUART).set_ease(Tween.EASE_IN_OUT)
+		tween.play()
+		
 func _input(event: InputEvent) -> void:
 	if Input.is_action_pressed("DebugMenu"):
 		ModifierMessage("Super Secret Debug Mode Enabled", "")
@@ -204,10 +230,18 @@ func _ready() -> void:
 	GlobalScript.TotalScore = 0
 	GlobalScript.CurrentEXP = 0
 	GlobalScript.CurrentLevel = 0
+	GlobalScript.PlayerDead = false
+	GlobalScript.GamePaused = false
+	$EnemyTick.wait_time = 8
 	$EnemyTick.timeout.connect(tick)
 	$RegenTick.timeout.connect(RegenTick)
 	$Control/FG.scale = Vector2.ONE
 	$Control/FG.visible = true
+	
+	$Control/DeathScreen/RetryButton.pressed.connect(Retry)
+	$Control/DeathScreen/RetryButton.mouse_entered.connect(enter.bind($Control/DeathScreen/RetryButton))
+	$Control/DeathScreen/RetryButton.mouse_exited.connect(exit.bind($Control/DeathScreen/RetryButton))
+	
 	var tween = get_tree().create_tween()
 
 	tween.tween_property($Control/FG, "scale", Vector2.ZERO, 2.0).set_trans(Tween.TRANS_QUART).set_ease(Tween.EASE_IN_OUT)
@@ -217,3 +251,12 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	if GlobalScript.CurrentEXP >= LevelRequirement():
 		LevelUp()
+	# Update the status:
+	loading_status = ResourceLoader.load_threaded_get_status(gamePath, progress)
+	
+	# Check the loading status:
+	match loading_status:
+		ResourceLoader.THREAD_LOAD_IN_PROGRESS:
+			pass # progress[0] * 100
+		ResourceLoader.THREAD_LOAD_LOADED:
+			get_tree().change_scene_to_packed(ResourceLoader.load_threaded_get(gamePath))
