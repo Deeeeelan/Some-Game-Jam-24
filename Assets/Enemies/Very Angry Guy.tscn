@@ -1,0 +1,43 @@
+[gd_scene load_steps=6 format=3 uid="uid://d34w8jh1lx8gt"]
+
+[ext_resource type="Script" path="res://Scripts/Very Angry Guy.tres.gd" id="1_w3kcm"]
+[ext_resource type="Material" uid="uid://bte5357tqnkbc" path="res://Resources/Materials/Enemies/Very Angry Guy.tres" id="2_ufaef"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_44npv"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_uwax2"]
+size = Vector3(2, 2, 0)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_bikjh"]
+radius = 0.75
+
+[node name="Very Angry Guy" type="CharacterBody3D"]
+axis_lock_angular_x = true
+axis_lock_angular_z = true
+script = ExtResource("1_w3kcm")
+metadata/Enemy = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_44npv")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+material_override = ExtResource("2_ufaef")
+mesh = SubResource("BoxMesh_uwax2")
+skeleton = NodePath("")
+
+[node name="Head" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+
+[node name="Melee" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Melee"]
+shape = SubResource("SphereShape3D_bikjh")
+
+[node name="EnemyAttackTick" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
+
+[node name="DespawnTimer" type="Timer" parent="."]
+wait_time = 120.0
+one_shot = true
+autostart = true
