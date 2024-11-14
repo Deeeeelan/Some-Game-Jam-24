@@ -53,6 +53,31 @@ label_settings = SubResource("LabelSettings_w3p1i")
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="QuitButton" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -100.0
+offset_right = 350.0
+grow_vertical = 0
+pivot_offset = Vector2(0, 100)
+focus_mode = 0
+flat = true
+
+[node name="Label" type="Label" parent="Control/QuitButton"]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -66.0
+offset_right = 115.0
+grow_vertical = 0
+text = "Quit"
+label_settings = SubResource("LabelSettings_w3p1i")
+vertical_alignment = 2
+
 [node name="TextureRect" type="TextureRect" parent="Control"]
 layout_mode = 1
 anchors_preset = -1

@@ -2,28 +2,32 @@ extends Node
 
 @onready var texture_rect = $Control/Checkerboard
 
+@export var Loading = false
 
 var gamePath = "res://Scenes/Game.tscn"
 var loading_status
 var progress : Array
 
 func ButtonPressed():
-	ResourceLoader.load_threaded_request(gamePath)
-	$Control/FG.scale = Vector2.ZERO
-	$Control/FG.visible = true
+	if not Loading:
+		Loading = true
+		ResourceLoader.load_threaded_request(gamePath)
+		$Control/FG.scale = Vector2.ZERO
+		$Control/FG.visible = true
+		var tween = get_tree().create_tween()
+		tween.tween_property($Control/FG, "scale", Vector2.ONE, 2.0).set_trans(Tween.TRANS_QUART).set_ease(Tween.EASE_IN_OUT)
+		tween.play()
+func QuitGame():
+	get_tree().quit()
+func enter(node):
 	var tween = get_tree().create_tween()
 
-	tween.tween_property($Control/FG, "scale", Vector2.ONE, 2.0).set_trans(Tween.TRANS_QUART).set_ease(Tween.EASE_IN_OUT)
+	tween.tween_property(node, "scale", Vector2.ONE*1.2, 0.2).set_trans(Tween.TRANS_EXPO).set_ease(Tween.EASE_OUT)
 	tween.play()
-func enter():
+func exit(node):
 	var tween = get_tree().create_tween()
 
-	tween.tween_property($Control/StartButton, "scale", Vector2.ONE*1.2, 0.2).set_trans(Tween.TRANS_EXPO).set_ease(Tween.EASE_OUT)
-	tween.play()
-func exit():
-	var tween = get_tree().create_tween()
-
-	tween.tween_property($Control/StartButton, "scale", Vector2.ONE, 0.2).set_trans(Tween.TRANS_EXPO).set_ease(Tween.EASE_OUT)
+	tween.tween_property(node, "scale", Vector2.ONE, 0.2).set_trans(Tween.TRANS_EXPO).set_ease(Tween.EASE_OUT)
 	tween.play()
 
 
@@ -62,9 +66,11 @@ func _ready():
 	TweenSize()
 	
 	$Control/StartButton.pressed.connect(ButtonPressed)
-	$Control/StartButton.mouse_entered.connect(enter)
-	$Control/StartButton.mouse_exited.connect(exit)
-
+	$Control/QuitButton.pressed.connect(QuitGame)
+	$Control/StartButton.mouse_entered.connect(enter.bind($Control/StartButton))
+	$Control/StartButton.mouse_exited.connect(exit.bind($Control/StartButton))
+	$Control/QuitButton.mouse_entered.connect(enter.bind($Control/QuitButton))
+	$Control/QuitButton.mouse_exited.connect(exit.bind($Control/QuitButton))
 func _process(_delta: float):
 	# Update the status:
 	loading_status = ResourceLoader.load_threaded_get_status(gamePath, progress)
