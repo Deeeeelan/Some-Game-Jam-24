@@ -204,7 +204,7 @@ func LevelUp():
 var FORCED_ENEMY = ""
 var EnemyRates = {
 	"Angry Guy" : {
-		"FilePath" : "res://Assets/Enemies/Angry Guy.tscn",
+		"FilePath" : "res://Assets/Enemies/Very Angry Guy.tscn",
 		"Weight" : 1,
 	}
 }

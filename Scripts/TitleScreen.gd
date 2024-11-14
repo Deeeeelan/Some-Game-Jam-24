@@ -7,7 +7,7 @@ extends Node
 var gamePath = "res://Scenes/Game.tscn"
 var loading_status
 var progress : Array
-
+var TransitionCompleted = false
 func ButtonPressed():
 	if not Loading:
 		Loading = true
@@ -17,6 +17,9 @@ func ButtonPressed():
 		var tween = get_tree().create_tween()
 		tween.tween_property($Control/FG, "scale", Vector2.ONE, 2.0).set_trans(Tween.TRANS_QUART).set_ease(Tween.EASE_IN_OUT)
 		tween.play()
+		tween.finished.connect(func():
+			TransitionCompleted = true
+			)
 func QuitGame():
 	get_tree().quit()
 func enter(node):
@@ -76,8 +79,6 @@ func _process(_delta: float):
 	loading_status = ResourceLoader.load_threaded_get_status(gamePath, progress)
 	
 	# Check the loading status:
-	match loading_status:
-		ResourceLoader.THREAD_LOAD_IN_PROGRESS:
-			pass # progress[0] * 100
-		ResourceLoader.THREAD_LOAD_LOADED:
-			get_tree().change_scene_to_packed(ResourceLoader.load_threaded_get(gamePath))
+
+	if loading_status == ResourceLoader.THREAD_LOAD_LOADED and TransitionCompleted:
+		get_tree().change_scene_to_packed(ResourceLoader.load_threaded_get(gamePath))
