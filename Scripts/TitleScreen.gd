@@ -62,7 +62,10 @@ func TweenSize():
 		
 		#tween2.stop()
 		
-
+func TitleGlitch():
+	if randi_range(1,3) == 1:
+		$Control/Logo.position = Vector2(172.8,0) + Vector2(randi_range(-5,5), randi_range(-5,5))
+		$Control/Logo.scale = Vector2.ONE * randf_range(0.9, 1.1)
 
 func _ready():
 	# Initial tween
@@ -74,6 +77,7 @@ func _ready():
 	$Control/StartButton.mouse_exited.connect(exit.bind($Control/StartButton))
 	$Control/QuitButton.mouse_entered.connect(enter.bind($Control/QuitButton))
 	$Control/QuitButton.mouse_exited.connect(exit.bind($Control/QuitButton))
+	$GlitchTick.timeout.connect(TitleGlitch)
 func _process(_delta: float):
 	# Update the status:
 	loading_status = ResourceLoader.load_threaded_get_status(gamePath, progress)

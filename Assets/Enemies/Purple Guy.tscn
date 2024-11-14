@@ -17,7 +17,6 @@ axis_lock_angular_z = true
 script = ExtResource("1_l3qpm")
 max_health = 350
 health = 350
-Damage = 55
 metadata/Enemy = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
