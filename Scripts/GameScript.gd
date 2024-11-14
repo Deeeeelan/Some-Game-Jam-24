@@ -31,7 +31,9 @@ func ModifierMessage(Title, Description):
 	DescText.position = Vector2(-100,-100)
 	tween2.tween_property(DescText,"position", Vector2(0,62), 1).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT).set_delay(0.5)
 
-
+func EnemyDied(Pos : Vector3):
+	print(Pos)
+	pass
 
 func LoseFPS(): # Hopefully this will not cause any problems in the future...
 	if Engine.max_fps > 120 or Engine.max_fps == 0:
@@ -202,7 +204,7 @@ func LevelUp():
 var FORCED_ENEMY = ""
 var EnemyRates = {
 	"Angry Guy" : {
-		"FilePath" : "res://Assets/Enemies/enemy.tscn",
+		"FilePath" : "res://Assets/Enemies/Angry Guy.tscn",
 		"Weight" : 1,
 	}
 }
@@ -240,14 +242,18 @@ func Retry():
 		tween.tween_property($Control/FG, "scale", Vector2.ONE, 2.0).set_trans(Tween.TRANS_QUART).set_ease(Tween.EASE_IN_OUT)
 		tween.play()
 		
-func _input(event: InputEvent) -> void:
+func _input(_event: InputEvent) -> void:
 	if Input.is_action_pressed("DebugMenu"):
 		ModifierMessage("Super Secret Debug Mode Enabled", "")
 		GlobalScript.DebugMode = true
 	if Input.is_action_pressed("DebugAction1") and GlobalScript.DebugMode:
 		GlobalScript.CurrentEXP += 1
-
+	if Input.is_action_pressed("DebugAction2") and GlobalScript.DebugMode:
+		player.max_health = 99999999
+		player.health = 99999999
 func _ready() -> void:
+	Engine.max_fps = 0
+	Engine.time_scale = 1
 	GlobalScript.TotalScore = 0
 	GlobalScript.CurrentEXP = 0
 	GlobalScript.CurrentLevel = 0
@@ -269,7 +275,7 @@ func _ready() -> void:
 	tween.play()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if GlobalScript.CurrentEXP >= LevelRequirement():
 		LevelUp()
 	# Update the status:

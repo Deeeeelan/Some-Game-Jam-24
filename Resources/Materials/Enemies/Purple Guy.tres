@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://fwc0p7diaajg"]
+
+[ext_resource type="Texture2D" uid="uid://wwuc8wu3a2rr" path="res://Assets/Textures/Mob Faces/Purple Guy.png" id="1_5a3j5"]
+
+[resource]
+transparency = 1
+albedo_texture = ExtResource("1_5a3j5")
+uv1_scale = Vector3(0.5, 0.5, 0.5)
+uv1_offset = Vector3(0.5, 0.5, 0.5)
+uv1_triplanar = true

@@ -42,7 +42,7 @@ func _ready():
 	# Why are tweens affected by the engine time scale, I don't wanna fix this
 	# $QuitButton.mouse_entered.connect(enter.bind($QuitButton))
 	# $QuitButton.mouse_exited.connect(exit.bind($QuitButton))
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if GlobalScript.PlayerDead == true and GamePaused == true:
 		GamePaused = false
 		self.visible = false

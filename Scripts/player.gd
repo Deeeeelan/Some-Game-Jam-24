@@ -20,8 +20,8 @@ func death():
 	# Handle death animation etc.
 	root.Death()
 
-func take_damage(damage):
-	health -= damage
+func take_damage(takenDMG):
+	health -= takenDMG
 	if health <= 0:
 		death()
 

@@ -88,6 +88,9 @@ script = ExtResource("1_m1acb")
 [node name="Player" parent="Node3D" instance=ExtResource("2_1pfwd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
 
+[node name="Sword" parent="Node3D/Player/Head" index="4"]
+transform = Transform3D(-1.086e-05, -3, 1.086e-05, 0, -1.086e-05, -3, 3, -1.086e-05, 3.9313e-11, 0.6, -0.2, -1)
+
 [node name="WorldEnvironment" type="WorldEnvironment" parent="Node3D"]
 environment = SubResource("Environment_k2ec4")
 
