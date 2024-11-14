@@ -1,7 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://d34w8jh1lx8gt"]
+[gd_scene load_steps=6 format=3 uid="uid://ybuqy3px3wh4"]
 
-[ext_resource type="Script" path="res://Scripts/Speedy Guy.gd" id="1_lle0y"]
-[ext_resource type="Material" uid="uid://bte5357tqnkbc" path="res://Resources/Materials/Enemies/Very Angry Guy.tres" id="2_ufaef"]
+[ext_resource type="Script" path="res://Scripts/Speedy Guy.gd" id="1_rd0pm"]
+[ext_resource type="Material" uid="uid://baq02tlwgfq7x" path="res://Resources/Materials/Enemies/Very Super Angry Guy.tres" id="2_kbybv"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_44npv"]
 
@@ -11,17 +11,17 @@ size = Vector3(2, 2, 0)
 [sub_resource type="SphereShape3D" id="SphereShape3D_bikjh"]
 radius = 0.75
 
-[node name="Very Angry Guy" type="CharacterBody3D"]
+[node name="Very Super Angry Guy" type="CharacterBody3D"]
 axis_lock_angular_x = true
 axis_lock_angular_z = true
-script = ExtResource("1_lle0y")
+script = ExtResource("1_rd0pm")
 metadata/Enemy = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_44npv")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-material_override = ExtResource("2_ufaef")
+material_override = ExtResource("2_kbybv")
 mesh = SubResource("BoxMesh_uwax2")
 skeleton = NodePath("")
 

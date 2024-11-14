@@ -3,13 +3,13 @@ extends CharacterBody3D
 @onready var head = $Head
 @export var Player: Node3D
 
-@export var SPEED = 7.0
+@export var SPEED = 12.0
 @export var JUMP_VELOCITY = 4.5
 
-@export var max_health = 200
-@export var health = 200
+@export var max_health = 450
+@export var health = 450
 @export var isDead = false
-@export var Damage = 10
+@export var Damage = 75
 
 @export var lerp_speed = 10
 

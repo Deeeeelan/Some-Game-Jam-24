@@ -203,10 +203,54 @@ func LevelUp():
 
 var FORCED_ENEMY = ""
 var EnemyRates = {
-	"Angry Guy" : {
+	"Sussy Guy" : {
+		"FilePath" : "res://Assets/Enemies/Sussy Guy.tscn",
+		"Weight" : 10000,
+		"minLvl" : 0,
+		"maxLvl" : INF,
+	},
+	"Robot Guy" : {
+		"FilePath" : "res://Assets/Enemies/Robot Guy.tscn",
+		"Weight" : 85,
+		"minLvl" : 25,
+		"maxLvl" : INF,
+	},
+	"Purple Guy" : {
+		"FilePath" : "res://Assets/Enemies/Purple Guy.tscn",
+		"Weight" : 85,
+		"minLvl" : 20,
+		"maxLvl" : INF,
+	},
+	"Speedy Guy" : {
+		"FilePath" : "res://Assets/Enemies/Speedy Guy.tscn",
+		"Weight" : 15,
+		"minLvl" : 15,
+		"maxLvl" : INF,
+	},
+	"Very Super Angry Guy" : {
+		"FilePath" : "res://Assets/Enemies/Very Super Angry Guy.tscn",
+		"Weight" : 55,
+		"minLvl" : 65,
+		"maxLvl" : INF,
+	},
+	"Super Angry Guy" : {
+		"FilePath" : "res://Assets/Enemies/Super Angry Guy.tscn",
+		"Weight" : 35,
+		"minLvl" : 35,
+		"maxLvl" : 100,
+	},
+	"Very Angry Guy" : {
 		"FilePath" : "res://Assets/Enemies/Very Angry Guy.tscn",
+		"Weight" : 5,
+		"minLvl" : 15,
+		"maxLvl" : 65,
+	},
+	"Angry Guy" : {
+		"FilePath" : "res://Assets/Enemies/Angry Guy.tscn",
 		"Weight" : 1,
-	}
+		"minLvl" : 0,
+		"maxLvl" : 40,
+	},
 }
 func LoadEnemy(Path):
 	var enemyScene = load(Path)
@@ -223,10 +267,11 @@ func tick():
 		pass
 	for EnemyName in EnemyRates:
 		var Enemy = EnemyRates[EnemyName]
-		if randi_range(1,Enemy.Weight) == 1:
-			LoadEnemy(Enemy.FilePath)
-			
-			break
+		if Enemy.minLvl <= GlobalScript.CurrentLevel and GlobalScript.CurrentLevel <= Enemy.maxLvl:
+			if randi_range(1,Enemy.Weight) == 1:
+				LoadEnemy(Enemy.FilePath)
+				
+				break
 
 
 func RegenTick():
