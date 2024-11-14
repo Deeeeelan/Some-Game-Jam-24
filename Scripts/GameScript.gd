@@ -5,12 +5,16 @@ var levelingDecounce = false
 @onready var player = $Node3D/Player
 
 func ModifierMessage(Title, Description):
-	var TitleText = $Control/Modifer
+	var TitleText = $Control/Modifer/Title
+	var DescText = $Control/Modifer/Description
 	$Control/Modifer/Title.text = str(Title) 
 	$Control/Modifer/Description.text = str(Description)
 	var tween = get_tree().create_tween()
-	TitleText.position = Vector2(0,-200)
-	tween.tween_property(TitleText,"position", Vector2.ZERO, 2).set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_OUT)
+	TitleText.position = Vector2(-100,-100)
+	tween.tween_property(TitleText,"position", Vector2.ZERO, 1).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
+	var tween2 = get_tree().create_tween()
+	DescText.position = Vector2(-100,-100)
+	tween2.tween_property(DescText,"position", Vector2(0,62), 1).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT).set_delay(0.5)
 
 
 

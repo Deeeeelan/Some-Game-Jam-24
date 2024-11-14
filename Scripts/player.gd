@@ -31,7 +31,7 @@ func _input(event):
 			rotate_y(deg_to_rad(-event.relative.x * mouse_sens))
 			head.rotate_x(deg_to_rad(-event.relative.y * mouse_sens))
 			head.rotation.x = clamp(head.rotation.x,deg_to_rad(-89),deg_to_rad(89))
-		if event.is_action_pressed("Attack") and not SwordCD:
+		if event.is_action_pressed("Attack") and not SwordCD and GlobalScript.GamePaused == false:
 			SwordCD = true
 			var DetectedItems = $Head/Area3D.get_overlapping_bodies()
 			$Head/SwordSlash.play()

@@ -75,5 +75,5 @@ func _physics_process(delta: float) -> void:
 		move_and_slide()
 	
 	# Just makes the enemy jump when velocity is lost. Likely hitting an obsticle. Temporary
-	if is_on_floor() and velocity.length() < 0.01:
-		Jump()
+	# if is_on_floor() and velocity.length() < 0.01:
+	# 	Jump()

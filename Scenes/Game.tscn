@@ -46,9 +46,12 @@ adjustment_saturation = 1.5
 shader = ExtResource("3_6jm6e")
 shader_parameter/pixelSize = 4
 
-[sub_resource type="LabelSettings" id="LabelSettings_f05eg"]
+[sub_resource type="LabelSettings" id="LabelSettings_oe6hx"]
 font = ExtResource("6_nfg15")
 font_size = 65
+shadow_size = 8
+shadow_color = Color(0.172549, 0.172549, 0.172549, 0.6)
+shadow_offset = Vector2(3, 3)
 
 [sub_resource type="LabelSettings" id="LabelSettings_njqa6"]
 font = ExtResource("6_nfg15")
@@ -72,6 +75,7 @@ font_size = 32
 font_color = Color(0.466181, 0.466181, 0.466181, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_rcyts"]
+font = ExtResource("6_nfg15")
 font_size = 56
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_gvx5f"]
@@ -84,9 +88,6 @@ script = ExtResource("1_m1acb")
 
 [node name="Player" parent="Node3D" instance=ExtResource("2_1pfwd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
-
-[node name="Sword" parent="Node3D/Player/Head" index="4"]
-transform = Transform3D(-1.086e-05, -3, 1.086e-05, 0, -1.086e-05, -3, 3, -1.086e-05, 3.9313e-11, 0.6, -0.2, -1)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="Node3D"]
 environment = SubResource("Environment_k2ec4")
@@ -2438,11 +2439,14 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -175.0
-offset_top = -37.5
+offset_top = -50.0
 offset_right = 175.0
-offset_bottom = 37.5
+offset_bottom = 50.0
 grow_horizontal = 2
 grow_vertical = 2
+pivot_offset = Vector2(175, 50)
+focus_mode = 0
+flat = true
 
 [node name="Label" type="Label" parent="Control/Pause Screen/QuitButton"]
 layout_direction = 1
@@ -2453,7 +2457,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "Quit"
-label_settings = SubResource("LabelSettings_f05eg")
+label_settings = SubResource("LabelSettings_oe6hx")
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -2545,34 +2549,38 @@ horizontal_alignment = 2
 
 [node name="Modifer" type="Control" parent="Control"]
 layout_mode = 1
-anchors_preset = 0
+anchor_right = 0.087
 offset_right = 228.0
 offset_bottom = 88.0
 
 [node name="Title" type="Label" parent="Control/Modifer"]
 layout_mode = 1
-anchors_preset = 15
+anchors_preset = -1
 anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_bottom = 0.6
 offset_right = 194.0
 grow_horizontal = 2
 grow_vertical = 2
 label_settings = SubResource("LabelSettings_aqka1")
+clip_text = true
 
 [node name="Description" type="Label" parent="Control/Modifer"]
 layout_mode = 1
-anchors_preset = 15
+anchors_preset = -1
+anchor_top = -0.34
 anchor_right = 1.0
-anchor_bottom = 1.0
-offset_top = 92.0
+anchor_bottom = 0.665
+offset_top = 91.92
 offset_right = 171.0
-offset_bottom = 72.0
+offset_bottom = 71.92
 grow_horizontal = 2
 grow_vertical = 2
 label_settings = SubResource("LabelSettings_36nfk")
+autowrap_mode = 3
 
 [node name="DeathScreen" type="Control" parent="Control"]
 visible = false
+z_index = 3
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -2597,6 +2605,8 @@ grow_horizontal = 2
 grow_vertical = 2
 text = "Death"
 label_settings = SubResource("LabelSettings_rcyts")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="ColorRect" type="ColorRect" parent="Control/DeathScreen"]
 visible = false
@@ -2658,6 +2668,7 @@ color = Color(0, 0, 0, 1)
 
 [node name="EnemyTick" type="Timer" parent="."]
 wait_time = 2.0
+autostart = true
 
 [node name="RegenTick" type="Timer" parent="."]
 autostart = true
