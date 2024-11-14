@@ -1,9 +1,8 @@
-[gd_scene load_steps=30 format=3 uid="uid://d0no0vp0vj5t1"]
+[gd_scene load_steps=29 format=3 uid="uid://d0no0vp0vj5t1"]
 
 [ext_resource type="Script" path="res://Scripts/GameScript.gd" id="1_m1acb"]
 [ext_resource type="PackedScene" uid="uid://c4qmwrba7n82r" path="res://Assets/Models/player.tscn" id="2_1pfwd"]
 [ext_resource type="Shader" path="res://Resources/Shaders/Pixelate.gdshader" id="3_6jm6e"]
-[ext_resource type="PackedScene" uid="uid://b0i7rkvyp80k0" path="res://Assets/MineAndCavesSet/scenes/Modular_Mine_Set.tscn" id="4_403ij"]
 [ext_resource type="Script" path="res://Scripts/Pause Screen.gd" id="4_w4rgy"]
 [ext_resource type="PackedScene" uid="uid://bvnq4ywoa0omv" path="res://Assets/MineAndCavesSet/scenes/Ground/Ground_Mines/ground_mines_a.tscn" id="4_wjyj0"]
 [ext_resource type="Script" path="res://Scripts/UIManager.gd" id="5_ubbnd"]
@@ -2375,12 +2374,6 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 15, 0, -105)
 [node name="tree44" parent="Node3D/Map/Outside/Foilage" instance=ExtResource("11_63ec5")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 12, 0, -121)
 
-[node name="Modular_Mine_Set" parent="Node3D" instance=ExtResource("4_403ij")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 53)
-
-[node name="DirectionalLight3D" parent="Node3D/Modular_Mine_Set" index="0"]
-visible = false
-
 [node name="Spawns" type="Node3D" parent="Node3D"]
 
 [node name="Spawn1" type="Node3D" parent="Node3D/Spawns"]
@@ -2705,4 +2698,3 @@ autostart = true
 autostart = true
 
 [editable path="Node3D/Player"]
-[editable path="Node3D/Modular_Mine_Set"]

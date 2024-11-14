@@ -188,7 +188,7 @@ func LevelUp():
 		GlobalScript.CurrentEXP -= LevelRequirement()
 		GlobalScript.CurrentLevel += 1
 		GlobalScript.TotalScore += 25
-		$EnemyTick.wait_time = clamp( 8 * (7/8) ** GlobalScript.CurrentLevel, 0.15, 10)
+		$EnemyTick.wait_time = clamp( 8 * ((7/8) ** GlobalScript.CurrentLevel), 0.15, 10)
 		player.max_health += 5
 		player.damage += 5
 		if player.sword_cooldown > 0.05:
@@ -198,11 +198,12 @@ func LevelUp():
 		levelingDecounce = false
 
 func tick():
-	var enemyScene = preload("res://Assets/Enemies/enemy.tscn")
+	var enemyScene = load("res://Assets/Enemies/enemy.tscn")
 	var enemy = enemyScene.instantiate()
 	
-	enemy.Player = player
 	EnemyNode.add_child(enemy)
+	enemy.Player = player
+	
 	var randomSpawn = $Node3D/Spawns.get_children().pick_random()
 	enemy.position = randomSpawn.position
 
