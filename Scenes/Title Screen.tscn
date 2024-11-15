@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://caeeogffw2krf"]
+[gd_scene load_steps=6 format=3 uid="uid://caeeogffw2krf"]
 
 [ext_resource type="Script" path="res://Scripts/TitleScreen.gd" id="1_bq351"]
 [ext_resource type="FontFile" uid="uid://c1k08kigjcudw" path="res://Assets/Fonts/Jacquard12-Regular.ttf" id="2_w5tgx"]
@@ -8,13 +8,6 @@
 [sub_resource type="LabelSettings" id="LabelSettings_w3p1i"]
 font = ExtResource("2_w5tgx")
 font_size = 65
-shadow_size = 8
-shadow_color = Color(0.172549, 0.172549, 0.172549, 0.6)
-shadow_offset = Vector2(3, 3)
-
-[sub_resource type="LabelSettings" id="LabelSettings_7fxqm"]
-font = ExtResource("2_w5tgx")
-font_size = 32
 shadow_size = 8
 shadow_color = Color(0.172549, 0.172549, 0.172549, 0.6)
 shadow_offset = Vector2(3, 3)
@@ -135,25 +128,8 @@ grow_vertical = 2
 mouse_filter = 2
 color = Color(0, 0, 0, 1)
 
-[node name="Text" type="Label" parent="Control"]
-layout_direction = 1
-layout_mode = 1
-anchors_preset = 3
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -520.0
-offset_top = -66.0
-grow_horizontal = 0
-grow_vertical = 0
-text = "Made by Dylan Tseng"
-label_settings = SubResource("LabelSettings_7fxqm")
-horizontal_alignment = 2
-vertical_alignment = 2
-
 [node name="Background" type="Node3D" parent="."]
 
 [node name="GlitchTick" type="Timer" parent="."]
-wait_time = 0.1
+wait_time = 0.075
 autostart = true

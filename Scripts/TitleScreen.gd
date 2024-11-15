@@ -64,8 +64,9 @@ func TweenSize():
 		
 func TitleGlitch():
 	if randi_range(1,3) == 1:
-		$Control/Logo.position = Vector2(172.8,0) + Vector2(randi_range(-5,5), randi_range(-5,5))
-		$Control/Logo.scale = Vector2.ONE * randf_range(0.9, 1.1)
+		$Control/Logo.pivot_offset = $Control/Logo.size / 2
+		$Control/Logo.position = Vector2($Control/Logo.position.x,0) + Vector2(randi_range(-8,8), randi_range(-8,8))
+		$Control/Logo.scale = Vector2.ONE * randf_range(0.975, 1.025)
 
 func _ready():
 	# Initial tween
