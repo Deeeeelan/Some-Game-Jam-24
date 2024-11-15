@@ -2,6 +2,7 @@ extends CharacterBody3D
 
 @onready var head = $Head
 @onready var root = get_tree().current_scene
+@onready var HealthText = get_tree().current_scene.get_node("Control/Health")
 
 @export var max_health = 100
 @export var health = 100
@@ -24,6 +25,10 @@ func take_damage(takenDMG):
 	health -= takenDMG
 	if health <= 0:
 		death()
+	HealthText.rotation = deg_to_rad(randi_range(-90,90))
+	var tween = get_tree().create_tween()
+	tween.tween_property(HealthText, "rotation", deg_to_rad(0), 0.85).set_trans(Tween.TRANS_QUART).set_ease(Tween.EASE_OUT)
+	tween.play()
 func spawnParticle(Pos):
 	var PartiScene = load("res://Assets/Misc/dmgparticle.tscn")
 	var Particle = PartiScene.instantiate()

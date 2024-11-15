@@ -55,7 +55,7 @@ shadow_offset = Vector2(3, 3)
 
 [sub_resource type="LabelSettings" id="LabelSettings_njqa6"]
 font = ExtResource("6_nfg15")
-font_size = 50
+font_size = 72
 
 [sub_resource type="LabelSettings" id="LabelSettings_4ahkw"]
 font = ExtResource("6_nfg15")
@@ -88,6 +88,9 @@ script = ExtResource("1_m1acb")
 
 [node name="Player" parent="Node3D" instance=ExtResource("2_1pfwd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+
+[node name="Sword" parent="Node3D/Player/Head" index="4"]
+transform = Transform3D(-1.086e-05, -3, 1.086e-05, 0, -1.086e-05, -3, 3, -1.086e-05, 3.9313e-11, 0.6, -0.2, -1)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="Node3D"]
 environment = SubResource("Environment_k2ec4")
@@ -2504,6 +2507,7 @@ anchor_bottom = 1.0
 offset_top = -88.0
 offset_right = 228.0
 grow_vertical = 0
+pivot_offset = Vector2(0, 88)
 
 [node name="Label" type="Label" parent="Control/Health"]
 layout_mode = 1
