@@ -13,4 +13,5 @@ func _process(_delta: float) -> void:
 	$Health/Label.text = str(clamp(Player.health,0,INF)) + "/" + str(Player.max_health)
 	$EXP/Label.text = str(GlobalScript.CurrentEXP) + " / " + str(root.LevelRequirement())
 	$Level/Label.text = "Level: " + str(GlobalScript.CurrentLevel)
-	
+	$EXP/ProgressBar.max_value = root.LevelRequirement()
+	$EXP/ProgressBar.value = GlobalScript.CurrentEXP
