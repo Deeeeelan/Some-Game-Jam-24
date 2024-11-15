@@ -36,6 +36,7 @@ func ModifierMessage(Title, Description):
 	tween2.tween_property(DescText,"position", Vector2(0,62), 0.8).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT).set_delay(0.5)
 
 func EnemyDied(Pos : Vector3):
+	player.health = clamp(player.health+25,0,player.max_health)
 	var PartiScene = load("res://Assets/Misc/deathparticle.tscn")
 	var Particle = PartiScene.instantiate()
 	$Node3D/Particles.add_child(Particle)
