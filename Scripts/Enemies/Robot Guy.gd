@@ -49,6 +49,11 @@ func melee():
 func _ready() -> void:
 	$EnemyAttackTick.timeout.connect(melee)
 	$DespawnTimer.timeout.connect(despawn)
+	max_health = randi_range(100,1500)
+	health = max_health
+	SPEED = randf_range(3,16)
+	Damage = randi_range(5,35)
+	lerp_speed = randi_range(5,20)
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	if not is_on_floor():

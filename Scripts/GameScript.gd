@@ -354,7 +354,7 @@ func _ready() -> void:
 	GlobalScript.CurrentLevel = 0
 	GlobalScript.PlayerDead = false
 	GlobalScript.GamePaused = false
-	$EnemyTick.wait_time = 8
+	$EnemyTick.wait_time = 6
 	$EnemyTick.timeout.connect(tick)
 	$RegenTick.timeout.connect(RegenTick)
 	$Control/FG.scale = Vector2.ONE

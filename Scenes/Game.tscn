@@ -2763,7 +2763,7 @@ mouse_filter = 2
 color = Color(0, 0, 0, 1)
 
 [node name="EnemyTick" type="Timer" parent="."]
-wait_time = 8.0
+wait_time = 6.0
 autostart = true
 
 [node name="RegenTick" type="Timer" parent="."]
