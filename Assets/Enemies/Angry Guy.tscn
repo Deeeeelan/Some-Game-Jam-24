@@ -15,8 +15,6 @@ radius = 0.75
 axis_lock_angular_x = true
 axis_lock_angular_z = true
 script = ExtResource("1_e2qw2")
-max_health = 350
-health = 350
 metadata/Enemy = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]

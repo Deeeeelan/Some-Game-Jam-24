@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://bnubtsdmbxshk"]
+
+[ext_resource type="Material" uid="uid://cvbv3ompgcs4c" path="res://Resources/Materials/Neon.tres" id="1_gamo3"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_5qi6n"]
+
+[node name="DeathParticle" type="Node3D"]
+
+[node name="CPUParticles3D" type="CPUParticles3D" parent="."]
+material_override = ExtResource("1_gamo3")
+emitting = false
+one_shot = true
+explosiveness = 1.0
+mesh = SubResource("BoxMesh_5qi6n")
+particle_flag_rotate_y = true
+direction = Vector3(0, 1, 0)
+spread = 75.0
+initial_velocity_min = 2.0
+initial_velocity_max = 4.0
+angular_velocity_min = -5.0
+angular_velocity_max = 5.0
+angle_max = 360.0
+scale_amount_min = 0.05
+scale_amount_max = 0.15
+color = Color(0, 0, 0, 1)

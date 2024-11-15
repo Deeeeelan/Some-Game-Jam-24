@@ -24,7 +24,14 @@ func take_damage(takenDMG):
 	health -= takenDMG
 	if health <= 0:
 		death()
-
+func spawnParticle(Pos):
+	var PartiScene = load("res://Assets/Misc/dmgparticle.tscn")
+	var Particle = PartiScene.instantiate()
+	get_tree().current_scene.get_node("Node3D/Particles").add_child(Particle)
+	Particle.position = Pos
+	Particle.get_node("CPUParticles3D").emitting = true
+	await Particle.get_node("CPUParticles3D").finished
+	Particle.queue_free()
 func _input(event):
 	if not GlobalScript.PlayerDead:
 		if event is InputEventMouseMotion and GlobalScript.GamePaused == false:
@@ -41,6 +48,7 @@ func _input(event):
 			for i in DetectedItems:
 				if i is CharacterBody3D and i.has_meta("Enemy") and i.get_meta("Enemy") == true: 
 					i.take_damage(damage)
+					spawnParticle(i.position)
 			await get_tree().create_timer(sword_cooldown).timeout
 			SwordCD = false
 		
