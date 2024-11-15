@@ -16,6 +16,7 @@ extends CharacterBody3D
 
 var direction = Vector3.ZERO
 var SwordCD = false
+@export var StillTicks = 0
 
 func death():
 	# Handle death animation etc.
@@ -57,8 +58,13 @@ func _input(event):
 			await get_tree().create_timer(sword_cooldown).timeout
 			SwordCD = false
 		
-		
-
+func still():
+	if velocity.length() < 0.1:
+		StillTicks += 1
+	else:
+		StillTicks = 0
+func _ready() -> void:
+	$StillTicks.timeout.connect(still)
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	if not is_on_floor():

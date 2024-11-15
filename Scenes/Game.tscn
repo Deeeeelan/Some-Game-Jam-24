@@ -60,20 +60,16 @@ font_size = 72
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5n8u1"]
 bg_color = Color(0, 0, 0, 1)
 border_color = Color(1, 1, 1, 1)
-corner_radius_bottom_right = 8
-corner_radius_bottom_left = 8
 shadow_color = Color(0, 0, 0, 0.368627)
 shadow_size = 4
 shadow_offset = Vector2(0, 4)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a5w5s"]
-bg_color = Color(0.4998, 0.683877, 0.98, 1)
+bg_color = Color(0.120659, 3.85046e-07, 0.645396, 1)
 border_width_left = 4
 border_width_right = 4
 border_width_bottom = 4
 border_color = Color(0.8, 0.8, 0.8, 0)
-corner_radius_bottom_right = 8
-corner_radius_bottom_left = 8
 
 [sub_resource type="LabelSettings" id="LabelSettings_4ahkw"]
 font = ExtResource("6_nfg15")
@@ -106,9 +102,6 @@ script = ExtResource("1_m1acb")
 
 [node name="Player" parent="Node3D" instance=ExtResource("2_1pfwd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
-
-[node name="Sword" parent="Node3D/Player/Head" index="4"]
-transform = Transform3D(-1.086e-05, -3, 1.086e-05, 0, -1.086e-05, -3, 3, -1.086e-05, 3.9313e-11, 0.6, -0.2, -1)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="Node3D"]
 environment = SubResource("Environment_k2ec4")
@@ -2569,7 +2562,7 @@ vertical_alignment = 2
 layout_mode = 1
 anchor_left = 0.35
 anchor_right = 0.65
-anchor_bottom = 0.08
+anchor_bottom = 0.05
 grow_horizontal = 2
 
 [node name="ProgressBar" type="ProgressBar" parent="Control/EXP"]
@@ -2582,7 +2575,7 @@ grow_vertical = 2
 mouse_filter = 2
 theme_override_styles/background = SubResource("StyleBoxFlat_5n8u1")
 theme_override_styles/fill = SubResource("StyleBoxFlat_a5w5s")
-value = 18.38
+value = 15.0
 show_percentage = false
 
 [node name="Label" type="Label" parent="Control/EXP"]

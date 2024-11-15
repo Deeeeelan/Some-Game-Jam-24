@@ -325,7 +325,7 @@ func tick():
 
 
 func RegenTick():
-	if player.health < player.max_health:
+	if player.health < player.max_health and player.StillTicks < 5:
 		player.health += floor(player.max_health/100)
 func Retry():
 	if not Loading:

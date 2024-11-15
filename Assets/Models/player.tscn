@@ -115,3 +115,6 @@ mesh = SubResource("CapsuleMesh_ey0af")
 libraries = {
 "": SubResource("AnimationLibrary_ab835")
 }
+
+[node name="StillTicks" type="Timer" parent="."]
+autostart = true
