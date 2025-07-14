@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://caeeogffw2krf"]
 
-[ext_resource type="Script" path="res://Scripts/TitleScreen.gd" id="1_bq351"]
+[ext_resource type="Script" uid="uid://c112cmqfyf2ar" path="res://Scripts/TitleScreen.gd" id="1_bq351"]
 [ext_resource type="FontFile" uid="uid://c1k08kigjcudw" path="res://Assets/Fonts/Jacquard12-Regular.ttf" id="2_w5tgx"]
 [ext_resource type="Texture2D" uid="uid://cp3ksktwmkwfx" path="res://Assets/Textures/WTHIH Logo FINAL.png" id="4_hqgjn"]
 [ext_resource type="Texture2D" uid="uid://crs3dw7ln8c67" path="res://Assets/Textures/Checkerboard BG.png" id="5_3jxrg"]

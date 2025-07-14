@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://djr7ajb8dlsc1"]
+[gd_scene load_steps=5 format=4 uid="uid://djr7ajb8dlsc1"]
 
 [ext_resource type="Material" uid="uid://ba6dvnpjd80mw" path="res://Assets/MineAndCavesSet/material/Mines_Trim.material" id="1_1ssqe"]
 
@@ -7,12 +7,12 @@ _surfaces = [{
 "aabb": AABB(-0.194538, 0, -0.194537, 0.389086, 4, 0.389086),
 "format": 34896613377,
 "index_count": 24,
-"index_data": PackedByteArray(1, 0, 2, 0, 6, 0, 1, 0, 0, 0, 2, 0, 6, 0, 3, 0, 5, 0, 6, 0, 2, 0, 3, 0, 5, 0, 4, 0, 7, 0, 5, 0, 3, 0, 4, 0, 7, 0, 0, 0, 1, 0, 7, 0, 4, 0, 0, 0),
+"index_data": PackedByteArray("AQACAAYAAQAAAAIABgADAAUABgACAAMABQAEAAcABQADAAQABwAAAAEABwAEAAAA"),
 "name": "MinesTrim",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
 "vertex_count": 8,
-"vertex_data": PackedByteArray(253, 255, 0, 0, 253, 255, 0, 0, 253, 255, 255, 255, 253, 255, 0, 0, 0, 0, 0, 0, 253, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 253, 255, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 0, 0, 0, 0, 255, 255, 253, 255, 0, 0, 253, 255, 255, 255, 0, 0, 0, 0)
+"vertex_data": PackedByteArray("/f8AAP3/AAD9/////f8AAAAAAAD9/wAAAAAAAAAAAAD9/wAAAAAAAAAA//8AAAAAAAD///3/AAD9////AAAAAA==")
 }]
 blend_shape_mode = 0
 
@@ -20,16 +20,16 @@ blend_shape_mode = 0
 resource_name = "Modular_Mine_Set_Wood_Platform_Post"
 _surfaces = [{
 "aabb": AABB(-0.194538, 0, -0.194537, 0.389086, 4, 0.389086),
-"attribute_data": PackedByteArray(254, 255, 150, 0, 254, 255, 229, 20, 107, 6, 150, 0, 138, 4, 229, 20, 254, 255, 229, 20, 254, 255, 150, 0, 254, 255, 150, 0, 254, 255, 229, 20, 254, 255, 229, 20, 254, 255, 111, 0, 0, 0, 150, 0, 0, 0, 229, 20, 215, 9, 229, 20, 215, 9, 150, 0, 117, 3, 229, 20, 142, 1, 111, 0),
+"attribute_data": PackedByteArray("/v+WAP7/5RRrBpYAigTlFP7/5RT+/5YA/v+WAP7/5RT+/+UU/v9vAAAAlgAAAOUU1wnlFNcJlgB1A+UUjgFvAA=="),
 "format": 34896613399,
 "index_count": 24,
-"index_data": PackedByteArray(2, 0, 4, 0, 12, 0, 2, 0, 0, 0, 4, 0, 13, 0, 7, 0, 11, 0, 13, 0, 5, 0, 7, 0, 10, 0, 8, 0, 14, 0, 10, 0, 6, 0, 8, 0, 15, 0, 1, 0, 3, 0, 15, 0, 9, 0, 1, 0),
+"index_data": PackedByteArray("AgAEAAwAAgAAAAQADQAHAAsADQAFAAcACgAIAA4ACgAGAAgADwABAAMADwAJAAEA"),
 "material": ExtResource("1_1ssqe"),
 "name": "MinesTrim",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
 "vertex_count": 16,
-"vertex_data": PackedByteArray(253, 255, 0, 0, 253, 255, 255, 191, 253, 255, 0, 0, 253, 255, 84, 213, 253, 255, 255, 255, 253, 255, 255, 191, 253, 255, 255, 255, 253, 255, 84, 213, 0, 0, 0, 0, 253, 255, 255, 191, 0, 0, 0, 0, 253, 255, 84, 213, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 0, 0, 0, 0, 84, 213, 253, 255, 0, 0, 0, 0, 255, 255, 253, 255, 0, 0, 0, 0, 84, 213, 0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 84, 213, 0, 0, 255, 255, 253, 255, 255, 191, 0, 0, 255, 255, 253, 255, 84, 213, 253, 255, 255, 255, 0, 0, 255, 255, 253, 255, 255, 255, 0, 0, 84, 213, 255, 127, 255, 127, 170, 170, 85, 85, 255, 127, 255, 127, 170, 170, 85, 85, 255, 127, 255, 127, 84, 85, 170, 170, 255, 191, 255, 63, 84, 85, 170, 170, 255, 191, 255, 63, 170, 170, 85, 85, 255, 191, 255, 63, 84, 85, 170, 170, 255, 127, 255, 127, 84, 85, 170, 170, 255, 191, 255, 63, 170, 170, 85, 85)
+"vertex_data": PackedByteArray("/f8AAP3//7/9/wAA/f9U1f3////9//+//f////3/VNUAAAAA/f//vwAAAAD9/1TVAAAAAAAA//8AAAAAAABU1f3/AAAAAP///f8AAAAAVNUAAP//AAD//wAA//8AAFTVAAD///3//78AAP///f9U1f3///8AAP///f///wAAVNX/f/9/qqpVVf9//3+qqlVV/3//f1RVqqr/v/8/VFWqqv+//z+qqlVV/7//P1RVqqr/f/9/VFWqqv+//z+qqlVV")
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_3n2xo")

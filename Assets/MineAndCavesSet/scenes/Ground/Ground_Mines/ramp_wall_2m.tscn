@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://bdmrv2475m0vk"]
+[gd_scene load_steps=5 format=4 uid="uid://bdmrv2475m0vk"]
 
 [ext_resource type="Material" uid="uid://b2233iujb5cfq" path="res://Assets/MineAndCavesSet/material/Mine_Walls_2.tres" id="1_0vy44"]
 
@@ -7,12 +7,12 @@ _surfaces = [{
 "aabb": AABB(-1.11891, -0.15349, -0.209634, 2.18195, 2.23997, 0.205932),
 "format": 34896613377,
 "index_count": 66,
-"index_data": PackedByteArray(15, 0, 6, 0, 3, 0, 16, 0, 7, 0, 13, 0, 13, 0, 7, 0, 6, 0, 5, 0, 4, 0, 12, 0, 14, 0, 12, 0, 13, 0, 0, 0, 17, 0, 12, 0, 12, 0, 17, 0, 16, 0, 1, 0, 5, 0, 14, 0, 10, 0, 14, 0, 15, 0, 17, 0, 9, 0, 8, 0, 16, 0, 8, 0, 2, 0, 9, 0, 17, 0, 0, 0, 15, 0, 3, 0, 11, 0, 13, 0, 6, 0, 15, 0, 5, 0, 12, 0, 14, 0, 14, 0, 13, 0, 15, 0, 0, 0, 12, 0, 4, 0, 12, 0, 16, 0, 13, 0, 1, 0, 14, 0, 10, 0, 10, 0, 15, 0, 11, 0, 17, 0, 8, 0, 16, 0, 16, 0, 2, 0, 7, 0),
+"index_data": PackedByteArray("DwAGAAMAEAAHAA0ADQAHAAYABQAEAAwADgAMAA0AAAARAAwADAARABAAAQAFAA4ACgAOAA8AEQAJAAgAEAAIAAIACQARAAAADwADAAsADQAGAA8ABQAMAA4ADgANAA8AAAAMAAQADAAQAA0AAQAOAAoACgAPAAsAEQAIABAAEAACAAcA"),
 "name": "Mines_Walls",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
 "vertex_count": 18,
-"vertex_data": PackedByteArray(153, 248, 138, 17, 251, 255, 0, 0, 216, 6, 120, 3, 73, 136, 0, 0, 153, 248, 255, 255, 3, 252, 0, 0, 122, 8, 195, 249, 27, 143, 0, 0, 69, 226, 92, 8, 46, 248, 0, 0, 3, 49, 0, 0, 73, 136, 0, 0, 204, 56, 221, 252, 77, 143, 0, 0, 98, 170, 255, 255, 73, 136, 0, 0, 255, 255, 206, 179, 3, 252, 0, 0, 255, 255, 187, 93, 73, 136, 0, 0, 0, 0, 19, 81, 251, 134, 0, 0, 117, 2, 34, 213, 217, 228, 0, 0, 199, 177, 20, 39, 0, 0, 0, 0, 199, 177, 87, 219, 0, 0, 0, 0, 188, 39, 192, 23, 191, 11, 0, 0, 252, 26, 6, 239, 117, 17, 0, 0, 51, 234, 221, 182, 58, 52, 0, 0, 28, 246, 187, 93, 0, 0, 0, 0)
+"vertex_data": PackedByteArray("mfiKEfv/AADYBngDSYgAAJn4//8D/AAAegjD+RuPAABF4lwILvgAAAMxAABJiAAAzDjd/E2PAABiqv//SYgAAP//zrMD/AAA//+7XUmIAAAAABNR+4YAAHUCItXZ5AAAx7EUJwAAAADHsVfbAAAAALwnwBe/CwAA/BoG73URAAAz6t22OjQAABz2u10AAAAA")
 }]
 blend_shape_mode = 0
 
@@ -20,16 +20,16 @@ blend_shape_mode = 0
 resource_name = "Modular_Mine_Set_Ramp_Wall_2m"
 _surfaces = [{
 "aabb": AABB(-1.11891, -0.15349, -0.209634, 2.18195, 2.23997, 0.205932),
-"attribute_data": PackedByteArray(221, 127, 177, 251, 84, 124, 115, 251, 92, 252, 5, 255, 124, 127, 175, 186, 177, 251, 169, 188, 93, 139, 42, 254, 120, 139, 40, 254, 191, 230, 252, 255, 204, 230, 255, 255, 201, 226, 208, 187, 72, 168, 248, 186, 172, 123, 58, 207, 190, 122, 102, 207, 48, 124, 186, 230, 54, 255, 28, 234, 255, 255, 32, 234, 192, 254, 132, 198, 198, 254, 135, 198, 110, 164, 115, 245, 121, 164, 119, 245, 172, 164, 196, 244, 190, 164, 5, 245, 121, 164, 219, 196, 121, 164, 44, 197, 128, 164, 221, 196, 190, 164, 38, 197, 204, 234, 87, 249, 148, 235, 152, 249, 190, 235, 53, 249, 132, 236, 180, 249, 15, 240, 185, 191, 127, 240, 242, 191, 36, 242, 140, 191, 36, 242, 4, 192, 105, 135, 177, 206, 105, 135, 129, 206, 114, 136, 235, 206, 14, 137, 247, 206, 71, 129, 186, 230, 89, 129, 187, 230, 214, 130, 250, 230, 219, 130, 167, 230),
+"attribute_data": PackedByteArray("3X+x+1R8c/tc/AX/fH+vurH7qbxdiyr+eIso/r/m/P/M5v//yeLQu0io+LqsezrPvnpmzzB8uuY2/xzq//8g6sD+hMbG/ofGbqRz9Xmkd/WspMT0vqQF9Xmk28R5pCzFgKTdxL6kJsXM6lf5lOuY+b7rNfmE7LT5D/C5v3/w8r8k8oy/JPIEwGmHsc5ph4HOcojrzg6J985HgbrmWYG75taC+ubbgqfm"),
 "format": 34896613399,
 "index_count": 66,
-"index_data": PackedByteArray(31, 0, 9, 0, 4, 0, 35, 0, 10, 0, 25, 0, 23, 0, 10, 0, 9, 0, 8, 0, 6, 0, 21, 0, 27, 0, 19, 0, 22, 0, 0, 0, 39, 0, 20, 0, 18, 0, 38, 0, 34, 0, 2, 0, 7, 0, 26, 0, 14, 0, 29, 0, 30, 0, 40, 0, 13, 0, 12, 0, 36, 0, 11, 0, 3, 0, 13, 0, 41, 0, 1, 0, 31, 0, 4, 0, 16, 0, 23, 0, 9, 0, 33, 0, 8, 0, 21, 0, 28, 0, 27, 0, 22, 0, 32, 0, 0, 0, 20, 0, 5, 0, 18, 0, 34, 0, 24, 0, 2, 0, 26, 0, 15, 0, 14, 0, 30, 0, 17, 0, 40, 0, 12, 0, 37, 0, 36, 0, 3, 0, 10, 0),
+"index_data": PackedByteArray("HwAJAAQAIwAKABkAFwAKAAkACAAGABUAGwATABYAAAAnABQAEgAmACIAAgAHABoADgAdAB4AKAANAAwAJAALAAMADQApAAEAHwAEABAAFwAJACEACAAVABwAGwAWACAAAAAUAAUAEgAiABgAAgAaAA8ADgAeABEAKAAMACUAJAADAAoA"),
 "material": ExtResource("1_0vy44"),
 "name": "Mines_Walls",
 "primitive": 3,
 "uv_scale": Vector4(1.05908, 2.0766, 0, 0),
 "vertex_count": 42,
-"vertex_data": PackedByteArray(153, 248, 138, 17, 251, 255, 171, 244, 153, 248, 138, 17, 251, 255, 6, 243, 216, 6, 120, 3, 73, 136, 253, 246, 153, 248, 255, 255, 3, 252, 115, 245, 122, 8, 195, 249, 27, 143, 199, 237, 69, 226, 92, 8, 46, 248, 7, 249, 69, 226, 92, 8, 46, 248, 72, 249, 3, 49, 0, 0, 73, 136, 153, 255, 3, 49, 0, 0, 73, 136, 72, 255, 204, 56, 221, 252, 77, 143, 49, 254, 98, 170, 255, 255, 73, 136, 89, 252, 255, 255, 206, 179, 3, 252, 62, 226, 255, 255, 206, 179, 3, 252, 51, 226, 255, 255, 187, 93, 73, 136, 183, 218, 0, 0, 19, 81, 251, 134, 74, 242, 0, 0, 19, 81, 251, 134, 76, 242, 117, 2, 34, 213, 217, 228, 57, 227, 117, 2, 34, 213, 217, 228, 47, 227, 199, 177, 20, 39, 0, 0, 233, 252, 199, 177, 20, 39, 0, 0, 241, 252, 199, 177, 20, 39, 0, 0, 223, 252, 199, 177, 20, 39, 0, 0, 225, 252, 199, 177, 87, 219, 0, 0, 188, 250, 199, 177, 87, 219, 0, 0, 188, 250, 199, 177, 87, 219, 0, 0, 166, 250, 199, 177, 87, 219, 0, 0, 169, 250, 188, 39, 192, 23, 191, 11, 113, 251, 188, 39, 192, 23, 191, 11, 139, 251, 188, 39, 192, 23, 191, 11, 145, 251, 188, 39, 192, 23, 191, 11, 62, 251, 252, 26, 6, 239, 117, 17, 87, 245, 252, 26, 6, 239, 117, 17, 22, 246, 252, 26, 6, 239, 117, 17, 107, 246, 252, 26, 6, 239, 117, 17, 125, 246, 51, 234, 221, 182, 58, 52, 162, 240, 51, 234, 221, 182, 58, 52, 178, 240, 51, 234, 221, 182, 58, 52, 165, 240, 51, 234, 221, 182, 58, 52, 155, 240, 28, 246, 187, 93, 0, 0, 58, 237, 28, 246, 187, 93, 0, 0, 69, 237, 28, 246, 187, 93, 0, 0, 37, 237, 28, 246, 187, 93, 0, 0, 52, 237, 10, 129, 239, 18, 139, 115, 21, 27, 1, 116, 152, 255, 148, 116, 20, 0, 49, 128, 83, 242, 35, 127, 158, 23, 168, 128, 144, 23, 24, 129, 1, 25, 85, 127, 164, 24, 75, 158, 125, 0, 213, 145, 209, 0, 213, 118, 2, 2, 56, 120, 244, 0, 211, 127, 81, 3, 59, 126, 221, 254, 87, 130, 178, 254, 208, 124, 156, 249, 116, 127, 42, 253, 95, 128, 84, 15, 175, 128, 157, 15, 240, 127, 8, 15, 8, 128, 4, 15, 197, 114, 235, 0, 197, 114, 235, 0, 138, 140, 61, 0, 98, 140, 13, 0, 138, 115, 25, 255, 49, 140, 118, 255, 129, 140, 35, 255, 34, 113, 74, 252, 104, 135, 22, 233, 3, 129, 241, 237, 31, 126, 229, 236, 138, 125, 84, 236, 183, 120, 214, 0, 243, 118, 100, 2, 104, 120, 27, 1, 85, 134, 0, 0, 233, 128, 1, 4, 59, 131, 206, 6, 99, 122, 25, 7, 64, 127, 118, 3)
+"vertex_data": PackedByteArray("mfiKEfv/q/SZ+IoR+/8G89gGeANJiP32mfj//wP8c/V6CMP5G4/H7UXiXAgu+Af5ReJcCC74SPkDMQAASYiZ/wMxAABJiEj/zDjd/E2PMf5iqv//SYhZ/P//zrMD/D7i///OswP8M+L//7tdSYi32gAAE1H7hkryAAATUfuGTPJ1AiLV2eQ543UCItXZ5C/jx7EUJwAA6fzHsRQnAADx/MexFCcAAN/8x7EUJwAA4fzHsVfbAAC8+sexV9sAALz6x7FX2wAApvrHsVfbAACp+rwnwBe/C3H7vCfAF78Li/u8J8AXvwuR+7wnwBe/Cz77/BoG73URV/X8GgbvdREW9vwaBu91EWv2/BoG73URffYz6t22OjSi8DPq3bY6NLLwM+rdtjo0pfAz6t22OjSb8Bz2u10AADrtHPa7XQAARe0c9rtdAAAl7Rz2u10AADTtCoHvEotzFRsBdJj/lHQUADGAU/Ijf54XqICQFxiBARlVf6QYS559ANWR0QDVdgICOHj0ANN/UQM7ft3+V4Ky/tB8nPl0fyr9X4BUD6+AnQ/wfwgPCIAED8Vy6wDFcusAiow9AGKMDQCKcxn/MYx2/4GMI/8icUr8aIcW6QOB8e0ffuXsin1U7Ld41gDzdmQCaHgbAVWGAADpgAEEO4POBmN6GQdAf3YD")
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_eq58i")

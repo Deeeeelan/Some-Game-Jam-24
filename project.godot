@@ -12,10 +12,10 @@ config_version=5
 
 config/name="What The HECK is happening!"
 run/main_scene="res://Scenes/Title Screen.tscn"
-config/features=PackedStringArray("4.3", "Forward Plus")
+config/features=PackedStringArray("4.4", "Forward Plus")
 boot_splash/bg_color=Color(0, 0, 0, 1)
-boot_splash/image="res://Assets/Textures/WTHIH Icon PNG.png"
 boot_splash/fullsize=false
+boot_splash/image="res://Assets/Textures/WTHIH Icon PNG.png"
 config/icon="res://Assets/Textures/WTHIH Icon.svg"
 
 [autoload]
@@ -25,6 +25,10 @@ GlobalScript="*res://Scripts/GlobalScript.gd"
 [display]
 
 window/size/mode=3
+
+[dotnet]
+
+project/assembly_name="What The HECK is happening!"
 
 [file_customization]
 

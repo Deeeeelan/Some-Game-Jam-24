@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://dklmjy7qrvbwa"]
+[gd_scene load_steps=5 format=4 uid="uid://dklmjy7qrvbwa"]
 
 [ext_resource type="Material" uid="uid://mnpwlc0stujg" path="res://Assets/MineAndCavesSet/material/Mines_Grounds.material" id="1_x4wvm"]
 
@@ -7,12 +7,12 @@ _surfaces = [{
 "aabb": AABB(-1.30623, -0.153898, -1.07762, 2.43763, 0.289231, 2.3451),
 "format": 34896613377,
 "index_count": 96,
-"index_data": PackedByteArray(14, 0, 6, 0, 7, 0, 14, 0, 12, 0, 6, 0, 9, 0, 21, 0, 14, 0, 6, 0, 10, 0, 2, 0, 6, 0, 17, 0, 10, 0, 5, 0, 18, 0, 15, 0, 0, 0, 14, 0, 7, 0, 8, 0, 11, 0, 16, 0, 19, 0, 10, 0, 17, 0, 18, 0, 13, 0, 15, 0, 18, 0, 1, 0, 13, 0, 14, 0, 22, 0, 12, 0, 20, 0, 16, 0, 19, 0, 1, 0, 20, 0, 13, 0, 12, 0, 17, 0, 6, 0, 9, 0, 14, 0, 0, 0, 3, 0, 18, 0, 5, 0, 3, 0, 4, 0, 18, 0, 4, 0, 1, 0, 18, 0, 20, 0, 12, 0, 13, 0, 12, 0, 19, 0, 17, 0, 12, 0, 20, 0, 19, 0, 16, 0, 10, 0, 19, 0, 16, 0, 11, 0, 10, 0, 8, 0, 20, 0, 1, 0, 8, 0, 16, 0, 20, 0, 13, 0, 12, 0, 22, 0, 15, 0, 21, 0, 5, 0, 5, 0, 21, 0, 9, 0, 21, 0, 22, 0, 14, 0, 15, 0, 22, 0, 21, 0, 15, 0, 13, 0, 22, 0),
+"index_data": PackedByteArray("DgAGAAcADgAMAAYACQAVAA4ABgAKAAIABgARAAoABQASAA8AAAAOAAcACAALABAAEwAKABEAEgANAA8AEgABAA0ADgAWAAwAFAAQABMAAQAUAA0ADAARAAYACQAOAAAAAwASAAUAAwAEABIABAABABIAFAAMAA0ADAATABEADAAUABMAEAAKABMAEAALAAoACAAUAAEACAAQABQADQAMABYADwAVAAUABQAVAAkAFQAWAA4ADwAWABUADwANABYA"),
 "name": "Mines_Ground",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
 "vertex_count": 23,
-"vertex_data": PackedByteArray(39, 247, 114, 42, 23, 231, 0, 0, 55, 10, 114, 42, 63, 81, 0, 0, 50, 242, 210, 33, 121, 8, 0, 0, 7, 18, 69, 16, 246, 246, 0, 0, 0, 0, 155, 29, 23, 193, 0, 0, 187, 55, 0, 0, 255, 255, 0, 0, 126, 255, 210, 33, 63, 81, 0, 0, 255, 255, 114, 42, 187, 184, 0, 0, 50, 18, 208, 15, 77, 6, 0, 0, 39, 221, 0, 0, 173, 248, 0, 0, 47, 172, 210, 33, 121, 8, 0, 0, 56, 115, 114, 42, 0, 0, 0, 0, 155, 203, 83, 198, 239, 140, 0, 0, 132, 83, 180, 140, 153, 88, 0, 0, 200, 200, 181, 202, 239, 198, 0, 0, 25, 66, 232, 180, 252, 207, 0, 0, 113, 95, 129, 224, 54, 24, 0, 0, 116, 165, 141, 159, 120, 48, 0, 0, 231, 32, 91, 203, 37, 198, 0, 0, 195, 123, 91, 220, 60, 39, 0, 0, 158, 91, 157, 200, 31, 54, 0, 0, 212, 137, 216, 238, 218, 226, 0, 0, 13, 173, 255, 255, 163, 176, 0, 0)
+"vertex_data": PackedByteArray("J/dyKhfnAAA3CnIqP1EAADLy0iF5CAAABxJFEPb2AAAAAJsdF8EAALs3AAD//wAAfv/SIT9RAAD//3Iqu7gAADIS0A9NBgAAJ90AAK34AAAvrNIheQgAADhzcioAAAAAm8tTxu+MAACEU7SMmVgAAMjItcrvxgAAGULotPzPAABxX4HgNhgAAHSljZ94MAAA5yBbyyXGAADDe1vcPCcAAJ5bncgfNgAA1InY7triAAANrf//o7AAAA==")
 }]
 blend_shape_mode = 0
 
@@ -20,16 +20,16 @@ blend_shape_mode = 0
 resource_name = "Modular_Mine_Set_Ground_Cave_F"
 _surfaces = [{
 "aabb": AABB(-1.30623, -0.153898, -1.07762, 2.43763, 0.289231, 2.3451),
-"attribute_data": PackedByteArray(210, 248, 144, 238, 252, 249, 200, 236, 97, 116, 52, 156, 10, 116, 219, 157, 86, 115, 121, 156, 15, 114, 175, 156, 251, 247, 232, 115, 127, 121, 216, 246, 223, 109, 240, 217, 197, 108, 150, 216, 169, 143, 176, 252, 248, 143, 235, 252, 221, 144, 19, 253, 248, 144, 255, 255, 22, 255, 8, 155, 107, 255, 212, 154, 251, 255, 102, 155, 251, 255, 63, 211, 255, 255, 143, 211, 206, 119, 211, 111, 57, 119, 75, 115, 250, 233, 5, 250, 3, 234, 165, 252, 231, 234, 156, 249, 221, 207, 225, 114, 49, 208, 4, 113, 205, 208, 124, 114, 223, 173, 41, 105, 1, 175, 139, 106, 35, 224, 48, 187, 250, 157, 14, 160, 8, 222, 165, 217, 110, 150, 145, 222, 194, 163, 198, 125, 192, 202, 166, 137, 40, 132, 135, 217, 119, 178, 69, 132, 175, 161, 172, 140, 20, 189, 34, 229, 52, 206, 150, 205),
+"attribute_data": PackedByteArray("0viQ7vz5yOxhdDScCnTbnVZzeZwPcq+c+/foc3952PbfbfDZxWyW2KmPsPz4j+v83ZAT/fiQ//8W/wiba//Umvv/Zpv7/z/T//+P08530285d0tz+ukF+gPqpfzn6pz53c/hcjHQBHHN0Hxy360paQGvi2oj4DC7+p0OoAjepdlulpHewqPGfcDKpokohIfZd7JFhK+hrIwUvSLlNM6WzQ=="),
 "format": 34896613399,
 "index_count": 96,
-"index_data": PackedByteArray(31, 0, 16, 0, 17, 0, 31, 0, 29, 0, 16, 0, 23, 0, 38, 0, 31, 0, 14, 0, 24, 0, 6, 0, 14, 0, 34, 0, 24, 0, 12, 0, 35, 0, 32, 0, 1, 0, 31, 0, 18, 0, 19, 0, 27, 0, 33, 0, 36, 0, 26, 0, 34, 0, 35, 0, 30, 0, 32, 0, 35, 0, 2, 0, 30, 0, 31, 0, 39, 0, 29, 0, 37, 0, 33, 0, 36, 0, 3, 0, 37, 0, 30, 0, 29, 0, 34, 0, 15, 0, 21, 0, 31, 0, 0, 0, 7, 0, 35, 0, 10, 0, 7, 0, 8, 0, 35, 0, 9, 0, 5, 0, 35, 0, 37, 0, 29, 0, 30, 0, 29, 0, 36, 0, 34, 0, 29, 0, 37, 0, 36, 0, 33, 0, 25, 0, 36, 0, 33, 0, 28, 0, 25, 0, 20, 0, 37, 0, 4, 0, 20, 0, 33, 0, 37, 0, 30, 0, 29, 0, 39, 0, 32, 0, 38, 0, 11, 0, 13, 0, 38, 0, 22, 0, 38, 0, 39, 0, 31, 0, 32, 0, 39, 0, 38, 0, 32, 0, 30, 0, 39, 0),
+"index_data": PackedByteArray("HwAQABEAHwAdABAAFwAmAB8ADgAYAAYADgAiABgADAAjACAAAQAfABIAEwAbACEAJAAaACIAIwAeACAAIwACAB4AHwAnAB0AJQAhACQAAwAlAB4AHQAiAA8AFQAfAAAABwAjAAoABwAIACMACQAFACMAJQAdAB4AHQAkACIAHQAlACQAIQAZACQAIQAcABkAFAAlAAQAFAAhACUAHgAdACcAIAAmAAsADQAmABYAJgAnAB8AIAAnACYAIAAeACcA"),
 "material": ExtResource("1_x4wvm"),
 "name": "Mines_Ground",
 "primitive": 3,
 "uv_scale": Vector4(1.27388, 1.29785, 0, 0),
 "vertex_count": 40,
-"vertex_data": PackedByteArray(39, 247, 114, 42, 23, 231, 53, 182, 39, 247, 114, 42, 23, 231, 66, 182, 55, 10, 114, 42, 63, 81, 237, 193, 55, 10, 114, 42, 63, 81, 195, 193, 55, 10, 114, 42, 63, 81, 214, 193, 55, 10, 114, 42, 63, 81, 155, 193, 50, 242, 210, 33, 121, 8, 236, 197, 7, 18, 69, 16, 246, 246, 73, 179, 0, 0, 155, 29, 23, 193, 83, 188, 0, 0, 155, 29, 23, 193, 210, 188, 187, 55, 0, 0, 255, 255, 31, 174, 187, 55, 0, 0, 255, 255, 220, 173, 187, 55, 0, 0, 255, 255, 217, 173, 187, 55, 0, 0, 255, 255, 253, 173, 126, 255, 210, 33, 63, 81, 195, 196, 126, 255, 210, 33, 63, 81, 201, 196, 126, 255, 210, 33, 63, 81, 162, 196, 255, 255, 114, 42, 187, 184, 255, 191, 255, 255, 114, 42, 187, 184, 235, 191, 50, 18, 208, 15, 77, 6, 26, 200, 50, 18, 208, 15, 77, 6, 5, 200, 39, 221, 0, 0, 173, 248, 196, 172, 39, 221, 0, 0, 173, 248, 148, 172, 39, 221, 0, 0, 173, 248, 136, 172, 47, 172, 210, 33, 121, 8, 118, 203, 47, 172, 210, 33, 121, 8, 153, 203, 47, 172, 210, 33, 121, 8, 103, 203, 56, 115, 114, 42, 0, 0, 136, 217, 56, 115, 114, 42, 0, 0, 72, 217, 155, 203, 83, 198, 239, 140, 187, 194, 132, 83, 180, 140, 153, 88, 83, 191, 200, 200, 181, 202, 239, 198, 181, 185, 25, 66, 232, 180, 252, 207, 0, 185, 113, 95, 129, 224, 54, 24, 45, 206, 116, 165, 141, 159, 120, 48, 16, 197, 231, 32, 91, 203, 37, 198, 77, 187, 195, 123, 91, 220, 60, 39, 164, 199, 158, 91, 157, 200, 31, 54, 29, 190, 212, 137, 216, 238, 218, 226, 158, 175, 13, 173, 255, 255, 163, 176, 2, 193, 159, 229, 183, 114, 133, 229, 59, 115, 3, 245, 204, 149, 160, 242, 233, 149, 197, 243, 219, 149, 143, 239, 14, 150, 234, 242, 131, 120, 153, 237, 71, 163, 254, 229, 133, 170, 217, 232, 138, 170, 28, 244, 34, 152, 8, 240, 94, 150, 172, 239, 54, 150, 95, 242, 97, 151, 77, 234, 190, 116, 84, 234, 9, 117, 28, 234, 220, 114, 155, 222, 161, 109, 151, 222, 6, 109, 178, 243, 57, 151, 169, 242, 100, 151, 34, 236, 83, 119, 219, 237, 241, 115, 163, 238, 104, 114, 28, 240, 10, 119, 182, 240, 177, 121, 204, 239, 169, 117, 156, 246, 65, 130, 194, 246, 80, 121, 47, 235, 142, 117, 253, 249, 139, 137, 194, 229, 253, 111, 189, 246, 104, 140, 42, 250, 242, 135, 10, 243, 5, 120, 106, 241, 21, 154, 40, 248, 219, 125, 234, 247, 60, 142, 137, 255, 82, 128, 147, 248, 83, 123)
+"vertex_data": PackedByteArray("J/dyKhfnNbYn93IqF+dCtjcKcio/Ue3BNwpyKj9Rw8E3CnIqP1HWwTcKcio/UZvBMvLSIXkI7MUHEkUQ9vZJswAAmx0XwVO8AACbHRfB0ry7NwAA//8frrs3AAD//9ytuzcAAP//2a27NwAA///9rX7/0iE/UcPEfv/SIT9RycR+/9IhP1GixP//ciq7uP+///9yKru4678yEtAPTQYayDIS0A9NBgXIJ90AAK34xKwn3QAArfiUrCfdAACt+IisL6zSIXkIdssvrNIheQiZyy+s0iF5CGfLOHNyKgAAiNk4c3IqAABI2ZvLU8bvjLvChFO0jJlYU7/IyLXK78a1uRlC6LT8zwC5cV+B4DYYLc50pY2feDAQxecgW8slxk27w3tb3DwnpMeeW53IHzYdvtSJ2O7a4p6vDa3//6OwAsGf5bdyheU7cwP1zJWg8umVxfPblY/vDpbq8oN4me1Ho/7lharZ6IqqHPQimAjwXpas7zaWX/Jhl03qvnRU6gl1HOrccpveoW2X3gZtsvM5l6nyZJci7FN32+3xc6PuaHIc8Ap3tvCxeczvqXWc9kGCwvZQeS/rjnX9+YuJwuX9b732aIwq+vKHCvMFeGrxFZoo+Nt96vc8jon/UoCT+FN7")
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_k0g7b")

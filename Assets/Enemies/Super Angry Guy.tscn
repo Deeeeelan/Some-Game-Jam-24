@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://datsbv1f021o4"]
 
-[ext_resource type="Script" path="res://Scripts/Enemies/Super Angry Guy.gd" id="1_m3syc"]
+[ext_resource type="Script" uid="uid://ca5iqsc4ariha" path="res://Scripts/Enemies/Super Angry Guy.gd" id="1_m3syc"]
 [ext_resource type="Material" uid="uid://cut6gmxba2l7m" path="res://Resources/Materials/Enemies/Super Angry Guy.tres" id="2_guinr"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_44npv"]

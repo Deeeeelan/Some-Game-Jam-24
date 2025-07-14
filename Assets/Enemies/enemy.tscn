@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://bxt55e62jg44i"]
 
-[ext_resource type="Script" path="res://Scripts/BasicEnemy.gd" id="1_8adtd"]
+[ext_resource type="Script" uid="uid://dakhmx5k7rljk" path="res://Scripts/BasicEnemy.gd" id="1_8adtd"]
 [ext_resource type="Material" uid="uid://bavnshhfq73yu" path="res://Resources/Materials/RedPlaceholder.tres" id="2_5mg81"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_44npv"]

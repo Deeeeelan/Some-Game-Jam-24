@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://ck4ntl0jvuq4w"]
+[gd_scene load_steps=5 format=4 uid="uid://ck4ntl0jvuq4w"]
 
 [ext_resource type="Material" uid="uid://ba6dvnpjd80mw" path="res://Assets/MineAndCavesSet/material/Mines_Trim.material" id="1_0vm3m"]
 
@@ -7,12 +7,12 @@ _surfaces = [{
 "aabb": AABB(-0.1, 0, -0.991422, 0.200001, 3.8, 1.09143),
 "format": 34896613377,
 "index_count": 48,
-"index_data": PackedByteArray(0, 0, 3, 0, 1, 0, 0, 0, 2, 0, 3, 0, 2, 0, 7, 0, 3, 0, 2, 0, 6, 0, 7, 0, 6, 0, 5, 0, 7, 0, 6, 0, 4, 0, 5, 0, 4, 0, 1, 0, 5, 0, 4, 0, 0, 0, 1, 0, 8, 0, 11, 0, 9, 0, 8, 0, 10, 0, 11, 0, 10, 0, 15, 0, 11, 0, 10, 0, 14, 0, 15, 0, 14, 0, 13, 0, 15, 0, 14, 0, 12, 0, 13, 0, 12, 0, 9, 0, 13, 0, 12, 0, 8, 0, 9, 0),
+"index_data": PackedByteArray("AAADAAEAAAACAAMAAgAHAAMAAgAGAAcABgAFAAcABgAEAAUABAABAAUABAAAAAEACAALAAkACAAKAAsACgAPAAsACgAOAA8ADgANAA8ADgAMAA0ADAAJAA0ADAAIAAkA"),
 "name": "MinesTrim",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
 "vertex_count": 16,
-"vertex_data": PackedByteArray(0, 0, 0, 0, 254, 255, 0, 0, 0, 0, 255, 255, 254, 255, 0, 0, 0, 0, 0, 0, 21, 209, 0, 0, 0, 0, 255, 255, 21, 209, 0, 0, 254, 255, 0, 0, 254, 255, 0, 0, 254, 255, 255, 255, 254, 255, 0, 0, 254, 255, 0, 0, 21, 209, 0, 0, 254, 255, 255, 255, 21, 209, 0, 0, 0, 0, 255, 255, 0, 0, 0, 0, 0, 0, 241, 195, 21, 209, 0, 0, 0, 0, 255, 255, 87, 66, 0, 0, 0, 0, 255, 214, 21, 209, 0, 0, 254, 255, 255, 255, 0, 0, 0, 0, 255, 255, 241, 195, 21, 209, 0, 0, 254, 255, 255, 255, 87, 66, 0, 0, 255, 255, 255, 214, 21, 209, 0, 0)
+"vertex_data": PackedByteArray("AAAAAP7/AAAAAP///v8AAAAAAAAV0QAAAAD//xXRAAD+/wAA/v8AAP7////+/wAA/v8AABXRAAD+////FdEAAAAA//8AAAAAAADxwxXRAAAAAP//V0IAAAAA/9YV0QAA/v///wAAAAD///HDFdEAAP7///9XQgAA////1hXRAAA=")
 }]
 blend_shape_mode = 0
 
@@ -20,16 +20,16 @@ blend_shape_mode = 0
 resource_name = "Modular_Mine_Set_Post_B"
 _surfaces = [{
 "aabb": AABB(-0.1, 0, -0.991422, 0.200001, 3.8, 1.09143),
-"attribute_data": PackedByteArray(255, 255, 229, 20, 255, 255, 111, 0, 0, 0, 229, 20, 0, 0, 111, 0, 255, 255, 111, 0, 255, 255, 229, 20, 0, 0, 111, 0, 0, 0, 229, 20, 255, 255, 111, 0, 255, 255, 229, 20, 0, 0, 111, 0, 0, 0, 229, 20, 255, 255, 229, 20, 255, 255, 111, 0, 0, 0, 229, 20, 0, 0, 111, 0, 229, 84, 30, 85, 229, 84, 82, 75, 111, 0, 30, 85, 111, 0, 82, 75, 229, 84, 82, 75, 127, 71, 30, 85, 111, 0, 82, 75, 213, 13, 30, 85, 229, 84, 82, 75, 229, 84, 30, 85, 111, 0, 82, 75, 111, 0, 30, 85, 229, 84, 30, 85, 127, 71, 82, 75, 111, 0, 30, 85, 213, 13, 82, 75),
+"attribute_data": PackedByteArray("///lFP//bwAAAOUUAABvAP//bwD//+UUAABvAAAA5RT//28A///lFAAAbwAAAOUU///lFP//bwAAAOUUAABvAOVUHlXlVFJLbwAeVW8AUkvlVFJLf0ceVW8AUkvVDR5V5VRSS+VUHlVvAFJLbwAeVeVUHlV/R1JLbwAeVdUNUks="),
 "format": 34896613399,
 "index_count": 48,
-"index_data": PackedByteArray(1, 0, 7, 0, 3, 0, 1, 0, 5, 0, 7, 0, 4, 0, 14, 0, 6, 0, 4, 0, 12, 0, 14, 0, 13, 0, 11, 0, 15, 0, 13, 0, 9, 0, 11, 0, 8, 0, 2, 0, 10, 0, 8, 0, 0, 0, 2, 0, 17, 0, 23, 0, 19, 0, 17, 0, 21, 0, 23, 0, 20, 0, 30, 0, 22, 0, 20, 0, 28, 0, 30, 0, 29, 0, 27, 0, 31, 0, 29, 0, 25, 0, 27, 0, 24, 0, 18, 0, 26, 0, 24, 0, 16, 0, 18, 0),
+"index_data": PackedByteArray("AQAHAAMAAQAFAAcABAAOAAYABAAMAA4ADQALAA8ADQAJAAsACAACAAoACAAAAAIAEQAXABMAEQAVABcAFAAeABYAFAAcAB4AHQAbAB8AHQAZABsAGAASABoAGAAQABIA"),
 "material": ExtResource("1_0vm3m"),
 "name": "MinesTrim",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
 "vertex_count": 32,
-"vertex_data": PackedByteArray(0, 0, 0, 0, 254, 255, 255, 191, 0, 0, 0, 0, 254, 255, 84, 213, 0, 0, 255, 255, 254, 255, 255, 191, 0, 0, 255, 255, 254, 255, 84, 213, 0, 0, 0, 0, 21, 209, 255, 255, 0, 0, 0, 0, 21, 209, 84, 213, 0, 0, 255, 255, 21, 209, 255, 255, 0, 0, 255, 255, 21, 209, 84, 213, 254, 255, 0, 0, 254, 255, 255, 191, 254, 255, 0, 0, 254, 255, 84, 213, 254, 255, 255, 255, 254, 255, 255, 191, 254, 255, 255, 255, 254, 255, 84, 213, 254, 255, 0, 0, 21, 209, 255, 255, 254, 255, 0, 0, 21, 209, 84, 213, 254, 255, 255, 255, 21, 209, 255, 255, 254, 255, 255, 255, 21, 209, 84, 213, 0, 0, 255, 255, 0, 0, 170, 233, 0, 0, 255, 255, 0, 0, 170, 233, 0, 0, 241, 195, 21, 209, 170, 233, 0, 0, 241, 195, 21, 209, 170, 233, 0, 0, 255, 255, 87, 66, 252, 197, 0, 0, 255, 255, 87, 66, 170, 233, 0, 0, 255, 214, 21, 209, 252, 197, 0, 0, 255, 214, 21, 209, 170, 233, 254, 255, 255, 255, 0, 0, 170, 233, 254, 255, 255, 255, 0, 0, 252, 197, 255, 255, 241, 195, 21, 209, 170, 233, 255, 255, 241, 195, 21, 209, 252, 197, 254, 255, 255, 255, 87, 66, 252, 197, 254, 255, 255, 255, 87, 66, 252, 197, 255, 255, 255, 214, 21, 209, 252, 197, 255, 255, 255, 214, 21, 209, 252, 197, 255, 127, 255, 127, 84, 85, 170, 170, 255, 127, 255, 127, 84, 85, 170, 170, 255, 63, 255, 191, 84, 85, 170, 170, 255, 63, 255, 191, 84, 85, 170, 170, 255, 127, 255, 127, 170, 170, 84, 85, 255, 127, 255, 127, 170, 170, 84, 85, 255, 63, 255, 191, 170, 170, 84, 85, 255, 63, 255, 191, 170, 170, 84, 85, 250, 74, 250, 74, 8, 234, 250, 202, 250, 74, 250, 74, 8, 234, 250, 202, 255, 226, 255, 28, 8, 234, 250, 202, 255, 226, 255, 28, 8, 234, 250, 202, 250, 74, 250, 74, 1, 70, 255, 28, 250, 74, 250, 74, 1, 70, 255, 28, 255, 226, 255, 28, 1, 70, 255, 28, 255, 226, 255, 28, 1, 70, 255, 28)
+"vertex_data": PackedByteArray("AAAAAP7//78AAAAA/v9U1QAA///+//+/AAD///7/VNUAAAAAFdH//wAAAAAV0VTVAAD//xXR//8AAP//FdFU1f7/AAD+//+//v8AAP7/VNX+/////v//v/7////+/1TV/v8AABXR///+/wAAFdFU1f7///8V0f///v///xXRVNUAAP//AACq6QAA//8AAKrpAADxwxXRqukAAPHDFdGq6QAA//9XQvzFAAD//1dCqukAAP/WFdH8xQAA/9YV0arp/v///wAAqun+////AAD8xf//8cMV0arp///xwxXR/MX+////V0L8xf7///9XQvzF////1hXR/MX////WFdH8xf9//39UVaqq/3//f1RVqqr/P/+/VFWqqv8//79UVaqq/3//f6qqVFX/f/9/qqpUVf8//7+qqlRV/z//v6qqVFX6SvpKCOr6yvpK+koI6vrK/+L/HAjq+sr/4v8cCOr6yvpK+koBRv8c+kr6SgFG/xz/4v8cAUb/HP/i/xwBRv8c")
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_s053i")

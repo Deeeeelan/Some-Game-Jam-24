@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=3 uid="uid://c4qmwrba7n82r"]
 
-[ext_resource type="Script" path="res://Scripts/player.gd" id="1_1n7vj"]
+[ext_resource type="Script" uid="uid://d30s2w7d33xql" path="res://Scripts/player.gd" id="1_1n7vj"]
 [ext_resource type="Texture2D" uid="uid://c0tst7ntrr03h" path="res://Assets/Textures/flashlightpattern.png" id="2_7ny0r"]
 [ext_resource type="AudioStream" uid="uid://0ingyjs47j34" path="res://Assets/Audio/SwordSlash.wav" id="3_cub0i"]
 [ext_resource type="PackedScene" uid="uid://qma07x6lbifr" path="res://Assets/Models/Sword.tscn" id="4_skxh6"]
@@ -68,8 +68,8 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ab835"]
 _data = {
-"RESET": SubResource("Animation_xkx4v"),
-"Sword_Slash": SubResource("Animation_xtda8")
+&"RESET": SubResource("Animation_xkx4v"),
+&"Sword_Slash": SubResource("Animation_xtda8")
 }
 
 [node name="Player" type="CharacterBody3D"]
